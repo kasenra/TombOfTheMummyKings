@@ -1,0 +1,1278 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TomboftheMummyKingsContent",
+				"abbreviation": "ToMK",
+				"full": "Tomb of the Mummy Kings",
+				"version": "0.1",
+				"url": "https://github.com/kasenra/TombOfTheMummyKings/",
+				"authors": [
+					"kasenra"
+				],
+				"color": "fbe928"
+			}
+		]
+	},
+	"monster": [
+		{
+			"source": "TomboftheMummyKingsContent",
+			"name": "Thri-Kreen Queensguard",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Thri-Kreen"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 71,
+				"formula": "11d8 + 22"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 14,
+			"int": 11,
+			"wis": 13,
+			"cha": 12,
+			"save": {
+				"str": "+6",
+				"wis": "+4",
+				"cha": "+4"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"deception": "+4",
+				"nature": "+3",
+				"persuasion": "+4",
+				"perception": "+6",
+				"survival": "+4",
+				"stealth": "+7"
+			},
+			"passive": 17,
+			"languages": [
+				"Thri-kreen",
+				"telepathy 60ft."
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Sunbeetle Armor",
+					"entries": [
+						"The knight's armor is perpetually slick. Any attempts to grapple the knight have disadvantage."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The knight has advantage on saving throws against magic and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The queensguard makes four attacks with its g'irakas, or makes three attacks and uses its immobilizing spittle once."
+					]
+				},
+				{
+					"name": "G'iraka",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Immobilizing Spittle",
+					"entries": [
+						"The queensguard sprays thick, resinous spittle onto a creature within 30 feet. The target must make a {@dc 14} strength saving throw or become {@condition restrained} (save at end of turn ends)."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Magic Resistance"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"OTH",
+				"TP"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"shortName": "Queensguard",
+			"conditionInflict": [
+				"restrained"
+			],
+			"reaction": [
+				{
+					"name": "Interception",
+					"entries": [
+						"When a melee attack targeting an ally within 5 feet hits them and does damage, reduce that damage by {@damage 1d10 + 3}"
+					]
+				}
+			],
+			"environment": [
+				"desert"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			},
+			"spellcasting": [
+				{
+					"name": "Psionic Drizzle",
+					"headerEntries": [
+						"The queensguard is weakly psionic ({@dc 12}). It has a heat capacity of 3 and access to the following emanations:"
+					],
+					"will": [
+						"{@spell 「lance」|TomboftheMummyKingsContent}"
+					],
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"intelligence"
+			]
+		},
+		{
+			"name": "Thri-kreen Minion (x5)",
+			"source": "TomboftheMummyKingsContent",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"thri-kreen"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 2",
+				"average": 11
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 13,
+			"int": 8,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4",
+				"survival": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Thri-kreen"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Chameleon Carapace",
+					"entries": [
+						"The thri-kreen can change the color of its carapace to match the color and texture of its surroundings. As a result, it has advantage on Dexterity ({@skill Stealth}) checks made to hide."
+					]
+				},
+				{
+					"name": "Standing Leap",
+					"entries": [
+						"The thri-kreen's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start."
+					]
+				},
+				{
+					"name": "Minion",
+					"entries": [
+						"If the thri-kreen takes damage from an attack or as the result of a failed saving throw, their hit points are reduced to 0. If the pile takes damage from another effect, they die if the damage equals or exceeds their hit point maximum; otherwise they take no damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite (Group Attack)",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one creature. {@h}3 + Group Size piercing damage, and the target must make a {@dc 10}  + Group Size Constitution save or be {@condition poisoned} for 1 minute. If the saving throw fails by 5 or more, the target is also {@condition paralyzed} while {@condition poisoned}. REOTE. Requires a group of size 2 or more."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}2 slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"grassland"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/thri-kreen.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"paralyzed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Thri-kreen",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Thri-kreen",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Thri-kreen wander the deserts and savannas of the world, avoiding all other races.",
+									{
+										"name": "Thri-Kreen Communication",
+										"entries": [
+											"Thri-kreen employ a language without words. To show emotion and reaction, a thri-kreen clacks its mandibles and waves its antennae, giving other thri-kreen a sense of what it is thinking and feeling. Other creatures find this manner of communication difficult to interpret and impossible to duplicate.",
+											"When forced to interact with creatures of other intelligent species, thri-kreen employ alternative methods of communication, such as drawing pictures in sand or making pictures out of twigs or blades of grass."
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Limited Emotions",
+										"type": "entries",
+										"entries": [
+											"Thri-kreen experience the full range of emotions but aren't as prone to emotional outbursts as humans. Thri-kreen with psionic ability often demonstrate a wider range of emotions, particularly if they live near or interact with humans or other highly emotional creatures."
+										]
+									},
+									{
+										"name": "Isolationists and Wanderers",
+										"type": "entries",
+										"entries": [
+											"Thri-kreen consider all other living creatures as potential nourishment, and they love the taste of elf flesh in particular. If a creature might be useful for something other than food, the thri-kreen aren't likely to attack it on sight. Thri-kreen kill to survive, never for sport."
+										]
+									},
+									{
+										"name": "Sleepless",
+										"type": "entries",
+										"entries": [
+											"Thri-kreen don't require sleep and can rest while remaining alert and performing light tasks. Their inability to sleep is thought to be the reason why thri-kreen have such short lifespans, the average thri-kreen life expectancy being only thirty years."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Thri-kreen.webp"
+						}
+					}
+				]
+			},
+			"shortName": "Minion",
+			"damageTags": [
+				"S"
+			]
+		},
+		{
+			"name": "USTAR, BLOOD DRIPPING FROM THE FANGS OF HEAVEN EXTINGUISHES ONLY THE WEAK FLAME",
+			"source": "TomboftheMummyKingsContent",
+			"page": 265,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"Brute",
+					"Gnoll"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d10 + 45",
+				"average": 94
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 20,
+			"int": 10,
+			"wis": 14,
+			"cha": 10,
+			"skill": {
+				"arcana": "+6",
+				"history": "+6",
+				"religion": "+6",
+				"athletics": "+8"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"the languages they knew in life"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Flammable",
+					"entries": [
+						"Whenever the mummy takes fire damage, they take an extra 5 ({@damage 1d10}) fire damage."
+					]
+				},
+				{
+					"name": "Mummy Dust",
+					"entries": [
+						"Whenever the mummy takes piercing or slashing damage, each creature within 5 feet of them takes 4 ({@damage 1d8}) poison damage."
+					]
+				},
+				{
+					"name": "Deadlord of Anauroch",
+					"entries": [
+						"If this creature is reduced to 0 hit points while its canopic jar remains intact, it reforms one round later at half of its maximum hit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mummy makes three Desiccating Slam attacks and uses Guardian Curse."
+					]
+				},
+				{
+					"name": "Desiccating Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 3d6 + 4}) slashing damage. Until the start of the mummy's next turn, the target's speed is reduced by 10 feet and the target can't regain hit points."
+					]
+				},
+				{
+					"name": "Guardian Curse",
+					"entries": [
+						"The mummy calls down a scourge on one creature they can see within 60 feet of them. The target must succeed on a {@dc 15} Wisdom saving throw or be cursed. While cursed in this way, whenever the target takes damage, they take an extra 3 ({@damage 1d6}) necrotic damage that can't be reduced in any way. The curse lasts until removed by a {@i cure ailment} power, a {@spell remove curse} spell, or a similar supernatural effect. A target who succeeds on their saving throw is immune to the Guardian Curse of all mummies for the next 24 hours."
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/FleeMortals/token/Mummy.png",
+			"foundryTokenScale": 1.5,
+			"shortName": "ustar",
+			"isNamedCreature": true,
+			"legendaryHeader": [
+				"Ustar has three Villain Actions. He can use only one per round and must use them in order."
+			],
+			"legendary": [
+				{
+					"name": "1. Terror in the Night",
+					"entries": [
+						"Ustar lets out an otherworldly howl, and all living creatures must make a {@dc 16} wisdom save against fear. SEOTE.",
+						"Then, Ustar can move his full movement towards a creature who failed this save."
+					]
+				},
+				{
+					"name": "2. Devour Worlds",
+					"entries": [
+						"Ustar picks up a mummy rotwrap (or scoops up their viscera if none are left alive), healing himself {@dice 3d10 + 5} hit points and gaining a bless effect for the next 10 minutes."
+					]
+				},
+				{
+					"name": "3. FEAST OF YENOGHU",
+					"entries": [
+						"Every creature cut by Ustar's claws makes a {@dc 17} CON save against delayed poison. SEOTE. Ustar cackles and pounces on one {@condition poisoned} target"
+					]
+				}
+			],
+			"environment": [
+				"desert"
+			],
+			"damageTags": [
+				"F",
+				"I",
+				"N",
+				"S"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Sand Kobold",
+			"source": "TomboftheMummyKingsScrap",
+			"page": 1,
+			"basicRules": true,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"kobold"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"condition": "(13 from sand armor)"
+				}
+			],
+			"hp": {
+				"formula": "2d6 - 1",
+				"average": 6
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "sandwalk 40 ft."
+				},
+				"burrow": {
+					"number": 10,
+					"condition": "in sand"
+				}
+			},
+			"str": 7,
+			"dex": 15,
+			"con": 9,
+			"int": 10,
+			"wis": 7,
+			"cha": 8,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "1/8",
+			"trait": [
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Sling",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"desert"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/kobold.mp3"
+			},
+			"attachedItems": [
+				"dagger|phb",
+				"sling|phb"
+			],
+			"traitTags": [
+				"Pack Tactics",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Kobold",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Kobold",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Kobolds are craven reptilian humanoids that worship evil dragons as demigods and serve them as minions and toadies. Kobolds inhabit dragons' lairs when they can but more commonly infest dungeons, gathering treasures and trinkets to add to their own tiny hoards.",
+									{
+										"name": "Strength in Numbers",
+										"entries": [
+											"Kobolds are egg-laying creatures. They mature quickly and can live to be \"great wyrms\" more than a century old. However, many kobolds perish before they reach the end of their first decade. Physically weak, they are easy prey for predators. This vulnerability forces them to band together. Their superior numbers can win battles against powerful adversaries, but often with massive casualties on the kobold side."
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Tunnelers and Builders",
+										"type": "entries",
+										"entries": [
+											"Kobolds make up for their physical ineptitude with a cleverness for trap making and tunneling. Their lairs consist of low tunnels through which they move easily but which hinder larger humanoids. Kobolds also riddle their lairs with traps. The most insidious kobold traps make use of natural hazards and other creatures. A trip wire might connect to a spring-loaded trap that hurls clay pots of flesh-eating green slime or flings crates of venomous giant centipedes at intruders."
+										]
+									},
+									{
+										"name": "The Lost God",
+										"type": "entries",
+										"entries": [
+											"In addition to the dragons they revere, kobolds worship a lesser god named Kurtulmak. Legends speak of how Kurtulmak served as Tiamat's vassal in the Nine Hells until Garl Glittergold, the god of gnomes, stole a trinket from the Dragon Queen's hoard. Tiamat sent Kurtulmak to retrieve the trinket, but Garl Glittergold played a trick on him, collapsing the earth and trapping the kobold god in an underground maze for eternity. For this reason, kobolds hate gnomes and pranks of any kind. Kurtulmak's most devoted worshipers dedicate themselves to finding and releasing their lost god from his prison-maze."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Kobold.webp"
+						},
+						"credit": "Conceptopolis"
+					}
+				]
+			},
+			"bonus": [
+				{
+					"name": "Sand Armor",
+					"entries": [
+						"When walking on sand, the Kobold can roll around in the sand, coating their scales and providing a +1 to their AC for 1 minute."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P"
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "「LANCE」",
+			"level": 1,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Target a creature with a jolt of psionic energy. The target makes an Intelligence Saving Throw and takes {@damage 2d6} psychic damage on a failure."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For every point of overclock, add {@dice 1d6} of psychic damage."
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"intelligence"
+			]
+		},
+		{
+			"name": "「SHADE」",
+			"level": 1,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				"Target a creature within range to make an Intelligence Saving Throw. If the target fails their save, the caster becomes {@condition invisible} to that creature until the caster moves or takes hostile action towards the target."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For every 2 points of overclock, add one target."
+					]
+				}
+			]
+		},
+		{
+			"name": "「CATCH」",
+			"level": 2,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "when hit by a melee attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"The creature whose attack triggered this reaction must make an Intelligence save or be {@condition grappled} by the caster's Intelligence (Arcana)."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For each point of overclock, the subject of this emanation receives disadvantage for one round of grapple escape checks."
+					]
+				}
+			],
+			"abilityCheck": [
+				"intelligence"
+			]
+		},
+		{
+			"name": "「SLIPSHOD」",
+			"level": 2,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Target creature makes an Intelligence Save against falling {@condition prone}."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For every 3 points of overclock, add an additional target."
+					]
+				}
+			],
+			"savingThrow": [
+				"intelligence"
+			]
+		},
+		{
+			"name": "「FIELD」",
+			"level": 10,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"You project your psychic weave into the world around you. Creatures besides yourself within the Brain Field are unable to cast spells or invoke emanations. Any psionic effects already active within your brain field are yours control freely.",
+				"While in your brain field, you are immune to psychic damage and resist all other damage.",
+				"If you exit the brain field or the duration of the emanation runs out, make an Intelligence Saving Throw against your psionics DC. On a successful save, take five levels of {@condition exhaustion}. On a failed save, take nine levels of {@condition exhaustion}.",
+				"If this {@condition exhaustion} is fatal, you erupt in psionic energy as if you'd reached maximum psionic strain."
+			],
+			"source": "TomboftheMummyKingsContent"
+		},
+		{
+			"name": "「EQUIP」",
+			"level": 2,
+			"school": "P",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"You coil your psychic weave into a second mind. Using this mind, you are able to attune to one more magical item.",
+				"This emanation uses an ongoing effect; ongoing effects cost heat capacity instead of building up heat."
+			],
+			"source": "TomboftheMummyKingsScrap",
+			"page": 2,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For every 3 points of overclock, your submind can attune to one additional magic item."
+					]
+				}
+			]
+		},
+		{
+			"name": "「MIND」",
+			"level": 1,
+			"school": "P",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"discharge"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Touch an inanimate object while invoking this emanation. That creature is imbued with a mind and becomes an awakened object with your mental statistics.",
+				"It is loyal to you as long as this emanation is ongoing.",
+				"By consuming the 3 units of sublimate from the material component, your connection with this new mind is severed, ending the ongoing effect and turning the creature into a permanent, independent awakened object retaining your mental statistics. ",
+				"This emanation uses an ongoing effect; ongoing effects cost heat capacity instead of building up heat."
+			],
+			"source": "TomboftheMummyKingsScrap",
+			"page": 2,
+			"components": {
+				"m": {
+					"text": "3 units of psionic sublimate, consumed to sever connection",
+					"consume": true
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For every 2 points of overclock, add 1 to each of the awakened object's statistics."
+					]
+				}
+			]
+		},
+		{
+			"name": "「SOAR」",
+			"level": 2,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Target a creature while invoking this emanation. This creature must make an Intelligence Saving Throw against your psychic DC or be teleported 20 feet upwards."
+			],
+			"source": "TomboftheMummyKingsScrap",
+			"page": 2,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For every point of overclock, increase height by 10 feet."
+					]
+				}
+			]
+		},
+		{
+			"name": "「EQUALIZE」",
+			"level": 3,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "round"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"When invoking this emanation, target up to 3 willing creatures, potentially including yourself. These creatures become psionically linked, gaining the following benefits:",
+				"- All linked creatures can communicate telepathically with other linked creatures",
+				"- All linked creatures' saving throw bonuses are replaced with the average of that bonus for all linked creatures.",
+				"If any linked creatures moves more than 60 feet away from the nearest linked creature, the link is broken and this emanation's effect ends."
+			],
+			"source": "TomboftheMummyKingsScrap",
+			"page": 2,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For every point of overclock, add an additional creature to the linkage."
+					]
+				}
+			]
+		},
+		{
+			"name": "「SPIRIT」",
+			"level": 3,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Touch a creature while invoking this emanation. You become aware of the current location of the targeted creature's soul as long as you are in contact with the target."
+			],
+			"source": "TomboftheMummyKingsScrap",
+			"page": 2,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For each point of overclock, gain an additional bonus from the following:",
+						"- You can see from the soul's location while maintaining contact.",
+						"- You can hear any sounds around the soul's location",
+						"- You know what plane of existence the soul is on"
+					]
+				}
+			]
+		},
+		{
+			"name": "「LINK」",
+			"level": 4,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "round"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"When invoking this emanation, target up to five creatures, potentially including yourself. The targets are psionically linked, gaining the following benefits:",
+				"- Linked creatures can communicate psychically with any other linked creatures.",
+				"- Psionic heat capacity is shared between linked creatures.",
+				"An unwilling creature may make an Intelligence Saving Throw against the initial effect of this emanation, as well as a save at the end of each of its turns."
+			],
+			"source": "TomboftheMummyKingsScrap",
+			"page": 2,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For every 2 points of overclock, add 1 target to the linkage."
+					]
+				}
+			]
+		},
+		{
+			"name": "「REFLECT」",
+			"level": 4,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "when a creature within range activates craft of tier 3 or below"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Interrupt the activation of the craft which triggered this effect. Then, you may reflect the craft's effect back upon its user (with you as its owner)."
+			],
+			"source": "TomboftheMummyKingsScrap",
+			"page": 2,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For every 2 points of overclock, raise the maximum tier of craft by 1."
+					]
+				}
+			]
+		},
+		{
+			"name": "「RAGE OF USTAR」",
+			"level": 2,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Fly into a dark rage, emboldened by the Deadlord of Blood's power. While enraged this way, you gain the following effects:",
+				"- You are vulnerable to radiant damage and resistant to all other damage.",
+				"- You are unable to activate or concentrate spells or emanations",
+				"- You gain +2 damage with strength-based weapon attacks",
+				"- You receive a minimum of 2 attacks per attack action.",
+				"If you become {@condition incapacitated} or go a full round without taking or dealing damage this rage ends early. If this rage would end early this way, you can instead choose to extend it up to ten times.",
+				"At the end of the rage, you take one level of {@condition exhaustion} per rage extension."
+			],
+			"source": "TomboftheMummyKingsScrap",
+			"page": 2,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For every 2 points of overheat, you gain +1 damage with strength-based weapon attacks, and for every 4 points of overheat, you gain one more minimum attack per attack action."
+					]
+				}
+			]
+		}
+	],
+	"condition": [
+		{
+			"name": "Exhaustion",
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"Some special abilities and environmental hazards, such as starvation and the long-term effects of freezing or scorching temperatures, can lead to a special condition called exhaustion. Exhaustion is measured in ten levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect's description.",
+						"For each level of exhaustion, a creature suffers a -1 penalty to their attack rolls, skill checks, and save DCs for supernatural effects.",
+       					"If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description.",
+						"Finishing a long rest reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink. Also, being raised from the dead reduces a creature's exhaustion level by 1."
+					]
+				}
+			],
+			"source": "TombOfTheMummyKings",
+			"page": 1
+		}
+	]
+}
