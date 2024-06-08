@@ -511,7 +511,7 @@
 		},
 		{
 			"name": "Sand Kobold",
-			"source": "TomboftheMummyKingsScrap",
+			"source": "TomboftheMummyKingsContent",
 			"page": 1,
 			"basicRules": true,
 			"size": [
@@ -890,7 +890,7 @@
 				"If you exit the brain field or the duration of the emanation runs out, make an Intelligence Saving Throw against your psionics DC. On a successful save, take five levels of {@condition exhaustion}. On a failed save, take nine levels of {@condition exhaustion}.",
 				"If this {@condition exhaustion} is fatal, you erupt in psionic energy as if you'd reached maximum psionic strain."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TomboftheMummyKingsContent"
 		},
 		{
 			"name": "「EQUIP」",
