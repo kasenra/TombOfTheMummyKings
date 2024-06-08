@@ -890,7 +890,7 @@
 				"If you exit the brain field or the duration of the emanation runs out, make an Intelligence Saving Throw against your psionics DC. On a successful save, take five levels of {@condition exhaustion}. On a failed save, take nine levels of {@condition exhaustion}.",
 				"If this {@condition exhaustion} is fatal, you erupt in psionic energy as if you'd reached maximum psionic strain."
 			],
-			"source": "TomboftheMummyKingsContent"
+			"source": "TomboftheMummyKingsContent",
 		},
 		{
 			"name": "「EQUIP」",
@@ -923,7 +923,7 @@
 				"You coil your psychic weave into a second mind. Using this mind, you are able to attune to one more magical item.",
 				"This emanation uses an ongoing effect; ongoing effects cost heat capacity instead of building up heat."
 			],
-			"source": "TomboftheMummyKingsScrap",
+			"source": "TomboftheMummyKingsContent",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -968,7 +968,7 @@
 				"By consuming the 3 units of sublimate from the material component, your connection with this new mind is severed, ending the ongoing effect and turning the creature into a permanent, independent awakened object retaining your mental statistics. ",
 				"This emanation uses an ongoing effect; ongoing effects cost heat capacity instead of building up heat."
 			],
-			"source": "TomboftheMummyKingsScrap",
+			"source": "TomboftheMummyKingsContent",
 			"page": 2,
 			"components": {
 				"m": {
@@ -1014,7 +1014,7 @@
 			"entries": [
 				"Target a creature while invoking this emanation. This creature must make an Intelligence Saving Throw against your psychic DC or be teleported 20 feet upwards."
 			],
-			"source": "TomboftheMummyKingsScrap",
+			"source": "TomboftheMummyKingsContent",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -1063,7 +1063,7 @@
 				"- All linked creatures' saving throw bonuses are replaced with the average of that bonus for all linked creatures.",
 				"If any linked creatures moves more than 60 feet away from the nearest linked creature, the link is broken and this emanation's effect ends."
 			],
-			"source": "TomboftheMummyKingsScrap",
+			"source": "TomboftheMummyKingsContent",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -1102,7 +1102,7 @@
 			"entries": [
 				"Touch a creature while invoking this emanation. You become aware of the current location of the targeted creature's soul as long as you are in contact with the target."
 			],
-			"source": "TomboftheMummyKingsScrap",
+			"source": "TomboftheMummyKingsContent",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -1154,7 +1154,7 @@
 				"- Psionic heat capacity is shared between linked creatures.",
 				"An unwilling creature may make an Intelligence Saving Throw against the initial effect of this emanation, as well as a save at the end of each of its turns."
 			],
-			"source": "TomboftheMummyKingsScrap",
+			"source": "TomboftheMummyKingsContent",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -1195,7 +1195,7 @@
 			"entries": [
 				"Interrupt the activation of the craft which triggered this effect. Then, you may reflect the craft's effect back upon its user (with you as its owner)."
 			],
-			"source": "TomboftheMummyKingsScrap",
+			"source": "TomboftheMummyKingsContent",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -1244,7 +1244,7 @@
 				"If you become {@condition incapacitated} or go a full round without taking or dealing damage this rage ends early. If this rage would end early this way, you can instead choose to extend it up to ten times.",
 				"At the end of the rage, you take one level of {@condition exhaustion} per rage extension."
 			],
-			"source": "TomboftheMummyKingsScrap",
+			"source": "TomboftheMummyKingsContent",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -1271,7 +1271,7 @@
 					]
 				}
 			],
-			"source": "TombOfTheMummyKings",
+			"source": "TomboftheMummyKingsContent",
 			"page": 1
 		}
 	]
