@@ -885,10 +885,11 @@
 				"fromClassList": []
 			},
 			"entries": [
+				"The ultimate psionic emanation.",
 				"You project your psychic weave into the world around you. Creatures besides yourself within the Brain Field are unable to cast spells or invoke emanations. Any psionic effects already active within your brain field are yours control freely.",
-				"While in your brain field, you are immune to psychic damage and resist all other damage.",
+				"While in your brain field, you are immune to psychic damage and resist all other damage. If invoking this emanation would put the user into psionic crisis, the effects of the crisis are delayed until after the field dissipates.",
 				"If you exit the brain field or the duration of the emanation runs out, make an Intelligence Saving Throw against your psionics DC. On a successful save, take five levels of {@condition exhaustion}. On a failed save, take nine levels of {@condition exhaustion}.",
-				"If this {@condition exhaustion} is fatal, you erupt in psionic energy as if you'd reached maximum psionic strain."
+				"If this {@condition exhaustion} is fatal, you erupt in psionic energy as if you'd reached maximum psionic crisis."
 			],
 			"source": "TomboftheMummyKingsContent"
 		},
@@ -937,7 +938,7 @@
 		},
 		{
 			"name": "「MIND」",
-			"level": 1,
+			"level": 3,
 			"school": "P",
 			"time": [
 				{
@@ -964,7 +965,7 @@
 			},
 			"entries": [
 				"Touch an inanimate object while invoking this emanation. That creature is imbued with a mind and becomes an awakened object with your mental statistics.",
-				"It is loyal to you as long as this emanation is ongoing.",
+				"It is loyal to you as long as this emanation is ongoing, and it can deliver your touch-emanations.",
 				"By consuming the 3 units of sublimate from the material component, your connection with this new mind is severed, ending the ongoing effect and turning the creature into a permanent, independent awakened object retaining your mental statistics. ",
 				"This emanation uses an ongoing effect; ongoing effects cost heat capacity instead of building up heat."
 			],
@@ -1255,6 +1256,296 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "「FUSION」",
+			"level": 7,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "round"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"When invoking this emanation, target up to 3 creatures in range, potentially including yourself. An unwilling target has the chance to make an Intelligence Saving Throw, repeating any time they take damage. The affected creatures are psionically linked, gaining the following effects:",
+				"- All linked creatures can communicate telepathically.",
+				"- Any psionic effect targeting a linked creature affects all linked creatures."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 2,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For every 3 points of overclock, add another target to the linkage."
+					]
+				}
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"areaTags": [
+				"MT"
+			]
+		},
+		{
+			"name": "「DOMINION」",
+			"level": 3,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"While invoking this emanation, target a medium or smaller Beast of CR 1/4 or lower. A submind fragments from your consciousness and parasitically attaches to the target. A non-{@condition incapacitated} target can make an Intelligence Saving Throw against your psionics DC to prevent this effect. ",
+				"While your submind is attached to a creature, it is directly controlled by you and can deliver your touch-based emanations.",
+				"By consuming 3 units of psionic sublimate, this connection can be severed, turning the target into an independent, psionic creature and ending this emanation's effect.",
+				"This emanation uses an ongoing effect; ongoing effects cost heat capacity instead of building up heat."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 2,
+			"components": {
+				"m": {
+					"text": "3 units of psionic sublimate, consumed only on severing"
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For each point of overclock, increase CR by one step (0, 1/8, 1/4, 1, 2, 3...)"
+					]
+				}
+			]
+		},
+		{
+			"name": "「DEVOUR」",
+			"level": 8,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "round"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"A dark emanation, shunned for its corrupting power.",
+				"While invoking this emanation, touch an {@condition incapacitated} humanoid creature. The target creature must make an Intelligence Saving Throw.",
+				"On a failed save, the caster reaches into the target's head, pulling out their brain and devouring it whole. This instantly kills the target and heals half of the invoker's heat buildup.",
+				"On a successful save, the caster is repulsed 30 feet away, and the target is no longer {@condition incapacitated}.",
+				"This emanation cannot be delivered by a submind, and invoking it is an explicitly Cosmic Chaotic Evil action with consequences."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 2,
+			"conditionInflict": [
+				"incapacitated"
+			]
+		},
+		{
+			"name": "「SUBLIMATE」",
+			"level": 9,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"An ancient, lost emanation.",
+				"While invoking this emanation, touch a creature. If the target fails an Intelligence Saving Throw against your psionics DC, it dies instantly as its body melts into pure psionic energy, leaving behind an amount of ashy, cold psionic sublimate scaling with their mental power.",
+				"Invoking this emanation immediately puts the user into a Stage 3 Psionic Crisis."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 2
+		},
+		{
+			"name": "「IMBUE」",
+			"level": 2,
+			"school": "P",
+			"time": [
+				{
+					"number": 30,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"A ritual emanation used in cultures where psychics are common.",
+				"While performing this ritual, target an unawakened humanoid within range. Over the course of this ritual, which often involves incense, music, or a shared meal, the invoker's psychic weave calls out to that of the target.",
+				"At the end of the ceremony, the target of this emanation consumes the sublimate used in the material component, orally, intravenously, in food, or by another delivery method. With their awakening, they are imprinted with one of the invoker's known emanations as well as their natural imprint."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 2,
+			"components": {
+				"m": {
+					"text": "One dose of Psionic Sublimate",
+					"consume": true
+				}
+			}
+		},
+		{
+			"name": "「SEVER」",
+			"level": 9,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "round"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"An ancient emanation of the arcane tradition.",
+				"While invoking this emanation, touch an {@condition incapacitated} creature. This creature's connection to the weave is shattered, rendering it incapable of casting spells. This effect can only be dispelled by a {@spell wish} spell or similar effect."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"subschools": [
+				"wizard"
+			]
+		},
+		{
+			"name": "「CORE」",
+			"level": 2,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"When invoking this emanation, gain 2 sorcery points."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 2,
+			"subschools": [
+				"sorcerer"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For each point of overclock, gain 1 more sorcery point."
+					]
+				}
+			]
 		}
 	],
 	"condition": [
@@ -1266,7 +1557,7 @@
 					"items": [
 						"Some special abilities and environmental hazards, such as starvation and the long-term effects of freezing or scorching temperatures, can lead to a special condition called exhaustion. Exhaustion is measured in ten levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect's description.",
 						"For each level of exhaustion, a creature suffers a -1 penalty to their attack rolls, skill checks, and save DCs for supernatural effects.",
-       					"If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description.",
+						"If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description.",
 						"Finishing a long rest reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink. Also, being raised from the dead reduces a creature's exhaustion level by 1."
 					]
 				}
