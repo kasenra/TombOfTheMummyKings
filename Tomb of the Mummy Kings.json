@@ -683,6 +683,187 @@
 				"B",
 				"P"
 			]
+		},
+		{
+			"name": "Thri-kreen Chakak",
+			"source": "TomboftheMummyKingsContent",
+			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"thri-kreen"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 39,
+				"formula": "6d8 + 12"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 14,
+			"dex": 17,
+			"con": 15,
+			"int": 14,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+5",
+				"survival": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Thri-kreen"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Chameleon Carapace",
+					"entries": [
+						"The thri-kreen can change the color of its carapace to match the color and texture of its surroundings. As a result, it has advantage on Dexterity ({@skill Stealth}) checks made to hide."
+					]
+				},
+				{
+					"name": "Standing Leap",
+					"entries": [
+						"The thri-kreen's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The thri-kreen makes two attacks: one with its bite and one with its claws."
+					]
+				},
+				{
+					"name": "Gythka",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"grassland"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/thri-kreen.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Thri-kreen",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Thri-kreen",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Thri-kreen wander the deserts and savannas of the world, avoiding all other races.",
+									{
+										"name": "Thri-Kreen Communication",
+										"entries": [
+											"Thri-kreen employ a language without words. To show emotion and reaction, a thri-kreen clacks its mandibles and waves its antennae, giving other thri-kreen a sense of what it is thinking and feeling. Other creatures find this manner of communication difficult to interpret and impossible to duplicate.",
+											"When forced to interact with creatures of other intelligent species, thri-kreen employ alternative methods of communication, such as drawing pictures in sand or making pictures out of twigs or blades of grass."
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Limited Emotions",
+										"type": "entries",
+										"entries": [
+											"Thri-kreen experience the full range of emotions but aren't as prone to emotional outbursts as humans. Thri-kreen with psionic ability often demonstrate a wider range of emotions, particularly if they live near or interact with humans or other highly emotional creatures."
+										]
+									},
+									{
+										"name": "Isolationists and Wanderers",
+										"type": "entries",
+										"entries": [
+											"Thri-kreen consider all other living creatures as potential nourishment, and they love the taste of elf flesh in particular. If a creature might be useful for something other than food, the thri-kreen aren't likely to attack it on sight. Thri-kreen kill to survive, never for sport."
+										]
+									},
+									{
+										"name": "Sleepless",
+										"type": "entries",
+										"entries": [
+											"Thri-kreen don't require sleep and can rest while remaining alert and performing light tasks. Their inability to sleep is thought to be the reason why thri-kreen have such short lifespans, the average thri-kreen life expectancy being only thirty years."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Thri-kreen.webp"
+						}
+					}
+				]
+			},
+			"spellcasting": [
+				{
+					"name": "Psionic Rain",
+					"headerEntries": [
+						"The chakak is powerful psionic. It has 5 heat capacity, with a psionic DC of 12. It has imprints of the following emanations."
+					],
+					"will": [
+						"{@spell 「catch」|TomboftheMummyKingsContent}",
+						"{@spell 「lance」|TomboftheMummyKingsContent}",
+						"{@spell 「slipshod」|TomboftheMummyKingsContent}"
+					],
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"S"
+			]
 		}
 	],
 	"spell": [
@@ -891,7 +1072,16 @@
 				"If you exit the brain field or the duration of the emanation runs out, make an Intelligence Saving Throw against your psionics DC. On a successful save, take five levels of {@condition exhaustion}. On a failed save, take nine levels of {@condition exhaustion}.",
 				"If this {@condition exhaustion} is fatal, you erupt in psionic energy as if you'd reached maximum psionic crisis."
 			],
-			"source": "TomboftheMummyKingsContent"
+			"source": "TomboftheMummyKingsContent",
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For every 2 points of overclock, gain one less {@condition exhaustion|TomboftheMummyKingsContent} level on Brain Field collapse."
+					]
+				}
+			]
 		},
 		{
 			"name": "「EQUIP」",
@@ -1546,24 +1736,247 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "「STARS」",
+			"level": 6,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"A raw emanation, pulled in through The Living Gate.",
+				"Touch a creature while invoking this emanation to attack them with eldritch knowledge beyond their comprehension. The targeted creature must make an Intelligence Saving Throw. On a failure, the target takes on a level of Short Term Madness. If the target fails this save by 5 or more, they instead take a level of Long Term Madness."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 2,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For each point of overclock, lower the DC gap by 1."
+					]
+				}
+			]
+		},
+		{
+			"name": "「COMMUNION WITH SANDS」",
+			"level": 4,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"An Anaurian emanation imprinted upon a {@item sharn amulet}.",
+				"While channeling this emanation, the invoker must be in contact with a connected piece of the sands of Anauroch.",
+				"The invoker psionically connects with the desert of Anauroch and can ask it three questions. It is under no compulsion to answer truthfully, and it has its own judgement as to whether helping you fits its own interests."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 2,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For each point of overclock, drop the invocation time by one step. ",
+						"(1 hour, 1 minute, 1 round, 1 action, 1 bonus action)"
+					]
+				}
+			]
+		},
+		{
+			"name": "「GRAVITY」",
+			"level": 2,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"While invoking this emanation, make a melee attack. On a hit, the target of this attack must make an Intelligence Saving Throw. On a failed save, the target is trapped within your psionic gravity and unable to willingly move out of your melee range.",
+				"The target can repeat this save at the end of each of its turns."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 2,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For every 2 points of overclock, add one more maximum target. (Up to your Attack Action multiplicity.)"
+					]
+				}
+			]
+		},
+		{
+			"name": "「HONE」",
+			"level": 3,
+			"school": "P",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"While this emanation is ongoing, your heightened predatory instincts increase your critical range by 1.",
+				"This emanation uses an ongoing effect; ongoing effects cost heat capacity instead of building up heat."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 2,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For every 3 points of overclock, increase critical range by 1 more."
+					]
+				}
+			]
+		},
+		{
+			"name": "「BRAND」",
+			"level": 1,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"When invoking this emanation, target a creature within range. A submind splits off from your consciousness and attaches to that creature. ",
+				"If the target isn't awakened or failed its save, the submind latches onto the target's psyche. As long as the submind is attached this way, you gain the following benefits while within 100 feet:",
+				"- You know where the target is and what way it is moving",
+				"- You know if the target is aware of your presence",
+				"A psionic target can make an Intelligence Saving Throw to resist the submind's presence, with the option to repeat this save once every 24 hours. An non-psionic creature can determine the presence of the sensor using a successful Intelligence (Investigation) check and attempt to shut it out using an Intelligence Saving Throw.",
+				"This emanation uses an ongoing effect; ongoing effects cost heat capacity instead of building up heat."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 1,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For each point of overclock, add one of the following effects (each effect can be chosen multiple times):",
+						"- Add another submind, targeting the same or a different creature",
+						"- Increase the tracking range by 20 feet."
+					]
+				}
+			]
 		}
 	],
 	"condition": [
 		{
 			"name": "Exhaustion",
 			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"Some special abilities and environmental hazards, such as starvation and the long-term effects of freezing or scorching temperatures, can lead to a special condition called exhaustion. Exhaustion is measured in ten levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect's description.",
-						"For each level of exhaustion, a creature suffers a -1 penalty to their attack rolls, skill checks, and save DCs for supernatural effects.",
-						"If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description.",
-						"Finishing a long rest reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink. Also, being raised from the dead reduces a creature's exhaustion level by 1."
-					]
-				}
+				"Some special abilities and environmental hazards, such as starvation and the long-term effects of freezing or scorching temperatures, can lead to a special condition called exhaustion. Exhaustion is measured in ten levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect's description.",
+				"For each level of exhaustion, a creature suffers a -1 penalty to their attack rolls, skill checks, and save DCs for supernatural effects.",
+				"If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description.",
+				"Finishing a long rest reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink. Also, being raised from the dead reduces a creature's exhaustion level by 1."
 			],
 			"source": "TomboftheMummyKingsContent",
-			"page": 1
+			"page": 3
+		},
+		{
+			"name": "Coated in Acid",
+			"entries": [
+				"A creature coated in acid takes 1d6 acid damage at the start of each of their turns for 1 minute. A creature can use its action to wipe acid off of itself or another creature."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 3
 		}
 	]
 }
