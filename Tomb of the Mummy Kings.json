@@ -764,8 +764,7 @@
 				}
 			],
 			"environment": [
-				"desert",
-				"grassland"
+				"desert"
 			],
 			"soundClip": {
 				"type": "external",
@@ -991,7 +990,8 @@
 			],
 			"abilityCheck": [
 				"intelligence"
-			]
+			],
+			"page": 2
 		},
 		{
 			"name": "「SLIPSHOD」",
@@ -1928,12 +1928,7 @@
 				}
 			],
 			"classes": {
-				"fromClassList": [
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
+				"fromClassList": []
 			},
 			"entries": [
 				"When invoking this emanation, target a creature within range. A submind splits off from your consciousness and attaches to that creature. ",
@@ -1944,7 +1939,7 @@
 				"This emanation uses an ongoing effect; ongoing effects cost heat capacity instead of building up heat."
 			],
 			"source": "TomboftheMummyKingsContent",
-			"page": 1,
+			"page": 2,
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
@@ -1977,6 +1972,51 @@
 			],
 			"source": "TomboftheMummyKingsContent",
 			"page": 3
+		}
+	],
+	"book": [
+		{
+			"name" : "Tomb of the Mummy Kings",
+			"id" : "TOMKRules",
+			"source" : "TOMKRules",
+			"published" : "2024-06-14",
+			"group" : "homebrew",
+
+			"contents" : [
+				{
+					"name" : "Psionics Rules"
+				}
+			]
+		}
+	],
+	"bookData" : [
+		{
+			"id" : "TOMKRules",
+			"source" : "TOMKRules",
+			"data" : [ {
+				"type" : "section",
+				"name" : "Psionics Rules",
+				"page" : 2,
+				"entries" : [
+					"All living creatures in the Forgotten Realms have a psionic potential. This potential can be awakened using psionic sublimate, a purple crystalline substance made up of pure psionic potential. An awakened creature is capable of invoking psionic emanations, which project their personal psychic weave onto the world in different ways. On their awakening, a creature receives a starting emanation, the imprint of their personal psychic weave.",
+					"Invoking a psionic emanation builds up Neural Heat equal to the sum of its level and overclock, and a psycker's Neural Heat Capacity increases as they consume more sublimate according to the Heat Capacity Table below. A psycker is capable of going over their heat capacity, but there are unpredicable consequences for doing so.",
+					{
+						"type" : "table",
+						"caption" : "Heat Capacity",
+						"colLabels" : ["Heat Capacity", "Sublimate Doses"],
+						"rows" : [
+							["1 Heat", "1 Dose (25 mL)"],
+							["2 Heat", "3 Doses (75 mL)"],
+							["3 Heat", "6 Doses (150 mL)"],
+							["4 Heat", "10 Doses (250 mL)"],
+							["5 Heat", "15 Doses (375 mL)"],
+							["X Heat", "Y := X*(X+1) / 2 Doses (Y * 25 mL)"]
+						]
+					}
+				] 
+				}
+			]
+
 		}
 	]
 }
