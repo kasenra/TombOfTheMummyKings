@@ -1951,6 +1951,98 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Extract Moisture",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entries": [
+				"While casting this spell, target a cube of non-living non-magical matter no more than 10 feet on each side.",
+				"Over the duration of the spell, all hydration is pulled out of the targeted matter and condensed into a ball of elemental water, protected by a thin membrane that can be easily pierced with a needle or tooth."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 2,
+			"feats": [
+				{
+					"name": "Artificer Initiate",
+					"source": "TCE"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"areaTags": [
+				"C"
+			],
+			"components": {
+				"s": true,
+				"m": "A handful of sand"
+			}
 		}
 	],
 	"condition": [
