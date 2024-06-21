@@ -2043,6 +2043,101 @@
 				"s": true,
 				"m": "A handful of sand"
 			}
+		},
+		{
+			"name": "Painkill",
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Touch a creature while casting this spell. The targeted creature is numbed against pain and will no longer become {@condition unconscious} when reaching 0 hit points for the duration. At the end of the duration, the target takes one level of {@condition exhaustion|TomboftheMummyKingsContent}.",
+				"If the targeted creature reaches a negative hit points value equal to their maximum hit points, they die as usual."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 2,
+			"feats": [
+				{
+					"name": "Adept of the White Robes",
+					"source": "DSotDQ"
+				}
+			],
+			"components": {
+				"s": true,
+				"m": true
+			}
 		}
 	],
 	"condition": [
