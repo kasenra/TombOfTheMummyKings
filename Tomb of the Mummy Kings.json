@@ -2159,6 +2159,15 @@
 			],
 			"source": "TomboftheMummyKingsContent",
 			"page": 3
+		},
+		{
+			"name": "Fuzzy",
+			"entries": [
+				"Effects involving alcohol or mundane mind-altering substances will often cause the Fuzzy condition, a special kind of poisoning.",
+				"A fuzzy creature has disadvantage on Dexterity Saving throws and Charisma checks, as well as advantage on saving throws against being frightened."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 3
 		}
 	],
 	"book": [
@@ -2170,7 +2179,10 @@
 			"group": "homebrew",
 			"contents": [
 				{
-					"name": "Psionics Rules"
+					"name": "Psionics Rules",
+					"headers" : [
+						"Common Psionics Verbs"
+					]
 				}
 			]
 		}
@@ -2185,43 +2197,66 @@
 					"name": "Psionics Rules",
 					"page": 2,
 					"entries": [
-						"All living creatures in the Forgotten Realms have a psionic potential. This potential can be awakened using psionic sublimate, a purple crystalline substance made up of pure psionic potential. An awakened creature is capable of invoking psionic emanations, which project their personal psychic weave onto the world in different ways. On their awakening, a creature receives a starting emanation, the imprint of their personal psychic weave.",
-						"Invoking a psionic emanation builds up Neural Heat equal to the sum of its level and overclock, and a psycker's Neural Heat Capacity increases as they consume more sublimate according to the Heat Capacity Table below. A psycker is capable of going over their heat capacity, but there are unpredicable consequences for doing so.",
 						{
-							"type": "table",
-							"caption": "Heat Capacity",
-							"colLabels": [
-								"Heat Capacity",
-								"Sublimate Doses"
-							],
-							"rows": [
-								[
-									"1 Heat",
-									"1 Dose"
+							"type" : "entries",
+							"name" : "Psionics Rules",
+							"entries" : [
+								"All living creatures in the Forgotten Realms have a psionic potential. This potential can be awakened using psionic sublimate, a purple crystalline substance made up of pure psionic potential. An awakened creature is capable of invoking psionic emanations, which project their personal psychic weave onto the world in different ways. On their awakening, a creature receives a starting emanation, the imprint of their personal psychic weave.",
+							"Invoking a psionic emanation builds up Neural Heat equal to the sum of its level and overclock, and a psycker's Neural Heat Capacity increases as they consume more sublimate according to the Heat Capacity Table below. A psycker is capable of going over their heat capacity, but there are unpredicable consequences for doing so.",
+							{
+								"type": "table",
+								"caption": "Heat Capacity",
+								"colLabels": [
+									"Heat Capacity",
+									"Sublimate Doses"
 								],
-								[
-									"2 Heat",
-									"3 Doses"
-								],
-								[
-									"3 Heat",
-									"6 Doses"
-								],
-								[
-									"4 Heat",
-									"10 Doses"
-								],
-								[
-									"5 Heat",
-									"15 Doses"
-								],
-								[
-									"X Heat",
-									"X * (X+1) / 2 Doses"
+								"rows": [
+									[
+										"1 Heat",
+										"1 Dose"
+									],
+									[
+										"2 Heat",
+										"3 Doses"
+									],
+									[
+										"3 Heat",
+										"6 Doses"
+									],
+									[
+										"4 Heat",
+										"10 Doses"
+									],
+									[
+										"5 Heat",
+										"15 Doses"
+									],
+									[
+										"X Heat",
+										"X * (X+1) / 2 Doses"
+									]
 								]
+							},
+							"Any psionic emanation invoked on the Ethereal Plane automatically receives 3 levels of overclock at no heat cost."
 							]
 						},
-						"Any psionic emanation invoked on the Ethereal Plane automatically receives 3 levels of overclock at no heat cost."
+						{
+							"type" : "entries",
+							"name" : "Common Psionics Verbs",
+							"entries" : [
+								"Many psionic emanations include variations on the same basic concepts. A non-exhaustive list is included below.",
+								{
+									"type" : "table",
+									"caption" : "Psionics Verbs",
+									"colLabels" : ["Verb", "Effect"],
+									"rows" : [
+										["Link", "Link emanations create a psionic connection between individuals. Linked individuals can always communicate psionically, among other effects stated in the emanation's description."],
+										["Submind", "Submind emanations create new micro-consciousnesses using the invoker's psychic power. These subminds can usually be released as independent minds by consuming psionic sublimate."]
+									]
+
+								}
+							]
+						}
 					]
 				}
 			]
