@@ -2183,6 +2183,12 @@
 					"headers" : [
 						"Common Psionics Verbs"
 					]
+				},
+				{
+					"name": "Travel in a Sentient, Evil Desert",
+					"headers" : [
+						
+					]
 				}
 			]
 		}
@@ -2232,8 +2238,8 @@
 										"15 Doses"
 									],
 									[
-										"X Heat",
-										"X * (X+1) / 2 Doses"
+										"Y Heat",
+										"Y x (Y+1) / 2 Doses"
 									]
 								]
 							},
@@ -2258,8 +2264,242 @@
 							]
 						}
 					]
+				},
+				{
+					"type": "section",
+					"name": "Travel in a Sentient, Evil Desert",
+					"page": 2,
+					"entries": [
+						{
+							"type" : "entries",
+							"name" : "Travel in a Sentient, Evil Desert",
+							"entries" : [
+								"In the cruel environs of Anauroch, basic travel is taxing and drains on the soul. For every stretch of travel, all travelling players participate in a Skill Challenge:",
+								"For every day of travel, each traveller needs a course of action in the form of a skill check. Each member makes a check for every day of the travel. Assuming a travelling party of five, every 3 failed checks results in one level of exhaustion for the entire party, as they work harder to deal with their teammates' shortcomings.",
+								"Once exhaustion has been handled, pick a party member to roll a D12 for each day of travel. If any of the rolls are within the critical range, a random encounter is triggered. Only one random encounter can trigger in a single stretch of travel.",
+							{
+								"type": "table",
+								"caption": "Travel in Anauroch",
+								"colLabels": [
+									"Environment",
+									"Travel DC",
+									"Critical Range"
+								],
+								"rows": [
+									["The Sword (Day)", "15", "Hard 11, Deadly 12"],
+									["The Sword (Night)", "14", "Hard 10, Deadly 11-12"],
+									["The Plain of Standing Stones", "N/A", "Hard 11, Deadly 12"],
+									["The High Ice", "16", "Hard 10, Deadly 11-12"],
+									["Plague-Cursed Lands", "17", "Hard 9, Deadly 10-12"]
+								]
+							}
+							]
+						}
+					]
 				}
 			]
+		}
+	],
+	"item":[
+		{
+			"name" : "Alchemical Pressure Gasket",
+			"wondrous" : "true",
+			"tier" : "minor",
+			"rarity": "uncommon",
+			"source": "TomboftheMummyKingsContent",
+			"entries": ["This complicated gizmo augments an {@item alchemy jug|dmg}, upgrading to an {@item alchemy cannon|TomboftheMummyKingsContent}",
+						"Applying or removing this augment takes one hour of uninterrupted tinkering by a user with proficiency in alchemical supplies."]
+		},
+		{
+			"name" : "Boots of Leaping",
+			"wondrous" : "true",
+			"tier" : "minor",
+			"rarity": "uncommon",
+			"reqAttune" : "true",
+			"source": "TomboftheMummyKingsContent",
+			"entries": ["This trinket imported from Baldur's Gate augments the wearer's jumps.",
+						"The attuned creature can jump twice as far and, by using a bonus action, can jump their entire jump distance for only 20 feet of movement, reference the Jumping Distance table below to review.",
+						{
+							"type": "table",
+							"caption": "Jumping Distance, (Boots of Leaping)",
+							"colLabels": [
+								"Jump Type",
+								"Jumping Distance / Height"
+							],
+							"rows": [
+								["Long Jump, 10 ft. Runup (Normal)","Feet equal to Strength Score"],
+								["Long Jump, 10 ft. Runup (Attuned)","Feet equal to 2 x Strength Score"],
+								["Long Jump (Normal)","Feet equal to Half of Strength Score, rounded down"],
+								["Long Jump (Attuned)","Feet equal to Strength Score"],
+								["High Jump, 10 ft. Runup (Normal)","Feet equal to Strength Score"],
+								["High Jump, 10 ft. Runup (Attuned)","Feet equal to 2 x Strength Score, rounded down"],
+								["High Jump (Normal)","Feet equal to Half strength Score, rounded down"],
+								["High Jump (Attuned)","Feet equal to Strength Score"]
+								
+							]
+						}
+					]
+		},
+		{
+			"name" : "Alchemical Cannon",
+			"wondrous" : "true",
+			"tier" : "major",
+			"rarity": "rare",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				"This augmented {@item alchemy jug | dmg} fires its contents in a pressurized stream. Once per day, you can set a dial and release this pressure to activate one of the following effects:",
+				{
+					"type": "table",
+					"caption": "Alchemy Cannon Options",
+					"colLabels": [
+						"Fluid",
+						"Effect"
+					],
+					"rows": [
+						["Acid Spray","Fire a 20 ft. line of acid, all creatures in range take 2d6 acid damage and are {@condition coated in acid}."],
+						["Poison Darts","Fire three bursts of poison, all targeted creatures make a Constitution save against being {@condition poisoned}, resaving at the end of their turns."],
+						["Beer Flood","Fire a 30 ft. cone of pressurized beer, every creature inside makes a Dexterity Saving Throw against being {@condition fuzzy}, resaving with Constitution at the end of their turns."],
+						["Honey Trap","Fire a 20 ft. line of sticky honey, every creature in the line must make a Dexterity Saving Throw against the effects of the {@spell Slow} spell, resaving at the end of their turns. This trap remains for 1 minute."],
+						["Mayo Slick","Fire a 30 ft. cone of non-flammable grease, creatures in the line must make a Dexterity Saving Throw against slipping and falling {@condition prone}. This trap remains for 1 minute, unless washed off."],
+						["Oil Slick","Fire into the air to create a 10 ft. circular slick of flammable oil, centered within 60 feet of the cannon. Creatures in the circle must make a Dexterity Saving Throw against slipping and falling {@condition prone}. The slick remains until ignited, at which point it lasts 18 seconds. The ignited slick deals 1d6 fire damage to those inside every turn."],
+						["Vinegar Splash","Fire a 30 ft. cone of vinegar, creatures in the cone must make a Dexterity Saving Throw against going {@condition blind}, resaving at the end of their turns."],
+						["Saltwater Geyser","Fire a 60 ft geyser of water which sweeps into a 60 ft cone, creatures in the cone take 1d6 bludgeoning damage and make a Strength Saving throw against being pushed back 15 feet."],
+						["Freshwater Spring","Fire a stream of freshwater, washing anything within a 30 foot sphere. Any liquid surface or coating effect within that region can be washed away."],
+						["Firewine Blast","Fire a burst of firewine onto a creature within 30 feet. When that creature is next hit with fire damage, the wine explodes in a 10 foot sphere, dealing the damage of the attack which triggered the explosion. This explosion hits the soaked creature, as well."]
+						
+					]
+				},
+				"The DC for an alchemy cannon attack is equal to the user's Intelligence spell DC."
+		]
+			
+		},
+		{
+			"name" : "Energy Pellet",
+			"wondrous" : "true",
+			"tier" : "minor",
+			"rarity": "common",
+			"source": "TomboftheMummyKingsContent",
+			"entries": ["These compressed medicinal pellets typically come in packs of three. A creature can take six seconds to dissolve one pellet under its tongue, removing one level of exhaustion."]
+		},
+		{
+			"name" : "Super Energy Pellet",
+			"wondrous" : "true",
+			"tier" : "minor",
+			"rarity": "rare",
+			"source": "TomboftheMummyKingsContent",
+			"entries": ["These limited edition medicinal pellets typically come in packs of three. A creature can take six seconds to dissolve one pellet under its tongue, removing all levels of exhaustion.",
+						"Has a slight taste of saffron."]
+		},
+		{
+			"name" : "Potion of Hill Giant Intelligence",
+			"wondrous" : "true",
+			"tier" : "minor",
+			"rarity": "common",
+			"source": "TomboftheMummyKingsContent",
+			"entries": ["Drinking this potion sets your intelligence to 5 (-3) for one hour."]
+		},
+		{
+			"name" : "Butcher's Knife",
+			"type" : "M",
+			"baseItem" : "shortsword|phb",
+			"weaponCategory" : "simple",
+			"wondrous" : "true",
+			"tier" : "minor",
+			"rarity": "common",
+			"source": "TomboftheMummyKingsContent",
+			"sword" : "true",
+			"weapon" : "true",
+			"property" : ["F", "L"],
+			"dmg1" : "1d6",
+			"dmgType" : "P",
+			"entries": ["The wielder of this knife gains a +2 to all checks which involve dissecting dead creatures, including attacks against the undead."]
+		},
+		{
+			"name" : "Arquebus",
+			"wondrous" : "false",
+			"rarity": "none",
+			"weaponCategory" : "artifice",
+			"type" : "R",
+			"property" : ["F"],
+			"range" : "40/120",
+			"dmg1" : "4d6",
+			"firearm" : "true",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+						"A primitive firearm prototyped by Abeian gnome clans. Most arquebi on Toril are shoddy forgeries of these original designs.",
+						"Loading a bullet and powder into this weapon takes ten minutes for a layman, one minute for someone proficient, and one action for someone with the {@feat gunner} feat."
+			]
+		},
+		{
+			"name" : "Glaive of the Empty Tomb",
+			"wondrous" : "true",
+			"tier" : "major",
+			"rarity": "rare",
+			"baseItem" : "glaive|phb",
+			"weaponCategory" : "martial",
+			"type" : "M",
+			"property" : ["H", "R", "2H"],
+			"dmg1" : "1d10",
+			"dmgType" : "S",
+			"source": "TomboftheMummyKingsContent",
+			"entries": ["When making an attack with this weapon, the user can spend one spell slot of 1st level or higher to convert the attack's damage to healing.",
+						"Embedded in the glaive's pommel is a fractured diamond consecrated by clerics of Kelemvor. This diamond can be crushed in one hand, and sprinkling its remains over a recently deceased creature will apply the effects of {@spell revivify}."]
+		},
+		{
+			"name" : "",
+			"wondrous" : "",
+			"tier" : "",
+			"rarity": "",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [""]
+		},
+		{
+			"name" : "",
+			"wondrous" : "",
+			"tier" : "",
+			"rarity": "",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [""]
+		},
+		{
+			"name" : "",
+			"wondrous" : "",
+			"tier" : "",
+			"rarity": "",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [""]
+		},
+		{
+			"name" : "",
+			"wondrous" : "",
+			"tier" : "",
+			"rarity": "",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [""]
+		},
+		{
+			"name" : "",
+			"wondrous" : "",
+			"tier" : "",
+			"rarity": "",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [""]
+		},
+		{
+			"name" : "",
+			"wondrous" : "",
+			"tier" : "",
+			"rarity": "",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [""]
+		},
+		{
+			"name" : "",
+			"wondrous" : "",
+			"tier" : "",
+			"rarity": "",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [""]
 		}
 	]
 }
