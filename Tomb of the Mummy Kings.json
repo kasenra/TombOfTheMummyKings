@@ -753,13 +753,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The thri-kreen makes two attacks: one with its bite and one with its claws."
+						"The thri-kreen makes two attacks with its Gythka."
 					]
 				},
 				{
 					"name": "Gythka",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
 					]
 				}
 			],
@@ -2318,7 +2318,7 @@
 			"reqAttune" : "true",
 			"source": "TomboftheMummyKingsContent",
 			"entries": ["This trinket imported from Baldur's Gate augments the wearer's jumps.",
-						"The attuned creature can jump twice as far and, by using a bonus action, can jump their entire jump distance for only 20 feet of movement, reference the Jumping Distance table below to review.",
+						"The attuned creature can jump twice as far and, by using a bonus action, can jump their entire jump distance for only 20 feet of movement. Reference the Jumping Distance table below to review.",
 						{
 							"type": "table",
 							"caption": "Jumping Distance, (Boots of Leaping)",
@@ -2416,7 +2416,6 @@
 		},
 		{
 			"name" : "Arquebus",
-			"wondrous" : "false",
 			"rarity": "none",
 			"weaponCategory" : "artifice",
 			"type" : "R",
@@ -2426,7 +2425,7 @@
 			"firearm" : "true",
 			"source": "TomboftheMummyKingsContent",
 			"entries": [
-						"A primitive firearm prototyped by Abeian gnome clans. Most arquebi on Toril are shoddy forgeries of these original designs.",
+						"A primitive firearm prototyped by Abeiran gnome clans. Most arquebi on Toril are shoddy forgeries of these original designs.",
 						"Loading a bullet and powder into this weapon takes ten minutes for a layman, one minute for someone proficient, and one action for someone with the {@feat gunner} feat."
 			]
 		},
@@ -2442,24 +2441,43 @@
 			"dmg1" : "1d10",
 			"dmgType" : "S",
 			"source": "TomboftheMummyKingsContent",
-			"entries": ["When making an attack with this weapon, the user can spend one spell slot of 1st level or higher to convert the attack's damage to healing.",
+			"entries": ["The shaft of this black-iron glaive is wrapped in funerary cloth soaked in annointing oils with the faint smell of lavender.",
+						"When making an attack with this weapon, the user can spend one spell slot of 1st level or higher to convert the attack's damage to healing.",
 						"Embedded in the glaive's pommel is a fractured diamond consecrated by clerics of Kelemvor. This diamond can be crushed in one hand, and sprinkling its remains over a recently deceased creature will apply the effects of {@spell revivify}."]
 		},
 		{
-			"name" : "",
-			"wondrous" : "",
-			"tier" : "",
-			"rarity": "",
+			"name" : "Guiding Moonlight",
+			"wondrous" : "true",
+			"tier" : "major",
+			"rarity": "rare",
 			"source": "TomboftheMummyKingsContent",
-			"entries": [""]
+			"baseItem" : "longbow|phb",
+			"type" : "R",
+			"weaponCategory" : "martial",
+			"property" : ["A", "2H"],
+			"range": "150/600",
+			"dmg1" : "1d8",
+			"dmgType" : "P",
+			"bonusWeapon" : "+1",
+			"entries": ["This silver longbow is inscribed with prayers to Selune, written in glowing elven script.",
+						"When making an attack with this weapon, the wielder can speak a command word to replace the arrow with a {@spell guiding bolt}. This ability can be used once per day, recharging at midnight.",
+						"On the night of Selune's full moon, the bow becomes overcharged until its next use, increasing the level of {@spell guiding bolt} use this way from 1 to 2.",
+						"This bow lets off dim light within 15 feet and bright light within 5 feet."]
 		},
 		{
-			"name" : "",
-			"wondrous" : "",
-			"tier" : "",
-			"rarity": "",
-			"source": "TomboftheMummyKingsContent",
-			"entries": [""]
+			"name" : "Iron Gate",
+			"wondrous" : "true",
+			"tier" : "major",
+			"rarity": "very rare",
+			"type" : "S",
+			"reqAttune": "true",
+			"property" : ["CUM", "SS"],
+			"strength" : "18",
+			"ac" : 4,
+ 			"source": "TomboftheMummyKingsContent",
+			"entries": ["This imposing wall of metal is engraved with warding runes, holding otherworldly evil at bay.",
+						"When an aberration, elemental, or fiend misses an attack against the wielder of this shield, they must make a DC 15 wisdom save or become {@cond frightened}, repeating at the end of their turns on failure.",
+						"Once per day, recharging at dawn, the wielder of this shield can use it to cast {@spell death ward} on themself."]
 		},
 		{
 			"name" : "",
