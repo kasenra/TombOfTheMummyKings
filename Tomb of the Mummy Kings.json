@@ -2859,8 +2859,21 @@
 		{
 			"name": "Grasp of Talona",
 			"entries": [
-				"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 14} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one.",
-				"A creature who fails this saving throw must make a {@dc 16} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace}."
+				"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 14} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 16} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TomboftheMummyKingsContent}."
+			],
+			"source" : "TomboftheMummyKingsContent"
+		},
+		{
+			"name": "Minion",
+			"entries": [
+				"If this creature takes damage from an attack or as the result of a failed saving throw, their hit points are reduced to 0. If this creature takes damage from another effect, they die if this damage equals or exceeds their hit point maximum."
+			],
+			"source" : "TomboftheMummyKingsContent"
+		},
+		{
+			"name": "Superior Minion",
+			"entries": [
+				"If this creature takes damage from an attack or as the result of a failed saving throw, they are bloodied, or if already bloodied, their hit points are reduced to 0. If this creature takes damage from another effect, they die if this damage equals or exceeds their hit point maximum."
 			],
 			"source" : "TomboftheMummyKingsContent"
 		}
