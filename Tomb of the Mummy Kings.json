@@ -863,6 +863,207 @@
 			"damageTags": [
 				"S"
 			]
+		},
+		{
+			"name": "Plague-Cursed Sahuagin",
+			"source": "TomboftheMummyKingsContent",
+			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"sahuagin"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "4d8 + 4"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 13,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 13,
+			"cha": 9,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+3"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"languages": [
+				"Sahuagin",
+				"Plague-Cursed"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"The sahuagin has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+					]
+				},
+				{
+					"name": "Limited Amphibiousness",
+					"entries": [
+						"The sahuagin can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating."
+					]
+				},
+				{
+					"name": "Grasp of Talona",
+					"entries": [
+						"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 10} Dexterity saving throw or contract the first stages of Talona's Embrace, as well as taken {@damage 2d6} acid damage on a failed save or half on a successful one."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The sahuagin makes two melee attacks: one with its bite and one with its claws or spear."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) slashing damage."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage, or 5 ({@damage 1d8 + 1}) piercing damage if used with two hands to make a melee attack."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"underwater"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/sahuagin.mp3"
+			},
+			"attachedItems": [
+				"spear|phb"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"MLW",
+				"THW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Sahuagin",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Sahuagin",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Across fog-shrouded coasts or endless ocean swells, an ominous drone sounded on a conch shell chills the blood of all who hear it. This is the sound of the sahuagin hunting horn-a call to raid and battle. Coastal settlers refer to sahuagin as \"sea devils,\" for sahuagin have no compassion in them, slaughtering the crews of ships and decimating coastal villages.",
+									{
+										"name": "Devils of the Deep",
+										"type": "entries",
+										"entries": [
+											"Sahuagin are a predatory, piscine race that ventures from the ocean's black depths to hunt the creatures of the shallows and shore. Though they dwell in the deepest trenches of the ocean, sahuagin view the entire aquatic realm as their kingdom and the creatures in it as blood sport for their hunting parties.",
+											"The self-styled rulers of sahuagin ocean domains are massive mutant males that grow second sets of arms. They are terrible foes in battle, and all sahuagin bow down before these powerful barons."
+										]
+									},
+									{
+										"name": "Way of the Shark",
+										"type": "entries",
+										"entries": [
+											"Sahuagin worship the shark god Sekolah. Only female sahuagin are deemed worthy of channeling the god's power, and priestesses hold tremendous sway in sahuagin communities.",
+											"Sahuagin are driven into a frenzy by the smell of fresh blood. As worshipers of Sekolah, they also have a special kinship with sharks, which they train as attack animals. Even untrained sharks recognize sahuagin as allies and don't prey on them."
+										]
+									},
+									{
+										"name": "Elven Enmity",
+										"type": "entries",
+										"entries": [
+											"The sahuagin might control the oceans if not for the presence of their mortal enemies, the aquatic elves. Wars between the two races have raged for centuries across the coasts and seas of the world, disrupting maritime trade and drawing other races into the bloody conflict.",
+											"So intense is sahuagin hatred for the aquatic elves that the sea devils have adapted to combat their ancient foes. A sahuagin born near enough to an aquatic elf community can enter the world as a malenti-a sahuagin that physically resembles an aquatic elf in every way. Sahuagin are prone to mutation, but whether this rare phenomenon is a result of the wars between the sahuagin and the aquatic elves-or whether it preceded or even began the conflict-none can say.",
+											"The sahuagin put the malenti to good use as spies and assassins in aquatic elf cities and the societies of other creatures that pose a threat to sahuagin. The mere shadow of the malenti threat incites paranoia and suspicion among aquatic elves, whose resilience is weakened as the prelude to an actual sahuagin invasion."
+										]
+									}
+								]
+							},
+							{
+								"type": "insetReadaloud",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"TThe village was empty, the seagulls were strangely quiet, and all we could hear was the surge of the sea."
+										],
+										"by": "An account of the aftermath of a sahuagin raid"
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Sahuagin.webp"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
 		}
 	],
 	"spell": [
@@ -2180,15 +2381,13 @@
 			"contents": [
 				{
 					"name": "Psionics Rules",
-					"headers" : [
+					"headers": [
 						"Common Psionics Verbs"
 					]
 				},
 				{
 					"name": "Travel in a Sentient, Evil Desert",
-					"headers" : [
-						
-					]
+					"headers": []
 				}
 			]
 		}
@@ -2204,62 +2403,70 @@
 					"page": 2,
 					"entries": [
 						{
-							"type" : "entries",
-							"name" : "Psionics Rules",
-							"entries" : [
+							"type": "entries",
+							"name": "Psionics Rules",
+							"entries": [
 								"All living creatures in the Forgotten Realms have a psionic potential. This potential can be awakened using psionic sublimate, a purple crystalline substance made up of pure psionic potential. An awakened creature is capable of invoking psionic emanations, which project their personal psychic weave onto the world in different ways. On their awakening, a creature receives a starting emanation, the imprint of their personal psychic weave.",
-							"Invoking a psionic emanation builds up Neural Heat equal to the sum of its level and overclock, and a psycker's Neural Heat Capacity increases as they consume more sublimate according to the Heat Capacity Table below. A psycker is capable of going over their heat capacity, but there are unpredicable consequences for doing so.",
-							{
-								"type": "table",
-								"caption": "Heat Capacity",
-								"colLabels": [
-									"Heat Capacity",
-									"Sublimate Doses"
-								],
-								"rows": [
-									[
-										"1 Heat",
-										"1 Dose"
+								"Invoking a psionic emanation builds up Neural Heat equal to the sum of its level and overclock, and a psycker's Neural Heat Capacity increases as they consume more sublimate according to the Heat Capacity Table below. A psycker is capable of going over their heat capacity, but there are unpredicable consequences for doing so.",
+								{
+									"type": "table",
+									"caption": "Heat Capacity",
+									"colLabels": [
+										"Heat Capacity",
+										"Sublimate Doses"
 									],
-									[
-										"2 Heat",
-										"3 Doses"
-									],
-									[
-										"3 Heat",
-										"6 Doses"
-									],
-									[
-										"4 Heat",
-										"10 Doses"
-									],
-									[
-										"5 Heat",
-										"15 Doses"
-									],
-									[
-										"Y Heat",
-										"Y x (Y+1) / 2 Doses"
+									"rows": [
+										[
+											"1 Heat",
+											"1 Dose"
+										],
+										[
+											"2 Heat",
+											"3 Doses"
+										],
+										[
+											"3 Heat",
+											"6 Doses"
+										],
+										[
+											"4 Heat",
+											"10 Doses"
+										],
+										[
+											"5 Heat",
+											"15 Doses"
+										],
+										[
+											"Y Heat",
+											"Y x (Y+1) / 2 Doses"
+										]
 									]
-								]
-							},
-							"Any psionic emanation invoked on the Ethereal Plane automatically receives 3 levels of overclock at no heat cost."
+								},
+								"Any psionic emanation invoked on the Ethereal Plane automatically receives 3 levels of overclock at no heat cost."
 							]
 						},
 						{
-							"type" : "entries",
-							"name" : "Common Psionics Verbs",
-							"entries" : [
+							"type": "entries",
+							"name": "Common Psionics Verbs",
+							"entries": [
 								"Many psionic emanations include variations on the same basic concepts. A non-exhaustive list is included below.",
 								{
-									"type" : "table",
-									"caption" : "Psionics Verbs",
-									"colLabels" : ["Verb", "Effect"],
-									"rows" : [
-										["Link", "Link emanations create a psionic connection between individuals. Linked individuals can always communicate psionically, among other effects stated in the emanation's description."],
-										["Submind", "Submind emanations create new micro-consciousnesses using the invoker's psychic power. These subminds can usually be released as independent minds by consuming psionic sublimate."]
+									"type": "table",
+									"caption": "Psionics Verbs",
+									"colLabels": [
+										"Verb",
+										"Effect"
+									],
+									"rows": [
+										[
+											"Link",
+											"Link emanations create a psionic connection between individuals. Linked individuals can always communicate psionically, among other effects stated in the emanation's description."
+										],
+										[
+											"Submind",
+											"Submind emanations create new micro-consciousnesses using the invoker's psychic power. These subminds can usually be released as independent minds by consuming psionic sublimate."
+										]
 									]
-
 								}
 							]
 						}
@@ -2271,28 +2478,48 @@
 					"page": 2,
 					"entries": [
 						{
-							"type" : "entries",
-							"name" : "Travel in a Sentient, Evil Desert",
-							"entries" : [
+							"type": "entries",
+							"name": "Travel in a Sentient, Evil Desert",
+							"entries": [
 								"In the cruel environs of Anauroch, basic travel is taxing and drains on the soul. For every stretch of travel, all travelling players participate in a Skill Challenge:",
 								"For every day of travel, each traveller needs a course of action in the form of a skill check. Each member makes a check for every day of the travel. Assuming a travelling party of five, every 3 failed checks results in one level of exhaustion for the entire party, as they work harder to deal with their teammates' shortcomings.",
 								"Once exhaustion has been handled, pick a party member to roll a D12 for each day of travel. If any of the rolls are within the critical range, a random encounter is triggered. Only one random encounter can trigger in a single stretch of travel.",
-							{
-								"type": "table",
-								"caption": "Travel in Anauroch",
-								"colLabels": [
-									"Environment",
-									"Travel DC",
-									"Critical Range"
-								],
-								"rows": [
-									["The Sword (Day)", "15", "Hard 11, Deadly 12"],
-									["The Sword (Night)", "14", "Hard 10, Deadly 11-12"],
-									["The Plain of Standing Stones", "N/A", "Hard 11, Deadly 12"],
-									["The High Ice", "16", "Hard 10, Deadly 11-12"],
-									["Plague-Cursed Lands", "17", "Hard 9, Deadly 10-12"]
-								]
-							}
+								{
+									"type": "table",
+									"caption": "Travel in Anauroch",
+									"colLabels": [
+										"Environment",
+										"Travel DC",
+										"Critical Range"
+									],
+									"rows": [
+										[
+											"The Sword (Day)",
+											"15",
+											"Hard 11, Deadly 12"
+										],
+										[
+											"The Sword (Night)",
+											"14",
+											"Hard 10, Deadly 11-12"
+										],
+										[
+											"The Plain of Standing Stones",
+											"N/A",
+											"Hard 11, Deadly 12"
+										],
+										[
+											"The High Ice",
+											"16",
+											"Hard 10, Deadly 11-12"
+										],
+										[
+											"Plague-Cursed Lands",
+											"17",
+											"Hard 9, Deadly 10-12"
+										]
+									]
+								}
 							]
 						}
 					]
@@ -2300,50 +2527,76 @@
 			]
 		}
 	],
-	"item":[
+	"item": [
 		{
-			"name" : "Alchemical Pressure Gasket",
-			"wondrous" : "true",
-			"tier" : "minor",
+			"name": "Alchemical Pressure Gasket",
+			"wondrous": "true",
+			"tier": "minor",
 			"rarity": "uncommon",
 			"source": "TomboftheMummyKingsContent",
-			"entries": ["This complicated gizmo augments an {@item alchemy jug|dmg}, upgrading to an {@item alchemy cannon|TomboftheMummyKingsContent}",
-						"Applying or removing this augment takes one hour of uninterrupted tinkering by a user with proficiency in alchemical supplies."]
+			"entries": [
+				"This complicated gizmo augments an {@item alchemy jug|dmg}, upgrading to an {@item alchemy cannon|TomboftheMummyKingsContent}",
+				"Applying or removing this augment takes one hour of uninterrupted tinkering by a user with proficiency in alchemical supplies."
+			]
 		},
 		{
-			"name" : "Boots of Leaping",
-			"wondrous" : "true",
-			"tier" : "minor",
+			"name": "Boots of Leaping",
+			"wondrous": "true",
+			"tier": "minor",
 			"rarity": "uncommon",
-			"reqAttune" : "true",
+			"reqAttune": true,
 			"source": "TomboftheMummyKingsContent",
-			"entries": ["This trinket imported from Baldur's Gate augments the wearer's jumps.",
-						"The attuned creature can jump twice as far and, by using a bonus action, can jump their entire jump distance for only 20 feet of movement. Reference the Jumping Distance table below to review.",
-						{
-							"type": "table",
-							"caption": "Jumping Distance, (Boots of Leaping)",
-							"colLabels": [
-								"Jump Type",
-								"Jumping Distance / Height"
-							],
-							"rows": [
-								["Long Jump, 10 ft. Runup (Normal)","Feet equal to Strength Score"],
-								["Long Jump, 10 ft. Runup (Attuned)","Feet equal to 2 x Strength Score"],
-								["Long Jump (Normal)","Feet equal to Half of Strength Score, rounded down"],
-								["Long Jump (Attuned)","Feet equal to Strength Score"],
-								["High Jump, 10 ft. Runup (Normal)","Feet equal to Strength Score"],
-								["High Jump, 10 ft. Runup (Attuned)","Feet equal to 2 x Strength Score, rounded down"],
-								["High Jump (Normal)","Feet equal to Half strength Score, rounded down"],
-								["High Jump (Attuned)","Feet equal to Strength Score"]
-								
-							]
-						}
+			"entries": [
+				"This trinket imported from Baldur's Gate augments the wearer's jumps.",
+				"The attuned creature can jump twice as far and, by using a bonus action, can jump their entire jump distance for a maximum of 20 feet of movement. Reference the Jumping Distance table below to review.",
+				{
+					"type": "table",
+					"caption": "Jumping Distance, (Boots of Leaping)",
+					"colLabels": [
+						"Jump Type",
+						"Jumping Distance / Height"
+					],
+					"rows": [
+						[
+							"Long Jump, 10 ft. Runup (Normal)",
+							"Feet equal to Strength Score"
+						],
+						[
+							"Long Jump, 10 ft. Runup (Attuned)",
+							"Feet equal to 2 x Strength Score"
+						],
+						[
+							"Long Jump (Normal)",
+							"Feet equal to Half of Strength Score, rounded down"
+						],
+						[
+							"Long Jump (Attuned)",
+							"Feet equal to Strength Score"
+						],
+						[
+							"High Jump, 10 ft. Runup (Normal)",
+							"Feet equal to Strength Score"
+						],
+						[
+							"High Jump, 10 ft. Runup (Attuned)",
+							"Feet equal to 2 x Strength Score, rounded down"
+						],
+						[
+							"High Jump (Normal)",
+							"Feet equal to Half strength Score, rounded down"
+						],
+						[
+							"High Jump (Attuned)",
+							"Feet equal to Strength Score"
+						]
 					]
+				}
+			]
 		},
 		{
-			"name" : "Alchemical Cannon",
-			"wondrous" : "true",
-			"tier" : "major",
+			"name": "Alchemical Cannon",
+			"wondrous": "true",
+			"tier": "major",
 			"rarity": "rare",
 			"source": "TomboftheMummyKingsContent",
 			"entries": [
@@ -2356,168 +2609,260 @@
 						"Effect"
 					],
 					"rows": [
-						["Acid Spray","Fire a 20 ft. line of acid, all creatures in range take 2d6 acid damage and are {@condition coated in acid}."],
-						["Poison Darts","Fire three bursts of poison, all targeted creatures make a Constitution save against being {@condition poisoned}, resaving at the end of their turns."],
-						["Beer Flood","Fire a 30 ft. cone of pressurized beer, every creature inside makes a Dexterity Saving Throw against being {@condition fuzzy}, resaving with Constitution at the end of their turns."],
-						["Honey Trap","Fire a 20 ft. line of sticky honey, every creature in the line must make a Dexterity Saving Throw against the effects of the {@spell Slow} spell, resaving at the end of their turns. This trap remains for 1 minute."],
-						["Mayo Slick","Fire a 30 ft. cone of non-flammable grease, creatures in the line must make a Dexterity Saving Throw against slipping and falling {@condition prone}. This trap remains for 1 minute, unless washed off."],
-						["Oil Slick","Fire into the air to create a 10 ft. circular slick of flammable oil, centered within 60 feet of the cannon. Creatures in the circle must make a Dexterity Saving Throw against slipping and falling {@condition prone}. The slick remains until ignited, at which point it lasts 18 seconds. The ignited slick deals 1d6 fire damage to those inside every turn."],
-						["Vinegar Splash","Fire a 30 ft. cone of vinegar, creatures in the cone must make a Dexterity Saving Throw against going {@condition blind}, resaving at the end of their turns."],
-						["Saltwater Geyser","Fire a 60 ft geyser of water which sweeps into a 60 ft cone, creatures in the cone take 1d6 bludgeoning damage and make a Strength Saving throw against being pushed back 15 feet."],
-						["Freshwater Spring","Fire a stream of freshwater, washing anything within a 30 foot sphere. Any liquid surface or coating effect within that region can be washed away."],
-						["Firewine Blast","Fire a burst of firewine onto a creature within 30 feet. When that creature is next hit with fire damage, the wine explodes in a 10 foot sphere, dealing the damage of the attack which triggered the explosion. This explosion hits the soaked creature, as well."]
-						
+						[
+							"Acid Spray",
+							"Fire a 20 ft. line of acid, all creatures in range take 2d6 acid damage and are {@condition coated in acid}."
+						],
+						[
+							"Poison Darts",
+							"Fire three bursts of poison, all targeted creatures make a Constitution save against being {@condition poisoned}, resaving at the end of their turns."
+						],
+						[
+							"Beer Flood",
+							"Fire a 30 ft. cone of pressurized beer, every creature inside makes a Dexterity Saving Throw against being {@condition fuzzy}, resaving with Constitution at the end of their turns."
+						],
+						[
+							"Honey Trap",
+							"Fire a 20 ft. line of sticky honey, every creature in the line must make a Dexterity Saving Throw against the effects of the {@spell Slow} spell, resaving at the end of their turns. This trap remains for 1 minute."
+						],
+						[
+							"Mayo Slick",
+							"Fire a 30 ft. cone of non-flammable grease, creatures in the line must make a Dexterity Saving Throw against slipping and falling {@condition prone}. This trap remains for 1 minute, unless washed off."
+						],
+						[
+							"Oil Slick",
+							"Fire into the air to create a 10 ft. circular slick of flammable oil, centered within 60 feet of the cannon. Creatures in the circle must make a Dexterity Saving Throw against slipping and falling {@condition prone}. The slick remains until ignited, at which point it lasts 18 seconds. The ignited slick deals 1d6 fire damage to those inside every turn."
+						],
+						[
+							"Vinegar Splash",
+							"Fire a 30 ft. cone of vinegar, creatures in the cone must make a Dexterity Saving Throw against going {@condition blind}, resaving at the end of their turns."
+						],
+						[
+							"Saltwater Geyser",
+							"Fire a 60 ft geyser of water which sweeps into a 60 ft cone, creatures in the cone take 1d6 bludgeoning damage and make a Strength Saving throw against being pushed back 15 feet."
+						],
+						[
+							"Freshwater Spring",
+							"Fire a stream of freshwater, washing anything within a 30 foot sphere. Any liquid surface or coating effect within that region can be washed away."
+						],
+						[
+							"Firewine Blast",
+							"Fire a burst of firewine onto a creature within 30 feet. When that creature is next hit with fire damage, the wine explodes in a 10 foot sphere, dealing the damage of the attack which triggered the explosion. This explosion hits the soaked creature, as well."
+						]
 					]
 				},
 				"The DC for an alchemy cannon attack is equal to the user's Intelligence spell DC."
-		]
-			
-		},
-		{
-			"name" : "Energy Pellet",
-			"wondrous" : "true",
-			"tier" : "minor",
-			"rarity": "common",
-			"source": "TomboftheMummyKingsContent",
-			"entries": ["These compressed medicinal pellets typically come in packs of three. A creature can take six seconds to dissolve one pellet under its tongue, removing one level of exhaustion."]
-		},
-		{
-			"name" : "Super Energy Pellet",
-			"wondrous" : "true",
-			"tier" : "minor",
-			"rarity": "rare",
-			"source": "TomboftheMummyKingsContent",
-			"entries": ["These limited edition medicinal pellets typically come in packs of three. A creature can take six seconds to dissolve one pellet under its tongue, removing all levels of exhaustion.",
-						"Has a slight taste of saffron."]
-		},
-		{
-			"name" : "Potion of Hill Giant Intelligence",
-			"wondrous" : "true",
-			"tier" : "minor",
-			"rarity": "common",
-			"source": "TomboftheMummyKingsContent",
-			"entries": ["Drinking this potion sets your intelligence to 5 (-3) for one hour."]
-		},
-		{
-			"name" : "Butcher's Knife",
-			"type" : "M",
-			"baseItem" : "shortsword|phb",
-			"weaponCategory" : "simple",
-			"wondrous" : "true",
-			"tier" : "minor",
-			"rarity": "common",
-			"source": "TomboftheMummyKingsContent",
-			"sword" : "true",
-			"weapon" : "true",
-			"property" : ["F", "L"],
-			"dmg1" : "1d6",
-			"dmgType" : "P",
-			"entries": ["The wielder of this knife gains a +2 to all checks which involve dissecting dead creatures, including attacks against the undead."]
-		},
-		{
-			"name" : "Arquebus",
-			"rarity": "none",
-			"weaponCategory" : "artifice",
-			"type" : "R",
-			"property" : ["F"],
-			"range" : "40/120",
-			"dmg1" : "4d6",
-			"firearm" : "true",
-			"source": "TomboftheMummyKingsContent",
-			"entries": [
-						"A primitive firearm prototyped by Abeiran gnome clans. Most arquebi on Toril are shoddy forgeries of these original designs.",
-						"Loading a bullet and powder into this weapon takes ten minutes for a layman, one minute for someone proficient, and one action for someone with the {@feat gunner} feat."
 			]
 		},
 		{
-			"name" : "Glaive of the Empty Tomb",
-			"wondrous" : "true",
-			"tier" : "major",
-			"rarity": "rare",
-			"baseItem" : "glaive|phb",
-			"weaponCategory" : "martial",
-			"type" : "M",
-			"property" : ["H", "R", "2H"],
-			"dmg1" : "1d10",
-			"dmgType" : "S",
+			"name": "Energy Pellet",
+			"wondrous": "true",
+			"tier": "minor",
+			"rarity": "common",
 			"source": "TomboftheMummyKingsContent",
-			"entries": ["The shaft of this black-iron glaive is wrapped in funerary cloth soaked in annointing oils with the faint smell of lavender.",
-						"When making an attack with this weapon, the user can spend one spell slot of 1st level or higher to convert the attack's damage to healing.",
-						"Embedded in the glaive's pommel is a fractured diamond consecrated by clerics of Kelemvor. This diamond can be crushed in one hand, and sprinkling its remains over a recently deceased creature will apply the effects of {@spell revivify}."]
+			"entries": [
+				"These compressed medicinal pellets typically come in packs of three. A creature can take six seconds to dissolve one pellet under its tongue, removing one level of exhaustion."
+			]
 		},
 		{
-			"name" : "Guiding Moonlight",
-			"wondrous" : "true",
-			"tier" : "major",
+			"name": "Super Energy Pellet",
+			"wondrous": "true",
+			"tier": "minor",
 			"rarity": "rare",
 			"source": "TomboftheMummyKingsContent",
-			"baseItem" : "longbow|phb",
-			"type" : "R",
-			"weaponCategory" : "martial",
-			"property" : ["A", "2H"],
+			"entries": [
+				"These limited edition medicinal pellets typically come in packs of three. A creature can take six seconds to dissolve one pellet under its tongue, removing all levels of exhaustion.",
+				"Has a slight taste of saffron."
+			]
+		},
+		{
+			"name": "Potion of Hill Giant Intelligence",
+			"wondrous": "true",
+			"tier": "minor",
+			"rarity": "common",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				"Drinking this potion sets your intelligence to 5 (-3) for one hour."
+			]
+		},
+		{
+			"name": "Butcher's Knife",
+			"type": "M",
+			"baseItem": "shortsword|phb",
+			"weaponCategory": "simple",
+			"wondrous": "true",
+			"tier": "minor",
+			"rarity": "common",
+			"source": "TomboftheMummyKingsContent",
+			"sword": "true",
+			"weapon": "true",
+			"property": [
+				"F",
+				"L"
+			],
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"entries": [
+				"The wielder of this knife gains a +2 to all checks which involve dissecting dead creatures, including attacks against the undead."
+			]
+		},
+		{
+			"name": "Arquebus",
+			"rarity": "none",
+			"weaponCategory": "artifice",
+			"type": "R",
+			"property": [
+				"F"
+			],
+			"range": "40/120",
+			"dmg1": "4d6",
+			"firearm": "true",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				"A primitive firearm prototyped by Abeiran gnome clans. Most arquebi on Toril are shoddy forgeries of these original designs.",
+				"Loading a bullet and powder into this weapon takes ten minutes for a layman, one minute for someone proficient, and one action for someone with the {@feat gunner} feat."
+			]
+		},
+		{
+			"name": "Glaive of the Empty Tomb",
+			"wondrous": "true",
+			"tier": "major",
+			"rarity": "rare",
+			"baseItem": "glaive|phb",
+			"weaponCategory": "martial",
+			"type": "M",
+			"property": [
+				"H",
+				"R",
+				"2H"
+			],
+			"dmg1": "1d10",
+			"dmgType": "S",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				"The shaft of this black-iron glaive is wrapped in funerary cloth soaked in annointing oils with the faint smell of lavender.",
+				"When making an attack with this weapon, the user can spend one spell slot of 1st level or higher to convert the attack's damage to healing.",
+				"Embedded in the glaive's pommel is a fractured diamond consecrated by clerics of Kelemvor. This diamond can be crushed in one hand, and sprinkling its remains over a recently deceased creature will apply the effects of {@spell revivify}."
+			]
+		},
+		{
+			"name": "Guiding Moonlight",
+			"wondrous": "true",
+			"tier": "major",
+			"rarity": "rare",
+			"source": "TomboftheMummyKingsContent",
+			"baseItem": "longbow|phb",
+			"type": "R",
+			"weaponCategory": "martial",
+			"property": [
+				"A",
+				"2H"
+			],
 			"range": "150/600",
-			"dmg1" : "1d8",
-			"dmgType" : "P",
-			"bonusWeapon" : "+1",
-			"entries": ["This silver longbow is inscribed with prayers to Selune, written in glowing elven script.",
-						"When making an attack with this weapon, the wielder can speak a command word to replace the arrow with a {@spell guiding bolt}. This ability can be used once per day, recharging at midnight.",
-						"On the night of Selune's full moon, the bow becomes overcharged until its next use, increasing the level of {@spell guiding bolt} use this way from 1 to 2.",
-						"This bow lets off dim light within 15 feet and bright light within 5 feet."]
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"bonusWeapon": "+1",
+			"entries": [
+				"This silver longbow is inscribed with prayers to Selune, written in glowing elven script.",
+				"When making an attack with this weapon, the wielder can speak a command word to replace the arrow with a {@spell guiding bolt}. This ability can be used once per day, recharging at midnight.",
+				"On the night of Selune's full moon, the bow becomes overcharged until its next use, increasing the level of {@spell guiding bolt} use this way from 1 to 2.",
+				"This bow lets off dim light within 15 feet and bright light within 5 feet."
+			]
 		},
 		{
-			"name" : "Iron Gate",
-			"wondrous" : "true",
-			"tier" : "major",
+			"name": "Iron Gate",
+			"source": "TomboftheMummyKingsContent",
+			"tier": "major",
 			"rarity": "very rare",
-			"type" : "S",
-			"reqAttune": "true",
-			"property" : ["CUM", "SS"],
-			"strength" : "18",
-			"ac" : 4,
- 			"source": "TomboftheMummyKingsContent",
-			"entries": ["This imposing wall of metal is engraved with warding runes, holding otherworldly evil at bay.",
-						"When an aberration, elemental, or fiend misses an attack against the wielder of this shield, they must make a DC 15 wisdom save or become {@cond frightened}, repeating at the end of their turns on failure.",
-						"Once per day, recharging at dawn, the wielder of this shield can use it to cast {@spell death ward} on themself."]
+			"type": "S",
+			"reqAttune": true,
+			"baseItem": "Tower Shield|Ar20",
+			"property": [
+				"CUM",
+				"SS"
+			],
+			"strength": "18",
+			"ac": 4,
+			"bonusAc": "+4",
+			"entries": [
+				"This imposing wall of metal is engraved with warding runes, holding otherworldly evil at bay.",
+				"When an aberration, elemental, or fiend misses an attack against the wielder of this shield, they must make a DC 15 wisdom save or become {@condition frightened}, repeating at the end of their turns on failure.",
+				"Once per day, recharging at dawn, the wielder of this shield can use it to cast {@spell death ward} on themself."
+			]
 		},
 		{
-			"name" : "",
-			"wondrous" : "",
-			"tier" : "",
-			"rarity": "",
+			"name": "Hydra Salve",
+			"wondrous": "true",
+			"tier": "major",
+			"rarity": "very rare",
 			"source": "TomboftheMummyKingsContent",
-			"entries": [""]
+			"entries": [
+				"This thick, tacky glue comes in a small adamantine tin and smells strongly of rotting balsam.",
+				"Spreading this substance on an open wound allows any detached biological limb to bind to the wound site as if it were a part of the wounded creature's body. After a day of setting, the creature slowly gains use of the limb over the next three days.",
+				"The effects of this are unpredictable, often dangerous, and almost always profane."
+			]
 		},
 		{
-			"name" : "",
-			"wondrous" : "",
-			"tier" : "",
+			"name": "",
+			"wondrous": "",
+			"tier": "",
 			"rarity": "",
 			"source": "TomboftheMummyKingsContent",
-			"entries": [""]
+			"entries": [
+				""
+			]
 		},
 		{
-			"name" : "",
-			"wondrous" : "",
-			"tier" : "",
+			"name": "",
+			"wondrous": "",
+			"tier": "",
 			"rarity": "",
 			"source": "TomboftheMummyKingsContent",
-			"entries": [""]
+			"entries": [
+				""
+			]
 		},
 		{
-			"name" : "",
-			"wondrous" : "",
-			"tier" : "",
+			"name": "",
+			"wondrous": "",
+			"tier": "",
 			"rarity": "",
 			"source": "TomboftheMummyKingsContent",
-			"entries": [""]
+			"entries": [
+				""
+			]
 		},
 		{
-			"name" : "",
-			"wondrous" : "",
-			"tier" : "",
+			"name": "",
+			"wondrous": "",
+			"tier": "",
 			"rarity": "",
 			"source": "TomboftheMummyKingsContent",
-			"entries": [""]
+			"entries": [
+				""
+			]
+		}
+	],
+	"disease" : [
+		{
+			"name" : "Talona's Embrace",
+			"source" : "TomboftheMummyKingsContent",
+			"page" : 4,
+			"entries" : [
+				"Talona's Embrace is the formal term for the plague sweeping the West-Anaurian Duchy of Gisselarre. Common folk refer to it as 'The Sand Plague' due to its magical effects on stone and sand exposed to the plague.",
+				"Infection is spread by exposure to infected bodily fluids and infected material. Within three days of exposure, victims develop a necrotizing rash. As the disease progresses, the infected's mind becomes clouded, and become violent without even noticing it. Within a tenday of infection, the infected's skin begins to slough off in infectious plague boluses.",
+				"By the second tenday, the infected loses their original personality and becomes a Cosmic Chaotic Evil plague-thrall with no goal beyond spreading the disease and serving any undead master they have."
+			]
+		}
+	],
+	"makebrewCreatureTrait" : [
+		{
+			"name": "Grasp of Talona",
+			"entries": [
+				"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 14} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one.",
+				"A creature who fails this saving throw must make a {@dc 16} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace}."
+			],
+			"source" : "TomboftheMummyKingsContent"
 		}
 	]
 }
