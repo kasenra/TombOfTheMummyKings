@@ -16,6 +16,207 @@
 	},
 	"monster": [
 		{
+			"name": "Plague-Cursed Sahuagin",
+			"source": "TomboftheMummyKingsContent",
+			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"sahuagin"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "4d8 + 4"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 13,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 13,
+			"cha": 9,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+3"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"languages": [
+				"Sahuagin",
+				"Plague-Cursed"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"The sahuagin has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+					]
+				},
+				{
+					"name": "Limited Amphibiousness",
+					"entries": [
+						"The sahuagin can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating."
+					]
+				},
+				{
+					"name": "Grasp of Talona",
+					"entries": [
+						"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 14} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 16} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TomboftheMummyKingsContent}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The sahuagin makes two melee attacks: one with its bite and one with its claws or spear."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) slashing damage."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage, or 5 ({@damage 1d8 + 1}) piercing damage if used with two hands to make a melee attack."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"underwater"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/sahuagin.mp3"
+			},
+			"attachedItems": [
+				"spear|phb"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"MLW",
+				"THW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Sahuagin",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Sahuagin",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Across fog-shrouded coasts or endless ocean swells, an ominous drone sounded on a conch shell chills the blood of all who hear it. This is the sound of the sahuagin hunting horn-a call to raid and battle. Coastal settlers refer to sahuagin as \"sea devils,\" for sahuagin have no compassion in them, slaughtering the crews of ships and decimating coastal villages.",
+									{
+										"name": "Devils of the Deep",
+										"type": "entries",
+										"entries": [
+											"Sahuagin are a predatory, piscine race that ventures from the ocean's black depths to hunt the creatures of the shallows and shore. Though they dwell in the deepest trenches of the ocean, sahuagin view the entire aquatic realm as their kingdom and the creatures in it as blood sport for their hunting parties.",
+											"The self-styled rulers of sahuagin ocean domains are massive mutant males that grow second sets of arms. They are terrible foes in battle, and all sahuagin bow down before these powerful barons."
+										]
+									},
+									{
+										"name": "Way of the Shark",
+										"type": "entries",
+										"entries": [
+											"Sahuagin worship the shark god Sekolah. Only female sahuagin are deemed worthy of channeling the god's power, and priestesses hold tremendous sway in sahuagin communities.",
+											"Sahuagin are driven into a frenzy by the smell of fresh blood. As worshipers of Sekolah, they also have a special kinship with sharks, which they train as attack animals. Even untrained sharks recognize sahuagin as allies and don't prey on them."
+										]
+									},
+									{
+										"name": "Elven Enmity",
+										"type": "entries",
+										"entries": [
+											"The sahuagin might control the oceans if not for the presence of their mortal enemies, the aquatic elves. Wars between the two races have raged for centuries across the coasts and seas of the world, disrupting maritime trade and drawing other races into the bloody conflict.",
+											"So intense is sahuagin hatred for the aquatic elves that the sea devils have adapted to combat their ancient foes. A sahuagin born near enough to an aquatic elf community can enter the world as a malenti-a sahuagin that physically resembles an aquatic elf in every way. Sahuagin are prone to mutation, but whether this rare phenomenon is a result of the wars between the sahuagin and the aquatic elves-or whether it preceded or even began the conflict-none can say.",
+											"The sahuagin put the malenti to good use as spies and assassins in aquatic elf cities and the societies of other creatures that pose a threat to sahuagin. The mere shadow of the malenti threat incites paranoia and suspicion among aquatic elves, whose resilience is weakened as the prelude to an actual sahuagin invasion."
+										]
+									}
+								]
+							},
+							{
+								"type": "insetReadaloud",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"TThe village was empty, the seagulls were strangely quiet, and all we could hear was the surge of the sea."
+										],
+										"by": "An account of the aftermath of a sahuagin raid"
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Sahuagin.webp"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
 			"source": "TomboftheMummyKingsContent",
 			"name": "Thri-Kreen Queensguard",
 			"size": [
@@ -865,74 +1066,206 @@
 			]
 		},
 		{
-			"name": "Plague-Cursed Sahuagin",
+			"name": "Plague-Cursed Hunter Minion (x8)",
 			"source": "TomboftheMummyKingsContent",
-			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"plague-cursed",
+					"Minion"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"special": "13"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 10,
+			"int": 14,
+			"wis": 12,
+			"cha": 10,
+			"passive": 11,
+			"languages": [
+				"Common",
+				"Plague-Cursed"
+			],
+			"cr": {
+				"cr": "6",
+				"xp": 285
+			},
+			"trait": [
+				{
+					"name": "Minion",
+					"entries": [
+						"If the mage takes damage from an attack or as the result of a failed saving throw, their hit points are reduced to 0. If the mage takes damage from another effect, they die if the damage equals or exceeds their hit point maximum; otherwise they take no damage."
+					]
+				},
+				{
+					"name": "Grasp of Talona",
+					"entries": [
+						"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 14} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 16} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TomboftheMummyKingsContent}."
+					]
+				},
+				{
+					"name": "Badberry",
+					"entries": [
+						"Any non-minion ally within 30 feet of a hunter can use its bonus action to consume a Badberry, healing them for {@dice 1d4} hit points if they are plague-cursed."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Volley (Group Attack)",
+					"entries": [
+						"{@atk r} {@hit 5} + X to hit, range 120/240 ft., one creature. {@h}4 + X piercing damage. If this attack was made by more than one hunter, the target is pinned down on a hit, reducing their movement speed by half until the end of these minions' next turn."
+					]
+				},
+				{
+					"name": "Dirty Tactics (Group Attack)",
+					"entries": [
+						"{@atk m} {@hit 5} + X to hit, reach 5 ft., one target. {@h}4 + X slashing damage, and the target can't make opportunity attacks until the start of their next turn. If this attack is made with flanking, knock the target {@condition prone}"
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/FleeMortals/token/Human Apprentice Mage.png",
+			"foundryTokenScale": 1.5,
+			"bonus": [
+				{
+					"name": "Hunter's Mark (Group Action)",
+					"entries": [
+						"Mark a target for death. Only one target can be marked at a time. When hunters make a group attack against a marked target, increase their X bonus by 1 for every 2 hunters in the attack."
+					]
+				}
+			],
+			"save": {
+				"dex": "+6"
+			},
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Mariya Liadon, Zhentarim Gloomstalker",
 			"size": [
 				"M"
 			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
-					"sahuagin"
+					"ranger",
+					"half-elf"
 				]
 			},
+			"source": "TomboftheMummyKingsContent",
 			"alignment": [
-				"L",
-				"E"
+				"C",
+				"N"
 			],
 			"ac": [
 				{
-					"ac": 12,
+					"ac": 17,
 					"from": [
-						"natural armor"
+						"{@item studded leather armor|phb}",
+						"{@item shield|phb}"
 					]
 				}
 			],
 			"hp": {
-				"average": 22,
-				"formula": "4d8 + 4"
+				"formula": "5d10 + 5",
+				"average": 32
 			},
 			"speed": {
-				"walk": 30,
-				"swim": 40
+				"walk": 40
 			},
-			"str": 13,
-			"dex": 12,
+			"str": 8,
+			"dex": 16,
 			"con": 12,
-			"int": 10,
-			"wis": 13,
-			"cha": 9,
-			"skill": {
-				"perception": "+5",
-				"stealth": "+3"
-			},
+			"int": 12,
+			"wis": 16,
+			"cha": 10,
+			"passive": 16,
+			"cr": "5",
+			"shortName": "Mariya",
+			"page": 1,
+			"level": 5,
 			"senses": [
 				"darkvision 120 ft."
 			],
-			"passive": 15,
-			"languages": [
-				"Sahuagin",
-				"Plague-Cursed"
+			"senseTags": [
+				"SD"
 			],
-			"cr": "1/2",
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"save": {
+				"dex": "+6",
+				"wis": "+6"
+			},
+			"skill": {
+				"stealth": "+6",
+				"survival": "+6",
+				"insight": "+6",
+				"perception": "+6"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Mariya casts using her wisdom via a Ruby of the War Mage embedded in her longbow. Her spell attack bonus is 6, and her spell save DC is 14. She has the following spell slots."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell cure wounds}",
+								"{@spell hail of thorns}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell magic weapon}",
+								"{@spell web}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
 			"trait": [
 				{
-					"name": "Blood Frenzy",
+					"name": "Gloomstalker",
 					"entries": [
-						"The sahuagin has advantage on melee attack rolls against any creature that doesn't have all its hit points."
-					]
-				},
-				{
-					"name": "Limited Amphibiousness",
-					"entries": [
-						"The sahuagin can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating."
-					]
-				},
-				{
-					"name": "Grasp of Talona",
-					"entries": [
-						"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 10} Dexterity saving throw or contract the first stages of Talona's Embrace, as well as taken {@damage 2d6} acid damage on a failed save or half on a successful one."
+						"Mariya adds her wisdom modifier to her initiative roll. If she is within darkness, she is {@condition invisible} to all creatures, even those with darkvision. Due to her half-elf heritage, Mariya can become Heavily Obscured by hiding within light foliage or brush."
 					]
 				}
 			],
@@ -940,130 +1273,553 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The sahuagin makes two melee attacks: one with its bite and one with its claws or spear."
+						"Mariya makes two attacks with either her Longbow or her Elven Longsword. If with her Longbow, she can immediately take the Hide action as a part of this action."
 					]
 				},
 				{
-					"name": "Bite",
+					"name": "Longbow",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+						"{@atk rw} {@hit 6} to hit, range 60/120 ft., one target. {@h}7 ({@damage 1d8 + 5}) piercing damage."
 					]
 				},
 				{
-					"name": "Claws",
+					"name": "Elven Longsword",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) slashing damage."
-					]
-				},
-				{
-					"name": "Spear",
-					"entries": [
-						"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage, or 5 ({@damage 1d8 + 1}) piercing damage if used with two hands to make a melee attack."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with both hands."
 					]
 				}
 			],
-			"environment": [
-				"coastal",
-				"underwater"
+			"miscTags": [
+				"RW",
+				"MW",
+				"MLW"
 			],
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/sahuagin.mp3"
-			},
 			"attachedItems": [
-				"spear|phb"
-			],
-			"senseTags": [
-				"SD"
+				"longbow|phb"
 			],
 			"actionTags": [
 				"Multiattack"
 			],
-			"languageTags": [
-				"OTH"
+			"bonus": [
+				{
+					"name": "Mark for Death",
+					"entries": [
+						"Mariya targets a single creature with her enmity. That creature becomes Marked For Death, taking 1 piercing damage every time it takes damage from any other source. This effect ends when Mariya goes {@condition unconscious}."
+					]
+				}
 			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"MLW",
-				"THW"
+			"reaction": [
+				{
+					"name": "Reposition",
+					"entries": [
+						"When an enemy spots Mariya, she can use this reaction to immediately disengage and move her full movement speed."
+					]
+				}
 			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"token": {
-				"name": "Sahuagin",
-				"source": "MM"
-			},
-			"fluff": {
-				"name": "Sahuagin",
-				"source": "MM",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"Across fog-shrouded coasts or endless ocean swells, an ominous drone sounded on a conch shell chills the blood of all who hear it. This is the sound of the sahuagin hunting horn-a call to raid and battle. Coastal settlers refer to sahuagin as \"sea devils,\" for sahuagin have no compassion in them, slaughtering the crews of ships and decimating coastal villages.",
-									{
-										"name": "Devils of the Deep",
-										"type": "entries",
-										"entries": [
-											"Sahuagin are a predatory, piscine race that ventures from the ocean's black depths to hunt the creatures of the shallows and shore. Though they dwell in the deepest trenches of the ocean, sahuagin view the entire aquatic realm as their kingdom and the creatures in it as blood sport for their hunting parties.",
-											"The self-styled rulers of sahuagin ocean domains are massive mutant males that grow second sets of arms. They are terrible foes in battle, and all sahuagin bow down before these powerful barons."
-										]
-									},
-									{
-										"name": "Way of the Shark",
-										"type": "entries",
-										"entries": [
-											"Sahuagin worship the shark god Sekolah. Only female sahuagin are deemed worthy of channeling the god's power, and priestesses hold tremendous sway in sahuagin communities.",
-											"Sahuagin are driven into a frenzy by the smell of fresh blood. As worshipers of Sekolah, they also have a special kinship with sharks, which they train as attack animals. Even untrained sharks recognize sahuagin as allies and don't prey on them."
-										]
-									},
-									{
-										"name": "Elven Enmity",
-										"type": "entries",
-										"entries": [
-											"The sahuagin might control the oceans if not for the presence of their mortal enemies, the aquatic elves. Wars between the two races have raged for centuries across the coasts and seas of the world, disrupting maritime trade and drawing other races into the bloody conflict.",
-											"So intense is sahuagin hatred for the aquatic elves that the sea devils have adapted to combat their ancient foes. A sahuagin born near enough to an aquatic elf community can enter the world as a malenti-a sahuagin that physically resembles an aquatic elf in every way. Sahuagin are prone to mutation, but whether this rare phenomenon is a result of the wars between the sahuagin and the aquatic elves-or whether it preceded or even began the conflict-none can say.",
-											"The sahuagin put the malenti to good use as spies and assassins in aquatic elf cities and the societies of other creatures that pose a threat to sahuagin. The mere shadow of the malenti threat incites paranoia and suspicion among aquatic elves, whose resilience is weakened as the prelude to an actual sahuagin invasion."
-										]
-									}
-								]
-							},
-							{
-								"type": "insetReadaloud",
-								"entries": [
-									{
-										"type": "quote",
-										"entries": [
-											"TThe village was empty, the seagulls were strangely quiet, and all we could hear was the surge of the sea."
-										],
-										"by": "An account of the aftermath of a sahuagin raid"
-									}
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/MM/Sahuagin.webp"
-						}
-					}
-				]
-			},
+			"isNamedCreature": true,
+			"legendaryHeader": [
+				"Mariya has one villain action, used on the first round of combat. If she is incapacitated when her villain action would activate, she is skipped in the villain action order."
+			],
+			"legendary": [
+				{
+					"name": "Dread Ambush",
+					"entries": [
+						"Mariya makes 3 longbow attacks, the first at advantage, and the third at disadvantage. Afterwards, she turns {@condition invisible}."
+					]
+				}
+			],
+			"isNpc": true,
 			"damageTags": [
 				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"F",
+				"P"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Heskan of Norixius, Zhentarim Inquisitor",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"source": "TomboftheMummyKingsContent",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 6",
+				"average": 33
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 12,
+			"int": 14,
+			"wis": 14,
+			"cha": 8,
+			"passive": 12,
+			"cr": "5",
+			"page": 1,
+			"level": 5,
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"shortName": "Heskan",
+			"skill": {
+				"insight": "+8",
+				"investigation": "+8",
+				"sleight of hand": "+5",
+				"stealth": "+5"
+			},
+			"save": {
+				"wis": "+5",
+				"dex": "+5"
+			},
+			"resist": [
+				"fire"
+			],
+			"isNamedCreature": true,
+			"action": [
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"Heskan makes one Light Glaive attack on a target against whom he has advantage. The attack deals an extra {@damage 4d6} damage."
+					]
+				},
+				{
+					"name": "Insightful Multiattack",
+					"entries": [
+						"Heskan makes two sweeping Light Glaive attacks, hitting up to two targets in his range by consuming an Uncanny Insight on each. "
+					]
+				},
+				{
+					"name": "Fire Breath (3/day)",
+					"entries": [
+						"Heskan exhales fire in a 30-foot by 5-foot line. Targets within the area must make a {@dc 14} Dexterity Saving Throw, taking {@damage 2d10} fire damage on a failed save or half on a successful save."
+					]
+				},
+				{
+					"name": "Light Glaive",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage."
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Uncanny Insight",
+					"entries": [
+						"Heskan's abilities allow him to build up Uncanny Insight on his enemies. When making an attack or inducing a save on a target, he can choose to burn one Uncanny Insight on the target to give his attack advantage or their save disadvantage."
+					]
+				}
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"MLW"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"bonus": [
+				{
+					"name": "Smoke Bomb",
+					"entries": [
+						"Heskan throws a smoke bomb at his feet, creating a 15 foot square {@spell fog cloud} effect for one turn."
+					]
+				},
+				{
+					"name": "Chromatic Warding (1/day)",
+					"entries": [
+						"Channeling his draconic ancestry, Heskan becomes immune to fire damage for 1 minute."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Inquisition",
+					"entries": [
+						"When an enemy of Heskan misses an attack or fails to induce a saving throw, Heskan observes them and gains one uncanny insight on them."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Heskan has one Villain Action which activates on the second round of combat. If he is incapacitated when it should activate, he is skipped in the Villain Action order."
+			],
+			"legendary": [
+				{
+					"name": "Butterfly Effect",
+					"entries": [
+						"Heskan throws a handful of red-hot sovereigns into the air, dealing 1 fire damage to every creature within 5 feet, as well as gaining Uncanny Insight on every enemy who can see this display. After, Heskan immediately moves up to his speed and makes a sneak attack."
+					]
+				}
+			],
+			"damageTags": [
+				"F",
 				"S"
 			],
 			"savingThrowForced": [
 				"dexterity"
 			]
+		},
+		{
+			"name": "Nashwa, Daughter of Rakim, Zhentarim Guide",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Bedine",
+					"Psycker"
+				]
+			},
+			"source": "TomboftheMummyKingsContent",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "5d8 + 5",
+				"average": 27
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 16,
+			"wis": 12,
+			"cha": 12,
+			"passive": 11,
+			"cr": "5",
+			"shortName": "Nashwa",
+			"page": 1,
+			"languages": [
+				"Common",
+				"Midani"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"int": "+6",
+				"wis": "+4"
+			},
+			"skill": {
+				"history": "+6",
+				"insight": "+4",
+				"survival": "+4",
+				"nature": "+6"
+			},
+			"spellcasting": [
+				{
+					"name": "Psychic Storm",
+					"headerEntries": [
+						"Nashwa is a trained Hadat. Her psionic DC is 14 and she has 6 Heat Capacity. Her loyalty is not strong enough to burn her brain, even if all of her allies die."
+					],
+					"will": [
+						"{@spell 「catch」|TomboftheMummyKingsContent}",
+						"{@spell 「reflect」|TomboftheMummyKingsContent}",
+						"{@spell 「shade」|TomboftheMummyKingsContent}",
+						"{@spell 「slipshod」|TomboftheMummyKingsContent}"
+					],
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Hasty Escape",
+					"entries": [
+						"Nashwa makes two quarterstaff attacks and then takes the disengage action as part of this action."
+					]
+				},
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) slashing damage."
+					]
+				},
+				{
+					"name": "Psionic Blast",
+					"entries": [
+						"Nashwa targets a point within 60 feet. All creatures within 5 feet of that point must make a {@dc 14} Intelligence Saving Throw, taking {@damage 2d8} psychic damage on a failed save, or half on a success."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"quarterstaff|phb"
+			],
+			"bonus": [
+				{
+					"name": "Enhanced Emanations",
+					"entries": [
+						"Nashwa invokes one of her bonus action emanations with a free tier of overclock."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Enhanced Reflection",
+					"entries": [
+						"Nashwa invokes 「REFLECT」. The first time the emanation is invoked with this reaction, it does not build up heat."
+					]
+				}
+			],
+			"level": 5,
+			"isNamedCreature": true,
+			"legendaryHeader": [
+				"Nashwa has one villain action which happens on the third round. If she is unconscious when this action would trigger, her position in the Villain Action order is skipped."
+			],
+			"legendary": [
+				{
+					"name": "Suffocating Silence",
+					"entries": [
+						"Nashwa lashes out with psychic power, psychically choking up to 3 enemies, silencing them and dealing {@damage 1d6} psychic damage every turn on a {@dc 14} Intelligence Saving Throw, SEOTE."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"savingThrowForced": [
+				"intelligence"
+			]
+		},
+		{
+			"name": "Skamos, Zhentarim Berserker",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Levistus Tiefling",
+					"Barbarian"
+				]
+			},
+			"source": "TomboftheMummyKingsContent",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "6d12 + 18",
+				"average": 57
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 16,
+			"int": 8,
+			"wis": 12,
+			"cha": 10,
+			"passive": 11,
+			"cr": "5",
+			"shortName": "Skamos",
+			"page": 1,
+			"level": 5,
+			"languages": [
+				"Common",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"save": {
+				"con": "+6",
+				"str": "+6"
+			},
+			"skill": {
+				"athletics": "+6",
+				"medicine": "+4"
+			},
+			"resist": [
+				{
+					"resist": [
+						"fire"
+					]
+				},
+				{
+					"resist": [
+						{
+							"special": "All damage except psychic"
+						}
+					],
+					"note": "while raging",
+					"cond": true
+				}
+			],
+			"action": [
+				{
+					"name": "Reckless Multiattack",
+					"entries": [
+						"Skamos makes two greataxe attacks with advantage. Any attacks made against Skamos until the end of his next turn have advantage."
+					]
+				},
+				{
+					"name": "Primal Lance",
+					"entries": [
+						"Skamos goes into a rage, throwing a javelin while he does so. As long as Skamos deals or takes damage every turn, he resists all damage except psychic, deals 2 more damage with every attack, and gains 10 feet of movement speed."
+					]
+				},
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d12 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 30/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"attachedItems": [
+				"greataxe|phb",
+				"javelin|phb"
+			],
+			"bonus": [
+				{
+					"name": "Feral Spirit",
+					"entries": [
+						"Skamos punches an ally for {@damage 1d4} bludgeoning damage, ending one effect on them causing the {@condition charmed} or {@condition frightened}. "
+					]
+				},
+				{
+					"name": "Pin Down",
+					"entries": [
+						"Skamos charges down an enemy, forcing an Athletics (Strength) contest against their Athletics (Strength) or Acrobatics (Dexterity), and pushing them {@condition prone} on a success. If the target is already {@condition prone}, they are now {@condition grappled} as Skamos steps on their chest."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"reaction": [
+				{
+					"name": "Law of Beasts",
+					"entries": [
+						"When an enemy within 60 feet of Skamos attempts to leave the melee range of Skamos or one of his allies, he can howl, inducing a {@dc 14} Wisdom Save against {@condition frightened}, SEOTE."
+					]
+				}
+			],
+			"isNamedCreature": true,
+			"legendaryHeader": [
+				"Skamos has one villain action, which triggers in the fourth round of combat. If Skamos is incapacitated when this action would be triggered, his position in the Villain Action order is skipped."
+			],
+			"legendary": [
+				{
+					"name": "Primal Hatred",
+					"entries": [
+						"Skamos pounces onto the nearest enemy, knocking them {@condition prone} and making four greataxe attacks. After this, Skamos's rage automatically ends."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Reeza of Many-Arrows, Zhentarim Mastermind",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"half-orc",
+					"warlord"
+				]
+			},
+			"source": "TomboftheMummyKingsContent",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "1d8 + 3",
+				"average": 7
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 12,
+			"con": 16,
+			"int": 14,
+			"wis": 14,
+			"cha": 18,
+			"passive": 12,
+			"cr": "5",
+			"shortName": "Reeza",
+			"page": 1,
+			"level": 5,
+			"save": {
+				"cha": "+7",
+				"wis": "+5",
+				"int": "+5"
+			},
+			"skill": {
+				"persuasion": "+10",
+				"deception": "+10"
+			}
 		}
 	],
 	"spell": [
@@ -2843,39 +3599,25 @@
 			]
 		}
 	],
-	"disease" : [
+	"disease": [
 		{
-			"name" : "Talona's Embrace",
-			"source" : "TomboftheMummyKingsContent",
-			"page" : 4,
-			"entries" : [
+			"name": "Talona's Embrace",
+			"source": "TomboftheMummyKingsContent",
+			"page": 4,
+			"entries": [
 				"Talona's Embrace is the formal term for the plague sweeping the West-Anaurian Duchy of Gisselarre. Common folk refer to it as 'The Sand Plague' due to its magical effects on stone and sand exposed to the plague.",
 				"Infection is spread by exposure to infected bodily fluids and infected material. Within three days of exposure, victims develop a necrotizing rash. As the disease progresses, the infected's mind becomes clouded, and become violent without even noticing it. Within a tenday of infection, the infected's skin begins to slough off in infectious plague boluses.",
 				"By the second tenday, the infected loses their original personality and becomes a Cosmic Chaotic Evil plague-thrall with no goal beyond spreading the disease and serving any undead master they have."
 			]
 		}
 	],
-	"makebrewCreatureTrait" : [
+	"makebrewCreatureTrait": [
 		{
 			"name": "Grasp of Talona",
 			"entries": [
 				"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 14} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 16} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TomboftheMummyKingsContent}."
 			],
-			"source" : "TomboftheMummyKingsContent"
-		},
-		{
-			"name": "Minion",
-			"entries": [
-				"If this creature takes damage from an attack or as the result of a failed saving throw, their hit points are reduced to 0. If this creature takes damage from another effect, they die if this damage equals or exceeds their hit point maximum."
-			],
-			"source" : "TomboftheMummyKingsContent"
-		},
-		{
-			"name": "Superior Minion",
-			"entries": [
-				"If this creature takes damage from an attack or as the result of a failed saving throw, they are bloodied, or if already bloodied, their hit points are reduced to 0. If this creature takes damage from another effect, they die if this damage equals or exceeds their hit point maximum."
-			],
-			"source" : "TomboftheMummyKingsContent"
+			"source": "TomboftheMummyKingsContent"
 		}
 	]
 }
