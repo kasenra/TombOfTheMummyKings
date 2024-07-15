@@ -1346,7 +1346,13 @@
 			"size": [
 				"M"
 			],
-			"type": "aberration",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dragonborn",
+					"inquisitive"
+				]
+			},
 			"source": "TomboftheMummyKingsContent",
 			"alignment": [
 				"N",
