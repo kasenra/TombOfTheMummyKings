@@ -3283,6 +3283,58 @@
 			]
 		}
 	],
+	"itemProperty": [
+		{
+			"abbreviation": "CUM",
+			"source": "Ar20",
+			"name": "Cumbersome",
+			"page": 4,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Cumbersome",
+					"page": 4,
+					"entries": [
+						"A shield with the cumbersome property can't be effectively thrown regardless of its wielder's class features or other abilities."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "TS",
+			"source": "TomboftheMummyKingsContent",
+			"name": "Tinker-Strength",
+			"page": 5,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Tinker-Strength",
+					"page": 5,
+					"entries": [
+						"A weapon with the Tinker property can use Intelligence as its attack stat, as well as either Strength or Dexterity. This weapon can use either Intelligence or Strength.",
+						"When a Tinker weapon induces a saving throw, it uses your Artifice DC, equal to 8 + your proficiency bonus + your Intelligence modifier."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "TD",
+			"source": "TomboftheMummyKingsContent",
+			"name": "Tinker-Dexterity",
+			"page": 5,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Tinker-Dexterity",
+					"page": 5,
+					"entries": [
+						"A weapon with the Tinker property can use Intelligence as its attack stat, as well as either Strength or Dexterity. This weapon can use either Intelligence or Dexterity.",
+						"When a Tinker weapon induces a saving throw, it uses your Artifice DC, equal to 8 + your proficiency bonus + your Intelligence modifier."
+					]
+				}
+			]
+		}
+	],
 	"item": [
 		{
 			"name": "Alchemical Pressure Gasket",
@@ -3468,7 +3520,7 @@
 			"weaponCategory": "artifice",
 			"type": "R",
 			"property": [
-				"F"
+				"A"
 			],
 			"range": "40/120",
 			"dmg1": "4d6",
@@ -3556,6 +3608,74 @@
 				"This thick, tacky glue comes in a small adamantine tin and smells strongly of rotting balsam.",
 				"Spreading this substance on an open wound allows any detached biological limb to bind to the wound site as if it were a part of the wounded creature's body. After a day of setting, the creature slowly gains use of the limb over the next three days.",
 				"The effects of this are unpredictable, often dangerous, and almost always profane."
+			]
+		},
+		{
+			"name": "Inconspicuous Barding of Strength",
+			"wondrous": "true",
+			"tier": "minor",
+			"rarity": "uncommon",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				"When this barding is attached to a mount, that mount's carrying capacity increases as if it is two sizes larger. This barding has no magical aura and appears nonmagical to anything less than an Identify spell."
+			]
+		},
+		{
+			"name": "Potion of Drunkenness",
+			"wondrous": "true",
+			"tier": "minor",
+			"rarity": "common",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				"This 'potion' contains a magically concentrated alcoholic concoction. The imbiber of this potion becomes fuzzy until completing a long rest. When they wake up after that long rest, they take 1d4 psychic damage."
+			]
+		},
+		{
+			"name": "Beasthunter's Gauntlets",
+			"wondrous": "true",
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				"These spikes on these gauntlets seek the blood of prey. When the attuned creature makes an unarmed attack against the target of its hunter's mark, increase the damage die of the attack by 1. On a hit, the prey must make a DC 15 Strength Saving Throw or be knocked prone."
+			]
+		},
+		{
+			"name": "Gloves of the Drunken Master",
+			"wondrous": "true",
+			"tier": "major",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				"While the attuned creature is fuzzy, they gain a +2 bonus to attack and damage rolls using simple or unarmed weapons. When the attuned creature fails a Dexterity Saving Throw, they also gain advantage on simple and unarmed weapon attacks until the end of their next turn."
+			]
+		},
+		{
+			"name": "Alchemist's Decanter (Simple Poison)",
+			"rarity": "none",
+			"weaponCategory": "artifice",
+			"type": "M",
+			"property": [
+				"TD",
+				"A",
+				"R"
+			],
+			"dmg1": "1d4",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				"This articulated flask is calibrated to accept cartridges of Simple Poison. By flicking this flask at the proper angle, a line of poisonous fog shoots out the barrel, attacking every creature in a 10 foot line. Creatures hit by this attack must make a Constitution Saving Throw against your Artifice DC, becoming poisoned on a failed save. A target poisoned this way can re-attempt the save at the end of each of its turns."
+			]
+		},
+		{
+			"name": "",
+			"wondrous": "",
+			"tier": "",
+			"rarity": "",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				""
 			]
 		},
 		{
