@@ -1346,7 +1346,7 @@
 			"size": [
 				"M"
 			],
-			"type": "aberration",
+			"type": "humanoid",
 			"source": "TomboftheMummyKingsContent",
 			"alignment": [
 				"N",
@@ -1703,9 +1703,9 @@
 					]
 				},
 				{
-					"name": "Greataxe",
+					"name": "Greataxe +1",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d12 + 3}) slashing damage."
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d12 + 4}) slashing damage."
 					]
 				},
 				{
@@ -1794,8 +1794,8 @@
 				}
 			],
 			"hp": {
-				"formula": "1d8 + 3",
-				"average": 7
+				"formula": "6d10 + 18",
+				"average": 51
 			},
 			"speed": {
 				"walk": 30
@@ -1819,7 +1819,96 @@
 			"skill": {
 				"persuasion": "+10",
 				"deception": "+10"
-			}
+			},
+			"languages": [
+				"Common",
+				"Orcish"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Mastermind",
+					"entries": [
+						"When Reeza rolls initiative, she gives a +2 to her allies but takes a -2 to her own initiative roll."
+					]
+				},
+				{
+					"name": "Many-Arrows Heir",
+					"entries": [
+						"When Reeza is reduced to 0 hit points while at more than 1 hit point, she stays conscious with 1 hit point. Additionally, when she or an ally she commands deals a critical strike, add one extra damage dice to the roll."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Viper's Multiattack",
+					"entries": [
+						"Reeza makes two dagger attacks against a single target. If either hits, the target must make a {@dc 14} Constitution Saving Throw or become {@condition poisoned}. If the target fails this save by 3 or more, the target is {@condition unconscious} while {@condition poisoned} this way."
+					]
+				},
+				{
+					"name": "Commander's Strike",
+					"entries": [
+						"Reeza commands one of her allies to make a melee attack with advantage."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"unconscious"
+			],
+			"bonus": [
+				{
+					"name": "Twisted Orders",
+					"entries": [
+						"Reeza snaps and orders one of her allies to move, giving them 15 feet of disengaged movement."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Compulsory Interception",
+					"entries": [
+						"When one of Reeza's allies is hit by an attack, she can command a different allies also within the attack's range to take the damage instead."
+					]
+				}
+			],
+			"isNamedCreature": true,
+			"legendaryHeader": [
+				"Reeza has one Villain Action, which happens on the fifth round. If she is incapacitated when her villain action would activate, it is skipped."
+			],
+			"legendary": [
+				{
+					"name": "Black Network Pride",
+					"entries": [
+						"Reeza rallies all her allies, letting all of them move up to their movement speed and make two attacks at advantage."
+					]
+				},
+				{
+					"name": "Black Network Vengeance",
+					"entries": [
+						"If Reeza is the only surviving member of her team, and she hasn't fled for some reason, she instead collects all of her fallen allies weapons with mage hands before moving up to her movement speed and making three attacks with each, with the third of each at disadvantage."
+					]
+				}
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
 		}
 	],
 	"spell": [
@@ -2207,8 +2296,13 @@
 			},
 			"entries": [
 				"When invoking this emanation, target up to 3 willing creatures, potentially including yourself. These creatures become psionically linked, gaining the following benefits:",
-				"- All linked creatures can communicate telepathically with other linked creatures",
-				"- All linked creatures' saving throw bonuses are replaced with the average of that bonus for all linked creatures.",
+				{
+					"type": "list",
+					"items": [
+						"All linked creatures can communicate telepathically with other linked creatures",
+						"All linked creatures' saving throw bonuses are replaced with the average of that bonus for all linked creatures."
+					]
+				},
 				"If any linked creatures moves more than 60 feet away from the nearest linked creature, the link is broken and this emanation's effect ends."
 			],
 			"source": "TomboftheMummyKingsContent",
@@ -2258,9 +2352,14 @@
 					"name": "At Higher Levels",
 					"entries": [
 						"For each point of overclock, gain an additional bonus from the following:",
-						"- You can see from the soul's location while maintaining contact.",
-						"- You can hear any sounds around the soul's location",
-						"- You know what plane of existence the soul is on"
+						{
+							"type": "list",
+							"items": [
+								"You can see from the soul's location while maintaining contact.",
+								"You can hear any sounds around the soul's location",
+								"You know what plane of existence the soul is on"
+							]
+						}
 					]
 				}
 			]
@@ -2298,8 +2397,13 @@
 			},
 			"entries": [
 				"When invoking this emanation, target up to five creatures, potentially including yourself. The targets are psionically linked, gaining the following benefits:",
-				"- Linked creatures can communicate psychically with any other linked creatures.",
-				"- Psionic heat capacity is shared between linked creatures.",
+				{
+					"type": "list",
+					"items": [
+						"Linked creatures can communicate psychically with any other linked creatures.",
+						"Psionic heat capacity is shared between linked creatures."
+					]
+				},
 				"An unwilling creature may make an Intelligence Saving Throw against the initial effect of this emanation, as well as a save at the end of each of its turns."
 			],
 			"source": "TomboftheMummyKingsContent",
@@ -2385,10 +2489,15 @@
 			},
 			"entries": [
 				"Fly into a dark rage, emboldened by the Deadlord of Blood's power. While enraged this way, you gain the following effects:",
-				"- You are vulnerable to radiant damage and resistant to all other damage.",
-				"- You are unable to activate or concentrate spells or emanations",
-				"- You gain +2 damage with strength-based weapon attacks",
-				"- You receive a minimum of 2 attacks per attack action.",
+				{
+					"type": "list",
+					"items": [
+						"You are vulnerable to radiant damage and resistant to all other damage.",
+						"You are unable to activate or concentrate spells or emanations",
+						"You gain +2 damage with strength-based weapon attacks",
+						"You receive a minimum of 2 attacks per attack action."
+					]
+				},
 				"If you become {@condition incapacitated} or go a full round without taking or dealing damage this rage ends early. If this rage would end early this way, you can instead choose to extend it up to ten times.",
 				"At the end of the rage, you take one level of {@condition exhaustion} per rage extension."
 			],
@@ -2437,8 +2546,13 @@
 			},
 			"entries": [
 				"When invoking this emanation, target up to 3 creatures in range, potentially including yourself. An unwilling target has the chance to make an Intelligence Saving Throw, repeating any time they take damage. The affected creatures are psionically linked, gaining the following effects:",
-				"- All linked creatures can communicate telepathically.",
-				"- Any psionic effect targeting a linked creature affects all linked creatures."
+				{
+					"type": "list",
+					"items": [
+						"All linked creatures can communicate telepathically.",
+						"Any psionic effect targeting a linked creature affects all linked creatures."
+					]
+				}
 			],
 			"source": "TomboftheMummyKingsContent",
 			"page": 2,
@@ -2890,8 +3004,13 @@
 			"entries": [
 				"When invoking this emanation, target a creature within range. A submind splits off from your consciousness and attaches to that creature. ",
 				"If the target isn't awakened or failed its save, the submind latches onto the target's psyche. As long as the submind is attached this way, you gain the following benefits while within 100 feet:",
-				"- You know where the target is and what way it is moving",
-				"- You know if the target is aware of your presence",
+				{
+					"type": "list",
+					"items": [
+						"You know where the target is and what way it is moving",
+						"You know if the target is aware of your presence"
+					]
+				},
 				"A psionic target can make an Intelligence Saving Throw to resist the submind's presence, with the option to repeat this save once every 24 hours. An non-psionic creature can determine the presence of the sensor using a successful Intelligence (Investigation) check and attempt to shut it out using an Intelligence Saving Throw.",
 				"This emanation uses an ongoing effect; ongoing effects cost heat capacity instead of building up heat."
 			],
@@ -2903,8 +3022,13 @@
 					"name": "At Higher Levels",
 					"entries": [
 						"For each point of overclock, add one of the following effects (each effect can be chosen multiple times):",
-						"- Add another submind, targeting the same or a different creature",
-						"- Increase the tracking range by 20 feet."
+						{
+							"type": "list",
+							"items": [
+								"Add another submind, targeting the same or a different creature",
+								"Increase the tracking range by 20 feet."
+							]
+						}
 					]
 				}
 			]
@@ -3122,6 +3246,14 @@
 			"entries": [
 				"Effects involving alcohol or mundane mind-altering substances will often cause the Fuzzy condition, a special kind of poisoning.",
 				"A fuzzy creature has disadvantage on Dexterity Saving throws and Charisma checks, as well as advantage on saving throws against being frightened."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 3
+		},
+		{
+			"name": "Marked for Death",
+			"entries": [
+				"Any time this creature takes damage, it takes 1 additional force damage. If no end condition is specified in the source, this condition ends when the creature causing it becomes incapacitated, or on a long rest, whichever comes first."
 			],
 			"source": "TomboftheMummyKingsContent",
 			"page": 3
@@ -3669,40 +3801,64 @@
 			]
 		},
 		{
-			"name": "",
-			"wondrous": "",
-			"tier": "",
-			"rarity": "",
+			"name": "Gloves of Magical Honing: Magic Missile",
+			"wondrous": "true",
+			"tier": "major",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				"Created by an incredibly lazy wizard, these red-dyed cloth gloves add the following effects to the {@spell magic missile} spell.",
+				{
+					"type": "list",
+					"items": [
+						"Create one additional dart",
+						"You may transmute the damage type of the spell to fire, cold, poison, or thunder",
+						"For each dart that deals damage, apply one stack of {@condition marked for death|TomboftheMummyKingsContent}. These stacks disappear at the end of your turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Arrow of Darkness",
+			"wondrous": "true",
+			"tier": "minor",
+			"rarity": "uncommon",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				"When this piece of ammunition is is fired at a target (whether it misses or hits), it explodes in a puff of dark smoke, creating a cloud of {@spell darkness} in a 10 foot radius around the target. This cloud persists for 18 seconds."
+			]
+		},
+		{
+			"name": "Elven Longsword",
+			"rarity": "none",
+			"weaponCategory": "martial",
+			"type": "M",
+			"property": [
+				"F",
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmg2": "1d10",
+			"dmgType": "S",
 			"source": "TomboftheMummyKingsContent",
 			"entries": [
 				""
 			]
 		},
 		{
-			"name": "",
-			"wondrous": "",
-			"tier": "",
-			"rarity": "",
-			"source": "TomboftheMummyKingsContent",
-			"entries": [
-				""
-			]
-		},
-		{
-			"name": "",
-			"wondrous": "",
-			"tier": "",
-			"rarity": "",
-			"source": "TomboftheMummyKingsContent",
-			"entries": [
-				""
-			]
-		},
-		{
-			"name": "",
-			"wondrous": "",
-			"tier": "",
-			"rarity": "",
+			"name": "Light Glaive",
+			"rarity": "none",
+			"weaponCategory": "martial",
+			"type": "M",
+			"property": [
+				"F",
+				"R",
+				"H",
+				"2H"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
 			"source": "TomboftheMummyKingsContent",
 			"entries": [
 				""
@@ -3736,6 +3892,20 @@
 			"name": "Grasp of Talona",
 			"entries": [
 				"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 14} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 16} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TomboftheMummyKingsContent}."
+			],
+			"source": "TomboftheMummyKingsContent"
+		},
+		{
+			"name": "Minion",
+			"entries": [
+				"When this creature takes damage from an attack or failed save, it dies. If it takes damage from any other source, it is reduced to 0 hit points if the damage it takes is higher than its max hit points."
+			],
+			"source": "TomboftheMummyKingsContent"
+		},
+		{
+			"name": "Superior Minion",
+			"entries": [
+				"When this creature takes damage from an attack or failed save, it is bloodied, or if already bloodied, it dies. If it takes damage from any other source higher than its max hit points, it is bloodied, and if already bloodied, it dies."
 			],
 			"source": "TomboftheMummyKingsContent"
 		}
