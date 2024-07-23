@@ -3668,6 +3668,23 @@
 			],
 			"source": "TomboftheMummyKingsContent",
 			"page": 3
+		},
+		{
+			"name": "Asleep",
+			"entries" : [
+				"A magically sleeping target is {@condition unconscious} and remains that way until they take damage or another creature uses their action to slap them awake."
+			],
+			"source" : "TomboftheMummyKingsContent",
+			"page" : 3
+		},
+		{
+			"name": "Slowed",
+			"entries" : [
+				"A slowed creature's speed is halved, it takes a -2 penalty to AC and Dexterity Saving Throws, and it cannot use reactions. On its turn, a slowed creature cano only take an action or a bonus action, not both.",
+				"The attack multiplicity of a slowed creature is always 1, and if it attempts to cast a 1 action spell, it must make a DC 9 flat check or cast the spell at a casting time of 2 actions."
+			],
+			"source" : "TomboftheMummyKingsContent",
+			"page" : 3
 		}
 	],
 	"book": [
@@ -3876,6 +3893,16 @@
 					]
 				}
 			]
+		},
+		{
+			"abbreviation" : "PSI",
+			"source" : "TomboftheMummyKingsContent",
+			"name" : "Psionic Attuned",
+			"page" : 5,
+			"entries" : [
+				"This item must be attuned to by a psycker before use. Doing so incurs an ongoing cost of {{item.psi}} Heat Capacity."
+			],
+			"template" : "Psi {{item.psi}}"
 		}
 	],
 	"item": [
@@ -4270,6 +4297,150 @@
 			],
 			"dmg1": "1d8",
 			"dmgType": "S",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Acolyte's Cap",
+			"wondrous": "true",
+			"tier": "minor",
+			"rarity": "uncommon",
+			"reqAttune" : true,
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				"This jaunty little cap is sewn with a modernist interpretation of the insignia of helm.",
+				"When the wearer heals another creature, they may choose to heal themself for 1d4 hit points as well. This power can be activated a number of times equal to the wearer's proficiency bonus, refreshing on a short rest."
+			]
+		},
+		{
+			"name": "Soporific Rapier",
+			"wondrous": "true",
+			"tier": "major",
+			"rarity": "rare",
+			"type" : "M",
+			"weaponCategory" : "martial",
+			"property" : ["F"],
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"bonusWeapon": "+1",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				"You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
+				"This enchanted rapier is lined with lilac runes which have a calming effect on onlookers. When an attack from this rapier reduces a target to 0 hit points, they instead remain at 1 hit point and fall into a peaceful, magical slumber. Any melee attack against a creature thus enchanted skips making an attack roll and automatically hits.",
+				{
+					"type" : "entries",
+					"name" : "Curse",
+					"entries" : "When a creature susceptible to sleeping magic makes an attack using this weapon, they must make a DC 18 Wisdom Saving Throw. On a successful save, they yawn but are otherwise unaffected. On a failed save, they are {@condition slowed} until the beginning of their next turn. On a save failed by 5 or more, they fall {@condition asleep}."
+				}
+			]
+		},
+		{
+			"name": "Rage of Ustar (Fallen)",
+			"wondrous": true,
+			"tier": "major",
+			"rarity": "artifact",
+			"source": "TomboftheMummyKingsContent",
+			"property" : ["PSI"],
+			"psi" : 0,
+			"entries": [
+				"This mummified aboleth heart was pulled from the chest of Ustar, Blood Dripping From the Fangs of Heaven Extinguishes Only the Weak Flame. It is weak enough to provide its own psionic power in this state.",
+				"The attuned psycker gains the following benefits:",
+				{
+					"type" : "list",
+					"items" : [
+						"The attuned can speak to Ustar willingly.",
+						"The attuned gains access to the {@spell 「RAGE OF USTAR」} emanation."
+					]
+				}
+			]
+		},
+		{
+			"name": "Rage of Ustar (Baptized)",
+			"wondrous": true,
+			"tier": "major",
+			"rarity": "artifact",
+			"source": "TomboftheMummyKingsContent",
+			"property" : ["PSI"],
+			"psi" : 1,
+			"entries": [
+				"This mummified aboleth heart was pulled from the chest of Ustar, Blood Dripping From the Fangs of Heaven Extinguishes Only the Weak Flame. After its master completed the Baptism of Blood, its power has awakened, and it has become permanently bonded to them.",
+				"The attuned psycker gains the following benefits:",
+				{
+					"type" : "list",
+					"items" : [
+						"The attuned can speak to Ustar willingly.",
+						"The attuned gains access to the {@spell 「RAGE OF USTAR」} emanation."
+					]
+				}
+			]
+		},
+		{
+			"name": "Rage of Ustar (Conquerer)",
+			"wondrous": true,
+			"tier": "major",
+			"rarity": "artifact",
+			"source": "TomboftheMummyKingsContent",
+			"property" : ["PSI"],
+			"psi" : -1,
+			"entries": [
+				"This mummified aboleth heart was pulled from the chest of Ustar, Blood Dripping From the Fangs of Heaven Extinguishes Only the Weak Flame. With the conclusion of The New War, the true power held within this artifact has awakened. Hell upon the world.",
+				"The attuned psycker gains the following benefits:",
+				{
+					"type" : "list",
+					"items" : [
+						"The attuned can speak to Ustar willingly.",
+						"The attuned gains access to the {@spell 「RAGE OF USTAR」} emanation."
+					]
+				}
+			]
+		},
+		{
+			"name": "",
+			"wondrous": "",
+			"tier": "",
+			"rarity": "",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "",
+			"wondrous": "",
+			"tier": "",
+			"rarity": "",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "",
+			"wondrous": "",
+			"tier": "",
+			"rarity": "",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "",
+			"wondrous": "",
+			"tier": "",
+			"rarity": "",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "",
+			"wondrous": "",
+			"tier": "",
+			"rarity": "",
 			"source": "TomboftheMummyKingsContent",
 			"entries": [
 				""
