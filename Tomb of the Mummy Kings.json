@@ -1909,6 +1909,163 @@
 			"savingThrowForced": [
 				"constitution"
 			]
+		},
+		{
+			"name": "Paladin in Gold",
+			"isNamedCreature": true,
+			"source": "TomboftheMummyKingsContent",
+			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"paladin"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|PHB}",
+						"{@item shield|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 55,
+				"formula": "10d8 + 10"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 13,
+			"int": 12,
+			"wis": 13,
+			"cha": 17,
+			"save": {
+				"wis": "+3",
+				"cha": "+5",
+				"str": "+5"
+			},
+			"skill": {
+				"insight": "+3",
+				"persuasion": "+5",
+				"athletics": "+5",
+				"religion": "+3"
+			},
+			"passive": 11,
+			"conditionImmune": [
+				"frightened"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Strongheart casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 13}):"
+					],
+					"daily": {
+						"3e": [
+							"{@spell bless}",
+							"{@spell command}"
+						],
+						"1e": [
+							"{@spell gentle repose}",
+							"{@spell lesser restoration}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The paladin makes two Holy Strike attacks."
+					]
+				},
+				{
+					"name": "Holy Strike",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, plus 6 ({@damage 1d6 + 3}) radiant damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Protect Another",
+					"entries": [
+						"When a creature the paladin can see attacks another creature that is within 5 feet of them, the paladin can use their reaction to impose disadvantage on the attack roll."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Strongheart",
+				"source": "WBtW"
+			},
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/WBtW/Strongheart.webp"
+						}
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Castigate the Unholy",
+					"entries": [
+						"When a creature misses the paladin with an attack, the paladin can choose to deal {@damage 1d4} radiant damage to them."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Vow of Gold",
+					"entries": [
+						"The paladin wreathes a creature in golden light. Until the end of the paladin's next turn, the target creature gains a +2 to armor class, while the paladin takes a -2 penalty to their own armor class."
+					]
+				}
+			],
+			"damageTags": [
+				"R",
+				"S"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			]
 		}
 	],
 	"spell": [
