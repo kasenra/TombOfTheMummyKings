@@ -16,6 +16,127 @@
 	},
 	"monster": [
 		{
+			"name": "Xol (6th Level)",
+			"source": "TomboftheMummyKingsContent",
+			"page": 1,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Companion"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"special": "49"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 30
+			},
+			"str": 16,
+			"dex": 8,
+			"con": 14,
+			"int": 6,
+			"wis": 10,
+			"cha": 6,
+			"save": {
+				"str": "+6",
+				"dex": "+2"
+			},
+			"skill": {
+				"athletics": "+6",
+				"perception": "+3",
+				"investigation": "+1"
+			},
+			"senses": [
+				"darkvision 30 ft.",
+				"tremorsense 60 ft."
+			],
+			"action": [
+				{
+					"name": "Signature Attack (Tongue Lash)",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}{@damage 1d6+3} acid damage."
+					]
+				},
+				{
+					"name": "1st Level: Distracting Attack (2 Ferocity)",
+					"entries": [
+						"The worm makes a signature attack. On a hit, the attack deals its normal effects, and the next attack roll made against the target before the start of the worm's next turn has advantage."
+					]
+				},
+				{
+					"name": "3rd Level: Tongue Grab (5 Ferocity)",
+					"entries": [
+						"The worm makes a signature attack. On a hit, the target is also {@condition grappled} (escape {@dc 13}). Until this grapple ends, the target is {@condition restrained} and the worm can't make a signature attack against another target."
+					]
+				},
+				{
+					"name": "5th Level: Swallow (8 Ferocity)",
+					"entries": [
+						"The worm attempts to swallow a Medium or smaller creature within 5 feet of them. The target must make a {@dc 13} Dexterity saving throw. On a failed save, the target takes {@damage 3d6} bludgeoning damage and is swallowed. On a successful save, the target takes half as much damage and isn't swallowed. The worm can have only one target swallowed at a time.",
+						"A swallowed target is {@condition blinded} and {@condition restrained}, they have total cover against attacks and other effects outside the worm, and they take {@damage 3d6} acid damage at the start of each of the worm's turns. Whenever the worm takes damage, they must succeed on a Constitution saving throw or regurgitate the swallowed creature, who falls {@condition prone} in an unoccupied space within 5 feet of the worm. The DC for this saving throw equals 10 or half the triggering damage, whichever is higher. If the worm is {@condition incapacitated} or dies, a swallowed creature is no longer {@condition restrained} by the worm and can escape from the corpse using 5 feet of movement, exiting {@condition prone}."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Item Storage",
+					"entries": [
+						"The worm can swallow an object without harming it by storing the object in a second stomach. They can use this bonus action again to regurgitate a specific stored object without disturbing any other objects in their second stomach. A regurgitated object lands in an unoccupied space within 5 feet of the worm.",
+						"The worm's second stomach can hold up to 30 pounds of objects, not exceeding a volume of 10 cubic feet."
+					]
+				}
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"actionTags": [
+				"Swallow"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"restrained"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/FleeMortals/token/Kingfissure Worm Companion.png"
+			},
+			"foundryTokenScale": 1.5,
+			"reaction": [
+				{
+					"name": "Psionic Link",
+					"entries": [
+						"Xol has a psionic heat capacity of 3. When his caregiver must make an Intelligence Saving throw, he can use his reaction to give them a bonus of +1 to +3, taking the same amount of psionic heat. If Xol goes over his heat capacity, his ferocity increases by 10, as well as undergoing a standard Psychic Crisis."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
 			"name": "Plague-Cursed Sahuagin",
 			"source": "TomboftheMummyKingsContent",
 			"page": 1,
@@ -2065,6 +2186,139 @@
 			],
 			"savingThrowForcedSpell": [
 				"wisdom"
+			]
+		},
+		{
+			"name": "Eternal Guardian",
+			"source": "TomboftheMummyKingsContent",
+			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "construct",
+				"tags": [
+					"eternal guardian"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 58,
+				"formula": "9d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 14,
+			"int": 14,
+			"wis": 11,
+			"cha": 10,
+			"passive": 12,
+			"cr": "3",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The veteran makes three Fist of Stone attacks, the third at disadvantage."
+					]
+				},
+				{
+					"name": "Fist of Stone",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage, plus 5 ({@damage 1d6 + 2}) force damage."
+					]
+				},
+				{
+					"name": "Burial Rites Blaster",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range 30/60 ft., one target. {@h}25 ({@damage 6d6 + 4}) force damage. On a hit, the guardian may choose to pull the target 10 feet closer."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"coastal",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"underdark",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/veteran.mp3"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"save": {
+				"con": "+4",
+				"int": "+4",
+				"str": "+5"
+			},
+			"skill": {
+				"perception": "+2",
+				"investigation": "+4",
+				"history": "+4"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Heart Stone",
+					"entries": [
+						"This guardian is powered by a singular Heart Stone. Every heart stone held by an Eternal Guardian gives it a +1 bonus to attack rolls, damage rolls, and saving throws."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"bonus": [
+				{
+					"name": "Ancient Engineering",
+					"entries": [
+						"The guardian stretches out a hand, reaching out to all the heart stones within defeated eternal guardians within 30 feet and incorporating them into its chassis."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			},
+			"damageTags": [
+				"B",
+				"O"
 			]
 		}
 	],
