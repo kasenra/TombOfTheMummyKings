@@ -2320,6 +2320,274 @@
 				"B",
 				"O"
 			]
+		},
+		{
+			"name": "LE-KOYETTE, TRUE LOVE'S LAST KISS FILLS HER MOUTH WITH POISON AND SHE SWALLOWS IT ALL",
+			"source": "TomboftheMummyKingsContent",
+			"page": 1,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"Siren",
+					"Controller"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 204,
+				"formula": "24d10 + 72"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 60
+			},
+			"str": 16,
+			"dex": 19,
+			"con": 17,
+			"int": 14,
+			"wis": 16,
+			"cha": 21,
+			"save": {
+				"int": "+5",
+				"wis": "+7",
+				"cha": "+9"
+			},
+			"skill": {
+				"insight": "+7",
+				"nature": "+5",
+				"perception": "+7",
+				"performance": "+9",
+				"persuasion": "+9",
+				"deception": "+9"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"fire"
+			],
+			"languages": [
+				"Aquan",
+				"Common",
+				"Sylvan"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The riverine casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 17}):"
+					],
+					"daily": {
+						"1": [
+							"{@spell control weather} (only creating rain)",
+							"{@spell rain to arrows|ABYSS}"
+						],
+						"2": [
+							"{@spell jet of water|Ar7}",
+							"{@spell tidal wave|XGE}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Matron of the Seas",
+					"entries": [
+						"Le-Koyette can breathe air and water. When she casts jet of water or tidal wave within her lair, the water level rises by one."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Le-Koyette fails a saving throw, she can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The riverine makes two Flood Strike attacks."
+					]
+				},
+				{
+					"name": "Flood Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage plus 10 ({@damage 3d6}) cold damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Ocean's Call",
+					"entries": [
+						"Le-Koyette teleports to any 5 foot square of contiguous standing water within 120 feet."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious",
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AQ",
+				"C",
+				"S"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Riverine",
+				"source": "JttRC"
+			},
+			"fluff": {
+				"name": "Riverine",
+				"source": "JttRC",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"More than mere waterway guardians, riverines are embodiments of particular rivers. These spirits of nature take shape to defend their waters and interact with those who travel along their currents. From the waist up, riverines have skin the color of the waters they protect but are otherwise humanlike in appearance. From the waist down, they can manifest either humanlike legs or churning gouts of water. A riverine's personality reflects the nature of the river it arises from—some are lethargic while others are wild and reckless."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "A Riverine's Lair",
+								"entries": [
+									"Some riverines enjoy reverence akin to worship. Their likenesses are cast as statues and housed in temples, and worshipers act as agents between the river spirits and the people who revere them. These temples often become the home of the riverine itself, serving as its lair, though other nexuses of power along the river's path—such as its source or a significant waterfall—can also be used as lairs by a riverine.",
+									"A riverine encountered in its lair has a challenge rating of 13 (10,000 XP)."
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"On initiative count 20 (losing initiative ties), the riverine can take one of the following lair actions; the riverine can't take the same lair action two rounds in a row:",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "entries",
+												"name": "Phantasmal Mist",
+												"entries": [
+													"The riverine creates fog around a creature it can see within 120 feet of it. The target must succeed on a {@dc 17} Wisdom saving throw or take 5 ({@damage 1d10}) psychic damage and be {@condition frightened} of the riverine until the end of the target's next turn."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "River's Fury",
+												"entries": [
+													"The riverine conjures swampy ground that briefly covers the ground in a 20-foot square the riverine can see within 120 feet of itself. That area becomes {@quickref difficult terrain||3} until initiative count 20 on the next round. Any creature, other than the riverine, that enters the affected area or starts its turn there takes 7 ({@damage 2d6}) cold damage."
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Regional Effects",
+								"entries": [
+									"The region containing a riverine's lair flourishes under the magic of the riverine's presence, which creates one or more of the following effects:",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Clearwater Sight",
+												"entries": [
+													"The waters of the river serve as a conduit for the riverine's consciousness. As an action, the riverine can cast the {@spell clairvoyance} spell, requiring no spell components, targeting any point along the river it's connected to."
+												]
+											},
+											{
+												"type": "item",
+												"name": "River's Bounty",
+												"entries": [
+													"Freshwater fauna and flora reproduce rapidly and thrive in the waters within 1 mile of the riverine's lair. Foraging in these waters yields twice the usual amount of food."
+												]
+											},
+											{
+												"type": "item",
+												"name": "Spirit Guidance",
+												"entries": [
+													"Tracks appear along the banks of the river within 6 miles of the riverine's lair. The tracks lead to potential shelters and safe passages across the river's waters, while also leading away from areas that the riverine prefers to remain undisturbed."
+												]
+											}
+										]
+									},
+									"If the riverine dies, the flora and fauna return to normal levels, and its river dries out over the course of {@dice 1d10} days. All other effects cease immediately."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/JttRC/Riverine.webp"
+						},
+						"credit": "Claudio Pozas"
+					}
+				]
+			},
+			"legendaryHeader": [
+				"Le-Koyette has four villain actions used after the turns of hostile creatures. Each corresponds to a round, used in order.",
+				"Additionally, when Le-Koyette regenerates from her canopic, she activates Hell Upon the World: "
+			],
+			"damageTags": [
+				"B",
+				"C"
+			],
+			"damageTagsSpell": [
+				"B"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"strength"
+			]
 		}
 	],
 	"spell": [
@@ -3671,20 +3939,20 @@
 		},
 		{
 			"name": "Asleep",
-			"entries" : [
+			"entries": [
 				"A magically sleeping target is {@condition unconscious} and remains that way until they take damage or another creature uses their action to slap them awake."
 			],
-			"source" : "TomboftheMummyKingsContent",
-			"page" : 3
+			"source": "TomboftheMummyKingsContent",
+			"page": 3
 		},
 		{
 			"name": "Slowed",
-			"entries" : [
+			"entries": [
 				"A slowed creature's speed is halved, it takes a -2 penalty to AC and Dexterity Saving Throws, and it cannot use reactions. On its turn, a slowed creature cano only take an action or a bonus action, not both.",
 				"The attack multiplicity of a slowed creature is always 1, and if it attempts to cast a 1 action spell, it must make a DC 9 flat check or cast the spell at a casting time of 2 actions."
 			],
-			"source" : "TomboftheMummyKingsContent",
-			"page" : 3
+			"source": "TomboftheMummyKingsContent",
+			"page": 3
 		}
 	],
 	"book": [
@@ -3895,14 +4163,21 @@
 			]
 		},
 		{
-			"abbreviation" : "PSI",
-			"source" : "TomboftheMummyKingsContent",
-			"name" : "Psionic Attuned",
-			"page" : 5,
-			"entries" : [
-				"This item must be attuned to by a psycker before use. Doing so incurs an ongoing cost of {{item.psi}} Heat Capacity."
+			"abbreviation": "PSI",
+			"source": "TomboftheMummyKingsContent",
+			"name": "Psionic Attuned",
+			"page": 5,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Psionic Attuned",
+					"page": 5,
+					"entries": [
+						"This item must be attuned to by a psycker before use. Doing so incurs an ongoing cost of {{item.psi}} Heat Capacity."
+					]
+				}
 			],
-			"template" : "Psi {{item.psi}}"
+			"template": "Psi {{item.psi}}"
 		}
 	],
 	"item": [
@@ -4307,7 +4582,7 @@
 			"wondrous": "true",
 			"tier": "minor",
 			"rarity": "uncommon",
-			"reqAttune" : true,
+			"reqAttune": true,
 			"source": "TomboftheMummyKingsContent",
 			"entries": [
 				"This jaunty little cap is sewn with a modernist interpretation of the insignia of Helm.",
@@ -4319,9 +4594,11 @@
 			"wondrous": "true",
 			"tier": "major",
 			"rarity": "rare",
-			"type" : "M",
-			"weaponCategory" : "martial",
-			"property" : ["F"],
+			"type": "M",
+			"weaponCategory": "martial",
+			"property": [
+				"F"
+			],
 			"dmg1": "1d8",
 			"dmgType": "P",
 			"bonusWeapon": "+1",
@@ -4330,9 +4607,11 @@
 				"You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
 				"This enchanted rapier is lined with lilac runes which have a calming effect on onlookers. When an attack from this rapier reduces a target to 0 hit points, they instead remain at 1 hit point and fall into a peaceful, magical slumber. Any melee attack against a creature thus enchanted skips making an attack roll and automatically hits.",
 				{
-					"type" : "entries",
-					"name" : "Curse",
-					"entries" : "When a creature susceptible to sleeping magic makes an attack using this weapon, they must make a DC 18 Wisdom Saving Throw. On a successful save, they yawn but are otherwise unaffected. On a failed save, they are {@condition slowed} until the beginning of their next turn. On a save failed by 5 or more, they fall {@condition asleep}."
+					"type": "entries",
+					"name": "Curse",
+					"entries": [
+						"When a creature susceptible to sleeping magic makes an attack using this weapon, they must make a DC 18 Wisdom Saving Throw. On a successful save, they yawn but are otherwise unaffected. On a failed save, they are {@condition slowed} until the beginning of their next turn. On a save failed by 5 or more, they fall {@condition asleep}."
+					]
 				}
 			]
 		},
@@ -4342,14 +4621,16 @@
 			"tier": "major",
 			"rarity": "artifact",
 			"source": "TomboftheMummyKingsContent",
-			"property" : ["PSI"],
-			"psi" : 0,
+			"property": [
+				"PSI"
+			],
+			"psi": 0,
 			"entries": [
 				"This mummified aboleth heart was pulled from the chest of Ustar, Blood Dripping From the Fangs of Heaven Extinguishes Only the Weak Flame. It is weak enough to provide its own psionic power in this state.",
 				"The attuned psycker gains the following benefits:",
 				{
-					"type" : "list",
-					"items" : [
+					"type": "list",
+					"items": [
 						"The attuned can speak to Ustar willingly.",
 						"The attuned gains access to the {@spell 「RAGE OF USTAR」} emanation."
 					]
@@ -4362,14 +4643,16 @@
 			"tier": "major",
 			"rarity": "artifact",
 			"source": "TomboftheMummyKingsContent",
-			"property" : ["PSI"],
-			"psi" : 1,
+			"property": [
+				"PSI"
+			],
+			"psi": 1,
 			"entries": [
 				"This mummified aboleth heart was pulled from the chest of Ustar, Blood Dripping From the Fangs of Heaven Extinguishes Only the Weak Flame. After its master completed the Baptism of Blood, its power has awakened, and it has become permanently bonded to them.",
 				"The attuned psycker gains the following benefits:",
 				{
-					"type" : "list",
-					"items" : [
+					"type": "list",
+					"items": [
 						"The attuned can speak to Ustar willingly.",
 						"The attuned gains access to the {@spell 「RAGE OF USTAR」} emanation."
 					]
@@ -4382,14 +4665,16 @@
 			"tier": "major",
 			"rarity": "artifact",
 			"source": "TomboftheMummyKingsContent",
-			"property" : ["PSI"],
-			"psi" : -1,
+			"property": [
+				"PSI"
+			],
+			"psi": -1,
 			"entries": [
 				"This mummified aboleth heart was pulled from the chest of Ustar, Blood Dripping From the Fangs of Heaven Extinguishes Only the Weak Flame. With the conclusion of The New War, the true power held within this artifact has awakened. Hell upon the world.",
 				"The attuned psycker gains the following benefits:",
 				{
-					"type" : "list",
-					"items" : [
+					"type": "list",
+					"items": [
 						"The attuned can speak to Ustar willingly.",
 						"The attuned gains access to the {@spell 「RAGE OF USTAR」} emanation."
 					]
