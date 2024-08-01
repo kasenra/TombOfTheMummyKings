@@ -16,7 +16,7 @@
 	},
 	"monster": [
 		{
-			"name": "Xol (6th Level)",
+			"name": "Xol (6th-8th Level)",
 			"source": "TomboftheMummyKingsContent",
 			"page": 1,
 			"size": [
@@ -2587,6 +2587,168 @@
 			"savingThrowForcedSpell": [
 				"dexterity",
 				"strength"
+			]
+		},
+		{
+			"name": "Plaguehulk",
+			"source": "TomboftheMummyKingsContent",
+			"page": 1,
+			"size": [
+				"H"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d12 + 126",
+				"average": 243
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 7,
+			"con": 24,
+			"int": 2,
+			"wis": 8,
+			"cha": 4,
+			"save": {
+				"str": "+9",
+				"con": "+11",
+				"dex": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Freedom of Movement",
+					"entries": [
+						"The plaguehulk ignores difficult terrain, and magical effects can't reduce its speed or cause it to be {@condition restrained}. It can spend 5 feet of movement and 5 hit points to escape from nonmagical restraints or being {@condition grappled}."
+					]
+				},
+				{
+					"name": "Late-Stage Embrace",
+					"entries": [
+						"When the plaguehulk is hit by slashing, piercing or lightning damage, it sloughs of plague boluses, and every creature within 5 feet must make a {@dc 15} Constitution Saving Throw against {@disease Talona's Embrace |TombOfTheMummyKingsContent} exposure and {@damage 2d4} poison damage. A creature that passes this save is immune to the disease for the rest of the round."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The leechwalker makes two melee attacks."
+					]
+				},
+				{
+					"name": "Fist of Talona",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) bludgeoning damage, plus 3 ({@damage 1d6}) poison damage. On a hit, target must make a {@dc 10} Constitution Saving Throw against {@disease Talona's Embrace |TombOfTheMummyKingsContent} exposure and {@damage 2d4} poison damage. A creature that passes this save is immune to the disease for the rest of the round."
+					]
+				},
+				{
+					"name": "Bite of Talona",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage, plus 7 ({@damage 2d6}) poison damage. On a hit, target must make a {@dc 17} Constitution Saving Throw against {@disease Talona's Embrace |TombOfTheMummyKingsContent} exposure and {@damage 2d4} poison damage. A creature that passes this save is immune to the disease for the rest of the round."
+					]
+				},
+				{
+					"name": "Improvised Weapon (Pillar)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 15 ft. line, one target. {@h}21 ({@damage 3d10 + 5}) bludgeoning damage. "
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/4It7zrY.png",
+			"fluff": {},
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"legendaryHeader": [
+				"The plaguehulk encountered in the Royal Observatory has four villain actions, one taken per round, each at the end of an opponent's turn."
+			],
+			"legendary": [
+				{
+					"name": "Turn 1: Rage Beyond Life",
+					"entries": [
+						"The plaguehulk roars and charges down a foe, attempting to grapple them. On a success, it makes two bite attacks against them, and they are {@condition grappled}. On a failure, it makes one bite attack against them and they are {@condition prone}."
+					]
+				},
+				{
+					"name": "Turn 2: Armament of Rot",
+					"entries": [
+						"The plaguehulk takes hold of one of the supports for The Ruby Lens, prying the column free and wielding it in one hand as a weapon. It immediately makes one Pillar attack."
+					]
+				},
+				{
+					"name": "Turn 3: <>",
+					"entries": [
+						"Grab a second pillar"
+					]
+				},
+				{
+					"name": "Turn 4: <>",
+					"entries": [
+						"Grab a third pillar... causing the telescope to collapse."
+					]
+				}
+			],
+			"skill": {
+				"athletics": "+9"
+			},
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution"
 			]
 		}
 	],
