@@ -4879,6 +4879,105 @@
 			]
 		},
 		{
+			"name": "Wraps of the Elementalist",
+			"wondrous": "true",
+			"tier": "major",
+			"rarity": "rare",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				"While you are wearing these wraps, your unarmed strikes are considered magical, and you receive a +1 bonus to the attack and damage rolls of your unarmed strikes.",
+				"Additionally, a monk wearing these wraps can channel their primal energies and add 1d4 thunder, fire, poison, or cold damage to your unarmed strikes.",
+				{
+					"type" : "entries",
+					"name" : "Secret",
+					"entries" : ["A large creature unlocks the full power of these wraps, increasing the elemental dice to 1d6"] 
+				}
+			]
+		},
+		{
+			"name": "Blood Astronomer's Vial (Aboleth)",
+			"wondrous": "true",
+			"tier": "major",
+			"rarity": "uncommon",
+			"reqAttune" : "by a sorcerer",
+			"reqAttuneTags" : [{
+				"class" : "sorcerer"
+			}],
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				"While attuned to this vial, you can use it as a spellcasting focus, and you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your sorcerer spells.",
+				"In addition, you gain the following effects from the aboleth blood in this vial:",
+				{
+					"type": "list",
+					"items": [
+						"Your cantrips deal additional acid damage equal to your Constitution modifier.",
+						"Once per day, when spending hit dice during a short rest, you may regain 5 sorcery points.",
+						"You treat the spells {@spell heroism}, {@spell enthrall}, and {@spell compulsion} as known spells."
+					]
+				}
+			]
+		},
+		{
+			"name": "Saddle of Stability",
+			"wondrous": "true",
+			"tier": "minor",
+			"rarity": "common",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				"This magical saddle attaches via magical means, connecting safely to any consenting creature over 10 minutes. While the attached creature is used as a mount, the rider cannot fall off unless they choose to do so, even while their mount is burrowing, flying, climbing, or swimming."
+			]
+		},
+		{
+			"name": "+1 Astral Cutlass",
+			"wondrous": "true",
+			"tier": "major",
+			"rarity": "rare",
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"L"
+			],
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"sword": true,
+			"weapon": true,
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				"This cutlass is forged of a light alloy which feels warm to the touch and leaves a rash with prolonged skin contact. This sword is likely not safe for extended use.",
+				"Attacks from this weapon deal an extra 1d4 radiant damage to any target previously cut by any Astral weapon."
+			]
+		},
+		{
+			"name": "",
+			"wondrous": "",
+			"tier": "",
+			"rarity": "",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "",
+			"wondrous": "",
+			"tier": "",
+			"rarity": "",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "",
+			"wondrous": "",
+			"tier": "",
+			"rarity": "",
+			"source": "TomboftheMummyKingsContent",
+			"entries": [
+				""
+			]
+		},
+		{
 			"name": "",
 			"wondrous": "",
 			"tier": "",
