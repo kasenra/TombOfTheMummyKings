@@ -2651,7 +2651,7 @@
 				{
 					"name": "Late-Stage Embrace",
 					"entries": [
-						"When the plaguehulk is hit by slashing, piercing or lightning damage, it sloughs of plague boluses, and every creature within 5 feet must make a {@dc 15} Constitution Saving Throw against {@disease Talona's Embrace |TombOfTheMummyKingsContent} exposure and {@damage 2d4} poison damage. A creature that passes this save is immune to the disease for the rest of the round."
+						"When the plaguehulk is hit by slashing, piercing or lightning damage, it sloughs off plague boluses, and every creature within 5 feet must make a {@dc 15} Constitution Saving Throw against {@disease Talona's Embrace |TombOfTheMummyKingsContent} exposure and {@damage 3d4} poison damage. A creature that passes this save is immune to the disease for the rest of the round."
 					]
 				}
 			],
@@ -2659,25 +2659,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The leechwalker makes two melee attacks."
+						"The plaguehulk makes two melee attacks."
 					]
 				},
 				{
 					"name": "Fist of Talona",
 					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) bludgeoning damage, plus 3 ({@damage 1d6}) poison damage. On a hit, target must make a {@dc 10} Constitution Saving Throw against {@disease Talona's Embrace |TombOfTheMummyKingsContent} exposure and {@damage 2d4} poison damage. A creature that passes this save is immune to the disease for the rest of the round."
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) bludgeoning damage, plus 3 ({@damage 1d6}) poison damage. On a hit, target must make a {@dc 10} Constitution Saving Throw against {@disease Talona's Embrace |TombOfTheMummyKingsContent} exposure and {@damage 3d4} poison damage. A creature that passes this save is immune to the disease for the rest of the round."
 					]
 				},
 				{
 					"name": "Bite of Talona",
 					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage, plus 7 ({@damage 2d6}) poison damage. On a hit, target must make a {@dc 17} Constitution Saving Throw against {@disease Talona's Embrace |TombOfTheMummyKingsContent} exposure and {@damage 2d4} poison damage. A creature that passes this save is immune to the disease for the rest of the round."
-					]
-				},
-				{
-					"name": "Improvised Weapon (Pillar)",
-					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 15 ft. line, one target. {@h}21 ({@damage 3d10 + 5}) bludgeoning damage. "
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage, plus 7 ({@damage 2d6}) poison damage. On a hit, target must make a {@dc 16} Constitution Saving Throw against {@disease Talona's Embrace |TombOfTheMummyKingsContent} exposure and {@damage 3d4} poison damage. A creature that passes this save is immune to the disease for the rest of the round."
 					]
 				}
 			],
@@ -2706,35 +2700,6 @@
 					"cond": true
 				}
 			],
-			"legendaryHeader": [
-				"The plaguehulk encountered in the Royal Observatory has four villain actions, one taken per round, each at the end of an opponent's turn."
-			],
-			"legendary": [
-				{
-					"name": "Turn 1: Rage Beyond Life",
-					"entries": [
-						"The plaguehulk roars and charges down a foe, attempting to grapple them. On a success, it makes two bite attacks against them, and they are {@condition grappled}. On a failure, it makes one bite attack against them and they are {@condition prone}."
-					]
-				},
-				{
-					"name": "Turn 2: Armament of Rot",
-					"entries": [
-						"The plaguehulk takes hold of one of the supports for The Ruby Lens, prying the column free and wielding it in one hand as a weapon. It immediately makes one Pillar attack."
-					]
-				},
-				{
-					"name": "Turn 3: <>",
-					"entries": [
-						"Grab a second pillar"
-					]
-				},
-				{
-					"name": "Turn 4: <>",
-					"entries": [
-						"Grab a third pillar... causing the telescope to collapse."
-					]
-				}
-			],
 			"skill": {
 				"athletics": "+9"
 			},
@@ -2742,9 +2707,180 @@
 				"MW",
 				"RCH"
 			],
+			"variant": [
+				{
+					"name": "Observatory",
+					"entries": [
+						"The Plaguehulk within The Royal Observatory has special contextual abilities, as follows below:",
+						{
+							"type": "entries",
+							"name": "Actions",
+							"entries": [
+								{
+									"name": "Improvised Weapon (Pillar)",
+									"entries": [
+										"{@atk mw} {@hit 9} to hit, reach 15 ft. line, one target. {@h}21 ({@damage 3d10 + 5}) bludgeoning damage. Targets are knocked {@condition prone} on a hit."
+									]
+								},
+								{
+									"name": "Improvised Weapon (Pillars)",
+									"entries": [
+										"{@atk mw} {@hit 9} to hit, reach 15 ft. radius, one target. {@h}21 ({@damage 3d10 + 5}) bludgeoning damage. Targets are knocked {@condition prone} on a hit. If the plaguehulk does this attack while another standing pillar is in the radius, it collapses the observation platform, reducing the plaguehulk to 1 hit point and 0 feet of movement. It will only make this mistake if the attack would hit 3 or more targets."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Villain Actions",
+							"entries": [
+								{
+									"name": "Turn 1: Rage Beyond Life",
+									"entries": [
+										"The plaguehulk roars and charges down a foe, attempting to grapple them. On a success, it makes two bite attacks against them, and they are {@condition grappled}. On a failure, it makes one bite attack against them and they are {@condition prone}."
+									]
+								},
+								{
+									"name": "Turn 2: Armament of Rot",
+									"entries": [
+										"The plaguehulk takes hold of one of the supports for The Ruby Lens, prying the column free and wielding it in one hand as a weapon. It immediately makes one Pillar attack."
+									]
+								},
+								{
+									"name": "Turn 3: Ferocious Arms",
+									"entries": [
+										"The plaguehulk pulls off another support pillar, dual wielding the two pillars as the observation platform above wobbles. It then moves up to its movement and makes one Pillars attack."
+									]
+								},
+								{
+									"name": "Turn 4: Hubris",
+									"entries": [
+										"The plaguehulk attempts to pull off a third support pillar, resulting in the observation platform collapsing and crushing it, reducing it to one hit point and 0 feet of movement."
+									]
+								}
+							]
+						}
+					],
+					"type": "variant"
+				}
+			],
 			"damageTags": [
 				"B",
 				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Plaguespitter",
+			"source": "TomboftheMummyKingsContent",
+			"page": 1,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"human",
+					"Artillery"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				15,
+				{
+					"ac": 16,
+					"condition": "with sticky shield"
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 18",
+				"average": 45
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 14,
+			"cha": 14,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+6"
+			},
+			"passive": 14,
+			"languages": [
+				"Plague-Cursed"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Viral Mind",
+					"entries": [
+						"The plaguespitter's limited mind sees all creatures infected with {@disease Talona's Embrace | TombOfTheMummyKingsContent} as allies innately."
+					]
+				},
+				{
+					"name": "Sticky Goop",
+					"entries": [
+						"The plaguespitter is immune to forced movement effects, unless it chooses to cooperate."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Sickening Mucus",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 100/400 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage. The target must succeed on a {@dc 13} Constitution Saving Throw or be afflicted with {@disease Talona's Embrace | TombOfTheMummyKingsContent}. A creature who succeeds on this saving throw is immune to the effect until the end of the round."
+					]
+				},
+				{
+					"name": "Carrion Devourer",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 4}) piercing damage. When the plaguespitter hits a creature with this attack, it gains {@dice 2d4} Temporary Hit Points."
+					]
+				},
+				{
+					"name": "Virulent Webbing {@recharge 5}",
+					"entries": [
+						"The plaguespitter fires a massive glob of sticky goop, creating a 10-foot radius puddle of sticky goop with the effects of the web spell with a DC of 13."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"AOE"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/FleeMortals/token/Human Trickshot.png"
+			},
+			"foundryTokenScale": 1.5,
+			"save": {
+				"con": "+5"
+			},
+			"immune": [
+				"poison"
+			],
+			"resist": [
+				"necrotic"
+			],
+			"bonus": [
+				{
+					"name": "Sticky Shield",
+					"entries": [
+						"The plaguespitter volleys a thick mucus-like resin onto an ally, giving it +1 AC until the end of its next turn."
+					]
+				}
+			],
+			"damageTags": [
 				"P"
 			],
 			"savingThrowForced": [
@@ -4849,9 +4985,13 @@
 			"tier": "major",
 			"rarity": "rare",
 			"reqAttune": "by a wizard",
-			"reqAttuneTags": [{"class" : "wizard"}],
+			"reqAttuneTags": [
+				{
+					"class": "wizard"
+				}
+			],
 			"ac": 14,
-			"type" : "MA",
+			"type": "MA",
 			"armor": true,
 			"source": "TomboftheMummyKingsContent",
 			"entries": [
@@ -4870,8 +5010,10 @@
 			"mace": true,
 			"weapon": "true",
 			"type": "M",
-			"property" : ["TS"],
-			"bonusWeapon" : "+1",
+			"property": [
+				"TS"
+			],
+			"bonusWeapon": "+1",
 			"source": "TomboftheMummyKingsContent",
 			"entries": [
 				"This aurix-trimmed mace was created by Cateline Lathalas, one of the twin founders of The Royal Observatory as a tool of self-defense. It is adorned with a glittering insignia of Correllion, which hides a secret mechanism. Cateline passed before her sister, who chose to inter her here, underneath the culmination of their life's work. From its spot above above its creator's tomb, this weapon has seen civilizations in Anauroch be born and die dozens of times. None can say how much more bloodshed it can bear.",
@@ -4888,9 +5030,11 @@
 				"While you are wearing these wraps, your unarmed strikes are considered magical, and you receive a +1 bonus to the attack and damage rolls of your unarmed strikes.",
 				"Additionally, a monk wearing these wraps can channel their primal energies and add 1d4 thunder, fire, poison, or cold damage to your unarmed strikes.",
 				{
-					"type" : "entries",
-					"name" : "Secret",
-					"entries" : ["A large creature unlocks the full power of these wraps, increasing the elemental dice to 1d6"] 
+					"type": "entries",
+					"name": "Secret",
+					"entries": [
+						"A large creature unlocks the full power of these wraps, increasing the elemental dice to 1d6"
+					]
 				}
 			]
 		},
@@ -4899,10 +5043,12 @@
 			"wondrous": "true",
 			"tier": "major",
 			"rarity": "uncommon",
-			"reqAttune" : "by a sorcerer",
-			"reqAttuneTags" : [{
-				"class" : "sorcerer"
-			}],
+			"reqAttune": "by a sorcerer",
+			"reqAttuneTags": [
+				{
+					"class": "sorcerer"
+				}
+			],
 			"source": "TomboftheMummyKingsContent",
 			"entries": [
 				"While attuned to this vial, you can use it as a spellcasting focus, and you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your sorcerer spells.",
@@ -4948,13 +5094,13 @@
 			]
 		},
 		{
-			"name": "",
-			"wondrous": "",
-			"tier": "",
-			"rarity": "",
+			"name": "Astral Round",
+			"wondrous": "true",
+			"tier": "minor",
+			"rarity": "uncommon",
 			"source": "TomboftheMummyKingsContent",
 			"entries": [
-				""
+				"This piece of golden ammunition can be used with a firearm. When used, this ammunition converts the firearm's piercing damage to radiant damage. Additionally, a target hit by this bullet must make a DC 12 Constitution Saving Throw or be {@condition poisoned} until the end of their next turn. On a critical hit or a critically failed save, the target is also {@condition blinded}."
 			]
 		},
 		{
