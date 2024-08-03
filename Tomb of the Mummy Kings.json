@@ -1224,7 +1224,6 @@
 			"cha": 10,
 			"passive": 11,
 			"languages": [
-				"Common",
 				"Plague-Cursed"
 			],
 			"cr": {
@@ -1232,12 +1231,6 @@
 				"xp": 285
 			},
 			"trait": [
-				{
-					"name": "Minion",
-					"entries": [
-						"If the mage takes damage from an attack or as the result of a failed saving throw, their hit points are reduced to 0. If the mage takes damage from another effect, they die if the damage equals or exceeds their hit point maximum; otherwise they take no damage."
-					]
-				},
 				{
 					"name": "Grasp of Talona",
 					"entries": [
@@ -1248,6 +1241,12 @@
 					"name": "Badberry",
 					"entries": [
 						"Any non-minion ally within 30 feet of a hunter can use its bonus action to consume a Badberry, healing them for {@dice 1d4} hit points if they are plague-cursed."
+					]
+				},
+				{
+					"name": "Minion",
+					"entries": [
+						"When this creature takes damage from an attack or failed save, it dies. If it takes damage from any other source, it is reduced to 0 hit points if the damage it takes is higher than its max hit points."
 					]
 				}
 			],
@@ -1264,9 +1263,6 @@
 						"{@atk m} {@hit 5} + X to hit, reach 5 ft., one target. {@h}4 + X slashing damage, and the target can't make opportunity attacks until the start of their next turn. If this attack is made with flanking, knock the target {@condition prone}"
 					]
 				}
-			],
-			"languageTags": [
-				"C"
 			],
 			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/FleeMortals/token/Human Apprentice Mage.png",
 			"foundryTokenScale": 1.5,
@@ -2788,7 +2784,8 @@
 				]
 			},
 			"alignment": [
-				"A"
+				"C",
+				"E"
 			],
 			"ac": [
 				15,
@@ -2830,6 +2827,12 @@
 					"name": "Sticky Goop",
 					"entries": [
 						"The plaguespitter is immune to forced movement effects, unless it chooses to cooperate."
+					]
+				},
+				{
+					"name": "Grasp of Talona",
+					"entries": [
+						"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 14} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 16} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TomboftheMummyKingsContent}."
 					]
 				}
 			],
@@ -2884,7 +2887,217 @@
 				"P"
 			],
 			"savingThrowForced": [
-				"constitution"
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Paladin of Rot",
+			"source": "TomboftheMummyKingsContent",
+			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Shadow-Cursed",
+					"Leader"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|PHB|plate}"
+					]
+				}
+			],
+			"hp": {
+				"average": 119,
+				"formula": "14d8 + 56"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 18,
+			"int": 11,
+			"wis": 14,
+			"cha": 15,
+			"save": {
+				"wis": "+5",
+				"cha": "+5"
+			},
+			"skill": {
+				"arcana": "+3",
+				"athletics": "+7",
+				"history": "+3",
+				"intimidation": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"necrotic"
+			],
+			"languages": [
+				"Shadow-Cursed"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Plagued Resistance (3/Day)",
+					"entries": [
+						"When the paladin fails a saving throw, it can call on its dark master to redirect its suffering to a nearby ally, instantly killing a minion, or dealing 5 damage to a non-minion ally."
+					]
+				},
+				{
+					"name": "Grasp of Talona",
+					"entries": [
+						"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 14} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 16} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TomboftheMummyKingsContent}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The paladin makes three attacks using Rotten Oathblade, Vile Expulsion, or both."
+					]
+				},
+				{
+					"name": "Rotten Oathblade",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage plus 10 ({@damage 3d6}) poison damage. If the target is a creature, they can't regain hit points until the start of the paladin's next turn."
+					]
+				},
+				{
+					"name": "Vile Expulsion",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 80/320 ft., one target. {@h}8 ({@damage 1d8 + 4}) poison damage plus 9 ({@damage 2d8}) necrotic damage, and the target must make a {@dc 14} Constitution Saving Throw against {@disease Talona's Embrace | TombOfTheMummyKingsContent}. A creature that passes this save is immune to the disease for one turn."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Advance and Attack",
+					"entries": [
+						"The paladin barks orders at one ally or two minions within 60 feet of who can hear it. The targeted ally(s) can use their reaction to move up to their speed and make an attack."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Eternal Legion",
+					"entries": [
+						"When a non-minion creature the paladin can see within 120 feet of it takes damage, the paladin magically summons three Plague-Cursed Thralls who appear in a space the paladin can see within 120 feet."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"foundryTokenScale": 1.5,
+			"immune": [
+				"poison"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			},
+			"damageTags": [
+				"I",
+				"N",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Plague-Cursed Thrall (x5)",
+			"source": "TomboftheMummyKingsContent",
+			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Plague-Cursed",
+					"Minion"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"special": "9"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 12,
+			"int": 10,
+			"wis": 14,
+			"cha": 14,
+			"passive": 12,
+			"languages": [
+				"Plague-Cursed"
+			],
+			"cr": {
+				"cr": "2",
+				"xp": 90
+			},
+			"trait": [
+				{
+					"name": "Grasp of Talona",
+					"entries": [
+						"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 12} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 14} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TomboftheMummyKingsContent}. A creature that succeeds this saving throw is immune to the disease until the end of it's next turn."
+					]
+				},
+				{
+					"name": "Minion",
+					"entries": [
+						"When this creature takes damage from an attack or failed save, it dies. If it takes damage from any other source, it is reduced to 0 hit points if the damage it takes is higher than its max hit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Clawing Horde (Group Attack)",
+					"entries": [
+						"{@atk ms} {@hit 4} + X to hit, reach 5 ft., one creature. {@h}2 + X bludgeoning damage and an additional {@h}2 + X poison damage, and if this attack was made by three or more thralls, the target must make a {@dc 10} + X Constitution Saving Throw against {@disease Talona's Embrace | TombOfTheMummyKingsContent}."
+					]
+				}
+			],
+			"savingThrowForced": [
+				"dexterity"
 			]
 		}
 	],
