@@ -5209,7 +5209,17 @@
 			"source": "TomboftheMummyKingsContent",
 			"entries": [
 				"This ruby-lined mithril breastplate was created by Cateline Lathalas, one of the twin founders of The Royal Observatory, for her sister. The jewels encrusted in it channel arcane power to protect the wearer. It is said that the only battle Meriele went into without this armor was the very one that killed her. The armor has been interred in the observatory ever since, watching over her and her sister's tombs.",
-				"A wizard attuned to this armor has the proficiency to wear it while attuned. The lefthand gem calms the roils of the weave, providing one additional spell level worth of arcane recovery each day. The righthand gem harnesses the weave's chaos to shield the wearer, storing an abjuration spell of sixth level or lower as if it were memorized. When this spell is cast, the attuned can choose to gain 5 temporary hit points."
+				"A wizard attuned to this armor has the proficiency to wear it while attuned, and the gems on each side provide the following effects.",
+				{"type" : "entries",
+				"name" : "Lefthand Gem", 
+				"entries" : ["The attuned wizard gains one additional Level One Spell Equivalent when restoring spell slots using arcane recovery."]
+				},
+				{"type" : "entries",
+			 	 "name" : "Righthand Gem",
+				 "entries" : ["The attuned wizard can store an abjuration spell of 6th level or lower within this armor. The stored spell counts as memorized until another spell is stored, and, upon casting it, the wizard can choose to gain 5 temporary hit points."]
+				}
+			
+			
 			]
 		},
 		{
@@ -5220,6 +5230,7 @@
 			"weaponCategory": "artifice",
 			"dmg1": "1d6",
 			"dmg2": "1d8",
+			"dmgType" : "B",
 			"mace": true,
 			"weapon": "true",
 			"type": "M",
@@ -5229,8 +5240,8 @@
 			"bonusWeapon": "+1",
 			"source": "TomboftheMummyKingsContent",
 			"entries": [
-				"This aurix-trimmed mace was created by Cateline Lathalas, one of the twin founders of The Royal Observatory as a tool of self-defense. It is adorned with a glittering insignia of Correllion, which hides a secret mechanism. Cateline passed before her sister, who chose to inter her here, underneath the culmination of their life's work. From its spot above above its creator's tomb, this weapon has seen civilizations in Anauroch be born and die dozens of times. None can say how much more bloodshed it can bear.",
-				"Once per day when wielding this weapon, a creature can press down on the insignia of Correllion, increasing its damage die and giving it the reach property for one minute. Additionally, the wielder can raise it heavensward, casting the {@spell sacred flame} cantrip using their Artifice DC."
+				"This aurix-trimmed mace was created by Cateline Lathalas, one of the twin founders of The Royal Observatory as a tool of self-defense. It is adorned with a glittering insignia of Correllon, which hides a secret mechanism. Cateline passed before her sister, who chose to inter her here, underneath the culmination of their life's work. From its spot above above its creator's tomb, this weapon has seen civilizations in Anauroch be born and die dozens of times. None can say how much more bloodshed it can bear.",
+				"Once per day when wielding this weapon, a creature can press down on the insignia of Correllon, increasing its damage die and giving it the reach property for one minute.", "Additionally, the wielder can raise it heavensward, casting the {@spell sacred flame} cantrip using their Artifice DC."
 			]
 		},
 		{
@@ -5241,7 +5252,7 @@
 			"source": "TomboftheMummyKingsContent",
 			"entries": [
 				"While you are wearing these wraps, your unarmed strikes are considered magical, and you receive a +1 bonus to the attack and damage rolls of your unarmed strikes.",
-				"Additionally, a monk wearing these wraps can channel their primal energies and add 1d4 thunder, fire, poison, or cold damage to your unarmed strikes.",
+				"Additionally, a monk wearing these wraps can channel their primal energies and add 1d4 thunder, fire, poison, or cold damage to their unarmed strikes.",
 				{
 					"type": "entries",
 					"name": "Secret",
@@ -5283,7 +5294,7 @@
 			"rarity": "common",
 			"source": "TomboftheMummyKingsContent",
 			"entries": [
-				"This magical saddle attaches via magical means, connecting safely to any consenting creature over 10 minutes. While the attached creature is used as a mount, the rider cannot fall off unless they choose to do so, even while their mount is burrowing, flying, climbing, or swimming."
+				"This saddle attaches via magical means, connecting safely to any consenting creature over 10 minutes. While the attached creature is used as a mount, the rider cannot fall off unless they choose to do so, even while their mount is burrowing, flying, climbing, or swimming."
 			]
 		},
 		{
@@ -5302,7 +5313,7 @@
 			"weapon": true,
 			"source": "TomboftheMummyKingsContent",
 			"entries": [
-				"This cutlass is forged of a light alloy which feels warm to the touch and leaves a rash with prolonged skin contact. This sword is likely not safe for extended use.",
+				"This cutlass is forged of a light alloy which feels warm to the touch and leaves a rash with prolonged skin contact. It is likely not safe for extended use.",
 				"Attacks from this weapon deal an extra 1d4 radiant damage to any target previously cut by any Astral weapon."
 			]
 		},
@@ -5313,7 +5324,7 @@
 			"rarity": "uncommon",
 			"source": "TomboftheMummyKingsContent",
 			"entries": [
-				"This piece of golden ammunition can be used with a firearm. When used, this ammunition converts the firearm's piercing damage to radiant damage. Additionally, a target hit by this bullet must make a DC 12 Constitution Saving Throw or be {@condition poisoned} until the end of their next turn. On a critical hit or a critically failed save, the target is also {@condition blinded}."
+				"This piece of golden ammunition can be used with a firearm. When used, this ammunition converts the firearm's piercing damage to radiant damage. Additionally, a target hit by this bullet must make a DC 12 Constitution Saving Throw or be {@condition poisoned} until the end of their next turn. On a critical hit or a critically failed save, the target is {@condition poisoned} AND {@condition blinded}."
 			]
 		},
 		{
