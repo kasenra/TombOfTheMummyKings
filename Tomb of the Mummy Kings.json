@@ -3348,6 +3348,7 @@
 			},
 			"entries": [
 				"You coil your psychic weave into a second mind. Using this mind, you are able to attune to one more magical item.",
+				"This submind has a SEVER cost of 3 sublimate units, ending the emanation's effect and turning the item attuned to the submind into a sentient, independent magic item.",
 				"This emanation uses an ongoing effect; ongoing effects cost heat capacity instead of building up heat."
 			],
 			"source": "TomboftheMummyKingsContent",
@@ -3392,7 +3393,7 @@
 			"entries": [
 				"Touch an inanimate object while invoking this emanation. That creature is imbued with a mind and becomes an awakened object with your mental statistics.",
 				"It is loyal to you as long as this emanation is ongoing, and it can deliver your touch-emanations.",
-				"By consuming the 3 units of sublimate from the material component, your connection with this new mind is severed, ending the ongoing effect and turning the creature into a permanent, independent awakened object retaining your mental statistics. ",
+				"This submind has a SEVER cost of 3 sublimate units, ending the ongoing effect and turning the creature into a permanent, independent awakened object retaining your mental statistics. ",
 				"This emanation uses an ongoing effect; ongoing effects cost heat capacity instead of building up heat."
 			],
 			"source": "TomboftheMummyKingsContent",
@@ -3792,7 +3793,7 @@
 			"entries": [
 				"While invoking this emanation, target a medium or smaller Beast of CR 1/4 or lower. A submind fragments from your consciousness and parasitically attaches to the target. A non-{@condition incapacitated} target can make an Intelligence Saving Throw against your psionics DC to prevent this effect. ",
 				"While your submind is attached to a creature, it is directly controlled by you and can deliver your touch-based emanations.",
-				"By consuming 3 units of psionic sublimate, this connection can be severed, turning the target into an independent, psionic creature and ending this emanation's effect.",
+				"This submind has a SEVER cost of 5 sublimate units, turning the target into an independent, psionic creature and ending this emanation's effect.",
 				"This emanation uses an ongoing effect; ongoing effects cost heat capacity instead of building up heat."
 			],
 			"source": "TomboftheMummyKingsContent",
@@ -3921,7 +3922,7 @@
 			}
 		},
 		{
-			"name": "「SEVER」",
+			"name": "「SNIP」",
 			"level": 9,
 			"school": "P",
 			"time": [
@@ -4193,7 +4194,7 @@
 			},
 			"entries": [
 				"When invoking this emanation, target a creature within range. A submind splits off from your consciousness and attaches to that creature. ",
-				"If the target isn't awakened or failed its save, the submind latches onto the target's psyche. As long as the submind is attached this way, you gain the following benefits while within 100 feet:",
+				"If the target isn't awakened or failed its save, the submind latches onto the target's psyche. As long as the submind is attached this way, you gain the following benefits while within 500 feet:",
 				{
 					"type": "list",
 					"items": [
@@ -4201,7 +4202,8 @@
 						"You know if the target is aware of your presence"
 					]
 				},
-				"A psionic target can make an Intelligence Saving Throw to resist the submind's presence, with the option to repeat this save once every 24 hours. An non-psionic creature can determine the presence of the sensor using a successful Intelligence (Investigation) check and attempt to shut it out using an Intelligence Saving Throw.",
+				"A psionic target can make an Intelligence Saving Throw to resist the submind's presence, with the option to repeat this save once every 24 hours. An non-psionic creature can determine the presence of the sensor using a successful Intelligence (Investigation) check and attempt to shut it out using an Intelligence Saving Throw. The DC for these saving throws is increased by 1 for every sensor after the first on a target.",
+				"This submind has a SEVER cost of 1 sublimate unit, becoming a tiny, incorporeal Aberrant Entity with your mental stats.",
 				"This emanation uses an ongoing effect; ongoing effects cost heat capacity instead of building up heat."
 			],
 			"source": "TomboftheMummyKingsContent",
@@ -4559,7 +4561,7 @@
 										],
 										[
 											"Submind",
-											"Submind emanations create new micro-consciousnesses using the invoker's psychic power. These subminds can usually be released as independent minds by consuming psionic sublimate."
+											"Submind emanations create new micro-consciousnesses using the invoker's psychic power. These subminds can be released as independent minds by consuming psionic sublimate equal to their SEVER cost."
 										]
 									]
 								}
