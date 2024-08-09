@@ -5212,16 +5212,20 @@
 			"entries": [
 				"This ruby-lined mithril breastplate was created by Cateline Lathalas, one of the twin founders of The Royal Observatory, for her sister. The jewels encrusted in it channel arcane power to protect the wearer. It is said that the only battle Meriele went into without this armor was the very one that killed her. The armor has been interred in the observatory ever since, watching over her and her sister's tombs.",
 				"A wizard attuned to this armor has the proficiency to wear it while attuned, and the gems on each side provide the following effects.",
-				{"type" : "entries",
-				"name" : "Lefthand Gem", 
-				"entries" : ["The attuned wizard gains one additional Level One Spell Equivalent when restoring spell slots using arcane recovery."]
+				{
+					"type": "entries",
+					"name": "Lefthand Gem",
+					"entries": [
+						"The attuned wizard gains one additional Level One Spell Equivalent when restoring spell slots using arcane recovery."
+					]
 				},
-				{"type" : "entries",
-			 	 "name" : "Righthand Gem",
-				 "entries" : ["The attuned wizard can store an abjuration spell of 6th level or lower within this armor. The stored spell counts as memorized until another spell is stored, and, upon casting it, the wizard can choose to gain 5 temporary hit points."]
+				{
+					"type": "entries",
+					"name": "Righthand Gem",
+					"entries": [
+						"The attuned wizard can store an abjuration spell of 6th level or lower within this armor. The stored spell counts as memorized until another spell is stored, and, upon casting it, the wizard can choose to gain 5 temporary hit points."
+					]
 				}
-			
-			
 			]
 		},
 		{
@@ -5232,7 +5236,7 @@
 			"weaponCategory": "artifice",
 			"dmg1": "1d6",
 			"dmg2": "1d8",
-			"dmgType" : "B",
+			"dmgType": "B",
 			"mace": true,
 			"weapon": "true",
 			"type": "M",
@@ -5243,7 +5247,8 @@
 			"source": "TomboftheMummyKingsContent",
 			"entries": [
 				"This aurix-trimmed mace was created by Cateline Lathalas, one of the twin founders of The Royal Observatory as a tool of self-defense. It is adorned with a glittering insignia of Correllon, which hides a secret mechanism. Cateline passed before her sister, who chose to inter her here, underneath the culmination of their life's work. From its spot above above its creator's tomb, this weapon has seen civilizations in Anauroch be born and die dozens of times. None can say how much more bloodshed it can bear.",
-				"Once per day when wielding this weapon, a creature can press down on the insignia of Correllon, increasing its damage die and giving it the reach property for one minute.", "Additionally, the wielder can raise it heavensward, casting the {@spell sacred flame} cantrip using their Artifice DC."
+				"Once per day when wielding this weapon, a creature can press down on the insignia of Correllon, increasing its damage die and giving it the reach property for one minute.",
+				"Additionally, the wielder can raise it heavensward, casting the {@spell sacred flame} cantrip using their Artifice DC."
 			]
 		},
 		{
