@@ -4001,7 +4001,7 @@
 		},
 		{
 			"name": "「STARS」",
-			"level": 6,
+			"level": 5,
 			"school": "P",
 			"time": [
 				{
@@ -4411,6 +4411,239 @@
 				"s": true,
 				"m": true
 			}
+		},
+		{
+			"name": "「CONDUCT」",
+			"level": 1,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "when a creature moves five feet or more"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Psychic energy lances the motor cortex of the creature triggering this reaction. It must continue moving in the direction of movement that triggered this emanation until it uses its full movement or encounters an obstacle it cannot move through."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 2,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For every point of overclock, the invoker can turn the target 45 degrees at one point during the movement caused by this effect."
+					]
+				}
+			]
+		},
+		{
+			"name": "「PHOBIA」",
+			"level": 2,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"While invoking this emanation, target a {@condition frightened} creature. That creature is now {@condition frightened} of you as well. While that creature is {@condition frightened}, it must take the dash action and attempt to move away from the sources of its fear. A creature {@condition frightened} this way can only attempt to save against fear while it doesn't have line of sight on any source of its fear.",
+				"If the fear effect modified by this emanation is limited to a number of turns, add one additional turn."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 1,
+			"conditionInflict": [
+				"frightened"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For each point of overclock, target one additional {@condition frightened} creature."
+					]
+				}
+			]
+		},
+		{
+			"name": "「PREPARE」",
+			"level": 3,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"While invoking this emanation, touch a creature, invoke a second emanation and think of a trigger. At the end of this emanation's invocation time, you splinter a submind attached to the targeted creature. When the targeted creature perceives the trigger as satisfied, the submind invokes the stored emanation and then disappears.",
+				"This submind has a SEVER cost of 3 sublimate units, with an additional cost of n(n-1)/2 sublimate units, where the stored emanation has a total heat cost of n.",
+				"This is an ongoing emanation. Ongoing emanations consume heat capacity instead of building up heat."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 3,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For each point of overclock, shorten invocation time by 12 seconds."
+					]
+				}
+			]
+		},
+		{
+			"name": "「GRAVE」",
+			"level": 4,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 5
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"While invoking this emanation, touch the corpse of a creature that died within the last 3 days, or within the last 30 minutes if the corpse's brain has been destroyed. At the end of the spells invocation time, you pass out and experience the last five minutes leading to the creature's death exactly as it did.",
+				"Experiencing this multiple times within a day causes immense strain on a psyckers body, giving one level of {@condition exhaustion|TomboftheMummyKingsContent} per use after the first, two for a creature whose brain has been destroyed."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 3,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For each point of overclock, double the maximum time since death."
+					]
+				}
+			]
+		},
+		{
+			"name": "「AWE」",
+			"level": 4,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "when a creature within 30 feet rolls initiative"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"The triggering creature must make an Intelligence Saving Throw or be {@status surprised} on a failure."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 3
+		},
+		{
+			"name": "「ARCANA」",
+			"level": 9,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"This ongoing emanation splits off a submind capable of {@status concentration||concentrating} on one of the main mind's spells. While this emanation is active, the invoker can concentrate on two spells at a time, making {@status concentration} saves for them independently.",
+				"This submind has a SEVER cost of 36 units of sublimate, creating an intangible independent mind with a caster level and class based on its creator."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 3
 		}
 	],
 	"condition": [
