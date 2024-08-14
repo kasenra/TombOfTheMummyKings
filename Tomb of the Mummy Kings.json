@@ -32,6 +32,16 @@
 				"RE",
 				"WP"
 			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "list",
@@ -54,6 +64,16 @@
 			"featureType": [
 				"RE",
 				"WP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
 			],
 			"entries": [
 				{
@@ -78,6 +98,16 @@
 				"RE",
 				"EP"
 			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "list",
@@ -100,6 +130,16 @@
 			"featureType": [
 				"RE",
 				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
 			],
 			"entries": [
 				{
@@ -124,6 +164,16 @@
 				"RE",
 				"EP"
 			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "list",
@@ -146,6 +196,16 @@
 			"featureType": [
 				"RE",
 				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
 			],
 			"entries": [
 				{
@@ -170,6 +230,16 @@
 				"RE",
 				"DP"
 			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "list",
@@ -192,6 +262,16 @@
 			"featureType": [
 				"RE",
 				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
 			],
 			"entries": [
 				{
@@ -216,6 +296,16 @@
 				"RE",
 				"DP"
 			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "list",
@@ -239,6 +329,16 @@
 				"RE",
 				"DP"
 			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "list",
@@ -261,6 +361,16 @@
 			"featureType": [
 				"MD",
 				"WP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
 			],
 			"entries": [
 				{
@@ -292,6 +402,16 @@
 				"MD",
 				"WP"
 			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "list",
@@ -322,6 +442,16 @@
 				"MD",
 				"EP"
 			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "list",
@@ -344,6 +474,16 @@
 			"featureType": [
 				"MD",
 				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
 			],
 			"entries": [
 				{
@@ -368,6 +508,16 @@
 				"MD",
 				"DP"
 			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "list",
@@ -390,6 +540,16 @@
 			"featureType": [
 				"MD",
 				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
 			],
 			"entries": [
 				{
@@ -414,6 +574,16 @@
 				"MD",
 				"EP"
 			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "list",
@@ -436,6 +606,16 @@
 			"featureType": [
 				"MD",
 				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
 			],
 			"entries": [
 				{
@@ -460,6 +640,16 @@
 				"MD",
 				"DP"
 			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "list",
@@ -482,6 +672,16 @@
 			"featureType": [
 				"MD",
 				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
 			],
 			"entries": [
 				{
@@ -506,6 +706,16 @@
 				"AH",
 				"WP"
 			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "list",
@@ -528,6 +738,16 @@
 			"featureType": [
 				"AH",
 				"WP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
 			],
 			"entries": [
 				{
@@ -552,6 +772,16 @@
 				"AH",
 				"EP"
 			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "list",
@@ -574,6 +804,16 @@
 			"featureType": [
 				"AH",
 				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
 			],
 			"entries": [
 				{
@@ -598,6 +838,16 @@
 				"AH",
 				"DP"
 			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "list",
@@ -620,6 +870,16 @@
 			"featureType": [
 				"AH",
 				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
 			],
 			"entries": [
 				{
@@ -644,6 +904,16 @@
 				"AH",
 				"EP"
 			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "list",
@@ -666,6 +936,16 @@
 			"featureType": [
 				"AH",
 				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
 			],
 			"entries": [
 				{
@@ -690,6 +970,16 @@
 				"AH",
 				"DP"
 			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
 			"entries": [
 				{
 					"type": "list",
@@ -712,6 +1002,16 @@
 			"featureType": [
 				"AH",
 				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
 			],
 			"entries": [
 				{
@@ -1969,13 +2269,13 @@
 				{
 					"name": "Volley (Group Attack)",
 					"entries": [
-						"{@atk r} {@hit 5} + X to hit, range 120/240 ft., one creature. {@h}4 + X piercing damage. If this attack was made by more than one hunter, the target is pinned down on a hit, reducing their movement speed by half until the end of these minions' next turn."
+						"{@atk r} {@hit 5} + X to hit, range 120/240 ft., one creature. {@h}4 * X piercing damage. If this attack was made by more than one hunter, the target is pinned down on a hit, reducing their movement speed by half until the end of these minions' next turn."
 					]
 				},
 				{
 					"name": "Dirty Tactics (Group Attack)",
 					"entries": [
-						"{@atk m} {@hit 5} + X to hit, reach 5 ft., one target. {@h}4 + X slashing damage, and the target can't make opportunity attacks until the start of their next turn. If this attack is made with flanking, knock the target {@condition prone}"
+						"{@atk m} {@hit 5} + X to hit, reach 5 ft., one target. {@h}4 * X slashing damage, and the target can't make opportunity attacks until the start of their next turn. If this attack is made with flanking, knock the target {@condition prone}"
 					]
 				}
 			],
@@ -1985,7 +2285,7 @@
 				{
 					"name": "Hunter's Mark (Group Action)",
 					"entries": [
-						"Mark a target for death. Only one target can be marked at a time. When hunters make a group attack against a marked target, increase their X bonus by 1 for every 2 hunters in the attack."
+						"Mark a target for death. Only one target can be marked at a time. When hunters make a group attack against a marked target, increase their bonus to hit and damage by 1 for every 2 hunters in the attack."
 					]
 				}
 			],
@@ -3807,358 +4107,12 @@
 				{
 					"name": "Clawing Horde (Group Attack)",
 					"entries": [
-						"{@atk ms} {@hit 4} + X to hit, reach 5 ft., one creature. {@h}2 + X bludgeoning damage and an additional {@h}2 + X poison damage, and if this attack was made by three or more thralls, the target must make a {@dc 10} + X Constitution Saving Throw against {@disease Talona's Embrace | TombOfTheMummyKingsContent}."
+						"{@atk ms} {@hit 4} + X to hit, reach 5 ft., one creature. {@h}2 * X bludgeoning damage and an additional {@h}2 * X poison damage, and if this attack was made by three or more thralls, the target must make a {@dc 10} + X Constitution Saving Throw against {@disease Talona's Embrace | TombOfTheMummyKingsContent}."
 					]
 				}
 			],
 			"savingThrowForced": [
 				"dexterity"
-			]
-		},
-		{
-			"name": "SI'QILEK'TER, WITCH OF TYRANNY",
-			"isNpc": true,
-			"isNamedCreature": true,
-			"source": "TomboftheMummyKingsContent",
-			"page": 1,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "aberration",
-				"tags": [
-					"witch",
-					"controller"
-				]
-			},
-			"alignment": [
-				"C",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 209,
-				"formula": "22d8 + 110"
-			},
-			"speed": {
-				"fly": {
-					"number": 40,
-					"condition": "hover"
-				},
-				"canHover": true,
-				"walk": 5
-			},
-			"str": 21,
-			"dex": 16,
-			"con": 20,
-			"int": 20,
-			"wis": 17,
-			"cha": 18,
-			"save": {
-				"dex": "+7",
-				"cha": "+8",
-				"con": "+9",
-				"int": "+9"
-			},
-			"skill": {
-				"insight": "+9",
-				"nature": "+11",
-				"perception": "+9",
-				"survival": "+13"
-			},
-			"senses": [
-				"truesight 120 ft."
-			],
-			"passive": 19,
-			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"paralyzed"
-			],
-			"languages": [
-				"Common",
-				"Witch"
-			],
-			"cr": "12",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The witch casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 17}):"
-					],
-					"will": [
-						"{@spell dissonant whispers}"
-					],
-					"daily": {
-						"2e": [
-							"{@spell dispel magic}",
-							"{@spell invisibility}",
-							"{@spell sleep} (at 3rd level)"
-						],
-						"1e": [
-							"{@spell confusion}",
-							"{@spell dominate person}",
-							"{@spell synaptic static|XGE}"
-						]
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Aberrant Psionics",
-					"headerEntries": [
-						"The witch harnesses psionic energy from the Far Realms to do battle. She has a limitless heat capacity, but she is only able to overclock emanations by one tier. Her psionics DC is 17."
-					],
-					"will": [
-						"{@spell 「conduct」|TomboftheMummyKingsContent}",
-						"{@spell 「lance」|TomboftheMummyKingsContent}"
-					],
-					"daily": {
-						"1": [
-							"{@spell 「awe」|TomboftheMummyKingsContent}",
-							"{@spell 「stars」|TomboftheMummyKingsContent}"
-						],
-						"2": [
-							"{@spell 「phobia」|TomboftheMummyKingsContent}",
-							"{@spell 「reflect」|TomboftheMummyKingsContent}"
-						]
-					},
-					"type": "spellcasting"
-				}
-			],
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"If the witch fails a saving throw, she can choose to succeed instead."
-					]
-				},
-				{
-					"name": "Surpass (1/Day)",
-					"entries": [
-						"When a creature would succeed on a saving throw against one of her psionic emanations, the witch can instead bypass the save entirely and proceed as if the creature failed."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The witch makes two Infernal Chains attacks and can use Miasma of Tranquility or any 1 action spell or emanation below her maximum tier."
-					]
-				},
-				{
-					"name": "Infernal Chains",
-					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}11 ({@damage 1d12 + 5}) bludgeoning damage plus 9 ({@damage 2d8}) fire damage, and if the target is a Large or smaller creature, the vine wraps around the target, and the target has the {@condition grappled} condition (escape {@dc 17}). The vine vanishes when the target is no longer {@condition grappled}, or when the witch wills it to (no action required)."
-					]
-				},
-				{
-					"name": "Miasma of Tranquility {@recharge 5}",
-					"entries": [
-						"The witch exhales soporific vapor in a 30-foot cone. Each creature in that area must succeed on a {@dc 17} Constitution saving throw or have the {@condition poisoned} condition. A {@condition poisoned} creature must repeat the saving throw at the end of its next turn. On a failed save, it has the {@condition unconscious} condition, and on a successful save, the effect ends on it. An {@condition unconscious} creature is no longer {@condition poisoned} and remains {@condition unconscious} for 1 hour, until it takes damage, or until a creature uses an action to shake it awake."
-					]
-				}
-			],
-			"traitTags": [
-				"Legendary Resistances"
-			],
-			"senseTags": [
-				"U"
-			],
-			"actionTags": [
-				"Breath Weapon",
-				"Multiattack"
-			],
-			"languageTags": [
-				"C"
-			],
-			"spellcastingTags": [
-				"O",
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RCH",
-				"AOE"
-			],
-			"conditionInflict": [
-				"grappled"
-			],
-			"conditionInflictSpell": [
-				"charmed"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"token": {
-				"name": "The Gardener",
-				"source": "QftIS"
-			},
-			"fluff": {
-				"name": "The Gardener",
-				"source": "QftIS",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							"The Gardener is an archfey who adores the splendor of nature, the joy of song, and the glow of shared merriment. This ancient being once wandered the Feywild and worlds of the Material Plane until two dear friends created a wondrous garden and asked the Gardener to tend to it. The Gardener agreed to the request, then pulled the garden from the Material Plane and transformed it into a Domain of Delight—a region of the Feywild that bows to an archfey's will. This place became known as the Eternal Garden.",
-							"The Gardener abhors bloodshed and avoids killing even those who threaten the garden, preferring to entangle them in vines and pacify them with tranquilizing breaths of flowery mist."
-						]
-					},
-					{
-						"type": "section",
-						"entries": [
-							{
-								"type": "entries",
-								"name": "The Gardener's Lair",
-								"entries": [
-									"The Gardener's lair is the entirety of the Eternal Garden."
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"name": "Lair Actions",
-								"entries": [
-									"On initiative count 20 (losing initiative ties), the Gardener can take one of the following lair actions; they can't take the same lair action two rounds in a row:",
-									{
-										"type": "list",
-										"style": "list-hang-notitle",
-										"items": [
-											{
-												"type": "item",
-												"name": "Plant Walk",
-												"entry": "The Gardener moves up to their speed into the space of a Medium or larger plant within the lair, then teleports to an unoccupied space within 5 feet of any other Medium or larger plant within the lair."
-											},
-											{
-												"type": "item",
-												"name": "Vine Wall",
-												"entry": "A wall of grasping vines appears on the ground within 120 feet of the Gardener. The wall is up to 60 feet long, 10 feet high, and 5 feet thick, and it blocks line of sight. When the wall appears, each creature in its area must succeed on a DC 15 Dexterity saving throw or have the grappled condition (escape DC 15). A creature must make this saving throw when it starts its turn inside the wall or when it enters the wall for the first time on a turn. The wall's area is difficult terrain for a creature that isn't grappled. The wall sinks back into the ground, freeing all creatures grappled by it, when the Gardener uses this lair action again or when the Gardener dies."
-											}
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"name": "Regional Effects",
-								"entries": [
-									"The Eternal Garden has the following features:",
-									{
-										"type": "list",
-										"style": "list-hang-notitle",
-										"items": [
-											{
-												"type": "item",
-												"name": "Boundary",
-												"entry": "At the border of the domain is a lightly obscuring mist, tinged with a sweet blossom scent and the colors of sunset. No matter how far a creature travels into the mist, the creature finds itself back where it entered the border, returning to the garden."
-											},
-											{
-												"type": "item",
-												"name": "Eternal Summer",
-												"entry": "The climate in the garden is a perpetual, lovely summer, but weather conditions reflect the emotional tone of creatures in the garden. In times of danger, thunderstorms shake the sky. During times of melancholy or mourning, chill rain patters throughout the domain."
-											},
-											{
-												"type": "item",
-												"name": "Gardener's Vigil",
-												"entry": "The Gardener senses when anything dies in the garden. If a creature dies in the garden, roll a {@dice d6}. On a 1, the Gardener appears on initiative count 20 of the next round (losing initiative ties) to investigate."
-											},
-											{
-												"type": "item",
-												"name": "Lighting",
-												"entry": "The sky above the garden is a perpetual twilight range of orange, red, pink, and yellow hues with no visible sun, moon, or stars. During daylight hours, it emits bright light, but at night, it never reaches full darkness, becoming dim light instead."
-											},
-											{
-												"type": "item",
-												"name": "Memory Loss",
-												"entry": "Unless otherwise stated, a creature that leaves the domain must make a DC 10 Wisdom saving throw; Fey creatures and creatures with the Fey Ancestry trait automatically succeed on the saving throw. On a failed save, the creature remembers nothing of its time in the garden or the Palace of Spires. On a successful save, the creature's memories remain intact, but they're hazy and dreamlike. A Remove Curse or Greater Restoration spell restores the creature's memories."
-											},
-											{
-												"type": "item",
-												"name": "Time",
-												"entry": "Time passes slower in the Eternal Garden relative to other planes. For each day spent in the garden, one year passes on the Material Plane."
-											}
-										]
-									}
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/QftIS/The Gardener.webp"
-						}
-					}
-				]
-			},
-			"legendaryHeader": [
-				"The witch has three Villain Actions, each used after an enemy completes their turn."
-			],
-			"legendary": [
-				{
-					"name": "Round 1: Melding Flesh",
-					"entries": [
-						"The witch targets up to 4 hostile creatures, linking them together with a {@spell 「fusion」|TomboftheMummyKingsContent} emanation unless they succeed on an Intelligence Saving Throw. Then, to show off, she launches an order one {@spell 「lance」|TomboftheMummyKingsContent} into the linked group. If a low intelligence target passes the save on luck, she will consider using surpass."
-					]
-				},
-				{
-					"name": "Round 2: Visage of the Far Realms",
-					"entries": [
-						"The witch screeches, momentarily releasing her true form in a burst of corrupting light and noise. Non-aberrations who can see the witch must make a {@dc 17} Wisdom Saving Throw or become {@condition frightened} of her, resaving at the end of every turn. A creature that fails this save by 5 or more is afflicted with Short Term Madness until they save against fright."
-					]
-				},
-				{
-					"name": "Round 3: Chains of the Godeater",
-					"entries": [
-						"A portal appears below the witch, and Godeater Tendrils pour out, impaling her, puppeting her body, and sending her electrified chains. The witch make up to six Infernal Chains attacks against targets within 30 feet, targets {@condition grappled} by these attacks are immediately pulled to be adjacent to the witch. The witch takes {@damage 10d6} necrotic damage as her master drains her life."
-					]
-				},
-				{
-					"name": "Round 4 Onward: Witchblood Wrath",
-					"entries": [
-						"The witch's dark master floods her body with necrotic energy, spraying her vile blood on nearby creatures. Every non-aberration within 20 feet must make a {@dc 17} Dexterity Saving Throw to half {@damage 6d6 + 5} necrotic damage and a stack of {@condition marked for death|TomboftheMummyKingsContent}."
-					]
-				}
-			],
-			"reactionHeader": [
-				"The witch has 3 reactions each round, but she can use no more than 1 per round."
-			],
-			"damageTags": [
-				"B",
-				"F"
-			],
-			"damageTagsSpell": [
-				"Y"
-			],
-			"savingThrowForced": [
-				"constitution",
-				"dexterity",
-				"wisdom"
-			],
-			"savingThrowForcedSpell": [
-				"constitution",
-				"intelligence",
-				"wisdom"
 			]
 		},
 		{
@@ -4585,6 +4539,343 @@
 			},
 			"damageTags": [
 				"F"
+			]
+		},
+		{
+			"name": "Returned Hydra",
+			"source": "TomboftheMummyKingsContent",
+			"page": 1,
+			"basicRules": true,
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": {
+					"choose": [
+						"dragon",
+						"undead"
+					]
+				}
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d12 + 30",
+				"average": 95
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 20,
+			"int": 2,
+			"wis": 10,
+			"cha": 7,
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Undead Nature",
+					"entries": [
+						"The returned hydra doesn't need to eat, drink, breathe, or sleep."
+					]
+				},
+				{
+					"name": "Multiple Heads",
+					"entries": [
+						"The returned hydra has only two heads remaining. While it has more than one head, the hydra has advantage on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}.",
+						"Whenever the hydra takes 25 or more damage in a single turn, one of its heads dies. If all its heads die, the hydra dies.",
+						"At the end of its turn, it grows two heads for each of its heads that died since its last turn, unless it has taken fire damage since its last turn. The hydra regains 10 hit points for each head regrown in this way."
+					]
+				},
+				{
+					"name": "Reactive Heads",
+					"entries": [
+						"For each head the hydra has beyond one, it gets an extra reaction that can be used only for opportunity attacks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hydra makes as many bite attacks as it has heads."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"swamp"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/hydra.mp3"
+			},
+			"traitTags": [
+				"Hold Breath",
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Hydra",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Hydra",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The hydra is a reptilian horror with a crocodilian body and multiple heads on long, serpentine necks. Although its heads can be severed, the hydra magically regrows them in short order. A typical specimen has five heads. At the dawn of time, Tiamat, the Queen of Evil Dragons, slew a rival dragon god named Lernaea and cast her blood across the multiverse. Each drop that fell upon a world spawned a multi-headed hydra consumed by a hunger as great as the fallen god's hatred. Great champions are known to test their mettle against these fearsome creatures.",
+									{
+										"name": "Everlasting Hunger",
+										"type": "entries",
+										"entries": [
+											"A rapacious and gluttonous monster, a hydra snatches and tears apart its prey in a frenzy of feeding. When a hydra has cleared a territory of food and driven off any creatures smart enough to avoid it, it moves on to seek its meals elsewhere. A hydra's hunger is so great that if it can't feed, it might turn against itself, its heads attacking each other as the creature eats itself alive."
+										]
+									},
+									{
+										"name": "Hardy Water Dwellers",
+										"type": "entries",
+										"entries": [
+											"Hydras are natural swimmers, dwelling in rivers, along lakeshores, in ocean shallows, and in wetland bogs. A hydra rarely requires shelter from the elements, so it doesn't normally have a lair. Only in colder climes are hydras drawn to the protection of sheltered caverns and ruins. When a hydra sleeps, at least one of its heads remains awake and alert, making the creature difficult to catch by surprise."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Hydra.webp"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Charmed Sahuagin Minion (x5)",
+			"source": "TomboftheMummyKingsContent",
+			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"sahuagin"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "8"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 13,
+			"dex": 11,
+			"con": 12,
+			"int": 12,
+			"wis": 13,
+			"cha": 9,
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"languages": [
+				"Sahuagin"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"The sahuagin has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+					]
+				},
+				{
+					"name": "Limited Amphibiousness",
+					"entries": [
+						"The sahuagin can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating."
+					]
+				},
+				{
+					"name": "Shark Telepathy",
+					"entries": [
+						"The sahuagin can magically command any shark within 120 feet of it, using a limited telepathy."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Aquatic Phalanx (Group Attack)",
+					"entries": [
+						"{@atk mw} Always Advantage underwater"
+					]
+				},
+				{
+					"name": "Great Catch (Group Action)",
+					"entries": [
+						"XDC Save against {@condition restrained}",
+						"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage, or 5 ({@damage 1d8 + 1}) piercing damage if used with two hands to make a melee attack."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"underwater"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/sahuagin.mp3"
+			},
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Sahuagin",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Sahuagin",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Across fog-shrouded coasts or endless ocean swells, an ominous drone sounded on a conch shell chills the blood of all who hear it. This is the sound of the sahuagin hunting horn-a call to raid and battle. Coastal settlers refer to sahuagin as \"sea devils,\" for sahuagin have no compassion in them, slaughtering the crews of ships and decimating coastal villages.",
+									{
+										"name": "Devils of the Deep",
+										"type": "entries",
+										"entries": [
+											"Sahuagin are a predatory, piscine race that ventures from the ocean's black depths to hunt the creatures of the shallows and shore. Though they dwell in the deepest trenches of the ocean, sahuagin view the entire aquatic realm as their kingdom and the creatures in it as blood sport for their hunting parties.",
+											"The self-styled rulers of sahuagin ocean domains are massive mutant males that grow second sets of arms. They are terrible foes in battle, and all sahuagin bow down before these powerful barons."
+										]
+									},
+									{
+										"name": "Way of the Shark",
+										"type": "entries",
+										"entries": [
+											"Sahuagin worship the shark god Sekolah. Only female sahuagin are deemed worthy of channeling the god's power, and priestesses hold tremendous sway in sahuagin communities.",
+											"Sahuagin are driven into a frenzy by the smell of fresh blood. As worshipers of Sekolah, they also have a special kinship with sharks, which they train as attack animals. Even untrained sharks recognize sahuagin as allies and don't prey on them."
+										]
+									},
+									{
+										"name": "Elven Enmity",
+										"type": "entries",
+										"entries": [
+											"The sahuagin might control the oceans if not for the presence of their mortal enemies, the aquatic elves. Wars between the two races have raged for centuries across the coasts and seas of the world, disrupting maritime trade and drawing other races into the bloody conflict.",
+											"So intense is sahuagin hatred for the aquatic elves that the sea devils have adapted to combat their ancient foes. A sahuagin born near enough to an aquatic elf community can enter the world as a malenti-a sahuagin that physically resembles an aquatic elf in every way. Sahuagin are prone to mutation, but whether this rare phenomenon is a result of the wars between the sahuagin and the aquatic elves-or whether it preceded or even began the conflict-none can say.",
+											"The sahuagin put the malenti to good use as spies and assassins in aquatic elf cities and the societies of other creatures that pose a threat to sahuagin. The mere shadow of the malenti threat incites paranoia and suspicion among aquatic elves, whose resilience is weakened as the prelude to an actual sahuagin invasion."
+										]
+									}
+								]
+							},
+							{
+								"type": "insetReadaloud",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"TThe village was empty, the seagulls were strangely quiet, and all we could hear was the surge of the sea."
+										],
+										"by": "An account of the aftermath of a sahuagin raid"
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Sahuagin.webp"
+						}
+					}
+				]
+			},
+			"conditionImmune": [
+				"charmed"
+			],
+			"damageTags": [
+				"P"
 			]
 		}
 	],
@@ -5512,7 +5803,7 @@
 			},
 			"entries": [
 				"A raw emanation, pulled in through The Living Gate.",
-				"Touch a creature while invoking this emanation to attack them with eldritch knowledge beyond their comprehension. The targeted creature must make an Intelligence Saving Throw. On a failure, the target takes on a level of Short Term Madness. If the target fails this save by 5 or more, they instead take a level of Long Term Madness."
+				"Touch a creature while invoking this emanation to attack them with eldritch knowledge beyond their comprehension. The targeted creature must make an Intelligence Saving Throw. On a failure, the target takes on a level of Short Term Madness and {@damage 2d10} psychic damage. If the target fails this save by 5 or more, they instead take a level of Long Term Madness."
 			],
 			"source": "TomboftheMummyKingsContent",
 			"page": 2,
