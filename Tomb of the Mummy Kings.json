@@ -4707,7 +4707,9 @@
 			"type": {
 				"type": "humanoid",
 				"tags": [
-					"sahuagin"
+					"sahuagin",
+					"minion",
+					"soldier"
 				]
 			},
 			"alignment": [
@@ -4754,12 +4756,6 @@
 					]
 				},
 				{
-					"name": "Limited Amphibiousness",
-					"entries": [
-						"The sahuagin can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating."
-					]
-				},
-				{
 					"name": "Shark Telepathy",
 					"entries": [
 						"The sahuagin can magically command any shark within 120 feet of it, using a limited telepathy."
@@ -4770,14 +4766,13 @@
 				{
 					"name": "Aquatic Phalanx (Group Attack)",
 					"entries": [
-						"{@atk mw} Always Advantage underwater"
+						"{@atk mw} {@hit 3} + X, reach 5 ft., one target: {@h} 1 * X piercing damage. Target is marked by the Sahuagin Phalanx. While marked this way, the target takes a -X penalty to saves against nets."
 					]
 				},
 				{
 					"name": "Great Catch (Group Action)",
 					"entries": [
-						"XDC Save against {@condition restrained}",
-						"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage, or 5 ({@damage 1d8 + 1}) piercing damage if used with two hands to make a melee attack."
+						"Target a single creature within 30 feet to make a {@dc 10}+x Dexterity Saving Throw or become {@condition restrained} by your net. The creature can attempt an escape using an action or by dealing 5 or more slashing or fire."
 					]
 				}
 			],
@@ -4799,8 +4794,7 @@
 				"OTH"
 			],
 			"miscTags": [
-				"MW",
-				"RW"
+				"MW"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
@@ -4874,8 +4868,8 @@
 			"conditionImmune": [
 				"charmed"
 			],
-			"damageTags": [
-				"P"
+			"conditionInflict": [
+				"restrained"
 			]
 		}
 	],
