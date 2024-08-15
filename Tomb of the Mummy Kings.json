@@ -6612,7 +6612,8 @@
 				"Some special abilities and environmental hazards, such as starvation and the long-term effects of freezing or scorching temperatures, can lead to a special condition called exhaustion. Exhaustion is measured in ten levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect's description.",
 				"For each level of exhaustion, a creature suffers a -1 penalty to their attack rolls, skill checks, and save DCs for supernatural effects.",
 				"If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description.",
-				"Finishing a long rest reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink. Also, being raised from the dead reduces a creature's exhaustion level by 1."
+				"Finishing a day of Downtime heals a creature's exhaustion level by 1, so long as your Downtime Activity is not physically straining. ({@i ie. Athletic Training, Hunting, Any activity involving combat}) Additionally, if your Downtime Activity is no more strenuous than bedrest, you heal one additional level of exhaustion.",
+				"If a creature is raised from the dead, it gains one level of exhaustion, being set to a max of 9."
 			],
 			"source": "TomboftheMummyKingsContent",
 			"page": 3
