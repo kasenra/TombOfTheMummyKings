@@ -14,1022 +14,192 @@
 			}
 		]
 	},
-	"optionalFeatureTypes": {
-		"RE": "Ranger Evocation",
-		"MD": "Monk Discipline",
-		"AH": "Artificer Hack",
-		"FE": "Fighter Exploits",
-		"WP": "At Will Power",
-		"EP": "Encounter Power",
-		"DP": "Daily Power"
-	},
-	"optionalfeature": [
-		{
-			"name": "Hit and Run",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"RE",
-				"WP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Ranger"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 1}",
-						"{@b Class:} Ranger Evocation",
-						"{@b Power Type:} At Will",
-						"{@b Use Time:} 1 Attack"
-					]
-				},
-				"After making this attack, move up to 10 feet to a location not within the target's melee range."
-			]
-		},
-		{
-			"name": "Warning Shot",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"RE",
-				"WP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Ranger"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 1}",
-						"{@b Class:} Ranger Evocation",
-						"{@b Power Type:} At Will",
-						"{@b Use Time:} 1 Attack"
-					]
-				},
-				"After making this attack, select a 5ft by 5ft square within your range and sight. If a creature enters that square before the start of your next turn, you can use your reaction to make an Attack of Opportunity against them."
-			]
-		},
-		{
-			"name": "Rapid Volley",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"RE",
-				"EP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Ranger"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 1}",
-						"{@b Class:} Ranger Evocation",
-						"{@b Power Type:} Encounter",
-						"{@b Use Time:} 1 Attack"
-					]
-				},
-				"Using this attack, make two attacks on different creatures. Do not add your ability modifier to the damage for these attacks, and take a -4 penalty to your roll to hit."
-			]
-		},
-		{
-			"name": "Skirmisher's Shot",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"RE",
-				"EP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Ranger"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 1}",
-						"{@b Class:} Ranger Evocation",
-						"{@b Power Type:} Encounter",
-						"{@b Use Time:} 1 Attack"
-					]
-				},
-				"Before making this attack, you may move up to your movement for free."
-			]
-		},
-		{
-			"name": "Archer's Stairway",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"RE",
-				"EP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "Ranger"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 1}",
-						"{@b Class:} Ranger Evocation",
-						"{@b Power Type:} Encounter",
-						"{@b Use Time:} 1 Action"
-					]
-				},
-				"Target a vertical surface no more than 25 feet high and fire a storm of arrows, creating a staircase which allows any creature to climb the surface as if they had a climbing speed."
-			]
-		},
-		{
-			"name": "Sustaining Strike",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"RE",
-				"EP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "Ranger"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 4}",
-						"{@b Class:} Ranger Evocation",
-						"{@b Power Type:} Encounter",
-						"{@b Use Time:} 1 Attack"
-					]
-				},
-				"If this attack is lethal, take a +2 bonus to your next attack and do not expend this power."
-			]
-		},
-		{
-			"name": "Hunter's Trap",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"RE",
-				"DP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Ranger"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 1}",
-						"{@b Class:} Ranger Evocation",
-						"{@b Power Type:} Daily",
-						"{@b Use Time:} 1 Attack"
-					]
-				},
-				"If this shot lands, it reduces the target's move speed to 10 feet. At the end of each of its turns, it can attempt a saving throw against your Strength or Dexterity DC, whichever stat you used for this attack."
-			]
-		},
-		{
-			"name": "Hunt's Climax",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"RE",
-				"DP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Ranger"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 1}",
-						"{@b Class:} Ranger Evocation",
-						"{@b Power Type:} Daily",
-						"{@b Use Time:} 1 Attack"
-					]
-				},
-				"If the target of this attack is bloodied and the focus of your hunter's mark, the attack deals 2 extra dice of damage and gains a Critical Width bonus of +1. If the attack hits, your hunter's mark ends."
-			]
-		},
-		{
-			"name": "Begin the Hunt",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"RE",
-				"DP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "Ranger"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 4}",
-						"{@b Class:} Ranger Evocation",
-						"{@b Power Type:} Daily",
-						"{@b Use Time:} Free"
-					]
-				},
-				"When rolling initiative, add +2 to your initiative roll, and immediately activate your hunter's mark. While your mark is on this target, take a +2 bonus to hits against it."
-			]
-		},
-		{
-			"name": "Rattle the Senses",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"RE",
-				"DP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "Ranger"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 4}",
-						"{@b Class:} Ranger Evocation",
-						"{@b Power Type:} Daily",
-						"{@b Use Time:} 1 Attack"
-					]
-				},
-				"If this attack hits, the target loses one bonus action, one reaction, and any special senses. At the end of each of its turns, it can attempt a Constitution Saving Throw against your Strength or Dexterity DC (whichever you used for this attack), ending the effect on a success. On a missed attack, the target spends one reaction if possible. "
-			]
-		},
-		{
-			"name": "Dragon's Tail",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"MD",
-				"WP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Monk"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 1}",
-						"{@b Class:} Monk Discipline",
-						"{@b Power Type:} At Will",
-						"{@b Use Time:} 1 Attack"
-					]
-				},
-				"The target of this attack must make a Strength saving throw against your Ki DC or fall prone. Additionally, activating this power puts you in Dragon Stance.",
-				{
-					"type": "entries",
-					"name": "Dragon Stance",
-					"entries": [
-						"While in Dragon Stance, you can consume 10 feet of movement speed in order to swap positions with an ally or prone enemy within 40 feet."
-					]
-				}
-			]
-		},
-		{
-			"name": "Lion's Den",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"MD",
-				"WP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Monk"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 1}",
-						"{@b Class:} Monk Discipline",
-						"{@b Power Type:} At Will",
-						"{@b Use Time:} 1 Attack"
-					]
-				},
-				"You may choose to push the target of this attack 5 feet. Until the start of your next turn, when a creature comes within 5 feet of you, you may choose to deal bludgeoning damage to it equal to your Wisdom modifier. Additionally, activating this power puts you into Lion Stance.",
-				{
-					"type": "entries",
-					"name": "Lion Stance",
-					"entries": [
-						"While in Lion Stance, you can choose to trade your full movement speed for a +1 bonus to AC and all saving throws and a 5 feet of disengaged movement."
-					]
-				}
-			]
-		},
-		{
-			"name": "Slumbering Hurt",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"MD",
-				"EP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Monk"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 1}",
-						"{@b Class:} Monk Discipline",
-						"{@b Power Type:} Encounter",
-						"{@b Use Time:} 1 Attack"
-					]
-				},
-				"If the target of this attack is bloodied, all attacks you make against it this turn deal extra damage equal to your strength modifier. Additionally, bloodied enemies cannot make reaction attacks against you until the end of your next turn."
-			]
-		},
-		{
-			"name": "Gentle Rainfall",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"MD",
-				"EP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Monk"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 1}",
-						"{@b Class:} Monk Discipline",
-						"{@b Power Type:} Encounter",
-						"{@b Use Time:} 1 Attack"
-					]
-				},
-				"This unarmed attack targets every creature within 5 feet, and you gain 5 feet of movement per hit. If at least one attack hits, you additionally disengage."
-			]
-		},
-		{
-			"name": "Granite Avalanche",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"MD",
-				"DP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Monk"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 1}",
-						"{@b Class:} Monk Discipline",
-						"{@b Power Type:} Daily",
-						"{@b Use Time:} 1 Action"
-					]
-				},
-				"You rain rocks down on a 10 foot by 10 foot square, and all creatures inside must make a Dexterity Saving through against your Ki DC to half 2d8 bludgeoning damage. Creatures who fail this save additionally take an ongoing -2 penalty to attacks, with a chance to save at the end of each of their turns. Afterwards, you may warp to any point within 5 feet of an affected space."
-			]
-		},
-		{
-			"name": "Harmonious Thunder",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"MD",
-				"DP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Monk"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 1}",
-						"{@b Class:} Monk Discipline",
-						"{@b Power Type:} Daily",
-						"{@b Use Time:} 1 Attack"
-					]
-				},
-				"Using this attack, make two unarmed attacks on different targets. Creatures hit by these attacks are wrapping in roiling thunder, taking additional damage equal to your Strength modifier when damaged by attacks. Any time a creature takes damage this way, they can make a Constitution Saving Throw against your Ki DC to end the effect."
-			]
-		},
-		{
-			"name": "Harmonious Discipline",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"MD",
-				"EP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "Monk"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 4}",
-						"{@b Class:} Monk Discipline",
-						"{@b Power Type:} Encounter",
-						"{@b Use Time:} 1 Bonus Action"
-					]
-				},
-				"Gain Temporary Hit Points equal to your Wisdom modifier. When you lose your last temporary hitpoint, you gain a bonus to your next attack roll equal to your Wisdom modifier. If unused, this buff disappears after 10 minutes."
-			]
-		},
-		{
-			"name": "Instrument of Earth",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"MD",
-				"EP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "Monk"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 4}",
-						"{@b Class:} Monk Discipline",
-						"{@b Power Type:} Encounter",
-						"{@b Use Time:} 1 Action"
-					]
-				},
-				"Target a creature within 15 feet to make a Strength Saving Throw against your Ki DC. On a failed save, they are pulled into your unarmed attack range and take 2d6 bludgeoning damage (half on save). Until the end of your next turn, you gain a +2 bonus to AC."
-			]
-		},
-		{
-			"name": "Eye in the Sky",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"MD",
-				"DP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "Monk"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 4}",
-						"{@b Class:} Monk Discipline",
-						"{@b Power Type:} Daily",
-						"{@b Use Time:} 1 Action"
-					]
-				},
-				"For the next 10 minutes, you gain a +5 bonus to perception checks. When an enemy comes within 5 feet of you, you can use your reaction to move 5 feet disengaged into a square adjacent to them and gain a +2 bonus to AC and saving throws against them."
-			]
-		},
-		{
-			"name": "Salamander's Charge",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"MD",
-				"DP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "Monk"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 4}",
-						"{@b Class:} Monk Discipline",
-						"{@b Power Type:} Daily",
-						"{@b Use Time:} 1 Action"
-					]
-				},
-				"Move up to your movespeed, leaving a trail of fire, then make an unarmed attack that deals 2d6 fire damage. When a creature enters the fire trail or starts their turn inside it, they take fire damage equal to your Wisdom Modifier."
-			]
-		},
-		{
-			"name": "Static Shock",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"AH",
-				"WP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Artificer"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 1}",
-						"{@b Class:} Artificer Hack",
-						"{@b Power Type:} At Will",
-						"{@b Use Time:} 1 Attack"
-					]
-				},
-				"The target of this attack takes 2 lightning damage. On a hit, it takes a penalty equal to your Intelligence modifier on its next attack."
-			]
-		},
-		{
-			"name": "Ethereal Chill",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"AH",
-				"WP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Artificer"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 1}",
-						"{@b Class:} Artificer Hack",
-						"{@b Power Type:} At Will",
-						"{@b Use Time:} 1 Action"
-					]
-				},
-				"Target a creature within 20 feet. All enemies within 5 feet of that creature must make a Dexterity Saving Throw. They take cold damage equal to your Intelligence modifier, plus an additonal 1d8 on a failed save. Additionally, they take cold damage equal to your Intelligence modifier the next time they attack the primary target."
-			]
-		},
-		{
-			"name": "Shield Emitter",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"AH",
-				"EP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Artificer"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 1}",
-						"{@b Class:} Artificer Hack",
-						"{@b Power Type:} Encounter",
-						"{@b Use Time:} 1 Action"
-					]
-				},
-				"You drop a magical shielding device. Every creature within 5 feet of the device gains 1/2 cover (+2 AC) to attacks from outside this range."
-			]
-		},
-		{
-			"name": "Halo of Thorns",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"AH",
-				"EP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Artificer"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 1}",
-						"{@b Class:} Artificer Hack",
-						"{@b Power Type:} Encounter",
-						"{@b Use Time:} 1 Attack"
-					]
-				},
-				"You coat your weapon in a special poison, adding poison damage equal to your Intelligence modifier to this attack. Then, you can pass this poison to an ally within 25 feet, coating one weapon or piece of ammunition with a single attack's dose."
-			]
-		},
-		{
-			"name": "Flameburst Armor",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"AH",
-				"DP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Artificer"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 1}",
-						"{@b Class:} Artificer Hack",
-						"{@b Power Type:} Daily",
-						"{@b Use Time:} 1 Action"
-					]
-				},
-				"You carve burning runes into a creature's armor or clothing. For the next hour, the targeted creature has resistance to fire damage and can use their action to deal 5 fire damage to all creatures within 5 feet."
-			]
-		},
-		{
-			"name": "Life-Tapping Darts",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"AH",
-				"DP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Artificer"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 1}",
-						"{@b Class:} Artificer Hack",
-						"{@b Power Type:} Daily",
-						"{@b Use Time:} 1 Action"
-					]
-				},
-				"You strike a target with life-extracting needles. Make an Intelligence attack against the target. On a hit, you deal 2d10 + Intelligence necrotic damage. Then, you can give the stolen life essence to an ally within 30 feet, giving them 10 Temporary Hit Points (half on a miss)."
-			]
-		},
-		{
-			"name": "Swift Mender",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"AH",
-				"EP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "Artificer"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 4}",
-						"{@b Class:} Artificer Hack",
-						"{@b Power Type:} Encounter",
-						"{@b Use Time:} 1 Bonus Action"
-					]
-				},
-				"You send a miniature drone out to assist an ally within 120 feet. The targeted ally can immediately attempt to save against one ongoing effect currently affecting them with a +1 bonus."
-			]
-		},
-		{
-			"name": "Phantom Henchman",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"AH",
-				"EP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "Artificer"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 4}",
-						"{@b Class:} Artificer Hack",
-						"{@b Power Type:} Encounter",
-						"{@b Use Time:} 1 Reaction"
-					]
-				},
-				"When an attack would hit you, you can drop a phantasmal projector, increasing your AC by 2 and potentially turning the attack into a miss. On your turn, the illusion created by the projector can move up to your movement and make an attack using your intelligence which deals 2d6 psychic damage."
-			]
-		},
-		{
-			"name": "Arcane Springboard",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"AH",
-				"DP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "Artificer"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 4}",
-						"{@b Class:} Artificer Hack",
-						"{@b Power Type:} Daily",
-						"{@b Use Time:} 1 Bonus Action"
-					]
-				},
-				"You summon a 5 foot by 5 foot magical trampoline in a space you can touch. Any creature you permit can walk onto its space and jump up or forward a distance equal to five times your Intelligence modifier in feet."
-			]
-		},
-		{
-			"name": "Flameheart Defender",
-			"source": "TomboftheMummyKingsContent",
-			"page": 5,
-			"featureType": [
-				"AH",
-				"DP"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "Artificer"
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						"{@b Level: 4}",
-						"{@b Class:} Artificer Hack",
-						"{@b Power Type:} Daily",
-						"{@b Use Time:} 1 Action"
-					]
-				},
-				"You construct a small guardian construct (Flameheart Defender) in a square adjacent to you. It persists for one hour."
-			]
-		}
-	],
 	"monster": [
+		{
+			"name": "Charmed Sahuagin Centurion (x5)",
+			"source": "TomboftheMummyKingsContent",
+			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"sahuagin",
+					"minion",
+					"soldier"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "8"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 13,
+			"dex": 11,
+			"con": 12,
+			"int": 12,
+			"wis": 13,
+			"cha": 9,
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"languages": [
+				"Sahuagin"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"The sahuagin has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+					]
+				},
+				{
+					"name": "Shark Telepathy",
+					"entries": [
+						"The sahuagin can magically command any shark within 120 feet of it, using a limited telepathy."
+					]
+				},
+				{
+					"name": "Opportunist Shieldwall",
+					"entries": [
+						"If a target violates the mark of a Sahuagin phalanx, they take 1 piercing damage for every centurion within 10 feet."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Aquatic Phalanx (Group Attack)",
+					"entries": [
+						"{@atk mw} {@hit 3} + X, reach 10 ft., one target: {@h} 1 * X piercing damage. Target is marked by the Sahuagin Phalanx. While marked this way, the target takes a -X penalty to saves against nets."
+					]
+				},
+				{
+					"name": "Great Catch (Group Action)",
+					"entries": [
+						"Target a single creature within 30 feet to make a {@dc 10}+x Dexterity Saving Throw or become {@condition restrained} by your net. The creature can attempt an escape using an action or by dealing 5 or more slashing or fire."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"underwater"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/sahuagin.mp3"
+			},
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Sahuagin",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Sahuagin",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Across fog-shrouded coasts or endless ocean swells, an ominous drone sounded on a conch shell chills the blood of all who hear it. This is the sound of the sahuagin hunting horn-a call to raid and battle. Coastal settlers refer to sahuagin as \"sea devils,\" for sahuagin have no compassion in them, slaughtering the crews of ships and decimating coastal villages.",
+									{
+										"name": "Devils of the Deep",
+										"type": "entries",
+										"entries": [
+											"Sahuagin are a predatory, piscine race that ventures from the ocean's black depths to hunt the creatures of the shallows and shore. Though they dwell in the deepest trenches of the ocean, sahuagin view the entire aquatic realm as their kingdom and the creatures in it as blood sport for their hunting parties.",
+											"The self-styled rulers of sahuagin ocean domains are massive mutant males that grow second sets of arms. They are terrible foes in battle, and all sahuagin bow down before these powerful barons."
+										]
+									},
+									{
+										"name": "Way of the Shark",
+										"type": "entries",
+										"entries": [
+											"Sahuagin worship the shark god Sekolah. Only female sahuagin are deemed worthy of channeling the god's power, and priestesses hold tremendous sway in sahuagin communities.",
+											"Sahuagin are driven into a frenzy by the smell of fresh blood. As worshipers of Sekolah, they also have a special kinship with sharks, which they train as attack animals. Even untrained sharks recognize sahuagin as allies and don't prey on them."
+										]
+									},
+									{
+										"name": "Elven Enmity",
+										"type": "entries",
+										"entries": [
+											"The sahuagin might control the oceans if not for the presence of their mortal enemies, the aquatic elves. Wars between the two races have raged for centuries across the coasts and seas of the world, disrupting maritime trade and drawing other races into the bloody conflict.",
+											"So intense is sahuagin hatred for the aquatic elves that the sea devils have adapted to combat their ancient foes. A sahuagin born near enough to an aquatic elf community can enter the world as a malenti-a sahuagin that physically resembles an aquatic elf in every way. Sahuagin are prone to mutation, but whether this rare phenomenon is a result of the wars between the sahuagin and the aquatic elves-or whether it preceded or even began the conflict-none can say.",
+											"The sahuagin put the malenti to good use as spies and assassins in aquatic elf cities and the societies of other creatures that pose a threat to sahuagin. The mere shadow of the malenti threat incites paranoia and suspicion among aquatic elves, whose resilience is weakened as the prelude to an actual sahuagin invasion."
+										]
+									}
+								]
+							},
+							{
+								"type": "insetReadaloud",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"TThe village was empty, the seagulls were strangely quiet, and all we could hear was the surge of the sea."
+										],
+										"by": "An account of the aftermath of a sahuagin raid"
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Sahuagin.webp"
+						}
+					}
+				]
+			},
+			"conditionImmune": [
+				"charmed"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"damageTags": [
+				"P"
+			]
+		},
 		{
 			"name": "Xol (6th-8th Level)",
 			"source": "TomboftheMummyKingsContent",
@@ -4873,6 +4043,1021 @@
 			]
 		}
 	],
+	"optionalFeatureTypes": {
+		"RE": "Ranger Evocation",
+		"MD": "Monk Discipline",
+		"AH": "Artificer Hack",
+		"FE": "Fighter Exploits",
+		"WP": "At Will Power",
+		"EP": "Encounter Power",
+		"DP": "Daily Power"
+	},
+	"optionalfeature": [
+		{
+			"name": "Hit and Run",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"RE",
+				"WP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Ranger Evocation",
+						"{@b Power Type:} At Will",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"After making this attack, move up to 10 feet to a location not within the target's melee range."
+			]
+		},
+		{
+			"name": "Warning Shot",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"RE",
+				"WP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Ranger Evocation",
+						"{@b Power Type:} At Will",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"After making this attack, select a 5ft by 5ft square within your range and sight. If a creature enters that square before the start of your next turn, you can use your reaction to make an Attack of Opportunity against them."
+			]
+		},
+		{
+			"name": "Rapid Volley",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"RE",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Ranger Evocation",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"Using this attack, make two attacks on different creatures. Do not add your ability modifier to the damage for these attacks, and take a -4 penalty to your roll to hit."
+			]
+		},
+		{
+			"name": "Skirmisher's Shot",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"RE",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Ranger Evocation",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"Before making this attack, you may move up to your movement for free."
+			]
+		},
+		{
+			"name": "Archer's Stairway",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"RE",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Ranger Evocation",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Action"
+					]
+				},
+				"Target a vertical surface no more than 25 feet high and fire a storm of arrows, creating a staircase which allows any creature to climb the surface as if they had a climbing speed."
+			]
+		},
+		{
+			"name": "Sustaining Strike",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"RE",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 4}",
+						"{@b Class:} Ranger Evocation",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"If this attack is lethal, take a +2 bonus to your next attack and do not expend this power."
+			]
+		},
+		{
+			"name": "Hunter's Trap",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"RE",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Ranger Evocation",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"If this shot lands, it reduces the target's move speed to 10 feet. At the end of each of its turns, it can attempt a saving throw against your Strength or Dexterity DC, whichever stat you used for this attack."
+			]
+		},
+		{
+			"name": "Hunt's Climax",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"RE",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Ranger Evocation",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"If the target of this attack is bloodied and the focus of your hunter's mark, the attack deals 2 extra dice of damage and gains a Critical Width bonus of +1. If the attack hits, your hunter's mark ends."
+			]
+		},
+		{
+			"name": "Begin the Hunt",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"RE",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 4}",
+						"{@b Class:} Ranger Evocation",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} Free"
+					]
+				},
+				"When rolling initiative, add +2 to your initiative roll, and immediately activate your hunter's mark. While your hunter's mark is on this target, take a +2 bonus to hits against it."
+			]
+		},
+		{
+			"name": "Rattle the Senses",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"RE",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 4}",
+						"{@b Class:} Ranger Evocation",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"If this attack hits, the target loses one bonus action, one reaction, and any special senses. At the end of each of its turns, it can attempt a Constitution Saving Throw against your Strength or Dexterity DC (whichever you used for this attack), ending the effect on a success. On a missed attack, the target spends one reaction if possible. "
+			]
+		},
+		{
+			"name": "Dragon's Tail",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"MD",
+				"WP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Monk Discipline",
+						"{@b Power Type:} At Will",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"The target of this attack must make a Strength saving throw against your Ki DC or fall prone. Additionally, activating this power puts you in Dragon Stance.",
+				{
+					"type": "entries",
+					"name": "Dragon Stance",
+					"entries": [
+						"While in Dragon Stance, you can consume 10 feet of movement speed in order to swap positions with an ally or prone enemy within 40 feet."
+					]
+				}
+			]
+		},
+		{
+			"name": "Lion's Den",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"MD",
+				"WP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Monk Discipline",
+						"{@b Power Type:} At Will",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"You may choose to push the target of this attack 5 feet. Until the start of your next turn, when a creature comes within 5 feet of you, you may choose to deal bludgeoning damage to it equal to your Wisdom modifier. Additionally, activating this power puts you into Lion Stance.",
+				{
+					"type": "entries",
+					"name": "Lion Stance",
+					"entries": [
+						"While in Lion Stance, you can choose to trade your full movement speed for a +1 bonus to AC and all saving throws and a 5 feet of disengaged movement."
+					]
+				}
+			]
+		},
+		{
+			"name": "Slumbering Hurt",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"MD",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Monk Discipline",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"If the target of this attack is bloodied, all attacks you make against it this turn deal extra damage equal to your strength modifier. Additionally, bloodied enemies cannot make reaction attacks against you until the end of your next turn."
+			]
+		},
+		{
+			"name": "Gentle Rainfall",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"MD",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Monk Discipline",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"This unarmed attack targets every creature within 5 feet, and you gain 5 feet of movement per hit. If at least one attack hits, you additionally disengage."
+			]
+		},
+		{
+			"name": "Granite Avalanche",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"MD",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Monk Discipline",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Action"
+					]
+				},
+				"You rain rocks down on a 10 foot by 10 foot square, and all creatures inside must make a Dexterity Saving through against your Ki DC to half 2d8 bludgeoning damage. Creatures who fail this save additionally take an ongoing -2 penalty to attacks, with a chance to save at the end of each of their turns. Afterwards, you may warp to any point within 5 feet of an affected space."
+			]
+		},
+		{
+			"name": "Harmonious Thunder",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"MD",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Monk Discipline",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"Using this attack, make two unarmed attacks on different targets. Creatures hit by these attacks are wrapping in roiling thunder, taking additional damage equal to your Strength modifier when damaged by attacks. Any time a creature takes damage this way, they can make a Constitution Saving Throw against your Ki DC to end the effect."
+			]
+		},
+		{
+			"name": "Harmonious Discipline",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"MD",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 4}",
+						"{@b Class:} Monk Discipline",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Bonus Action"
+					]
+				},
+				"Gain Temporary Hit Points equal to your Wisdom modifier. When you lose your last temporary hitpoint, you gain a bonus to your next attack roll equal to your Wisdom modifier. If unused, this buff disappears after 10 minutes."
+			]
+		},
+		{
+			"name": "Instrument of Earth",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"MD",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 4}",
+						"{@b Class:} Monk Discipline",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Action"
+					]
+				},
+				"Target a creature within 15 feet to make a Strength Saving Throw against your Ki DC. On a failed save, they are pulled into your unarmed attack range and take 2d6 bludgeoning damage (half on save). Until the end of your next turn, you gain a +2 bonus to AC."
+			]
+		},
+		{
+			"name": "Eye in the Sky",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"MD",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 4}",
+						"{@b Class:} Monk Discipline",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Action"
+					]
+				},
+				"For the next 10 minutes, you gain a +5 bonus to perception checks. When an enemy comes within 5 feet of you, you can use your reaction to move 5 feet disengaged into a square adjacent to them and gain a +2 bonus to AC and saving throws against them."
+			]
+		},
+		{
+			"name": "Salamander's Charge",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"MD",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 4}",
+						"{@b Class:} Monk Discipline",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Action"
+					]
+				},
+				"Move up to your movespeed, leaving a trail of fire, then make an unarmed attack that deals 2d6 fire damage. When a creature enters the fire trail or starts their turn inside it, they take fire damage equal to your Wisdom Modifier."
+			]
+		},
+		{
+			"name": "Static Shock",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"AH",
+				"WP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Artificer Hack",
+						"{@b Power Type:} At Will",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"The target of this attack takes 2 lightning damage. On a hit, it takes a penalty equal to your Intelligence modifier on its next attack."
+			]
+		},
+		{
+			"name": "Ethereal Chill",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"AH",
+				"WP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Artificer Hack",
+						"{@b Power Type:} At Will",
+						"{@b Use Time:} 1 Action"
+					]
+				},
+				"Target a creature within 20 feet. All enemies within 5 feet of that creature must make a Dexterity Saving Throw. They take cold damage equal to your Intelligence modifier, plus an additonal 1d8 on a failed save. Additionally, they take cold damage equal to your Intelligence modifier the next time they attack the primary target."
+			]
+		},
+		{
+			"name": "Shield Emitter",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"AH",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Artificer Hack",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Action"
+					]
+				},
+				"You drop a magical shielding device. Every creature within 5 feet of the device gains 1/2 cover (+2 AC) to attacks from outside this range."
+			]
+		},
+		{
+			"name": "Halo of Thorns",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"AH",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Artificer Hack",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"You coat your weapon in a special poison, adding poison damage equal to your Intelligence modifier to this attack. Then, you can pass this poison to an ally within 25 feet, coating one weapon or piece of ammunition with a single attack's dose."
+			]
+		},
+		{
+			"name": "Flameburst Armor",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"AH",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Artificer Hack",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Action"
+					]
+				},
+				"You carve burning runes into a creature's armor or clothing. For the next hour, the targeted creature has resistance to fire damage and can use their action to deal 5 fire damage to all creatures within 5 feet."
+			]
+		},
+		{
+			"name": "Life-Tapping Darts",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"AH",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Artificer Hack",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Action"
+					]
+				},
+				"You strike a target with life-extracting needles. Make an Intelligence attack against the target. On a hit, you deal 2d10 + Intelligence necrotic damage. Then, you can give the stolen life essence to an ally within 30 feet, giving them 10 Temporary Hit Points (half on a miss)."
+			]
+		},
+		{
+			"name": "Swift Mender",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"AH",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 4}",
+						"{@b Class:} Artificer Hack",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Bonus Action"
+					]
+				},
+				"You send a miniature drone out to assist an ally within 120 feet. The targeted ally can immediately attempt to save against one ongoing effect currently affecting them with a +1 bonus."
+			]
+		},
+		{
+			"name": "Phantom Henchman",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"AH",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 4}",
+						"{@b Class:} Artificer Hack",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Reaction"
+					]
+				},
+				"When an attack would hit you, you can drop a phantasmal projector, increasing your AC by 2 and potentially turning the attack into a miss. On your turn, the illusion created by the projector can move up to your movement and make an attack using your intelligence which deals 2d6 psychic damage."
+			]
+		},
+		{
+			"name": "Arcane Springboard",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"AH",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 4}",
+						"{@b Class:} Artificer Hack",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Bonus Action"
+					]
+				},
+				"You summon a 5 foot by 5 foot magical trampoline in a space you can touch. Any creature you permit can walk onto its space and jump up or forward a distance equal to five times your Intelligence modifier in feet."
+			]
+		},
+		{
+			"name": "Flameheart Defender",
+			"source": "TomboftheMummyKingsContent",
+			"page": 5,
+			"featureType": [
+				"AH",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 4}",
+						"{@b Class:} Artificer Hack",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Action"
+					]
+				},
+				"You construct a small guardian construct (Flameheart Defender) in a square adjacent to you. It persists for one hour."
+			]
+		}
+	],
 	"spell": [
 		{
 			"name": "「LANCE」",
@@ -6468,8 +6653,23 @@
 		{
 			"name": "Slowed",
 			"entries": [
-				"A slowed creature's speed is halved, it takes a -2 penalty to AC and Dexterity Saving Throws, and it cannot use reactions. On its turn, a slowed creature cano only take an action or a bonus action, not both.",
+				"A slowed creature's speed is halved, and it cannot use reactions. On its turn, a slowed creature can only take an action or a bonus action, not both.",
 				"The attack multiplicity of a slowed creature is always 1, and if it attempts to cast a 1 action spell, it must make a DC 9 flat check or cast the spell at a casting time of 2 actions."
+			],
+			"source": "TomboftheMummyKingsContent",
+			"page": 3
+		},
+		{
+			"name": "Marked",
+			"entries": [
+				"A marked creature takes a -2 penalty to attack rolls not directed at the source of their mark. A target can only be marked by one creature at a time, with newer marks superceding older ones. A mark ends when the source of the mark goes to 0 hit points or hostilities end.",
+				{
+					"type": "entries",
+					"name": "Mark Violation",
+					"entries": [
+						"Along with mark riders, a marking effect can have Violation Riders, effects which activate when the target attempts to leave the source's range or attack a different creature. {@i (These are not opportunity attacks. Disengaging will not prevent Violation Riders.)}"
+					]
+				}
 			],
 			"source": "TomboftheMummyKingsContent",
 			"page": 3
