@@ -6663,12 +6663,13 @@
 		{
 			"name": "Marked",
 			"entries": [
-				"A marked creature takes a -2 penalty to attack rolls not directed at the source of their mark. A target can only be marked by one creature at a time, with newer marks superceding older ones. A mark ends when the source of the mark goes to 0 hit points or hostilities end.",
+				"A marked creature takes a -2 penalty to attack rolls not directed at the source of their mark. A target can only be marked by one creature at a time, with newer marks superceding older ones. A mark ends when the source of the mark goes to 0 hit points or hostilities end. Unless otherwise stated, a mark ends at the end of the marker's next turn.",
+				"When a creature makes a marking attack against they have already marked, they can choose whether to keep the old mark or add the new one.",
 				{
 					"type": "entries",
 					"name": "Mark Violation",
 					"entries": [
-						"Along with mark riders, a marking effect can have Violation Riders, effects which activate when the target attempts to leave the source's range or attack a different creature. {@i (These are not opportunity attacks. Disengaging will not prevent Violation Riders.)}"
+						"Along with mark riders, a marking effect can have Violation Riders, effects which activate when the target attempts to leave the source's attack range or attack a different creature while in the source's attack range. {@i (These are not opportunity attacks. Disengaging will not prevent Violation Riders.)}"
 					]
 				}
 			],
