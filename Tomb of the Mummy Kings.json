@@ -7368,7 +7368,7 @@
 			"property": [
 				"PSI"
 			],
-			"psi": 1,
+			"psi": -1,
 			"entries": [
 				"This mummified aboleth heart was pulled from the chest of Ustar, Blood Dripping From the Fangs of Heaven Extinguishes Only the Weak Flame. After its master completed the Baptism of Blood, its power has awakened, and it has become permanently bonded to them.",
 				"The attuned psycker gains the following benefits:",
@@ -7390,7 +7390,7 @@
 			"property": [
 				"PSI"
 			],
-			"psi": -1,
+			"psi": -2,
 			"entries": [
 				"This mummified aboleth heart was pulled from the chest of Ustar, Blood Dripping From the Fangs of Heaven Extinguishes Only the Weak Flame. With the conclusion of The New War, the true power held within this artifact has awakened. Hell upon the world.",
 				"The attuned psycker gains the following benefits:",
@@ -7544,13 +7544,82 @@
 			]
 		},
 		{
-			"name": "",
-			"wondrous": "",
-			"tier": "",
-			"rarity": "",
+			"name": "Le-Koyette's Desire (Fallen)",
+			"wondrous": true,
+			"tier": "major",
+			"rarity": "artifact",
+			"source": "TomboftheMummyKingsContent",
+			"property": [
+				"PSI"
+			],
+			"psi": 0,
+			"entries": [
+				"This dessicated tube of lipstick was pulled from the chest of Ustar, Le-Koyette, True Love's Last Kiss Fills Her Mouth With Poison and She Swallows It All. It is weak enough to provide its own psionic power in this state.",
+				"The attuned psycker gains the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"The attuned can speak to Le-Koyette willingly.",
+						"The attuned gains access to the {@spell 「LE-KOYETTE'S PERVERSE DESIRE」} emanation.",
+						"The attuned gains a swimming speed equal to their walk speed."
+					]
+				}
+			]
+		},
+		{
+			"name": "Le-Koyette's Desire (Baptized)",
+			"wondrous": true,
+			"tier": "major",
+			"rarity": "artifact",
+			"source": "TomboftheMummyKingsContent",
+			"property": [
+				"PSI"
+			],
+			"psi": -1,
+			"entries": [
+				"This dessicated tube of lipstick was pulled from the chest of Le-Koyette, True Love's Last Kiss Fills Her Mouth With Poison and She Swallows It All. After its master completed the Baptism of Blood, its power has awakened, and it has become permanently bonded to them.",
+				"The attuned psycker gains the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"The attuned can speak to Le-Koyette willingly.",
+						"The attuned gains access to the {@spell 「LE-KOYETTE'S PERVERSE DESIRE」} emanation.",
+						"The attuned gains a swimming speed equal to their walk speed."
+					]
+				}
+			]
+		},
+		{
+			"name": "Le-Koyette's Desire (Conquerer)",
+			"wondrous": true,
+			"tier": "major",
+			"rarity": "artifact",
+			"source": "TomboftheMummyKingsContent",
+			"property": [
+				"PSI"
+			],
+			"psi": -2,
+			"entries": [
+				"This dessicated tube of lipstick was pulled from the chest of Le-Koyette, True Love's Last Kiss Fills Her Mouth With Poison and She Swallows It All. With the conclusion of The New War, the true power held within this artifact has awakened. Hell upon the world.",
+				"The attuned psycker gains the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"The attuned can speak to Le-Koyette willingly.",
+						"The attuned gains access to the {@spell 「LE-KOYETTE'S PERVERSE DESIRE」} emanation.",
+						"The attuned gains a swimming speed equal to their walk speed."
+					]
+				}
+			]
+		},
+		{
+			"name": "Magister's Mouth",
+			"wondrous": "true",
+			"tier": "minor",
+			"rarity": "common",
 			"source": "TomboftheMummyKingsContent",
 			"entries": [
-				""
+				"This jig houses an aberrant creature descended from flumphs. If fed any food under the effects of poison or magic, the creature screams, shrivels up, and dies. This piece comes with a pouch of three fertilized eggs, which take one day to hatch inside the harness."
 			]
 		},
 		{
