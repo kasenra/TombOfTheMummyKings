@@ -2513,7 +2513,8 @@
 				"type": "undead",
 				"tags": [
 					"Siren",
-					"Controller"
+					"Controller",
+					"Leader"
 				]
 			},
 			"alignment": [
@@ -2567,7 +2568,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The riverine casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 17}):"
+						"The deadlord casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 17}):"
 					],
 					"daily": {
 						"1": [
@@ -2587,7 +2588,7 @@
 				{
 					"name": "Matron of the Seas",
 					"entries": [
-						"Le-Koyette can breathe air and water. When she casts jet of water or tidal wave within her lair, the water level rises by one."
+						"Le-Koyette can breathe air and water."
 					]
 				},
 				{
@@ -2599,15 +2600,27 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "Multiattack Surge",
 					"entries": [
-						"The riverine makes two Flood Strike attacks."
+						"The deadlord makes two Flood Strike attacks. While in Surging Form, Le-Koyette can substitute one attack for a use of Miracle of Love or Beckoning Whispers."
 					]
 				},
 				{
 					"name": "Flood Strike",
 					"entries": [
 						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage plus 10 ({@damage 3d6}) cold damage."
+					]
+				},
+				{
+					"name": "Beckoning Whispers",
+					"entries": [
+						"{@atk r} {@hit 9} to hit, range 120/240 ft., one target. {@h}21 ({@damage 5d6}) psychic damage. On a hit, a target must make a {@dc 17} Charisma Saving Throw or be {@condition charmed} by Le-Koyette. While {@condition charmed} this way, the target must use their full movement on each turn to approach Le-Koyette."
+					]
+				},
+				{
+					"name": "Miracle of Love (3/Day)",
+					"entries": [
+						"Le-Koyette targets two creatures within 120 feet she can see. The pair must make a summed {@dc 34} Charisma Saving Throw or be {@condition charmed} by Le-Koyette. While {@condition charmed} this way, the targets' field of view closes in on one another, making them blind to every creature not directly between them. This save can be repeated at the end of each of their turns."
 					]
 				}
 			],
@@ -2616,6 +2629,12 @@
 					"name": "Ocean's Call",
 					"entries": [
 						"Le-Koyette teleports to any 5 foot square of contiguous standing water within 120 feet."
+					]
+				},
+				{
+					"name": "Endless Horde",
+					"entries": [
+						"Le-Koyette summons an additional 3 Charmed Sahuagin Centurions or 1 additional Merrow Sniper from the back ranks, and these minions move up to their movement speed. While in Surging Form, this increases to a 6 Sahuagin Phalanx or 2 Merrow Snipers."
 					]
 				}
 			],
@@ -2755,19 +2774,52 @@
 				]
 			},
 			"legendaryHeader": [
-				"Le-Koyette has four villain actions used after the turns of hostile creatures. Each corresponds to a round, used in order.",
-				"Additionally, when Le-Koyette regenerates from her canopic, she activates Hell Upon the World: "
+				"Le-Koyette has four villain actions used after the turns of hostile creatures. Each corresponds to a round, used in order."
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"legendary": [
+				{
+					"name": "Round 1: Legion of Thralls",
+					"entries": [
+						"Each of Le-Koyette's enthralled minions can move their full speed without taking opportunity attacks."
+					]
+				},
+				{
+					"name": "Round 2: All-Devouring Storm",
+					"entries": [
+						"The storm surrounding Le-Koyette's army intensifies. Low-lying areas flood and the mist becomes nearly opaque. Non-aquan creatures must make a {@dc 12} Perception Check at the start of each of their turns. On a failed check, they are blind to everything more than 30 feet away until the start of their next turn. ",
+						"Additionally, Le-Koyette enters surging form, gaining an extra bonus action and 30 Temporary Hit Points."
+					]
+				},
+				{
+					"name": "Round 3: Decimating Chorus",
+					"entries": [
+						"Every creature within 30 feet of Le-Koyette or one of her thralls must make a {@dc 16} Charisma Saving Throw to halve {@damage 2d8} psychic damage and avoid being {@condition charmed} by Le-Koyette. A creature that fails this save can repeat their save against the charm at the end of each turn."
+					]
+				},
+				{
+					"name": "Round 4: Storm of Ancient Blood",
+					"entries": [
+						"Le-Koyette sprays her tainted blood into the sky. Every non-undead creature exposed to the rain must make a {@dc 16} Constitution Saving Throw to half {@damage 4d8} necrotic damage at the start of each of their turns."
+					]
+				}
 			],
 			"damageTags": [
 				"B",
-				"C"
+				"C",
+				"Y"
 			],
 			"damageTagsSpell": [
 				"B"
 			],
+			"savingThrowForced": [
+				"charisma",
+				"constitution"
+			],
 			"savingThrowForcedSpell": [
-				"dexterity",
-				"strength"
+				"dexterity"
 			]
 		},
 		{
