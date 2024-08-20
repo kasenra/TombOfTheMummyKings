@@ -3920,113 +3920,124 @@
 			]
 		},
 		{
-			"name": "Charmed Sahuagin Minion (x5)",
+			"name": "Returned Blue Dragon",
 			"source": "TomboftheMummyKingsContent",
 			"page": 1,
 			"size": [
-				"M"
+				"L"
 			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"sahuagin",
-					"minion",
-					"soldier"
-				]
-			},
+			"type": "Undead Dragon",
 			"alignment": [
 				"L",
 				"E"
 			],
 			"ac": [
 				{
-					"ac": 12,
+					"ac": 16,
 					"from": [
 						"natural armor"
 					]
 				}
 			],
 			"hp": {
-				"special": "8"
+				"average": 110,
+				"formula": "13d10 + 39"
 			},
 			"speed": {
-				"walk": 30,
-				"swim": 40
+				"walk": 40,
+				"fly": 40
 			},
-			"str": 13,
-			"dex": 11,
-			"con": 12,
-			"int": 12,
+			"str": 21,
+			"dex": 8,
+			"con": 17,
+			"int": 14,
 			"wis": 13,
-			"cha": 9,
+			"cha": 17,
+			"save": {
+				"dex": "+2",
+				"con": "+6",
+				"wis": "+4",
+				"cha": "+6"
+			},
 			"skill": {
-				"perception": "+5"
+				"perception": "+7",
+				"stealth": "+2"
 			},
 			"senses": [
+				"blindsight 30 ft.",
 				"darkvision 120 ft."
 			],
-			"passive": 15,
-			"languages": [
-				"Sahuagin"
+			"passive": 17,
+			"immune": [
+				"lightning"
 			],
-			"cr": "1",
-			"trait": [
-				{
-					"name": "Blood Frenzy",
-					"entries": [
-						"The sahuagin has advantage on melee attack rolls against any creature that doesn't have all its hit points."
-					]
-				},
-				{
-					"name": "Shark Telepathy",
-					"entries": [
-						"The sahuagin can magically command any shark within 120 feet of it, using a limited telepathy."
-					]
-				}
-			],
+			"cr": "5",
 			"action": [
 				{
-					"name": "Aquatic Phalanx (Group Attack)",
+					"name": "Multiattack",
 					"entries": [
-						"{@atk mw} {@hit 3} + X, reach 5 ft., one target: {@h} 1 * X piercing damage. Target is marked by the Sahuagin Phalanx. While marked this way, the target takes a -X penalty to saves against nets."
+						"The dragon makes three attacks: one with its bite and two with its claws."
 					]
 				},
 				{
-					"name": "Great Catch (Group Action)",
+					"name": "Bite",
 					"entries": [
-						"Target a single creature within 30 feet to make a {@dc 10}+x Dexterity Saving Throw or become {@condition restrained} by your net. The creature can attempt an escape using an action or by dealing 5 or more slashing or fire."
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage plus 5 ({@damage 1d10}) lightning damage. On a hit, the target must make a {@dc 15} Strength Saving Throw or {@condition grappled} in the dragon's mouth."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Lightning Breath {@recharge 5}",
+					"entries": [
+						"The dragon exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a {@dc 15} Dexterity saving throw, taking 33 ({@damage 6d10}) lightning damage on a failed save, or half as much damage on a successful one."
 					]
 				}
 			],
 			"environment": [
 				"coastal",
-				"underwater"
+				"desert"
 			],
+			"dragonAge": "young",
 			"soundClip": {
 				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/sahuagin.mp3"
+				"url": "https://5e.tools/audio/bestiary/blue-dragon.mp3"
 			},
 			"senseTags": [
+				"B",
 				"SD"
 			],
 			"actionTags": [
+				"Breath Weapon",
 				"Multiattack"
 			],
-			"languageTags": [
-				"OTH"
-			],
 			"miscTags": [
-				"MW"
+				"MW",
+				"RCH",
+				"AOE"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"token": {
-				"name": "Sahuagin",
+				"name": "Young Blue Dragon",
 				"source": "MM"
 			},
 			"fluff": {
-				"name": "Sahuagin",
+				"name": "Young Blue Dragon",
 				"source": "MM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Young Blue Dragon.webp"
+						}
+					}
+				],
 				"entries": [
 					{
 						"type": "entries",
@@ -4034,64 +4045,161 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Across fog-shrouded coasts or endless ocean swells, an ominous drone sounded on a conch shell chills the blood of all who hear it. This is the sound of the sahuagin hunting horn-a call to raid and battle. Coastal settlers refer to sahuagin as \"sea devils,\" for sahuagin have no compassion in them, slaughtering the crews of ships and decimating coastal villages.",
+									"Vain and territorial, blue dragons soar through the skies over deserts, preying on caravans and plundering herds and settlements in the verdant lands beyond the desert's reach. These dragons can also be found in dry steppes, searing badlands, and rocky coasts. They guard their territories against all potential competitors, especially brass dragons.",
+									"A blue dragon is recognized by its dramatic frilled ears and the massive ridged horn atop its blunt head. Rows of spikes extend back from its nostrils to line its brow, and cluster on its jutting lower jaw.",
+									"A blue dragon's scales vary in color from an iridescent azure to a deep indigo, polished to a glossy finish by the desert sands. As the dragon ages, its scales become thicker and harder, and its hide hums and crackles with static electricity. These effects intensify when the dragon is angry or about to attack, giving off an odor of ozone and dusty air.",
 									{
-										"name": "Devils of the Deep",
+										"name": "Vain and Deadly",
 										"type": "entries",
 										"entries": [
-											"Sahuagin are a predatory, piscine race that ventures from the ocean's black depths to hunt the creatures of the shallows and shore. Though they dwell in the deepest trenches of the ocean, sahuagin view the entire aquatic realm as their kingdom and the creatures in it as blood sport for their hunting parties.",
-											"The self-styled rulers of sahuagin ocean domains are massive mutant males that grow second sets of arms. They are terrible foes in battle, and all sahuagin bow down before these powerful barons."
+											"A blue dragon will not stand for any remark or insinuation that it is weak or inferior, taking great pleasure in lording its power over humanoids and other lesser creatures.",
+											"A blue dragon is a patient and methodical combatant. When fighting on its own terms, it turns combat into an extended affair of hours or even days, attacking from a distance with volleys of lightning, then flying well out of harm's reach as it waits to attack again."
 										]
 									},
 									{
-										"name": "Way of the Shark",
+										"name": "Desert Predators",
 										"type": "entries",
 										"entries": [
-											"Sahuagin worship the shark god Sekolah. Only female sahuagin are deemed worthy of channeling the god's power, and priestesses hold tremendous sway in sahuagin communities.",
-											"Sahuagin are driven into a frenzy by the smell of fresh blood. As worshipers of Sekolah, they also have a special kinship with sharks, which they train as attack animals. Even untrained sharks recognize sahuagin as allies and don't prey on them."
+											"Though they sometimes eat cacti and other desert plants to sate their great hunger, blue dragons are carnivores. They prefer to dine on herd animals, cooking those creatures with their lightning breath before gorging themselves. Their dining habits make blue dragons an enormous threat to desert caravans and nomadic tribes, which become convenient collections of food and treasure to a dragon's eye.",
+											"When it hunts, a blue dragon buries itself in the desert sand so that only the horn on its nose pokes above the surface, appearing to be an outcropping of stone. When prey draws near, the dragon rises up, sand pouring from its wings like an avalanche as it attacks."
 										]
 									},
 									{
-										"name": "Elven Enmity",
+										"name": "Overlords and Minions",
 										"type": "entries",
 										"entries": [
-											"The sahuagin might control the oceans if not for the presence of their mortal enemies, the aquatic elves. Wars between the two races have raged for centuries across the coasts and seas of the world, disrupting maritime trade and drawing other races into the bloody conflict.",
-											"So intense is sahuagin hatred for the aquatic elves that the sea devils have adapted to combat their ancient foes. A sahuagin born near enough to an aquatic elf community can enter the world as a malenti-a sahuagin that physically resembles an aquatic elf in every way. Sahuagin are prone to mutation, but whether this rare phenomenon is a result of the wars between the sahuagin and the aquatic elves-or whether it preceded or even began the conflict-none can say.",
-											"The sahuagin put the malenti to good use as spies and assassins in aquatic elf cities and the societies of other creatures that pose a threat to sahuagin. The mere shadow of the malenti threat incites paranoia and suspicion among aquatic elves, whose resilience is weakened as the prelude to an actual sahuagin invasion."
+											"Blue dragons covet valuable and talented creatures whose service reinforces their sense of superiority. Bards, sages, artists, wizards, and assassins can become valuable agents for a blue dragon, which rewards loyal service handsomely.",
+											"A blue dragon keeps its lair secret and well protected, and even its most trusted servants are rarely allowed within. It encourages ankhegs, giant scorpions, and other creatures of the desert to dwell near its lair for additional security. Older blue dragons sometimes attract air elementals and other creatures to serve them."
 										]
-									}
-								]
-							},
-							{
-								"type": "insetReadaloud",
-								"entries": [
+									},
 									{
-										"type": "quote",
+										"name": "Hoarders of Gems",
+										"type": "entries",
 										"entries": [
-											"TThe village was empty, the seagulls were strangely quiet, and all we could hear was the surge of the sea."
-										],
-										"by": "An account of the aftermath of a sahuagin raid"
+											"Though blue dragons collect anything that looks valuable, they are especially fond of gems. Considering blue to be the most noble and beautiful of colors, they covet sapphires, favoring jewelery and magic items adorned with those gems.",
+											"A blue dragon buries its most valuable treasures deep in the sand, while scattering a few less valuable trinkets in plainer sight over hidden sinkholes to punish and eliminate would-be thieves."
+										]
 									}
 								]
 							}
 						]
-					}
-				],
-				"images": [
+					},
 					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/MM/Sahuagin.webp"
-						}
+						"type": "entries",
+						"name": "A Blue Dragon's Lair",
+						"entries": [
+							"Blue dragons make their lairs in barren places, using their lightning breath and their burrowing ability to carve out crystallized caverns and tunnels beneath the sands.",
+							"Thunderstorms rage around a legendary blue dragon's lair, and narrow tubes lined with glassy sand ventilate the lair, all the while avoiding the deadly sinkholes that are the dragon's first line of defense.",
+							"A blue dragon will collapse the caverns that make up its lair if that lair is invaded. The dragon then burrows out, leaving its attackers to be crushed and suffocated. When it returns later, it collects its possessions-along with the wealth of the dead intruders."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Chromatic Dragons",
+						"entries": [
+							"The black, blue, green, red, and white dragons represent the evil side of dragonkind. Aggressive, gluttonous, and vain, chromatic dragons are dark sages and powerful tyrants feared by all creatures-including each other.",
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"name": "Driven by Greed",
+										"entries": [
+											"Chromatic dragons lust after treasure, and this greed colors their every scheme and plot. They believe that the world's wealth belongs to them by right, and a chromatic dragon seizes that wealth without regard for the humanoids and other creatures that have \"stolen\" it. With its piles of coins, gleaming gems, and magic items, a dragon's hoard is the stuff of legend. However, chromatic dragons have no interest in commerce, amassing wealth for no other reason than to have it."
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Creatures of Ego",
+										"type": "entries",
+										"entries": [
+											"Chromatic dragons are united by their sense of superiority, believing themselves the most powerful and worthy of all mortal creatures. When they interact with other creatures, it is only to further their own interests. They believe in their innate right to rule, and this belief is the cornerstone of every chromatic dragon's personality and worldview. Trying to humble a chromatic dragon is like trying to convince the wind to stop blowing. To these creatures, humanoids are animals, fit to serve as prey or beasts of burden, and wholly unworthy of respect."
+										]
+									},
+									{
+										"name": "Dangerous Lairs",
+										"type": "entries",
+										"entries": [
+											"A dragon's lair serves as the seat of its power and a vault for its treasure. With its innate toughness and tolerance for severe environmental effects, a dragon selects or builds a lair not for shelter but for defense, favoring multiple entrances and exits, and security for its hoard.",
+											"Most chromatic dragon lairs are hidden in dangerous and remote locations to prevent all but the most audacious mortals from reaching them. A black dragon might lair in the heart of a vast swamp, while a red dragon might claim the caldera of an active volcano. In addition to the natural defenses of their lairs, powerful chromatic dragons use magical guardians, traps, and subservient creatures to protect their treasures."
+										]
+									},
+									{
+										"name": "Queen of Evil Dragons",
+										"type": "entries",
+										"entries": [
+											"Tiamat the Dragon Queen is the chief deity of evil dragonkind. She dwells on Avernus, the first layer of the Nine Hells. As a lesser god, Tiamat has the power to grant spells to her worshipers, though she is loath to share her power. She epitomizes the avarice of evil dragons, believing that the multiverse and all its treasures will one day be hers and hers alone.",
+											"Tiamat is a gigantic dragon whose five heads reflect the forms of the chromatic dragons that worship her-black, blue, green, red, and white. She is a terror on the battlefield, capable of annihilating whole armies with her five breath weapons, her formidable spellcasting, and her fearsome claws.",
+											"Tiamat's most hated enemy is Bahamut the Platinum Dragon, with whom she shares control of the faith of dragonkind. She also holds a special enmity for Asmodeus, who long ago stripped her of the rule of Avernus and who continues to curb the Dragon Queen's power."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"name": "Dragons",
+						"entries": [
+							"True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.",
+							"Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.",
+							"Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.",
+							"True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.",
+							{
+								"type": "table",
+								"caption": "Dragon Age Categories",
+								"colLabels": [
+									"Category",
+									"Size",
+									"Age Range"
+								],
+								"colStyles": [
+									"col-4",
+									"col-4",
+									"col-4"
+								],
+								"rows": [
+									[
+										"Wyrmling",
+										"Medium",
+										"5 years or less"
+									],
+									[
+										"Young",
+										"Large",
+										"6–100 years"
+									],
+									[
+										"Adult",
+										"Huge",
+										"101–800 years"
+									],
+									[
+										"Ancient",
+										"Gargantuan",
+										"801 years or more"
+									]
+								]
+							}
+						]
 					}
 				]
 			},
-			"conditionImmune": [
-				"charmed"
+			"reaction": [
+				{
+					"name": "Hard Landing",
+					"entries": [
+						"When a creature passes under the undead dragon, it can stop flapping its wings, plummeting down onto the character below it. The creature below must make a {@dc 15} Dexterity Saving Throw or take {@damage 1d6} bludgeoning damage for every five feet the dragon falls. On a successful save, the dragon takes half of this damage."
+					]
+				}
 			],
-			"conditionInflict": [
-				"restrained"
+			"damageTags": [
+				"L",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
 			]
 		}
 	],
