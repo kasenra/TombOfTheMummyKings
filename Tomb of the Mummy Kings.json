@@ -2,7 +2,7 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "TomboftheMummyKingsContent",
+				"json": "TOMK",
 				"abbreviation": "ToMK",
 				"full": "Tomb of the Mummy Kings",
 				"version": "0.1",
@@ -17,7 +17,7 @@
 	"monster": [
 		{
 			"name": "Charmed Sahuagin Centurion (x5)",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 1,
 			"size": [
 				"M"
@@ -201,8 +201,8 @@
 			]
 		},
 		{
-			"name": "Xol (6th-8th Level)",
-			"source": "TomboftheMummyKingsContent",
+			"name": "Xol (9th-12th Level)",
+			"source": "TOMK",
 			"page": 1,
 			"size": [
 				"L"
@@ -218,14 +218,14 @@
 			],
 			"ac": [
 				{
-					"ac": 16,
+					"ac": 17,
 					"from": [
 						"unarmored defense"
 					]
 				}
 			],
 			"hp": {
-				"special": "49"
+				"special": "56"
 			},
 			"speed": {
 				"walk": 30,
@@ -234,17 +234,17 @@
 			"str": 16,
 			"dex": 8,
 			"con": 14,
-			"int": 6,
+			"int": 8,
 			"wis": 10,
 			"cha": 6,
 			"save": {
-				"str": "+6",
-				"dex": "+2"
+				"str": "+7",
+				"dex": "+3"
 			},
 			"skill": {
-				"athletics": "+6",
-				"perception": "+3",
-				"investigation": "+1"
+				"athletics": "+7",
+				"perception": "+4",
+				"investigation": "+3"
 			},
 			"senses": [
 				"darkvision 30 ft.",
@@ -254,7 +254,7 @@
 				{
 					"name": "Signature Attack (Tongue Lash)",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}{@damage 1d6+3} acid damage."
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}{@damage 1d6+4} acid damage."
 					]
 				},
 				{
@@ -266,14 +266,14 @@
 				{
 					"name": "3rd Level: Tongue Grab (5 Ferocity)",
 					"entries": [
-						"The worm makes a signature attack. On a hit, the target is also {@condition grappled} (escape {@dc 13}). Until this grapple ends, the target is {@condition restrained} and the worm can't make a signature attack against another target."
+						"The worm makes a signature attack. On a hit, the target is also {@condition grappled} (escape {@dc 14}). Until this grapple ends, the target is {@condition restrained} and the worm can't make a signature attack against another target."
 					]
 				},
 				{
 					"name": "5th Level: Swallow (8 Ferocity)",
 					"entries": [
-						"The worm attempts to swallow a Medium or smaller creature within 5 feet of them. The target must make a {@dc 13} Dexterity saving throw. On a failed save, the target takes {@damage 3d6} bludgeoning damage and is swallowed. On a successful save, the target takes half as much damage and isn't swallowed. The worm can have only one target swallowed at a time.",
-						"A swallowed target is {@condition blinded} and {@condition restrained}, they have total cover against attacks and other effects outside the worm, and they take {@damage 3d6} acid damage at the start of each of the worm's turns. Whenever the worm takes damage, they must succeed on a Constitution saving throw or regurgitate the swallowed creature, who falls {@condition prone} in an unoccupied space within 5 feet of the worm. The DC for this saving throw equals 10 or half the triggering damage, whichever is higher. If the worm is {@condition incapacitated} or dies, a swallowed creature is no longer {@condition restrained} by the worm and can escape from the corpse using 5 feet of movement, exiting {@condition prone}."
+						"The worm attempts to swallow a Medium or smaller creature within 5 feet of them. The target must make a {@dc 14} Dexterity saving throw. On a failed save, the target takes {@damage 4d6} bludgeoning damage and is swallowed. On a successful save, the target takes half as much damage and isn't swallowed. The worm can have only one target swallowed at a time.",
+						"A swallowed target is {@condition blinded} and {@condition restrained}, they have total cover against attacks and other effects outside the worm, and they take {@damage 4d6} acid damage at the start of each of the worm's turns. Whenever the worm takes damage, they must succeed on a Constitution saving throw or regurgitate the swallowed creature, who falls {@condition prone} in an unoccupied space within 5 feet of the worm. The DC for this saving throw equals 10 or half the triggering damage, whichever is higher. If the worm is {@condition incapacitated} or dies, a swallowed creature is no longer {@condition restrained} by the worm and can escape from the corpse using 5 feet of movement, exiting {@condition prone}."
 					]
 				}
 			],
@@ -282,7 +282,7 @@
 					"name": "Item Storage",
 					"entries": [
 						"The worm can swallow an object without harming it by storing the object in a second stomach. They can use this bonus action again to regurgitate a specific stored object without disturbing any other objects in their second stomach. A regurgitated object lands in an unoccupied space within 5 feet of the worm.",
-						"The worm's second stomach can hold up to 30 pounds of objects, not exceeding a volume of 10 cubic feet."
+						"The worm's second stomach can hold up to 40 pounds of objects, not exceeding a volume of 10 cubic feet."
 					]
 				}
 			],
@@ -310,7 +310,7 @@
 				{
 					"name": "Psionic Link",
 					"entries": [
-						"Xol has a psionic heat capacity of 3. When his caregiver must make an Intelligence Saving throw, he can use his reaction to give them a bonus of +1 to +3, taking the same amount of psionic heat. If Xol goes over his heat capacity, his ferocity increases by 10, as well as undergoing a standard Psychic Crisis."
+						"Xol has a psionic heat capacity of 4. When his caregiver must make an Intelligence Saving throw, he can use his reaction to give them a bonus of +1 to +4, taking the same amount of psionic heat. If Xol goes over his heat capacity, his ferocity increases by 10, as well as undergoing a standard Psychic Crisis."
 					]
 				}
 			],
@@ -323,7 +323,7 @@
 		},
 		{
 			"name": "Plague-Cursed Sahuagin",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 1,
 			"size": [
 				"M"
@@ -389,7 +389,7 @@
 				{
 					"name": "Grasp of Talona",
 					"entries": [
-						"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 14} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 16} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TomboftheMummyKingsContent}."
+						"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 14} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 16} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TOMK}."
 					]
 				}
 			],
@@ -523,7 +523,7 @@
 			]
 		},
 		{
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"name": "Thri-Kreen Queensguard",
 			"size": [
 				"M"
@@ -661,7 +661,7 @@
 						"The queensguard is weakly psionic ({@dc 12}). It has a heat capacity of 3 and access to the following emanations:"
 					],
 					"will": [
-						"{@spell 「lance」|TomboftheMummyKingsContent}"
+						"{@spell 「lance」|TOMK}"
 					],
 					"type": "spellcasting"
 				}
@@ -684,7 +684,7 @@
 		},
 		{
 			"name": "Thri-kreen Minion (x5)",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"size": [
 				"M"
 			],
@@ -857,7 +857,7 @@
 		},
 		{
 			"name": "USTAR, BLOOD DRIPPING FROM THE FANGS OF HEAVEN EXTINGUISHES ONLY THE WEAK FLAME",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 265,
 			"size": [
 				"M"
@@ -1018,7 +1018,7 @@
 		},
 		{
 			"name": "Sand Kobold",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 1,
 			"basicRules": true,
 			"size": [
@@ -1193,7 +1193,7 @@
 		},
 		{
 			"name": "Thri-kreen Chakak",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 1,
 			"size": [
 				"M"
@@ -1357,9 +1357,9 @@
 						"The chakak is powerful psionic. It has 5 heat capacity, with a psionic DC of 12. It has imprints of the following emanations."
 					],
 					"will": [
-						"{@spell 「catch」|TomboftheMummyKingsContent}",
-						"{@spell 「lance」|TomboftheMummyKingsContent}",
-						"{@spell 「slipshod」|TomboftheMummyKingsContent}"
+						"{@spell 「catch」|TOMK}",
+						"{@spell 「lance」|TOMK}",
+						"{@spell 「slipshod」|TOMK}"
 					],
 					"type": "spellcasting"
 				}
@@ -1373,7 +1373,7 @@
 		},
 		{
 			"name": "Plague-Cursed Hunter Minion (x8)",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"size": [
 				"M"
 			],
@@ -1419,7 +1419,7 @@
 				{
 					"name": "Grasp of Talona",
 					"entries": [
-						"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 14} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 16} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TomboftheMummyKingsContent}."
+						"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 14} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 16} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TOMK}."
 					]
 				},
 				{
@@ -1478,7 +1478,7 @@
 					"half-elf"
 				]
 			},
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"alignment": [
 				"C",
 				"N"
@@ -1649,7 +1649,7 @@
 				"M"
 			],
 			"type": "humanoid",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"alignment": [
 				"N",
 				"E"
@@ -1798,7 +1798,7 @@
 					"Psycker"
 				]
 			},
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"alignment": [
 				"C",
 				"N"
@@ -1847,10 +1847,10 @@
 						"Nashwa is a trained Hadat. Her psionic DC is 14 and she has 6 Heat Capacity. Her loyalty is not strong enough to burn her brain, even if all of her allies die."
 					],
 					"will": [
-						"{@spell 「catch」|TomboftheMummyKingsContent}",
-						"{@spell 「reflect」|TomboftheMummyKingsContent}",
-						"{@spell 「shade」|TomboftheMummyKingsContent}",
-						"{@spell 「slipshod」|TomboftheMummyKingsContent}"
+						"{@spell 「catch」|TOMK}",
+						"{@spell 「reflect」|TOMK}",
+						"{@spell 「shade」|TOMK}",
+						"{@spell 「slipshod」|TOMK}"
 					],
 					"type": "spellcasting"
 				}
@@ -1933,7 +1933,7 @@
 					"Barbarian"
 				]
 			},
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"alignment": [
 				"C",
 				"E"
@@ -2081,7 +2081,7 @@
 					"warlord"
 				]
 			},
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"alignment": [
 				"L",
 				"E"
@@ -2215,7 +2215,7 @@
 		{
 			"name": "Paladin in Gold",
 			"isNamedCreature": true,
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 1,
 			"size": [
 				"M"
@@ -2371,7 +2371,7 @@
 		},
 		{
 			"name": "Eternal Guardian",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 1,
 			"size": [
 				"M"
@@ -2504,7 +2504,7 @@
 		},
 		{
 			"name": "LE-KOYETTE, TRUE LOVE'S LAST KISS FILLS HER MOUTH WITH POISON AND SHE SWALLOWS IT ALL",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 1,
 			"size": [
 				"L"
@@ -2824,7 +2824,7 @@
 		},
 		{
 			"name": "Plaguehulk",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 1,
 			"size": [
 				"H"
@@ -2884,7 +2884,7 @@
 				{
 					"name": "Late-Stage Embrace",
 					"entries": [
-						"When the plaguehulk is hit by slashing, piercing or lightning damage, it sloughs off plague boluses, and every creature within 5 feet must make a {@dc 15} Constitution Saving Throw against {@disease Talona's Embrace |TombOfTheMummyKingsContent} exposure and {@damage 3d4} poison damage. A creature that passes this save is immune to the disease for the rest of the round."
+						"When the plaguehulk is hit by slashing, piercing or lightning damage, it sloughs off plague boluses, and every creature within 5 feet must make a {@dc 15} Constitution Saving Throw against {@disease Talona's Embrace |TOMK} exposure and {@damage 3d4} poison damage. A creature that passes this save is immune to the disease for the rest of the round."
 					]
 				}
 			],
@@ -2898,13 +2898,13 @@
 				{
 					"name": "Fist of Talona",
 					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) bludgeoning damage, plus 3 ({@damage 1d6}) poison damage. On a hit, target must make a {@dc 10} Constitution Saving Throw against {@disease Talona's Embrace |TombOfTheMummyKingsContent} exposure and {@damage 3d4} poison damage. A creature that passes this save is immune to the disease for the rest of the round."
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) bludgeoning damage, plus 3 ({@damage 1d6}) poison damage. On a hit, target must make a {@dc 10} Constitution Saving Throw against {@disease Talona's Embrace |TOMK} exposure and {@damage 3d4} poison damage. A creature that passes this save is immune to the disease for the rest of the round."
 					]
 				},
 				{
 					"name": "Bite of Talona",
 					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage, plus 7 ({@damage 2d6}) poison damage. On a hit, target must make a {@dc 16} Constitution Saving Throw against {@disease Talona's Embrace |TombOfTheMummyKingsContent} exposure and {@damage 3d4} poison damage. A creature that passes this save is immune to the disease for the rest of the round."
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage, plus 7 ({@damage 2d6}) poison damage. On a hit, target must make a {@dc 16} Constitution Saving Throw against {@disease Talona's Embrace |TOMK} exposure and {@damage 3d4} poison damage. A creature that passes this save is immune to the disease for the rest of the round."
 					]
 				}
 			],
@@ -3008,7 +3008,7 @@
 		},
 		{
 			"name": "Plaguespitter",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 1,
 			"size": [
 				"S"
@@ -3057,7 +3057,7 @@
 				{
 					"name": "Viral Mind",
 					"entries": [
-						"The plaguespitter's limited mind sees all creatures infected with {@disease Talona's Embrace | TombOfTheMummyKingsContent} as allies innately."
+						"The plaguespitter's limited mind sees all creatures infected with {@disease Talona's Embrace | TOMK} as allies innately."
 					]
 				},
 				{
@@ -3069,7 +3069,7 @@
 				{
 					"name": "Grasp of Talona",
 					"entries": [
-						"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 14} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 16} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TomboftheMummyKingsContent}."
+						"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 14} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 16} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TOMK}."
 					]
 				}
 			],
@@ -3077,7 +3077,7 @@
 				{
 					"name": "Sickening Mucus",
 					"entries": [
-						"{@atk rw} {@hit 6} to hit, range 100/400 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage. The target must succeed on a {@dc 13} Constitution Saving Throw or be afflicted with {@disease Talona's Embrace | TombOfTheMummyKingsContent}. A creature who succeeds on this saving throw is immune to the effect until the end of the round."
+						"{@atk rw} {@hit 6} to hit, range 100/400 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage. The target must succeed on a {@dc 13} Constitution Saving Throw or be afflicted with {@disease Talona's Embrace | TOMK}. A creature who succeeds on this saving throw is immune to the effect until the end of the round."
 					]
 				},
 				{
@@ -3130,7 +3130,7 @@
 		},
 		{
 			"name": "Paladin of Rot",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 1,
 			"size": [
 				"M"
@@ -3198,7 +3198,7 @@
 				{
 					"name": "Grasp of Talona",
 					"entries": [
-						"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 14} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 16} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TomboftheMummyKingsContent}."
+						"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 14} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 16} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TOMK}."
 					]
 				}
 			],
@@ -3218,7 +3218,7 @@
 				{
 					"name": "Vile Expulsion",
 					"entries": [
-						"{@atk rw} {@hit 7} to hit, range 80/320 ft., one target. {@h}8 ({@damage 1d8 + 4}) poison damage plus 9 ({@damage 2d8}) necrotic damage, and the target must make a {@dc 14} Constitution Saving Throw against {@disease Talona's Embrace | TombOfTheMummyKingsContent}. A creature that passes this save is immune to the disease for one turn."
+						"{@atk rw} {@hit 7} to hit, range 80/320 ft., one target. {@h}8 ({@damage 1d8 + 4}) poison damage plus 9 ({@damage 2d8}) necrotic damage, and the target must make a {@dc 14} Constitution Saving Throw against {@disease Talona's Embrace | TOMK}. A creature that passes this save is immune to the disease for one turn."
 					]
 				}
 			],
@@ -3268,7 +3268,7 @@
 		},
 		{
 			"name": "Plague-Cursed Thrall (x5)",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 1,
 			"size": [
 				"M"
@@ -3315,7 +3315,7 @@
 				{
 					"name": "Grasp of Talona",
 					"entries": [
-						"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 12} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 14} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TomboftheMummyKingsContent}. A creature that succeeds this saving throw is immune to the disease until the end of it's next turn."
+						"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 12} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 14} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TOMK}. A creature that succeeds this saving throw is immune to the disease until the end of it's next turn."
 					]
 				},
 				{
@@ -3329,7 +3329,7 @@
 				{
 					"name": "Clawing Horde (Group Attack)",
 					"entries": [
-						"{@atk ms} {@hit 4} + X to hit, reach 5 ft., one creature. {@h}2 * X bludgeoning damage and an additional {@h}2 * X poison damage, and if this attack was made by three or more thralls, the target must make a {@dc 10} + X Constitution Saving Throw against {@disease Talona's Embrace | TombOfTheMummyKingsContent}."
+						"{@atk ms} {@hit 4} + X to hit, reach 5 ft., one creature. {@h}2 * X bludgeoning damage and an additional {@h}2 * X poison damage, and if this attack was made by three or more thralls, the target must make a {@dc 10} + X Constitution Saving Throw against {@disease Talona's Embrace | TOMK}."
 					]
 				}
 			],
@@ -3341,7 +3341,7 @@
 			"name": "SI'QILEK'TER, WITCH OF TYRANNY",
 			"isNpc": true,
 			"isNamedCreature": true,
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 1,
 			"size": [
 				"M"
@@ -3439,17 +3439,17 @@
 						"The witch harnesses psionic energy from the Far Realms to do battle. She has a limitless heat capacity, but she is only able to overclock emanations by one tier. Her psionics DC is 17."
 					],
 					"will": [
-						"{@spell 「conduct」|TomboftheMummyKingsContent}",
-						"{@spell 「lance」|TomboftheMummyKingsContent}"
+						"{@spell 「conduct」|TOMK}",
+						"{@spell 「lance」|TOMK}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell 「awe」|TomboftheMummyKingsContent}",
-							"{@spell 「stars」|TomboftheMummyKingsContent}"
+							"{@spell 「awe」|TOMK}",
+							"{@spell 「stars」|TOMK}"
 						],
 						"2e": [
-							"{@spell 「phobia」|TomboftheMummyKingsContent}",
-							"{@spell 「reflect」|TomboftheMummyKingsContent}"
+							"{@spell 「phobia」|TOMK}",
+							"{@spell 「reflect」|TOMK}"
 						]
 					},
 					"type": "spellcasting"
@@ -3640,7 +3640,7 @@
 				{
 					"name": "Round 1: Melding Flesh",
 					"entries": [
-						"The witch targets up to 4 hostile creatures, linking them together with a {@spell 「fusion」|TomboftheMummyKingsContent} emanation unless they succeed on an Intelligence Saving Throw. Then, to show off, she launches an order one {@spell 「lance」|TomboftheMummyKingsContent} into the linked group. If a low intelligence target passes the save on luck, she will consider using surpass."
+						"The witch targets up to 4 hostile creatures, linking them together with a {@spell 「fusion」|TOMK} emanation unless they succeed on an Intelligence Saving Throw. Then, to show off, she launches an order one {@spell 「lance」|TOMK} into the linked group. If a low intelligence target passes the save on luck, she will consider using surpass."
 					]
 				},
 				{
@@ -3658,7 +3658,7 @@
 				{
 					"name": "Round 4 Onward: Witchblood Wrath",
 					"entries": [
-						"The witch's dark master floods her body with necrotic energy, spraying her vile blood on nearby creatures. Every non-aberration within 20 feet must make a {@dc 17} Dexterity Saving Throw to half {@damage 6d6 + 5} necrotic damage and a stack of {@condition marked for death|TomboftheMummyKingsContent}."
+						"The witch's dark master floods her body with necrotic energy, spraying her vile blood on nearby creatures. Every non-aberration within 20 feet must make a {@dc 17} Dexterity Saving Throw to half {@damage 6d6 + 5} necrotic damage and a stack of {@condition marked for death|TOMK}."
 					]
 				}
 			],
@@ -3685,7 +3685,7 @@
 		},
 		{
 			"name": "Flameheart Defender",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 1,
 			"size": [
 				"M"
@@ -3765,7 +3765,7 @@
 		},
 		{
 			"name": "Returned Hydra",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 1,
 			"basicRules": true,
 			"size": [
@@ -3921,7 +3921,7 @@
 		},
 		{
 			"name": "Returned Blue Dragon",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 1,
 			"size": [
 				"L"
@@ -4201,6 +4201,150 @@
 				"dexterity",
 				"strength"
 			]
+		},
+		{
+			"name": "Charmed Merrow Sniper Minion (x5)",
+			"source": "TOMK",
+			"page": 1,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "10"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 40
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 15,
+			"int": 8,
+			"wis": 10,
+			"cha": 9,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Abyssal",
+				"Aquan"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The merrow can breathe air and water."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Rain of Arrows (Group Attack)",
+					"entries": [
+						"{@atk rw}{@hit 5}+X to hit, range 120/240 feet, one target. {@h} X piercing and 2X lightning damage."
+					]
+				},
+				{
+					"name": "Lightning Trap (Group Action)",
+					"entries": [
+						"Target an empty square within 120 feet and fire an electrified, {@condition invisible} wire trap onto it. Once stepped on, every creature within 10 feet must make a {@dc 10}+X Dexterity Saving Throw or take 3X lightning damage and be {@condition slowed|TOMK}."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"underwater"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/merrow.mp3"
+			},
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"AQ"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Merrow",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Merrow",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Merrow haunt coastal waters, preying on fisherfolk, merfolk, and any other edible creature that crosses their path. These savage monsters snatch and devour unwary prey, hauling drowned corpses back to their underwater grottoes to feed.",
+									{
+										"name": "Transformed Merfolk",
+										"type": "entries",
+										"entries": [
+											"Long ago, a tribe of merfolk found an idol of Demogorgon at the bottom of the sea.",
+											"Not knowing what it was, they brought the artifact to their king. Everyone who touched the idol became afflicted with madness, including the king, who decreed that a sacrificial ritual be performed to open a gateway to the Abyss. The ocean turned red with the blood of slaughtered merfolk, but the ritual worked, and the king led the survivors through the underwater gate to Demogorgon's layer of the Abyss. The merfolk remained there for generations, fighting for their lives as the Abyss warped them completely, transforming them into hulking, evil monstrosities. Thus, the first merrow were born."
+										]
+									},
+									{
+										"name": "Coastal Bullies",
+										"type": "entries",
+										"entries": [
+											"Whenever an opportunity presents itself, the Prince of Demons sends merrow back to the Material Plane to wreak havoc in the oceans. The merrow are bullies, attacking all creatures smaller and weaker than themselves.",
+											"Merrow dwell in undersea caves filled with treasures and trophies, taken from their victims and sunken ships. They tie the rotting corpses of dead enemies and drowned sailors to strands of kelp to mark the borders of their territory."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Merrow.webp"
+						}
+					}
+				]
+			},
+			"save": {
+				"dex": "+5",
+				"con": "+4"
+			},
+			"conditionInflict": [
+				"slowed|tomk"
+			]
 		}
 	],
 	"optionalFeatureTypes": {
@@ -4215,7 +4359,7 @@
 	"optionalfeature": [
 		{
 			"name": "Hit and Run",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"RE",
@@ -4248,7 +4392,7 @@
 		},
 		{
 			"name": "Warning Shot",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"RE",
@@ -4281,7 +4425,7 @@
 		},
 		{
 			"name": "Rapid Volley",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"RE",
@@ -4314,7 +4458,7 @@
 		},
 		{
 			"name": "Skirmisher's Shot",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"RE",
@@ -4347,7 +4491,7 @@
 		},
 		{
 			"name": "Archer's Stairway",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"RE",
@@ -4380,7 +4524,7 @@
 		},
 		{
 			"name": "Sustaining Strike",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"RE",
@@ -4413,7 +4557,7 @@
 		},
 		{
 			"name": "Hunter's Trap",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"RE",
@@ -4446,7 +4590,7 @@
 		},
 		{
 			"name": "Hunt's Climax",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"RE",
@@ -4479,7 +4623,7 @@
 		},
 		{
 			"name": "Begin the Hunt",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"RE",
@@ -4512,7 +4656,7 @@
 		},
 		{
 			"name": "Rattle the Senses",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"RE",
@@ -4545,7 +4689,7 @@
 		},
 		{
 			"name": "Dragon's Tail",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"MD",
@@ -4585,7 +4729,7 @@
 		},
 		{
 			"name": "Lion's Den",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"MD",
@@ -4625,7 +4769,7 @@
 		},
 		{
 			"name": "Slumbering Hurt",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"MD",
@@ -4658,7 +4802,7 @@
 		},
 		{
 			"name": "Gentle Rainfall",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"MD",
@@ -4691,7 +4835,7 @@
 		},
 		{
 			"name": "Granite Avalanche",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"MD",
@@ -4724,7 +4868,7 @@
 		},
 		{
 			"name": "Harmonious Thunder",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"MD",
@@ -4757,7 +4901,7 @@
 		},
 		{
 			"name": "Harmonious Discipline",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"MD",
@@ -4790,7 +4934,7 @@
 		},
 		{
 			"name": "Instrument of Earth",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"MD",
@@ -4823,7 +4967,7 @@
 		},
 		{
 			"name": "Eye in the Sky",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"MD",
@@ -4856,7 +5000,7 @@
 		},
 		{
 			"name": "Salamander's Charge",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"MD",
@@ -4889,7 +5033,7 @@
 		},
 		{
 			"name": "Static Shock",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"AH",
@@ -4922,7 +5066,7 @@
 		},
 		{
 			"name": "Ethereal Chill",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"AH",
@@ -4955,7 +5099,7 @@
 		},
 		{
 			"name": "Shield Emitter",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"AH",
@@ -4988,7 +5132,7 @@
 		},
 		{
 			"name": "Halo of Thorns",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"AH",
@@ -5021,7 +5165,7 @@
 		},
 		{
 			"name": "Flameburst Armor",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"AH",
@@ -5054,7 +5198,7 @@
 		},
 		{
 			"name": "Life-Tapping Darts",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"AH",
@@ -5087,7 +5231,7 @@
 		},
 		{
 			"name": "Swift Mender",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"AH",
@@ -5120,7 +5264,7 @@
 		},
 		{
 			"name": "Phantom Henchman",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"AH",
@@ -5153,7 +5297,7 @@
 		},
 		{
 			"name": "Arcane Springboard",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"AH",
@@ -5186,7 +5330,7 @@
 		},
 		{
 			"name": "Flameheart Defender",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 5,
 			"featureType": [
 				"AH",
@@ -5247,7 +5391,7 @@
 			"entries": [
 				"Target a creature with a jolt of psionic energy. The target makes an Intelligence Saving Throw and takes {@damage 2d6} psychic damage on a failure."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
@@ -5289,7 +5433,7 @@
 			"classes": {
 				"fromClassList": []
 			},
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"Target a creature within range to make an Intelligence Saving Throw. If the target fails their save, the caster becomes {@condition invisible} to that creature until the caster moves or takes hostile action towards the target."
 			],
@@ -5331,7 +5475,7 @@
 			"entries": [
 				"The creature whose attack triggered this reaction must make an Intelligence save or be {@condition grappled} by the caster's Intelligence (Arcana)."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
@@ -5374,7 +5518,7 @@
 			"entries": [
 				"Target creature makes an Intelligence Save against falling {@condition prone}."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
@@ -5425,13 +5569,13 @@
 				"If you exit the brain field or the duration of the emanation runs out, make an Intelligence Saving Throw against your psionics DC. On a successful save, take five levels of {@condition exhaustion}. On a failed save, take nine levels of {@condition exhaustion}.",
 				"If this {@condition exhaustion} is fatal, you erupt in psionic energy as if you'd reached maximum psionic crisis."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"For every 2 points of overclock, gain one less {@condition exhaustion|TomboftheMummyKingsContent} level on Brain Field collapse."
+						"For every 2 points of overclock, gain one less {@condition exhaustion|TOMK} level on Brain Field collapse."
 					]
 				}
 			]
@@ -5468,7 +5612,7 @@
 				"This submind has a SEVER cost of 3 sublimate units, ending the emanation's effect and turning the item attuned to the submind into a sentient, independent magic item.",
 				"This emanation uses an ongoing effect; ongoing effects cost heat capacity instead of building up heat."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -5513,7 +5657,7 @@
 				"This submind has a SEVER cost of 3 sublimate units, ending the ongoing effect and turning the creature into a permanent, independent awakened object retaining your mental statistics. ",
 				"This emanation uses an ongoing effect; ongoing effects cost heat capacity instead of building up heat."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"components": {
 				"m": {
@@ -5559,7 +5703,7 @@
 			"entries": [
 				"Target a creature while invoking this emanation. This creature must make an Intelligence Saving Throw against your psychic DC or be teleported 20 feet upwards."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -5613,7 +5757,7 @@
 				},
 				"If any linked creatures moves more than 60 feet away from the nearest linked creature, the link is broken and this emanation's effect ends."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -5652,7 +5796,7 @@
 			"entries": [
 				"Touch a creature while invoking this emanation. You become aware of the current location of the targeted creature's soul as long as you are in contact with the target."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -5714,7 +5858,7 @@
 				},
 				"An unwilling creature may make an Intelligence Saving Throw against the initial effect of this emanation, as well as a save at the end of each of its turns."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -5755,7 +5899,7 @@
 			"entries": [
 				"Interrupt the activation of the craft which triggered this effect. Then, you may reflect the craft's effect back upon its user (with you as its owner)."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -5809,7 +5953,7 @@
 				"If you become {@condition incapacitated} or go a full round without taking or dealing damage this rage ends early. If this rage would end early this way, you can instead choose to extend it up to ten times.",
 				"At the end of the rage, you take one level of {@condition exhaustion} per rage extension."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -5862,7 +6006,7 @@
 					]
 				}
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -5913,7 +6057,7 @@
 				"This submind has a SEVER cost of 5 sublimate units, turning the target into an independent, psionic creature and ending this emanation's effect.",
 				"This emanation uses an ongoing effect; ongoing effects cost heat capacity instead of building up heat."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"components": {
 				"m": {
@@ -5961,7 +6105,7 @@
 				"On a successful save, the caster is repulsed 30 feet away, and the target is no longer {@condition incapacitated}.",
 				"This emanation cannot be delivered by a submind, and invoking it is an explicitly Cosmic Chaotic Evil action with consequences."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"conditionInflict": [
 				"incapacitated"
@@ -5996,7 +6140,7 @@
 				"While invoking this emanation, touch a creature. If the target fails an Intelligence Saving Throw against your psionics DC, it dies instantly as its body melts into pure psionic energy, leaving behind an amount of ashy, cold psionic sublimate scaling with their mental power.",
 				"Invoking this emanation immediately puts the user into a Stage 3 Psionic Crisis."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2
 		},
 		{
@@ -6029,7 +6173,7 @@
 				"While performing this ritual, target an unawakened humanoid within range. Over the course of this ritual, which often involves incense, music, or a shared meal, the invoker's psychic weave calls out to that of the target.",
 				"At the end of the ceremony, the target of this emanation consumes the sublimate used in the material component, orally, intravenously, in food, or by another delivery method. With their awakening, they are imprinted with one of the invoker's known emanations as well as their natural imprint."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"components": {
 				"m": {
@@ -6069,7 +6213,7 @@
 				"An ancient emanation of the arcane tradition.",
 				"While invoking this emanation, touch an {@condition incapacitated} creature. This creature's connection to the weave is shattered, rendering it incapable of casting spells. This effect can only be dispelled by a {@spell wish} spell or similar effect."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"subschools": [
 				"wizard"
 			]
@@ -6101,7 +6245,7 @@
 			"entries": [
 				"When invoking this emanation, gain 2 sorcery points."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"subschools": [
 				"sorcerer"
@@ -6144,7 +6288,7 @@
 				"A raw emanation, pulled in through The Living Gate.",
 				"Touch a creature while invoking this emanation to attack them with eldritch knowledge beyond their comprehension. The targeted creature must make an Intelligence Saving Throw. On a failure, the target takes on a level of Short Term Madness and {@damage 2d10} psychic damage. If the target fails this save by 5 or more, they instead take a level of Long Term Madness."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -6185,7 +6329,7 @@
 				"While channeling this emanation, the invoker must be in contact with a connected piece of the sands of Anauroch.",
 				"The invoker psionically connects with the desert of Anauroch and can ask it three questions. It is under no compulsion to answer truthfully, and it has its own judgement as to whether helping you fits its own interests."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -6226,7 +6370,7 @@
 				"While invoking this emanation, make a melee attack. On a hit, the target of this attack must make an Intelligence Saving Throw. On a failed save, the target is trapped within your psionic gravity and unable to willingly move out of your melee range.",
 				"The target can repeat this save at the end of each of its turns."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -6269,7 +6413,7 @@
 				"While this emanation is ongoing, your heightened predatory instincts increase your critical range by 1.",
 				"This emanation uses an ongoing effect; ongoing effects cost heat capacity instead of building up heat."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -6323,7 +6467,7 @@
 				"This submind has a SEVER cost of 1 sublimate unit, becoming a tiny, incorporeal Aberrant Entity with your mental stats.",
 				"This emanation uses an ongoing effect; ongoing effects cost heat capacity instead of building up heat."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -6407,7 +6551,7 @@
 				"While casting this spell, target a cube of non-living non-magical matter no more than 10 feet on each side.",
 				"Over the duration of the spell, all hydration is pulled out of the targeted matter and condensed into a ball of elemental water, protected by a thin membrane that can be easily pierced with a needle or tooth."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"feats": [
 				{
@@ -6513,10 +6657,10 @@
 				]
 			},
 			"entries": [
-				"Touch a creature while casting this spell. The targeted creature is numbed against pain and will no longer become {@condition unconscious} when reaching 0 hit points for the duration. At the end of the duration, the target takes one level of {@condition exhaustion|TomboftheMummyKingsContent}.",
+				"Touch a creature while casting this spell. The targeted creature is numbed against pain and will no longer become {@condition unconscious} when reaching 0 hit points for the duration. At the end of the duration, the target takes one level of {@condition exhaustion|TOMK}.",
 				"If the targeted creature reaches a negative hit points value equal to their maximum hit points, they die as usual."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"feats": [
 				{
@@ -6558,7 +6702,7 @@
 			"entries": [
 				"Psychic energy lances the motor cortex of the creature triggering this reaction. It must make an Intelligence Saving Throw or continue moving in the direction of movement that triggered this emanation until it uses its full movement or encounters an obstacle it cannot move through."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 2,
 			"entriesHigherLevel": [
 				{
@@ -6599,7 +6743,7 @@
 				"While invoking this emanation, target a {@condition frightened} creature. That creature is now {@condition frightened} of you as well. While that creature is {@condition frightened}, it must take the dash action and attempt to move away from the sources of its fear. A creature {@condition frightened} this way can only attempt to save against fear while it doesn't have line of sight on any source of its fear.",
 				"If the fear effect modified by this emanation is limited to a number of turns, add one additional turn."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 1,
 			"conditionInflict": [
 				"frightened"
@@ -6643,7 +6787,7 @@
 				"This submind has a SEVER cost of 3 sublimate units, with an additional cost of n(n-1)/2 sublimate units, where the stored emanation has a total heat cost of n.",
 				"This is an ongoing emanation. Ongoing emanations consume heat capacity instead of building up heat."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 3,
 			"entriesHigherLevel": [
 				{
@@ -6685,9 +6829,9 @@
 			},
 			"entries": [
 				"While invoking this emanation, touch the corpse of a creature that died within the last 3 days, or within the last 30 minutes if the corpse's brain has been destroyed. At the end of the spells invocation time, you pass out and experience the last five minutes leading to the creature's death exactly as it did.",
-				"Experiencing this multiple times within a day causes immense strain on a psyckers body, giving one level of {@condition exhaustion|TomboftheMummyKingsContent} per use after the first, two for a creature whose brain has been destroyed."
+				"Experiencing this multiple times within a day causes immense strain on a psyckers body, giving one level of {@condition exhaustion|TOMK} per use after the first, two for a creature whose brain has been destroyed."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 3,
 			"entriesHigherLevel": [
 				{
@@ -6727,7 +6871,7 @@
 			"entries": [
 				"The triggering creature must make an Intelligence Saving Throw or be {@status surprised} on a failure."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 3
 		},
 		{
@@ -6761,8 +6905,83 @@
 				"This ongoing emanation splits off a submind capable of {@status concentration||concentrating} on one of the main mind's spells. While this emanation is active, the invoker can concentrate on two spells at a time, making {@status concentration} saves for them independently.",
 				"This submind has a SEVER cost of 36 units of sublimate, creating an intangible independent mind with a caster level and class based on its creator."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 3
+		},
+		{
+			"name": "「POOL」",
+			"level": 5,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Invoke this emanation while {@status concentration||concentrating} on a spell. The creature you touch while invoking this emanation must make an Intelligence Check with a DC equal to 10 + the level of your {@status concentration} spell. On a success, the burden of your {@status concentration} is moved onto the target creature. The target of this shifted {@status concentration} must make a DC 15 Concentration Save at the start of each of your turns.",
+				"While your shifted {@status concentration} is active, you cannot cast the same {@status concentration} spell again, and you can never shift more than one {@status concentration} effect at a time."
+			],
+			"source": "TOMK",
+			"page": 2
+		},
+		{
+			"name": "「GRAND FINALE」",
+			"level": 20,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "special"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"When a psycker exerts themself too far beyond their limits, they will erupt, and their psionic weave will shatter the world around them. For a psycker with a heat capacity of X, this has the following effects at the following ranges.",
+				{
+					"type" : "list",
+					"items" : 
+					[
+
+						"Creatures within 10 feet must make a DC 25 Intelligence Saving Throw against instant death. On a successful save, they take 4Xd6 + 40 psychic damage. If this damage is lethal, they are dissolved into a pile of psionic sublimate.",
+						"Creatures within 30 feet must make a DC 20 Intelligence Saving Throw against 2Xd6 + 20 psychic damage, taking half on a save.",
+						"Creatures within 60 feet must make a DC 18 Intelligence Saving Throw against Xd6 + 10 psychic damage, taking half on a save.",
+						"Creatures within 120 feet must make a DC 16 Intelligence Saving Throw against Xd4 + 10 psychic damage, taking half on a save."
+
+					]
+				},
+				
+				"Additionally: All nonmagical objects not being worn or carried within 120 feet take {@damage 30d6} force damage. Any object destroyed this way leaves behind a twinkling psionic echo."
+			],
+			"source": "TOMK"
 		}
 	],
 	"condition": [
@@ -6775,7 +6994,7 @@
 				"Finishing a day of Downtime heals a creature's exhaustion level by 1, so long as your Downtime Activity is not physically straining. ({@i ie. Athletic Training, Hunting, Any activity involving combat}) Additionally, if your Downtime Activity is no more strenuous than bedrest, you heal one additional level of exhaustion.",
 				"If a creature is raised from the dead, it gains one level of exhaustion, being set to a max of 9."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 3
 		},
 		{
@@ -6783,7 +7002,7 @@
 			"entries": [
 				"A creature coated in acid takes 1d6 acid damage at the start of each of their turns for 1 minute. A creature can use its action to wipe acid off of itself or another creature."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 3
 		},
 		{
@@ -6792,7 +7011,7 @@
 				"Effects involving alcohol or mundane mind-altering substances will often cause the Fuzzy condition, a special kind of poisoning.",
 				"A fuzzy creature has disadvantage on Dexterity Saving throws and Charisma checks, as well as advantage on saving throws against being frightened."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 3
 		},
 		{
@@ -6800,7 +7019,7 @@
 			"entries": [
 				"Any time this creature takes damage, it takes 1 additional force damage. If no end condition is specified in the source, this condition ends when the creature causing it becomes incapacitated, or on a long rest, whichever comes first."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 3
 		},
 		{
@@ -6808,7 +7027,7 @@
 			"entries": [
 				"A magically sleeping target is {@condition unconscious} and remains that way until they take damage or another creature uses their action to slap them awake."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 3
 		},
 		{
@@ -6817,7 +7036,7 @@
 				"A slowed creature's speed is halved, and it cannot use reactions. On its turn, a slowed creature can only take an action or a bonus action, not both.",
 				"The attack multiplicity of a slowed creature is always 1, and if it attempts to cast a 1 action spell, it must make a DC 9 flat check or cast the spell at a casting time of 2 actions."
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 3
 		},
 		{
@@ -6833,7 +7052,7 @@
 					]
 				}
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 3
 		}
 	],
@@ -6841,7 +7060,7 @@
 		{
 			"name": "Tomb of the Mummy Kings",
 			"id": "TOMKRules",
-			"source": "TOMKRules",
+			"source": "TOMK",
 			"published": "2024-06-14",
 			"group": "homebrew",
 			"contents": [
@@ -6861,7 +7080,7 @@
 	"bookData": [
 		{
 			"id": "TOMKRules",
-			"source": "TOMKRules",
+			"source": "TOMK",
 			"data": [
 				{
 					"type": "section",
@@ -6908,7 +7127,7 @@
 										]
 									]
 								},
-								"Any psionic emanation invoked on the Ethereal Plane automatically receives 3 levels of overclock at no heat cost."
+								"Any psionic emanation invoked on the Ethereal Plane automatically receives 3 levels of overclock at no extra heat cost."
 							]
 						},
 						{
@@ -6931,6 +7150,59 @@
 										[
 											"Submind",
 											"Submind emanations create new micro-consciousnesses using the invoker's psychic power. These subminds can be released as independent minds by consuming psionic sublimate equal to their SEVER cost."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Psionic Crisis",
+							"entries": [
+								"A psycker who pushes beyond their Heat Capacity suffers a Psionic Crisis, as their brain burns itself out trying to exert pressure on the psychic weave. A psycker attempting an emanation that will put them into a Psionic Crisis of Stage 7 or higher must succeed on a DC 20 Intelligence, Wisdom, or Charisma check.",
+								{
+									"type": "table",
+									"caption": "Psionic Crisis",
+									"colLabels": [
+										"Heat Over Capacity",
+										"Visual Indication (Cumulative)",
+										"Crisis Effects (Cumulative)"
+									],
+									"rows": [
+										[
+											"1",
+											"Bloodshot eyes, burning pain beneath the skin.",
+											"Psycker takes 2d6 psychic damage and loses that many max hit points until dawn."
+										],
+										[
+											"2",
+											"Trouble Breathing, Psychic Drone affecting nearby psyckers",
+											"Psycker takes an additional 2d6 psychic max hit points reduction until dawn."
+										],
+										[
+											"3",
+											"Deep runes searing into skin",
+											"Psycker's Intelligence Score is reduced to 1, making a DC 7 Intelligence Saving Throw at the end of each turn to end this effect."
+										],
+										[
+											"5",
+											"Palor of death. Intense psychic drone.",
+											"Psycker's Intelligence Score is reduced to 1 until the next dawn."
+										],
+										[
+											"7",
+											"Fractal burns across the entire body, drip of dilute psionic sublimate pouring from the mouth.",
+											"Psycker falls unconscious until the next dawn."
+										],
+										[
+											"9",
+											"Agonizing psychic drone, psyckers nearby feel primal terror. All creatures sleeping within 60 feet have horrific, incomprehensible nightmares.",
+											"Psycker goes into a coma, not waking for 30 days."
+										],
+										[
+											"11",
+											"Psycker is reduced to a small pile of ash and sublimate.",
+											"Psycker erupts in psionic resonance, dying instantly and invoking {@spell 「GRAND FINALE」|TOMK} with all their remaining psionic strength."
 										]
 									]
 								}
@@ -6996,7 +7268,7 @@
 	"itemProperty": [
 		{
 			"abbreviation": "CUM",
-			"source": "Ar20",
+			"source": "TOMK",
 			"name": "Cumbersome",
 			"page": 4,
 			"entries": [
@@ -7012,7 +7284,7 @@
 		},
 		{
 			"abbreviation": "TS",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"name": "Tinker-Strength",
 			"page": 5,
 			"entries": [
@@ -7029,7 +7301,7 @@
 		},
 		{
 			"abbreviation": "TD",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"name": "Tinker-Dexterity",
 			"page": 5,
 			"entries": [
@@ -7046,7 +7318,7 @@
 		},
 		{
 			"abbreviation": "PSI",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"name": "Psionic Attuned",
 			"page": 5,
 			"entries": [
@@ -7068,9 +7340,9 @@
 			"wondrous": "true",
 			"tier": "minor",
 			"rarity": "uncommon",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
-				"This complicated gizmo augments an {@item alchemy jug|dmg}, upgrading to an {@item alchemy cannon|TomboftheMummyKingsContent}",
+				"This complicated gizmo augments an {@item alchemy jug|dmg}, upgrading to an {@item alchemy cannon|TOMK}",
 				"Applying or removing this augment takes one hour of uninterrupted tinkering by a user with proficiency in alchemical supplies."
 			]
 		},
@@ -7080,7 +7352,7 @@
 			"tier": "minor",
 			"rarity": "uncommon",
 			"reqAttune": true,
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"This trinket imported from Baldur's Gate augments the wearer's jumps.",
 				"The attuned creature can jump twice as far and, by using a bonus action, can jump their entire jump distance for a maximum of 20 feet of movement. Reference the Jumping Distance table below to review.",
@@ -7133,7 +7405,7 @@
 			"wondrous": "true",
 			"tier": "major",
 			"rarity": "rare",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"This augmented {@item alchemy jug | dmg} fires its contents in a pressurized stream. Once per day, you can set a dial and release this pressure to activate one of the following effects:",
 				{
@@ -7194,7 +7466,7 @@
 			"wondrous": "true",
 			"tier": "minor",
 			"rarity": "common",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"These compressed medicinal pellets typically come in packs of three. A creature can take six seconds to dissolve one pellet under its tongue, removing one level of exhaustion."
 			]
@@ -7204,7 +7476,7 @@
 			"wondrous": "true",
 			"tier": "minor",
 			"rarity": "rare",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"These limited edition medicinal pellets typically come in packs of three. A creature can take six seconds to dissolve one pellet under its tongue, removing all levels of exhaustion.",
 				"Has a slight taste of saffron."
@@ -7215,7 +7487,7 @@
 			"wondrous": "true",
 			"tier": "minor",
 			"rarity": "common",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"Drinking this potion sets your intelligence to 5 (-3) for one hour."
 			]
@@ -7228,7 +7500,7 @@
 			"wondrous": "true",
 			"tier": "minor",
 			"rarity": "common",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"sword": "true",
 			"weapon": "true",
 			"property": [
@@ -7252,7 +7524,7 @@
 			"range": "40/120",
 			"dmg1": "4d6",
 			"firearm": "true",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"A primitive firearm prototyped by Abeiran gnome clans. Most arquebi on Toril are shoddy forgeries of these original designs.",
 				"Loading a bullet and powder into this weapon takes ten minutes for a layman, one minute for someone proficient, and one action for someone with the {@feat gunner} feat."
@@ -7273,7 +7545,7 @@
 			],
 			"dmg1": "1d10",
 			"dmgType": "S",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"The shaft of this black-iron glaive is wrapped in funerary cloth soaked in annointing oils with the faint smell of lavender.",
 				"When making an attack with this weapon, the user can spend one spell slot of 1st level or higher to convert the attack's damage to healing.",
@@ -7285,7 +7557,7 @@
 			"wondrous": "true",
 			"tier": "major",
 			"rarity": "rare",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"baseItem": "longbow|phb",
 			"type": "R",
 			"weaponCategory": "martial",
@@ -7306,7 +7578,7 @@
 		},
 		{
 			"name": "Iron Gate",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"tier": "major",
 			"rarity": "very rare",
 			"type": "S",
@@ -7330,7 +7602,7 @@
 			"wondrous": "true",
 			"tier": "major",
 			"rarity": "very rare",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"This thick, tacky glue comes in a small adamantine tin and smells strongly of rotting balsam.",
 				"Spreading this substance on an open wound allows any detached biological limb to bind to the wound site as if it were a part of the wounded creature's body. After a day of setting, the creature slowly gains use of the limb over the next three days.",
@@ -7342,7 +7614,7 @@
 			"wondrous": "true",
 			"tier": "minor",
 			"rarity": "uncommon",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"When this barding is attached to a mount, that mount's carrying capacity increases as if it is two sizes larger. This barding has no magical aura and appears nonmagical to anything less than an Identify spell."
 			]
@@ -7352,7 +7624,7 @@
 			"wondrous": "true",
 			"tier": "minor",
 			"rarity": "common",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"This 'potion' contains a magically concentrated alcoholic concoction. The imbiber of this potion becomes fuzzy until completing a long rest. When they wake up after that long rest, they take 1d4 psychic damage."
 			]
@@ -7363,7 +7635,7 @@
 			"tier": "major",
 			"rarity": "rare",
 			"reqAttune": true,
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"These spikes on these gauntlets seek the blood of prey. When the attuned creature makes an unarmed attack against the target of its hunter's mark, increase the damage die of the attack by 1. On a hit, the prey must make a DC 15 Strength Saving Throw or be knocked prone."
 			]
@@ -7374,7 +7646,7 @@
 			"tier": "major",
 			"rarity": "uncommon",
 			"reqAttune": true,
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"While the attuned creature is fuzzy, they gain a +2 bonus to attack and damage rolls using simple or unarmed weapons. When the attuned creature fails a Dexterity Saving Throw, they also gain advantage on simple and unarmed weapon attacks until the end of their next turn."
 			]
@@ -7390,7 +7662,7 @@
 				"R"
 			],
 			"dmg1": "1d4",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"This articulated flask is calibrated to accept cartridges of Simple Poison. By flicking this flask at the proper angle, a line of poisonous fog shoots out the barrel, attacking every creature in a 10 foot line. Creatures hit by this attack must make a Constitution Saving Throw against your Artifice DC, becoming poisoned on a failed save. A target poisoned this way can re-attempt the save at the end of each of its turns."
 			]
@@ -7401,7 +7673,7 @@
 			"tier": "major",
 			"rarity": "very rare",
 			"reqAttune": true,
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"Created by an incredibly lazy wizard, these red-dyed cloth gloves add the following effects to the {@spell magic missile} spell.",
 				{
@@ -7409,7 +7681,7 @@
 					"items": [
 						"Create one additional dart",
 						"You may transmute the damage type of the spell to fire, cold, poison, or thunder",
-						"For each dart that deals damage, apply one stack of {@condition marked for death|TomboftheMummyKingsContent}. These stacks disappear at the end of your turn."
+						"For each dart that deals damage, apply one stack of {@condition marked for death|TOMK}. These stacks disappear at the end of your turn."
 					]
 				}
 			]
@@ -7419,7 +7691,7 @@
 			"wondrous": "true",
 			"tier": "minor",
 			"rarity": "uncommon",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"When this piece of ammunition is is fired at a target (whether it misses or hits), it explodes in a puff of dark smoke, creating a cloud of {@spell darkness} in a 10 foot radius around the target. This cloud persists for 18 seconds."
 			]
@@ -7436,7 +7708,7 @@
 			"dmg1": "1d8",
 			"dmg2": "1d10",
 			"dmgType": "S",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				""
 			]
@@ -7454,7 +7726,7 @@
 			],
 			"dmg1": "1d8",
 			"dmgType": "S",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				""
 			]
@@ -7465,7 +7737,7 @@
 			"tier": "minor",
 			"rarity": "uncommon",
 			"reqAttune": true,
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"This jaunty little cap is sewn with a modernist interpretation of the insignia of Helm.",
 				"When the wearer heals another creature, they may choose to heal themself for 1d4 hit points as well. This power can be activated a number of times equal to the wearer's proficiency bonus, refreshing on a short rest."
@@ -7484,7 +7756,7 @@
 			"dmg1": "1d8",
 			"dmgType": "P",
 			"bonusWeapon": "+1",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
 				"This enchanted rapier is lined with lilac runes which have a calming effect on onlookers. When an attack from this rapier reduces a target to 0 hit points, they instead remain at 1 hit point and fall into a peaceful, magical slumber. Any melee attack against a creature thus enchanted skips making an attack roll and automatically hits.",
@@ -7502,7 +7774,7 @@
 			"wondrous": true,
 			"tier": "major",
 			"rarity": "artifact",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"property": [
 				"PSI"
 			],
@@ -7524,7 +7796,7 @@
 			"wondrous": true,
 			"tier": "major",
 			"rarity": "artifact",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"property": [
 				"PSI"
 			],
@@ -7546,7 +7818,7 @@
 			"wondrous": true,
 			"tier": "major",
 			"rarity": "artifact",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"property": [
 				"PSI"
 			],
@@ -7577,7 +7849,7 @@
 			"ac": 14,
 			"type": "MA",
 			"armor": true,
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"This ruby-lined mithril breastplate was created by Cateline Lathalas, one of the twin founders of The Royal Observatory, for her sister. The jewels encrusted in it channel arcane power to protect the wearer. It is said that the only battle Meriele went into without this armor was the very one that killed her. The armor has been interred in the observatory ever since, watching over her and her sister's tombs.",
 				"A wizard attuned to this armor has the proficiency to wear it while attuned, and the gems on each side provide the following effects.",
@@ -7613,7 +7885,7 @@
 				"TS"
 			],
 			"bonusWeapon": "+1",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"This aurix-trimmed mace was created by Cateline Lathalas, one of the twin founders of The Royal Observatory as a tool of self-defense. It is adorned with a glittering insignia of Correllon, which hides a secret mechanism. Cateline passed before her sister, who chose to inter her here, underneath the culmination of their life's work. From its spot above above its creator's tomb, this weapon has seen civilizations in Anauroch be born and die dozens of times. None can say how much more bloodshed it can bear.",
 				"Once per day when wielding this weapon, a creature can press down on the insignia of Correllon, increasing its damage die and giving it the reach property for one minute.",
@@ -7625,7 +7897,7 @@
 			"wondrous": "true",
 			"tier": "major",
 			"rarity": "rare",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"While you are wearing these wraps, your unarmed strikes are considered magical, and you receive a +1 bonus to the attack and damage rolls of your unarmed strikes.",
 				"Additionally, a monk wearing these wraps can channel their primal energies and add 1d4 thunder, fire, poison, or cold damage to their unarmed strikes.",
@@ -7649,7 +7921,7 @@
 					"class": "sorcerer"
 				}
 			],
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"While attuned to this vial, you can use it as a spellcasting focus, and you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your sorcerer spells.",
 				"In addition, you gain the following effects from the aboleth blood in this vial:",
@@ -7668,7 +7940,7 @@
 			"wondrous": "true",
 			"tier": "minor",
 			"rarity": "common",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"This saddle attaches via magical means, connecting safely to any consenting creature over 10 minutes. While the attached creature is used as a mount, the rider cannot fall off unless they choose to do so, even while their mount is burrowing, flying, climbing, or swimming."
 			]
@@ -7687,7 +7959,7 @@
 			"dmgType": "S",
 			"sword": true,
 			"weapon": true,
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"This cutlass is forged of a light alloy which feels warm to the touch and leaves a rash with prolonged skin contact. It is likely not safe for extended use.",
 				"Attacks from this weapon deal an extra 1d4 radiant damage to any target previously cut by any Astral weapon."
@@ -7698,7 +7970,7 @@
 			"wondrous": "true",
 			"tier": "minor",
 			"rarity": "uncommon",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"This piece of golden ammunition can be used with a firearm. When used, this ammunition converts the firearm's piercing damage to radiant damage. Additionally, a target hit by this bullet must make a DC 12 Constitution Saving Throw or be {@condition poisoned} until the end of their next turn. On a critical hit or a critically failed save, the target is {@condition poisoned} AND {@condition blinded}."
 			]
@@ -7708,7 +7980,7 @@
 			"wondrous": true,
 			"tier": "major",
 			"rarity": "artifact",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"property": [
 				"PSI"
 			],
@@ -7731,7 +8003,7 @@
 			"wondrous": true,
 			"tier": "major",
 			"rarity": "artifact",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"property": [
 				"PSI"
 			],
@@ -7754,7 +8026,7 @@
 			"wondrous": true,
 			"tier": "major",
 			"rarity": "artifact",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"property": [
 				"PSI"
 			],
@@ -7777,7 +8049,7 @@
 			"wondrous": "true",
 			"tier": "minor",
 			"rarity": "common",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				"This jig houses an aberrant creature descended from flumphs. If fed any food under the effects of poison or magic, the creature screams, shrivels up, and dies. This piece comes with a pouch of three fertilized eggs, which take one day to hatch inside the harness."
 			]
@@ -7787,7 +8059,7 @@
 			"wondrous": "",
 			"tier": "",
 			"rarity": "",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				""
 			]
@@ -7797,7 +8069,7 @@
 			"wondrous": "",
 			"tier": "",
 			"rarity": "",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				""
 			]
@@ -7807,7 +8079,7 @@
 			"wondrous": "",
 			"tier": "",
 			"rarity": "",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				""
 			]
@@ -7817,7 +8089,7 @@
 			"wondrous": "",
 			"tier": "",
 			"rarity": "",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				""
 			]
@@ -7827,7 +8099,7 @@
 			"wondrous": "",
 			"tier": "",
 			"rarity": "",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"entries": [
 				""
 			]
@@ -7836,7 +8108,7 @@
 	"disease": [
 		{
 			"name": "Talona's Embrace",
-			"source": "TomboftheMummyKingsContent",
+			"source": "TOMK",
 			"page": 4,
 			"entries": [
 				"Talona's Embrace is the formal term for the plague sweeping the West-Anaurian Duchy of Gisselarre. Common folk refer to it as 'The Sand Plague' due to its magical effects on stone and sand exposed to the plague.",
@@ -7849,23 +8121,23 @@
 		{
 			"name": "Grasp of Talona",
 			"entries": [
-				"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 14} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 16} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TomboftheMummyKingsContent}."
+				"When this creature dies, it explodes in a cloud of dark pestilence. Creatures within 10 feet must make a {@dc 14} Dexterity Saving Throw or take {@damage 2d6} acid damage on a failed save or half on a successful one. A creature who fails this saving throw must make a {@dc 16} Constitution Saving Throw or become infected with the initial stages of {@disease Talona's Embrace|TOMK}."
 			],
-			"source": "TomboftheMummyKingsContent"
+			"source": "TOMK"
 		},
 		{
 			"name": "Minion",
 			"entries": [
 				"When this creature takes damage from an attack or failed save, it dies. If it takes damage from any other source, it is reduced to 0 hit points if the damage it takes is higher than its max hit points."
 			],
-			"source": "TomboftheMummyKingsContent"
+			"source": "TOMK"
 		},
 		{
 			"name": "Superior Minion",
 			"entries": [
 				"When this creature takes damage from an attack or failed save, it is bloodied, or if already bloodied, it dies. If it takes damage from any other source higher than its max hit points, it is bloodied, and if already bloodied, it dies."
 			],
-			"source": "TomboftheMummyKingsContent"
+			"source": "TOMK"
 		}
 	]
 }
