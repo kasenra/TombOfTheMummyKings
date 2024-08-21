@@ -4345,6 +4345,252 @@
 			"conditionInflict": [
 				"slowed|tomk"
 			]
+		},
+		{
+			"name": "Adult Obsidian Dragon (Under Construction)",
+			"group": [
+				"Gem Dragon"
+			],
+			"source": "TOMK",
+			"page": 1,
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "dragon",
+				"tags": [
+					"gem"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 229,
+				"formula": "17d12 + 119"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": {
+					"number": 80,
+					"condition": "(hover)"
+				},
+				"swim": 40,
+				"canHover": true
+			},
+			"str": 25,
+			"dex": 14,
+			"con": 25,
+			"int": 20,
+			"wis": 17,
+			"cha": 21,
+			"save": {
+				"dex": "+7",
+				"wis": "+8",
+				"int": "+10"
+			},
+			"skill": {
+				"arcana": "+15",
+				"perception": "+13",
+				"persuasion": "+10",
+				"stealth": "+7"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 23,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"preNote": "nonmagical"
+				}
+			],
+			"conditionImmune": [
+				"frightened",
+				"paralyzed",
+				"prone"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"telepathy 120 ft."
+			],
+			"cr": {
+				"cr": "16",
+				"lair": "16"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting (Psionics)",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The dragon casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save {@dc 18}):"
+					],
+					"daily": {
+						"1e": [
+							"{@spell blink}",
+							"{@spell control water}",
+							"{@spell dispel magic}",
+							"{@spell protection from evil and good}",
+							"{@spell sending}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The dragon can breathe both air and water."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon makes one Bite attack and two Claw attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}18 ({@damage 2d10 + 7}) piercing damage plus 9 ({@damage 2d8}) fire damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}11 ({@damage 1d8 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Magma Breath {@recharge 5}",
+					"entries": [
+						"The dragon pools roiling magma in its mouth then expels it in a 90-foot cone. Each creature in that area must make a {@dc 20} Strength saving throw. On a failed save, the creature takes 22 ({@damage 5d8}) fire damage and 22 ({@damage 5d8}) bludgeoning damage, and they are {@condition restrained} by igneous rock. On a successful save, the creature takes half a much damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Change Shape",
+					"entries": [
+						"The dragon magically transforms into any creature that is Medium or Small, while retaining its game statistics (other than its size). This transformation ends if the dragon is reduced to 0 hit points or uses a bonus action to end it."
+					]
+				},
+				{
+					"name": "Psychic Step",
+					"entries": [
+						"The dragon magically teleports to an unoccupied space it can see within 60 feet of it."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Claw",
+					"entries": [
+						"The dragon makes one claw attack."
+					]
+				},
+				{
+					"name": "Psionics (Costs 2 Actions)",
+					"entries": [
+						"The dragon uses Psychic Step or Spellcasting."
+					]
+				},
+				{
+					"name": "Explosive Crystal (Costs 3 Actions)",
+					"entries": [
+						"The dragon spits an amethyst that that explodes at a point it can see within 60 feet of it. Each creature within a 20-foot-radius sphere centered on that point must succeed on a {@dc 20} Dexterity saving throw or take 13 ({@damage 3d8}) force damage and be knocked {@condition prone}."
+					]
+				}
+			],
+			"dragonAge": "adult",
+			"traitTags": [
+				"Amphibious",
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack",
+				"Shapechanger"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"TP"
+			],
+			"spellcastingTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"prone",
+				"restrained"
+			],
+			"conditionInflictLegendary": [
+				"charmed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"immune": [
+				"fire"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			},
+			"savingThrowForcedLegendary": [
+				"charisma"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"O",
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"B"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"strength"
+			]
 		}
 	],
 	"optionalFeatureTypes": {
@@ -6967,18 +7213,14 @@
 			"entries": [
 				"When a psycker exerts themself too far beyond their limits, they will erupt, and their psionic weave will shatter the world around them. For a psycker with a heat capacity of X, this has the following effects at the following ranges.",
 				{
-					"type" : "list",
-					"items" : 
-					[
-
+					"type": "list",
+					"items": [
 						"Creatures within 10 feet must make a DC 25 Intelligence Saving Throw against instant death. On a successful save, they take 4Xd6 + 40 psychic damage. If this damage is lethal, they are dissolved into a pile of psionic sublimate.",
 						"Creatures within 30 feet must make a DC 20 Intelligence Saving Throw against 2Xd6 + 20 psychic damage, taking half on a save.",
 						"Creatures within 60 feet must make a DC 18 Intelligence Saving Throw against Xd6 + 10 psychic damage, taking half on a save.",
 						"Creatures within 120 feet must make a DC 16 Intelligence Saving Throw against Xd4 + 10 psychic damage, taking half on a save."
-
 					]
 				},
-				
 				"Additionally: All nonmagical objects not being worn or carried within 120 feet take {@damage 30d6} force damage. Any object destroyed this way leaves behind a twinkling psionic echo."
 			],
 			"source": "TOMK"
