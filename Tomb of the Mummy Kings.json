@@ -7224,6 +7224,46 @@
 				"Additionally: All nonmagical objects not being worn or carried within 120 feet take {@damage 30d6} force damage. Any object destroyed this way leaves behind a twinkling psionic echo."
 			],
 			"source": "TOMK"
+		},
+		{
+			"name": "「LE-KOYETTE'S PERVERSE DESIRE」",
+			"level": 3,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Target two creatures in range to make Intelligence Saving Throws. All targets who fail their saving throw are {@condition charmed} by you and {@condition blinded} to any creature but the other targets and those directly in between it and another target (including targets who have already saved). At the end of each target's turn, they may re-attempt the save to end this effect."
+			],
+			"source": "TOMK",
+			"page": 2,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For every 2 points of overclock, add another target."
+					]
+				}
+			]
 		}
 	],
 	"condition": [
@@ -8234,7 +8274,7 @@
 					"type": "list",
 					"items": [
 						"The attuned can speak to Le-Koyette willingly.",
-						"The attuned gains access to the {@spell 「LE-KOYETTE'S PERVERSE DESIRE」} emanation.",
+						"The attuned gains access to the {@spell 「LE-KOYETTE'S PERVERSE DESIRE」| TOMK} emanation.",
 						"The attuned gains a swimming speed equal to their walk speed."
 					]
 				}
@@ -8251,13 +8291,13 @@
 			],
 			"psi": -1,
 			"entries": [
-				"This dessicated tube of lipstick was pulled from the chest of Le-Koyette, True Love's Last Kiss Fills Her Mouth With Poison and She Swallows It All. After its master completed the Baptism of Blood, its power has awakened, and it has become permanently bonded to them.",
+				"This dessicated tube of lipstick was pulled from the chest of Le-Koyette, True Love's Last Kiss Fills Her Mouth With Poison and She Swallows It All. After its master completed the Baptism of Want, its power has awakened, and it has become permanently bonded to them.",
 				"The attuned psycker gains the following benefits:",
 				{
 					"type": "list",
 					"items": [
 						"The attuned can speak to Le-Koyette willingly.",
-						"The attuned gains access to the {@spell 「LE-KOYETTE'S PERVERSE DESIRE」} emanation.",
+						"The attuned gains access to the {@spell 「LE-KOYETTE'S PERVERSE DESIRE」 | TOMK} emanation.",
 						"The attuned gains a swimming speed equal to their walk speed."
 					]
 				}
@@ -8280,7 +8320,7 @@
 					"type": "list",
 					"items": [
 						"The attuned can speak to Le-Koyette willingly.",
-						"The attuned gains access to the {@spell 「LE-KOYETTE'S PERVERSE DESIRE」} emanation.",
+						"The attuned gains access to the {@spell 「LE-KOYETTE'S PERVERSE DESIRE」 | TOMK} emanation.",
 						"The attuned gains a swimming speed equal to their walk speed."
 					]
 				}
