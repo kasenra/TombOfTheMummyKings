@@ -6489,7 +6489,7 @@
 				"fromClassList": []
 			},
 			"entries": [
-				"When invoking this emanation, gain 2 sorcery points."
+				"Gain 2 temporary sorcery points, which disappear if not used before the start of your next turn."
 			],
 			"source": "TOMK",
 			"page": 2,
@@ -7333,6 +7333,14 @@
 						"Along with mark riders, a marking effect can have Violation Riders, effects which activate when the target attempts to leave the source's attack range or attack a different creature while in the source's attack range. {@i (These are not opportunity attacks. Disengaging will not prevent Violation Riders.)}"
 					]
 				}
+			],
+			"source": "TOMK",
+			"page": 3
+		},
+		{
+			"name": "Rattled",
+			"entries": [
+				"A rattled creature has -2 to its next attack roll, and the effect ends after it makes an attack. If a rattled creature becomes immune to fear, the effect ends."
 			],
 			"source": "TOMK",
 			"page": 3
