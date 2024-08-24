@@ -4597,7 +4597,8 @@
 		"RE": "Ranger Evocation",
 		"MD": "Monk Discipline",
 		"AH": "Artificer Hack",
-		"FE": "Fighter Exploits",
+		"FM": "Fighter Maneuvers",
+		"RX": "Rogueish Exploits",
 		"WP": "At Will Power",
 		"EP": "Encounter Power",
 		"DP": "Daily Power"
@@ -5606,7 +5607,18 @@
 				},
 				"You construct a small guardian construct (Flameheart Defender) in a square adjacent to you. It persists for one hour."
 			]
-		}
+		},
+		{"name": "Riposte Strike", "source": "TOMK","page": 5,"featureType": ["RX","WP"],"prerequisite": [{"level": {"level": 1,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 1}","{@b Class:} Rogueish Exploit","{@b Power Type:} At Will","{@b Use Time:} 1 Attack"]},"If the target of this attack attempts an attack against you before the start of your next turn, you may make an attack of opportunity against it."]},
+		{"name": "Preparatory Strike", "source": "TOMK","page": 5,"featureType": ["RX","WP"],"prerequisite": [{"level": {"level": 1,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 1}","{@b Class:} Rogueish Exploit","{@b Power Type:} At Will","{@b Use Time:} 1 Attack"]},"When making a ranged attack with this power, gain advantage on attacks against the target of this attack until the end of your next turn."]},
+		{"name": "King's Castle", "source": "TOMK","page": 5,"featureType": ["RX","EP"],"prerequisite": [{"level": {"level": 1,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 1}","{@b Class:} Rogueish Exploit","{@b Power Type:} Encounter","{@b Use Time:} 1 Attack"]},"Make a melee attack which pushes the target back 5 feet on a hit, then swap positions with an ally within 10 feet."]},
+		{"name": "One-Two Punch", "source": "TOMK","page": 5,"featureType": ["RX","EP"],"prerequisite": [{"level": {"level": 1,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 1}","{@b Class:} Rogueish Exploit","{@b Power Type:} Encounter","{@b Use Time:} 1 Action"]},"Make two melee attacks against different creatures. If both hit, you can divide your sneak attack dice freely between the two targets."]},
+		{"name": "Blinding Barrage", "source": "TOMK","page": 5,"featureType": ["RX","DP"],"prerequisite": [{"level": {"level": 1,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 1}","{@b Class:} Rogueish Exploit","{@b Power Type:} Daily","{@b Use Time:} 1 Attack"]},"Make a thrown weapon or ranged attack. The target and every creature within 10 feet take damage equal to your Dexterity modifier. All affected creatures must make a Dexterity Saving Throw against your Finesse DC or be blinded until the start of your next turn."]},
+		{"name": "Confounding Attack", "source": "TOMK","page": 5,"featureType": ["RX","DP"],"prerequisite": [{"level": {"level": 1,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 1}","{@b Class:} Rogueish Exploit","{@b Power Type:} Daily","{@b Use Time:} 1 Attack"]},"Make a melee attack against a creature. On a hit, you may then force the creature to make a melee attack against another creature within their melee range. The second attack can utilize your sneak attack."]},
+		{"name": "Concussive Response", "source": "TOMK","page": 5,"featureType": ["RX","EP"],"prerequisite": [{"level": {"level": 4,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 4}","{@b Class:} Rogueish Exploit","{@b Power Type:} Encounter","{@b Use Time:} 1 Bonus Action"]},"If you are bloodied, all your attacks which deal psychic damage deal an additional 1d6 psychic damage until the start of your next turn."]},
+		{"name": "Low Slash", "source": "TOMK","page": 5,"featureType": ["RX","EP"],"prerequisite": [{"level": {"level": 4,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 4}","{@b Class:} Rogueish Exploit","{@b Power Type:} Encounter","{@b Use Time:}  1 Attack"]},"Make a melee attack. On a hit, you can slide the target one square to the left or the right, and it is slowed until the end of your next turn."]},
+		{"name": "Psionic Conduit", "source": "TOMK","page": 5,"featureType": ["RX","DP"],"prerequisite": [{"level": {"level": 4,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 4}","{@b Class:} Rogueish Exploit","{@b Power Type:} Daily","{@b Use Time:} 1 Bonus Action"]},"Touch an awakened ally and expend one of your Soulknife Dice. The ally then dissipates that much heat."]},
+		{"name": "Bloodbath", "source": "TOMK","page": 5,"featureType": ["RX","DP"],"prerequisite": [{"level": {"level": 4,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 4}","{@b Class:} Rogueish Exploit","{@b Power Type:} Daily","{@b Use Time:} 1 Attack"]},"Sneak attack a creature in melee. On a hit, gore the target. While the target is gored, it takes damage equal to your sneak attack dice at the start of each turn. Each time a target takes this damage, the ongoing amount is halved and it can attempt a Constitution Saving Throw against your Finesse DC to end the effect."]}
+
 	],
 	"spell": [
 		{
@@ -7315,8 +7327,7 @@
 		{
 			"name": "Slowed",
 			"entries": [
-				"A slowed creature's speed is halved, and it cannot use reactions. On its turn, a slowed creature can only take an action or a bonus action, not both.",
-				"The attack multiplicity of a slowed creature is always 1, and if it attempts to cast a 1 action spell, it must make a DC 9 flat check or cast the spell at a casting time of 2 actions."
+				"A slowed creature's speed is halved, and it cannot use reactions. On its turn, a slowed creature can only take an action or a bonus action, not both."
 			],
 			"source": "TOMK",
 			"page": 3
