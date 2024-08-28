@@ -4591,6 +4591,103 @@
 			"savingThrowForcedSpell": [
 				"strength"
 			]
+		},
+		{
+			"name": "Eiglay, Paladin in Gold",
+			"source": "TOMK",
+			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Retainer",
+					"Paladin"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"heavy armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "Eight times their level (number of d10 Hit Dice equal to their level)"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 14,
+			"int": 12,
+			"wis": 10,
+			"cha": 14,
+			"skill": {
+				"athletics": "+3 plus PB",
+				"perception": "+0 plus PB"
+			},
+			"languages": [
+				"Common"
+			],
+			"pbNote": "equals the party's bonus",
+			"action": [
+				{
+					"name": "Signature Attack (< Swordname >)",
+					"entries": [
+						"{@atk mw} {@hit 3 plus PB} to hit, reach 5 ft., one target. {@h}{@damage 1d8 plus PB} piercing damage. Beginning at 7th level, Eiglay can make this attack twice, instead of once, when she takes the Attack action on her turn."
+					]
+				},
+				{
+					"name": "3rd Level: Binding Discipline (3/Day)",
+					"entries": [
+						"When using her signature attack, Eiglay can use a bonus action to infuse her attack with the rigidity of law. The target of this smite must make a {@dc 10} plus PB wisdom saving throw or be {@condition restrained} until the end of its next turn as golden chains envelop it. On a save failed by 5 or more, the creature is also silenced."
+					]
+				},
+				{
+					"name": "5th Level: Brutal Charge (3/Day)",
+					"entries": [
+						"Eiglay charges at least 10 feet then attempts to topple a Medium or smaller creature within 5 feet of them. The target must succeed on a {@dc 10} plus PB Strength saving throw or be knocked {@condition prone}. Succeed or fail, Eiglay then makes two signature attacks against any creature within reach."
+					]
+				},
+				{
+					"name": "7th Level: Shield of the Righteous (1/Day)",
+					"entries": [
+						"When an ally within 30 feet of Eiglay is hit by an attack within 2 of their AC, Eiglay can activate her Golden Vow to give that ally a +2 bonus to AC until a long rest, at the cost of a -2 penalty to her own AC."
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone",
+				"restrained"
+			],
+			"passive": 0,
+			"save": {
+				"wis": "+0",
+				"con": "+0",
+				"str": "+0"
+			},
+			"bonus": [
+				{
+					"name": "Awakened: 「SHADE」",
+					"entries": [
+						"If awakened, Eiglay has a max Heat Capacity of 2, which she can use to invoke {@spell 「SHADE」| TOMK} with a psionics DC of 9 plus PB."
+					]
+				}
+			]
 		}
 	],
 	"optionalFeatureTypes": {
@@ -5608,17 +5705,336 @@
 				"You construct a small guardian construct (Flameheart Defender) in a square adjacent to you. It persists for one hour."
 			]
 		},
-		{"name": "Riposte Strike", "source": "TOMK","page": 5,"featureType": ["RX","WP"],"prerequisite": [{"level": {"level": 1,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 1}","{@b Class:} Rogueish Exploit","{@b Power Type:} At Will","{@b Use Time:} 1 Attack"]},"If the target of this attack attempts an attack against you before the start of your next turn, you may make an attack of opportunity against it."]},
-		{"name": "Preparatory Strike", "source": "TOMK","page": 5,"featureType": ["RX","WP"],"prerequisite": [{"level": {"level": 1,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 1}","{@b Class:} Rogueish Exploit","{@b Power Type:} At Will","{@b Use Time:} 1 Attack"]},"When making a ranged attack with this power, gain advantage on attacks against the target of this attack until the end of your next turn."]},
-		{"name": "King's Castle", "source": "TOMK","page": 5,"featureType": ["RX","EP"],"prerequisite": [{"level": {"level": 1,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 1}","{@b Class:} Rogueish Exploit","{@b Power Type:} Encounter","{@b Use Time:} 1 Attack"]},"Make a melee attack which pushes the target back 5 feet on a hit, then swap positions with an ally within 10 feet."]},
-		{"name": "One-Two Punch", "source": "TOMK","page": 5,"featureType": ["RX","EP"],"prerequisite": [{"level": {"level": 1,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 1}","{@b Class:} Rogueish Exploit","{@b Power Type:} Encounter","{@b Use Time:} 1 Action"]},"Make two melee attacks against different creatures. If both hit, you can divide your sneak attack dice freely between the two targets."]},
-		{"name": "Blinding Barrage", "source": "TOMK","page": 5,"featureType": ["RX","DP"],"prerequisite": [{"level": {"level": 1,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 1}","{@b Class:} Rogueish Exploit","{@b Power Type:} Daily","{@b Use Time:} 1 Attack"]},"Make a thrown weapon or ranged attack. The target and every creature within 10 feet take damage equal to your Dexterity modifier. All affected creatures must make a Dexterity Saving Throw against your Finesse DC or be blinded until the start of your next turn."]},
-		{"name": "Confounding Attack", "source": "TOMK","page": 5,"featureType": ["RX","DP"],"prerequisite": [{"level": {"level": 1,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 1}","{@b Class:} Rogueish Exploit","{@b Power Type:} Daily","{@b Use Time:} 1 Attack"]},"Make a melee attack against a creature. On a hit, you may then force the creature to make a melee attack against another creature within their melee range. The second attack can utilize your sneak attack."]},
-		{"name": "Concussive Response", "source": "TOMK","page": 5,"featureType": ["RX","EP"],"prerequisite": [{"level": {"level": 4,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 4}","{@b Class:} Rogueish Exploit","{@b Power Type:} Encounter","{@b Use Time:} 1 Bonus Action"]},"If you are bloodied, all your attacks which deal psychic damage deal an additional 1d6 psychic damage until the start of your next turn."]},
-		{"name": "Low Slash", "source": "TOMK","page": 5,"featureType": ["RX","EP"],"prerequisite": [{"level": {"level": 4,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 4}","{@b Class:} Rogueish Exploit","{@b Power Type:} Encounter","{@b Use Time:}  1 Attack"]},"Make a melee attack. On a hit, you can slide the target one square to the left or the right, and it is slowed until the end of your next turn."]},
-		{"name": "Psionic Conduit", "source": "TOMK","page": 5,"featureType": ["RX","DP"],"prerequisite": [{"level": {"level": 4,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 4}","{@b Class:} Rogueish Exploit","{@b Power Type:} Daily","{@b Use Time:} 1 Bonus Action"]},"Touch an awakened ally and expend one of your Soulknife Dice. The ally then dissipates that much heat."]},
-		{"name": "Bloodbath", "source": "TOMK","page": 5,"featureType": ["RX","DP"],"prerequisite": [{"level": {"level": 4,"class": {"name": "Rogue"}}}],"entries": [{"type": "list","style": "list-hang-notitle","columns": 2,"items": ["{@b Level: 4}","{@b Class:} Rogueish Exploit","{@b Power Type:} Daily","{@b Use Time:} 1 Attack"]},"Sneak attack a creature in melee. On a hit, gore the target. While the target is gored, it takes damage equal to your sneak attack dice at the start of each turn. Each time a target takes this damage, the ongoing amount is halved and it can attempt a Constitution Saving Throw against your Finesse DC to end the effect."]}
-
+		{
+			"name": "Riposte Strike",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RX",
+				"WP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Rogue"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Rogueish Exploit",
+						"{@b Power Type:} At Will",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"If the target of this attack attempts an attack against you before the start of your next turn, you may make an attack of opportunity against it."
+			]
+		},
+		{
+			"name": "Preparatory Strike",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RX",
+				"WP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Rogue"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Rogueish Exploit",
+						"{@b Power Type:} At Will",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"When making a ranged attack with this power, gain advantage on attacks against the target of this attack until the end of your next turn."
+			]
+		},
+		{
+			"name": "King's Castle",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RX",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Rogue"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Rogueish Exploit",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"Make a melee attack which pushes the target back 5 feet on a hit, then swap positions with an ally within 10 feet."
+			]
+		},
+		{
+			"name": "One-Two Punch",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RX",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Rogue"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Rogueish Exploit",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Action"
+					]
+				},
+				"Make two melee attacks against different creatures. If both hit, you can divide your sneak attack dice freely between the two targets."
+			]
+		},
+		{
+			"name": "Blinding Barrage",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RX",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Rogue"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Rogueish Exploit",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"Make a thrown weapon or ranged attack. The target and every creature within 10 feet take damage equal to your Dexterity modifier. All affected creatures must make a Dexterity Saving Throw against your Finesse DC or be blinded until the start of your next turn."
+			]
+		},
+		{
+			"name": "Confounding Attack",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RX",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Rogue"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 1}",
+						"{@b Class:} Rogueish Exploit",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"Make a melee attack against a creature. On a hit, you may then force the creature to make a melee attack against another creature within their melee range. The second attack can utilize your sneak attack."
+			]
+		},
+		{
+			"name": "Concussive Response",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RX",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Rogue"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 4}",
+						"{@b Class:} Rogueish Exploit",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Bonus Action"
+					]
+				},
+				"If you are bloodied, all your attacks which deal psychic damage deal an additional 1d6 psychic damage until the start of your next turn."
+			]
+		},
+		{
+			"name": "Low Slash",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RX",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Rogue"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 4}",
+						"{@b Class:} Rogueish Exploit",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:}  1 Attack"
+					]
+				},
+				"Make a melee attack. On a hit, you can slide the target one square to the left or the right, and it is slowed until the end of your next turn."
+			]
+		},
+		{
+			"name": "Psionic Conduit",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RX",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Rogue"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 4}",
+						"{@b Class:} Rogueish Exploit",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Bonus Action"
+					]
+				},
+				"Touch an awakened ally and expend one of your Soulknife Dice. The ally then dissipates that much heat."
+			]
+		},
+		{
+			"name": "Bloodbath",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RX",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Rogue"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 4}",
+						"{@b Class:} Rogueish Exploit",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"Sneak attack a creature in melee. On a hit, gore the target. While the target is gored, it takes damage equal to your sneak attack dice at the start of each turn. Each time a target takes this damage, the ongoing amount is halved and it can attempt a Constitution Saving Throw against your Finesse DC to end the effect."
+			]
+		}
 	],
 	"spell": [
 		{
