@@ -4640,9 +4640,9 @@
 			"pbNote": "equals the party's bonus",
 			"action": [
 				{
-					"name": "Signature Attack (< Swordname >)",
+					"name": "Signature Attack (Fulgur)",
 					"entries": [
-						"{@atk mw} {@hit 3 plus PB} to hit, reach 5 ft., one target. {@h}{@damage 1d8 plus PB} piercing damage. Beginning at 7th level, Eiglay can make this attack twice, instead of once, when she takes the Attack action on her turn."
+						"{@atk mw} {@hit 3 plus PB} to hit, reach 5 ft., one target. {@h}{@damage 1d8} piercing damage and {@damage PB} lightning damage. Beginning at 7th level, Eiglay can make this attack twice, instead of once, when she takes the Attack action on her turn."
 					]
 				},
 				{
