@@ -4803,10 +4803,6 @@
 				"mountain",
 				"urban"
 			],
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/githyanki-gish.mp3"
-			},
 			"attachedItems": [
 				"longsword|phb"
 			],
@@ -4827,39 +4823,6 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"token": {
-				"name": "Githyanki Gish",
-				"source": "MPMM"
-			},
-			"fluff": {
-				"name": "Githyanki Gish",
-				"source": "MPMM",
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/MPMM/Githyanki Gish.webp"
-						},
-						"credit": "Chris Seaman"
-					}
-				],
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							"Gish blend their magical abilities with swordplay to become dangerous foes in battle. Their specialized capabilities make them well suited for assassination, raiding, and espionage."
-						]
-					},
-					{
-						"type": "section",
-						"name": "Githyanki",
-						"entries": [
-							"Githyanki descend from an ancient people who were also the progenitors of githzerai (also in this book). These tall, gaunt folk have potent psionic powers and dwell, for the most part, on the Astral Plane. Among the best-known githyanki are the bellicose followers of the Lich Queen Vlaakith. They terrorize the Astral Plane, raiding into other planes to plunder the multiverse of its magic and riches."
-						]
-					}
-				]
-			},
 			"languageTags": [
 				"C"
 			],
@@ -4912,6 +4875,27 @@
 					"type": "variant"
 				}
 			],
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			},
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The lizardfolk firehawk commander can breathe air and water."
+					]
+				},
+				{
+					"name": "Reptillian Escape (1/Day)",
+					"entries": [
+						"If the lizardfolk would fail a Strength or Dexterity Saving Throw, they can shed their tail and succeed instead."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
 			"damageTags": [
 				"F",
 				"S"
@@ -4919,6 +4903,188 @@
 			"damageTagsSpell": [
 				"F",
 				"O"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Lizardfolk Cannibal Diviner",
+			"source": "TOMK",
+			"page": 261,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid"
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"condition": "from {@spell mage armor}"
+				}
+			],
+			"hp": {
+				"average": 90,
+				"formula": "20d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 11,
+			"int": 18,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"int": "+7",
+				"wis": "+4"
+			},
+			"skill": {
+				"arcana": "+7",
+				"history": "+7"
+			},
+			"passive": 11,
+			"languages": [
+				"any four languages"
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The diviner casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 15}):"
+					],
+					"daily": {
+						"2e": [
+							"{@spell detect magic}",
+							"{@spell fly}",
+							"{@spell lightning bolt}",
+							"{@spell Rary's telepathic bond} (always active with crew)"
+						],
+						"1e": [
+							"{@spell true seeing}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The diviner makes three Arcane Burst attacks."
+					]
+				},
+				{
+					"name": "Arcane Burst",
+					"entries": [
+						"{@atk ms,rs} {@hit 7} to hit, reach 5 ft. or range 120 ft., one target. {@h}20 ({@damage 3d10 + 4}) radiant damage."
+					]
+				},
+				{
+					"name": "Overwhelming Revelation {@recharge 5}",
+					"entries": [
+						"The diviner magically creates a burst of illumination in a 10-foot-radius sphere centered on a point within 120 feet of it. Each creature in that area must make a {@dc 15} Wisdom saving throw. On a failed save, a creature takes 45 ({@damage 10d8}) psychic damage and is {@condition stunned} until the end of the diviner's next turn. On a successful save, the creature takes half as much damage and isn't {@condition stunned}."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Perverse Portent (3/Day)",
+					"entries": [
+						"When the diviner or a creature it can see makes an attack roll, a saving throw, or an ability check, the diviner rolls a {@dice d20} and chooses whether to use that roll in place of the {@dice d20} rolled for the attack roll, saving throw, or ability check. Once per turn, the diviner can restore a use of portent if it is able to eat human flesh."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/diviner.mp3"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"X"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Diviner Wizard",
+				"source": "MPMM"
+			},
+			"fluff": {
+				"name": "Diviner Wizard",
+				"source": "MPMM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Diviner Wizard.webp"
+						},
+						"credit": "Alix Branwyn"
+					}
+				],
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Diviners peer into the future and know that knowledge is power. They might act aloof and mysterious, hinting at omens and secrets, or they might be know-it-alls, spilling insights to advance their own status."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Wizards",
+						"entries": [
+							"Wizards pursue magical power through the study of arcane texts. Some travel the world searching for esoteric tomes while others train lesser wizards or collaborate with colleagues to create new spells."
+						]
+					}
+				]
+			},
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The lizardfolk can breathe air and water."
+					]
+				},
+				{
+					"name": "Reptilian Escape (1/Day)",
+					"entries": [
+						"If the lizardfolk would fail a Strength or Dexterity Saving Throw, it can choose to shed its tail and succeed instead"
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"damageTags": [
+				"R",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"L"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
@@ -6268,6 +6434,402 @@
 					]
 				},
 				"Sneak attack a creature in melee. On a hit, gore the target. While the target is gored, it takes damage equal to your sneak attack dice at the start of each turn. Each time a target takes this damage, the ongoing amount is halved and it can attempt a Constitution Saving Throw against your Finesse DC to end the effect."
+			]
+		},
+		{
+			"name": "Arrow of the Savior",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RE",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 9}",
+						"{@b Class:} Ranger Evocation",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Reaction"
+					]
+				},
+				"React to a creature falling while within 5 feet of a wall and while within the range of your bow. They can attempt a DC 10 Acrobatics or Athletics check to cling to your arrow, stopping their fall."
+			]
+		},
+		{
+			"name": "Killer's Ambush",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RE",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 9}",
+						"{@b Class:} Ranger Evocation",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"Attack a creature from which you are hidden. The target is rattled by you, and you can immediately move 10 feet and attempt to hide again."
+			]
+		},
+		{
+			"name": "Step of the Morning Mist",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RE",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 9}",
+						"{@b Class:} Ranger Evocation",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} Free"
+					]
+				},
+				"Consume your full movement to teleport to a location you can see within 30 feet. Then, gain a +2 bonus to AC until the end of your next turn."
+			]
+		},
+		{
+			"name": "Thousand Arrow Awareness",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RE",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 9}",
+						"{@b Class:} Ranger Evocation",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Action"
+					]
+				},
+				"Target a 5ft circle within range of your bow. For the next hour, you can use your reaction to make a bow reaction attack against any creature you can see enter that area. On your turn, you can consume your full movement to move this circle up to half of your movement speed."
+			]
+		},
+		{
+			"name": "Energy Conversion",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"AH",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 9}",
+						"{@b Class:} Artificer Hack",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Reaction"
+					]
+				},
+				"React to a creature being damaged by an attack. Reduce the damage that target takes by an amount equal to your intelligence modifier plus 5, then that ally gains that many temporary hit points."
+			]
+		},
+		{
+			"name": "Sphere of Reality",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"AH",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 9}",
+						"{@b Class:} Artificer Hack",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"Make a ranged artifice attack on a creature within 60 feet. On a hit, they take 1d10 thunder damage, as well as force damage equal to your intelligence modifier. Then, open a rift terminus within 5 feet of the target and one within 5 feet of yourself. Until the end of your next turn, targets you allow can direct attacks through the rift."
+			]
+		},
+		{
+			"name": "Phantom Structure",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"AH",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 9}",
+						"{@b Class:} Artificer Hack",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Action"
+					]
+				},
+				"Target a line with a length up to 5 times your intelligence modifier plus 10 feet which begins and ends at the same elevation. A 5 foot wide phantom bridge is constructed there which functions as normal walkable terrain, even if it goes over open air or difficult terrain. On each of your turns, you can use a bonus action to preserve this bridge."
+			]
+		},
+		{
+			"name": "Brittleskin Missile",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"AH",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 9}",
+						"{@b Class:} Artificer Hack",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"Make an artifice attack, firing an acid dart at a target. On a hit, the target takes 2d6 acid damage and loses resistance to physical damage types. On a miss, the target loses resistance to nonmagical physical damage types. At the end of each of its turns, the target can attempt a Constitution Saving Throw to end this effect."
+			]
+		},
+		{
+			"name": "Thought Shield",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RX",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Rogue"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 9}",
+						"{@b Class:} Rogueish Exploit",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Action"
+					]
+				},
+				"Touch a creature. That creature and yourself are resistant to psychic damage and have advantage on Intelligence Saving Throws until the start of your next turn."
+			]
+		},
+		{
+			"name": "Mind Clash",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RX",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Rogue"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 9}",
+						"{@b Class:} Rogueish Exploit",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Action"
+					]
+				},
+				"Target a creature within 60 feet. It must make an Intelligence Saving Throw against your psychic DC, taking 2d8 psychic damage on a fail. You can add your sneak attack to this damage."
+			]
+		},
+		{
+			"name": "Mental Triumph",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RX",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Rogue"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 9}",
+						"{@b Class:} Rogueish Exploit",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Bonus Action"
+					]
+				},
+				"For the next hour, you are immune to the slowed, grappled, and restrained conditions. Any effect of this type on you immediately ends."
+			]
+		},
+		{
+			"name": "Intellect Hammer",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RX",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Rogue"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 9}",
+						"{@b Class:} Rogueish Exploit",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"Attack a creature in melee, regaining one Psionic Die on a hit and dealing extra psychic damage equal to your Intelligence Modifier. On a critical hit, regain two Psionic Dice instead."
 			]
 		}
 	],
