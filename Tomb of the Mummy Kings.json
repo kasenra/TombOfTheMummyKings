@@ -5089,6 +5089,114 @@
 			"savingThrowForcedSpell": [
 				"dexterity"
 			]
+		},
+		{
+			"name": "Lizardfolk Anklebiter Conscript Minion (x8)",
+			"source": "TOMK",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"lizardfolk",
+					"Minion",
+					"Soldier"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"Shoddy Breastplate"
+					]
+				}
+			],
+			"hp": {
+				"special": "13"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 12,
+			"int": 12,
+			"wis": 12,
+			"cha": 8,
+			"passive": 11,
+			"languages": [
+				"Lizardfolk",
+				"Common"
+			],
+			"cr": {
+				"cr": "6",
+				"xp": 285
+			},
+			"trait": [
+				{
+					"name": "Malnourishment",
+					"entries": [
+						"After a lifetime of nothing but ankle meat, the lizardfolk will go feral over any humanoid corpse within 30 feet, charging directly to its side to start gnawing on the prime cuts."
+					]
+				},
+				{
+					"name": "Minion",
+					"entries": [
+						"When this creature takes damage from an attack or failed save, it dies. If it takes damage from any other source, it is reduced to 0 hit points if the damage it takes is higher than its max hit points."
+					]
+				},
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The lizardfolk can breathe air and water."
+					]
+				},
+				{
+					"name": "Reptillian Escape",
+					"entries": [
+						"If the lizardfolk would fail a Strength Saving Throw or Dexterity Saving Throw by 3 or less, they can instead choose to succeed, slipping away by shedding their tail and moving up to 30 feet."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Rising Sun Exhalation (Group Attack)",
+					"entries": [
+						"{@atk r} {@hit 5} + X to hit, range 30 ft., one creature. {@h}4 * X fire damage. If this attack was made by more than two anklebiters, the target is {@condition fuzzy|TOMK} until the end of their next turn."
+					]
+				},
+				{
+					"name": "Shieldwall Glaive (Group Attack)",
+					"entries": [
+						"{@atk mw} {@hit 5} + X to hit, reach 5 ft., one target. {@h}4 * X slashing damage. If this attack is made with two or more anklebiters, the target is {@condition marked|TOMK} by the legion. A target violating this mark must make a {@dc 12}+X Strength Saving Throw or fall {@condition prone}."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/FleeMortals/token/Human Apprentice Mage.png",
+			"foundryTokenScale": 1.5,
+			"save": {
+				"str": "+5",
+				"con": "+4"
+			},
+			"languageTags": [
+				"C"
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"conditionInflict": [
+				"fuzzy|tomk",
+				"marked|tomk",
+				"prone"
+			]
 		}
 	],
 	"optionalFeatureTypes": {
