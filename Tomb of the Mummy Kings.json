@@ -5197,6 +5197,185 @@
 				"marked|tomk",
 				"prone"
 			]
+		},
+		{
+			"name": "Adult Armalix",
+			"source": "TOMK",
+			"page": 1,
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Solo"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 315,
+				"formula": "18d20 + 126"
+			},
+			"speed": {
+				"walk": 60,
+				"burrow": 50
+			},
+			"str": 30,
+			"dex": 10,
+			"con": 25,
+			"int": 3,
+			"wis": 10,
+			"cha": 5,
+			"save": {
+				"con": "+12",
+				"str": "+15"
+			},
+			"senses": [
+				"blindsight 30 ft.",
+				"tremorsense 120 ft."
+			],
+			"passive": 10,
+			"conditionImmune": [
+				"charmed",
+				"flanked|FleeMortals",
+				"frightened",
+				"prone"
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"name": "Army of One",
+					"entries": [
+						"The armalix has six claws, each of which can be targeted with attacks (AC 20, immunity to psychic damage) while that claw is grappling a creature. When a claw takes 35 damage or more in a single turn, that claw is destroyed, releasing any target it was grappling. The armalix can't use a destroyed tongue with their Multiattack or Tongue Grab action until they finish a long rest. Damaging or destroying a claw deals no damage to the worm."
+					]
+				},
+				{
+					"name": "Slowed, Not Stopped (3/Day)",
+					"entries": [
+						"When the armalix fails a saving throw, they can choose to succeed instead. When they do, their speed and the reach of their Chittering Claw attack are each reduced by a cumulative 5 feet. The armalix's speed and reach can't be reduced below 5 feet in this way."
+					]
+				},
+				{
+					"name": "Tunneler",
+					"entries": [
+						"The armalix can burrow through solid rock at half their burrowing speed and leaves a 10-foot-diameter tunnel in their wake."
+					]
+				},
+				{
+					"name": "Legendary Determination",
+					"entries": [
+						"When this creature would become {@condition paralyzed}, {@condition incapacitated}, or {@condition stunned}, it is instead only {@condition restrained}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The armalix can make a number of Chittering Claw attacks equal to the number of claws they currently have (see Army of One). The Armalix can replace any number of those attacks with a use of Devour."
+					]
+				},
+				{
+					"name": "Chittering Claw",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 30 ft., one target. {@h}7 ({@damage 2d6}) acid damage and 2 {@damage 1d4} slashing damage, and the creature is {@condition grappled} (escape {@dc 19}). Until this grapple ends, the worm can't use this tongue against another target."
+					]
+				},
+				{
+					"name": "Maw",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 5 ft., one target. {@h}23 ({@damage 3d8 + 10}) piercing damage. If the target is Huge or smaller, they must succeed on a {@dc 19} Dexterity saving throw or be swallowed (as if by the armalix's Devour action)."
+					]
+				},
+				{
+					"name": "Devour",
+					"entries": [
+						"The armalix pulls a Huge or smaller {@condition grappled} creature into their maw and swallows them. A swallowed creature is no longer {@condition grappled}, but they are {@condition blinded} and {@condition restrained}, have total cover against attacks and other effects outside the worm, and take 28 ({@damage 8d6}) acid damage at the start of each of the worm's turns.",
+						"If the armalix takes 30 damage or more on a single turn from a creature inside them, the worm must succeed on a {@dc 21} Constitution check at the end of that turn or regurgitate all swallowed creatures, each of whom fall {@condition prone} in an unoccupied space within 10 feet of the armalix. If the armalix dies, a swallowed creature can escape from the corpse by using 20 feet of movement, exiting {@condition prone}."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Goring Sweep",
+					"entries": [
+						"The armalix violently swings a creature they have {@condition grappled}. The {@condition grappled} creature takes 10 ({@damage 3d6}) bludgeoning damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Tongue Recall",
+					"entries": [
+						"When one of the armalix's claws takes damage that doesn't immediately destroy it, the worm can release any target that tongue is grappling and recall the tongue back inside the worm's body. That tongue can't be targeted until the worm uses it to grapple a creature again."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"The armalix has three villain actions. They can take each action once during an encounter after an enemy's turn. They can take these actions in any order but can use only one per round."
+			],
+			"legendary": [
+				{
+					"name": "Action 1: Open the Earth",
+					"entries": [
+						"The armalix writhes, sending tremors through the ground and opening a 20-foot-wide, 100-foot-long, 40-foot-deep fissure in the ground, originating from the worm. Each creature in that area must make a {@dc 19} Dexterity saving throw. On a failed save, a creature falls into the fissure, taking 14 ({@damage 4d6}) bludgeoning damage from the fall and landing {@condition prone}. On a successful save, a creature flees to the closest unoccupied space outside the fissure's area."
+					]
+				},
+				{
+					"name": "Action 2: Earth Breach",
+					"entries": [
+						"The worm burrows up to half their speed and then bursts through the surface, breaching the ground in a 10-foot-radius circle. Huge and smaller creatures within that area must succeed on a {@dc 19} Dexterity saving throw or be swallowed (as if by the worm's Swallow action)."
+					]
+				},
+				{
+					"name": "Action 3: Better Out Than In",
+					"entries": [
+						"The worm projectile vomits the contents of their stomach in a 60-foot cone. Each creature in that area must make a {@dc 19} Dexterity saving throw, taking 21 ({@damage 6d6}) bludgeoning damage plus 21 ({@damage 6d6}) acid damage on a failed save, or half as much damage on a successful one. Additionally, creatures who were swallowed by the worm are regurgitated, taking 21 ({@damage 6d6}) bludgeoning damage and landing {@condition prone} in an unoccupied space of the worm's choice within that area."
+					]
+				}
+			],
+			"traitTags": [
+				"Tunneler"
+			],
+			"senseTags": [
+				"B",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/FleeMortals/token/Kingfissure Worm.png"
+			},
+			"foundryTokenScale": 2,
+			"damageTags": [
+				"A",
+				"B",
+				"P"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
 		}
 	],
 	"optionalFeatureTypes": {
@@ -9758,6 +9937,13 @@
 			"name": "Superior Minion",
 			"entries": [
 				"When this creature takes damage from an attack or failed save, it is bloodied, or if already bloodied, it dies. If it takes damage from any other source higher than its max hit points, it is bloodied, and if already bloodied, it dies."
+			],
+			"source": "TOMK"
+		},
+		{
+			"name": "Legendary Determination",
+			"entries": [
+				"When this creature would become paralyzed, incapacitated, or stunned, it is instead only restrained."
 			],
 			"source": "TOMK"
 		}
