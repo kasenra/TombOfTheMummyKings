@@ -5282,13 +5282,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The armalix can make a number of Chittering Claw attacks equal to the number of claws they currently have (see Army of One). The Armalix can replace any number of those attacks with a use of Devour."
+						"The armalix can make a number of Chittering Claw attacks equal to the number of claws they currently have (see Army of One). The armalix can replace any number of those attacks with a use of Devour."
 					]
 				},
 				{
 					"name": "Chittering Claw",
 					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 30 ft., one target. {@h}7 ({@damage 2d6}) acid damage and 2 {@damage 1d4} slashing damage, and the creature is {@condition grappled} (escape {@dc 19}). Until this grapple ends, the worm can't use this tongue against another target."
+						"{@atk mw} {@hit 11} to hit, reach 30 ft., one target. {@h}7 ({@damage 2d6}) acid damage and 2 {@damage 1d4} slashing damage, and the creature is {@condition grappled} (escape {@dc 19}). Until this grapple ends, the armalix can't use this claw against another target."
 					]
 				},
 				{
@@ -5315,7 +5315,7 @@
 			],
 			"reaction": [
 				{
-					"name": "Tongue Recall",
+					"name": "Claw Recall",
 					"entries": [
 						"When one of the armalix's claws takes damage that doesn't immediately destroy it, the worm can release any target that tongue is grappling and recall the tongue back inside the worm's body. That tongue can't be targeted until the worm uses it to grapple a creature again."
 					]
@@ -5334,13 +5334,13 @@
 				{
 					"name": "Action 2: Earth Breach",
 					"entries": [
-						"The worm burrows up to half their speed and then bursts through the surface, breaching the ground in a 10-foot-radius circle. Huge and smaller creatures within that area must succeed on a {@dc 19} Dexterity saving throw or be swallowed (as if by the worm's Swallow action)."
+						"The armalix burrows up to half their speed and then bursts through the surface, breaching the ground in a 10-foot-radius circle. Huge and smaller creatures within that area must succeed on a {@dc 19} Dexterity saving throw or be swallowed (as if by the armalix's Swallow action)."
 					]
 				},
 				{
 					"name": "Action 3: Better Out Than In",
 					"entries": [
-						"The worm projectile vomits the contents of their stomach in a 60-foot cone. Each creature in that area must make a {@dc 19} Dexterity saving throw, taking 21 ({@damage 6d6}) bludgeoning damage plus 21 ({@damage 6d6}) acid damage on a failed save, or half as much damage on a successful one. Additionally, creatures who were swallowed by the worm are regurgitated, taking 21 ({@damage 6d6}) bludgeoning damage and landing {@condition prone} in an unoccupied space of the worm's choice within that area."
+						"The armalix projectile vomits the contents of their stomach in a 60-foot cone. Each creature in that area must make a {@dc 19} Dexterity saving throw, taking 21 ({@damage 6d6}) bludgeoning damage plus 21 ({@damage 6d6}) acid damage on a failed save, or half as much damage on a successful one. Additionally, creatures who were swallowed by the worm are regurgitated, taking 21 ({@damage 6d6}) bludgeoning damage and landing {@condition prone} in an unoccupied space of the worm's choice within that area."
 					]
 				}
 			],
