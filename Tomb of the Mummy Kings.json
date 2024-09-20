@@ -5376,6 +5376,204 @@
 			"savingThrowForced": [
 				"dexterity"
 			]
+		},
+		{
+			"name": "ERO'FULA'SEN, WITCH OF MADNESS",
+			"isNamedCreature": true,
+			"source": "TOMK",
+			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Solo",
+					"Witch"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"formula": "20d8 + 120",
+				"average": 210
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 22,
+			"con": 22,
+			"int": 16,
+			"wis": 17,
+			"cha": 18,
+			"save": {
+				"str": "+9",
+				"dex": "+10",
+				"con": "+10",
+				"wis": "+7"
+			},
+			"skill": {
+				"athletics": "+8",
+				"deception": "+8",
+				"perception": "+7",
+				"persuasion": "+8",
+				"stealth": "+11",
+				"survival": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Witch"
+			],
+			"cr": "11",
+			"trait": [
+				{
+					"name": "Stone Sacrifice (3/Day)",
+					"entries": [
+						"When Emer fails a saving throw, she can choose to succeed instead by ending the effects of her Stone Gaze on a creature of her choice within 300 feet of her."
+					]
+				},
+				{
+					"name": "Legendary Determination",
+					"entries": [
+						"When this creature would become {@condition paralyzed}, {@condition incapacitated}, or {@condition stunned}, it is instead only {@condition restrained}."
+					]
+				},
+				{
+					"name": "Surpass (1/Day)",
+					"entries": [
+						"Once per day, when a creature would save against one of the witch's abilities, it may choose to bypass the need for a save and have the creature automatically fail."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Emer uses Pinning Shot or makes three attacks using Snake Bite, Longbow, or both. She also uses Stone Gaze or Envenomed Stone, if available."
+					]
+				},
+				{
+					"name": "Stone Crush",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one creature. {@h}14 ({@damage 4d6}) bludgeoning damage and {@h}3 ({@damage 1d6}) poison damage, and the target must succeed on a {@dc 16} Constitution saving throw or be {@condition poisoned} until the end of the witch's next turn. While {@condition poisoned} in this way, the target can't take reactions."
+					]
+				},
+				{
+					"name": "Stone Gaze",
+					"entries": [
+						"The witch fires beams of energy from its mask at up to three creatures it can see within 60 feet. Each target must succeed on a {@dc 16} Constitution saving throw or begin turning to stone. Every turn while turning to stone, the target repeats this saving throw. After one failed Saving Throw, the target is {@condition slowed|TOMK}. After a second failure, the target is also {@condition restrained}. And, after the third, the target is {@condition petrified}. If the target two times before becoming {@condition petrified}, the effect ends for them."
+					]
+				},
+				{
+					"name": "Envenomed Stone {@recharge 5}",
+					"entries": [
+						"The witch utters an otherworldly hex. Each creature within 60 feet of it who is being turned to stone by Stone Gaze must make a {@dc 16} Constitution saving throw, taking 44 ({@damage 8d10}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Mesmerizing Smile",
+					"entries": [
+						"The glowing eyes of the witch's mask gaze at one creature it can see within 60 feet. If the target can see the witch, they must succeed on a {@dc 16} Wisdom saving throw or be {@condition charmed} until the start of the target's next turn. A target {@condition charmed} in this way must immediately use their reaction, if available, to move up to their speed in a direction of the witch's choice."
+					]
+				},
+				{
+					"name": "Everpresence",
+					"entries": [
+						"The witch vanishes into a cloud of red mist, appearing at a location it can see within 60 feet, so long as that location is not in direct sunlight."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Blinding Fog",
+					"entries": [
+						"When a creature the witch can see within 5 feet hits it with a melee attack, the witch envelops them in its mist. The target must succeed on a {@dc 16} Dexterity saving throw or take 7 ({@damage 2d6}) acid damage and be {@condition blinded} until the start of their next turn."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"The witch has four villain actions. It can take each action once during an encounter after an enemy's turn. It can take these actions in any order but can use only one per round."
+			],
+			"legendary": [
+				{
+					"name": "Action 1: I See You!",
+					"entries": [
+						"Emer uses Stone Gaze against each enemy she can see within 60 feet of her."
+					]
+				},
+				{
+					"name": "Action 2: Mists of Aparidion",
+					"entries": [
+						"<>"
+					]
+				},
+				{
+					"name": "Action 3: Stone Puppets",
+					"entries": [
+						"Emer mentally manipulates the stone in each creature who is being turned to stone by her Stone Gaze. Emer and each of those creatures move up to their speed then make a weapon attack against a creature of Emer's choice (no action required)."
+					]
+				},
+				{
+					"name": "Action 4: Punishment of the Godeater",
+					"entries": [
+						"Three portals manifest behind the witch, and a Godeater Tendril appears out of each, grabbing at its face and ripping its stone head off to reveal the beating heart beneath it. The witch becomes vulnerable to all damage, and its Stone Crush attack is replaced with the Curseblood Aurora attack.",
+						"These Godeater Tendrils can be targeted (15 AC, 25 HP), and when a tendril is killed this way, it deals 50 damage to the witch."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"blinded",
+				"charmed",
+				"petrified",
+				"poisoned",
+				"restrained",
+				"slowed|tomk"
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"I"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
 		}
 	],
 	"optionalFeatureTypes": {
@@ -9581,7 +9779,7 @@
 			],
 			"psi": 0,
 			"entries": [
-				"This mummified aboleth heart was pulled from the chest of Ustar, Blood Dripping From the Fangs of Heaven Extinguishes Only the Weak Flame. It is weak enough to provide its own psionic power in this state.",
+				"This mummified aboleth heart was pulled from the chest of USTAR, BLOOD DRIPPING FROM THE FANGS OF HEAVEN EXTINGUISHES ONLY THE WEAK FLAME.",
 				"The attuned psycker gains the following benefits:",
 				{
 					"type": "list",
@@ -9603,7 +9801,7 @@
 			],
 			"psi": -1,
 			"entries": [
-				"This mummified aboleth heart was pulled from the chest of Ustar, Blood Dripping From the Fangs of Heaven Extinguishes Only the Weak Flame. After its master completed the Baptism of Blood, its power has awakened, and it has become permanently bonded to them.",
+				"This mummified aboleth heart was pulled from the chest of USTAR, BLOOD DRIPPING FROM THE FANGS OF HEAVEN EXTINGUISHES ONLY THE WEAK FLAME. Through the Baptism of Blood, its true power has been awakened.",
 				"The attuned psycker gains the following benefits:",
 				{
 					"type": "list",
@@ -9625,7 +9823,7 @@
 			],
 			"psi": -2,
 			"entries": [
-				"This mummified aboleth heart was pulled from the chest of Ustar, Blood Dripping From the Fangs of Heaven Extinguishes Only the Weak Flame. With the conclusion of The New War, the true power held within this artifact has awakened. Hell upon the world.",
+				"This mummified aboleth heart was pulled from the chest of USTAR, BLOOD DRIPPING FROM THE FANGS OF HEAVEN EXTINGUISHES ONLY THE WEAK FLAME. With the conclusion of The New War and the reunion of the key fragments, new power has been infused into this artifact. Hell upon the world.",
 				"The attuned psycker gains the following benefits:",
 				{
 					"type": "list",
@@ -9787,7 +9985,7 @@
 			],
 			"psi": 0,
 			"entries": [
-				"This dessicated tube of lipstick was pulled from the chest of Ustar, Le-Koyette, True Love's Last Kiss Fills Her Mouth With Poison and She Swallows It All. It is weak enough to provide its own psionic power in this state.",
+				"This dessicated tube of lipstick was pulled from the chest of LE-KOYETTE, TRUE LOVE'S LAST KISS FILLS HER MOUTH WITH POISON AND SHE SWALLOWS IT ALL.",
 				"The attuned psycker gains the following benefits:",
 				{
 					"type": "list",
@@ -9810,7 +10008,7 @@
 			],
 			"psi": -1,
 			"entries": [
-				"This dessicated tube of lipstick was pulled from the chest of Le-Koyette, True Love's Last Kiss Fills Her Mouth With Poison and She Swallows It All. After its master completed the Baptism of Want, its power has awakened, and it has become permanently bonded to them.",
+				"This dessicated tube of lipstick was pulled from the chest of LE-KOYETTE, TRUE LOVE'S LAST KISS FILLS HER MOUTH WITH POISON AND SHE SWALLOWS IT ALL. Through the Baptism of Want, its true power has been awakened.",
 				"The attuned psycker gains the following benefits:",
 				{
 					"type": "list",
@@ -9833,7 +10031,7 @@
 			],
 			"psi": -2,
 			"entries": [
-				"This dessicated tube of lipstick was pulled from the chest of Le-Koyette, True Love's Last Kiss Fills Her Mouth With Poison and She Swallows It All. With the conclusion of The New War, the true power held within this artifact has awakened. Hell upon the world.",
+				"This dessicated tube of lipstick was pulled from the chest of LE-KOYETTE, TRUE LOVE'S LAST KISS FILLS HER MOUTH WITH POISON AND SHE SWALLOWS IT ALL. With the conclusion of The New War and the reunion of the key fragments, new power has been infused into this artifact. Hell upon the world.",
 				"The attuned psycker gains the following benefits:",
 				{
 					"type": "list",
@@ -9856,43 +10054,153 @@
 			]
 		},
 		{
-			"name": "",
-			"wondrous": "",
-			"tier": "",
-			"rarity": "",
+			"name": "Strange Rabbit Talisman",
+			"wondrous": "true",
+			"tier": "minor",
+			"rarity": "Uncommon",
 			"source": "TOMK",
 			"entries": [
-				""
+				"This felted talisman depicting a rabbit's ears can be affixed to a piece of clothing or armor, at which point it becomes permanently bonded. When the wearer goes over their psionic heat capacity by 1, they don't receive the effects of a Tier One Psionic Crisis. Further psychic exertion will still trigger Crisis Tiers two and beyond"
 			]
 		},
 		{
-			"name": "",
-			"wondrous": "",
-			"tier": "",
-			"rarity": "",
+			"name": "Tharadorn's Ambitions (Fallen)",
+			"wondrous": true,
+			"tier": "major",
+			"rarity": "artifact",
 			"source": "TOMK",
+			"property": [
+				"PSI"
+			],
+			"psi": 0,
 			"entries": [
-				""
+				"This rotting dagger handle was pulled from the chest of THARADORN, HOT BLOOD POOLS BENEATH THE EARTH AND FEEDS SOMETHING OLDER THAN HIM.",
+				"The attuned psycker gains the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"The attuned can speak to Tharadorn willingly.",
+						"The attuned gains access to the {@spell 「THARADORN'S VILE STRATAGEM| TOMK} emanation."
+					]
+				}
 			]
 		},
 		{
-			"name": "",
-			"wondrous": "",
-			"tier": "",
-			"rarity": "",
+			"name": "Tharadorn's Ambitions (Baptized)",
+			"wondrous": true,
+			"tier": "major",
+			"rarity": "artifact",
 			"source": "TOMK",
+			"property": [
+				"PSI"
+			],
+			"psi": 0,
 			"entries": [
-				""
+				"This rotting dagger handle was pulled from the chest of THARADORN, HOT BLOOD POOLS BENEATH THE EARTH AND FEEDS SOMETHING OLDER THAN HIM. Through the Baptism of War, its true power has been awakened.",
+				"The attuned psycker gains the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"The attuned can speak to Tharadorn willingly.",
+						"The attuned gains access to the {@spell 「THARADORN'S VILE STRATAGEM| TOMK} emanation."
+					]
+				}
 			]
 		},
 		{
-			"name": "",
-			"wondrous": "",
-			"tier": "",
-			"rarity": "",
+			"name": "Tharadorn's Ambitions (Conquerer)",
+			"wondrous": true,
+			"tier": "major",
+			"rarity": "artifact",
+			"source": "TOMK",
+			"property": [
+				"PSI"
+			],
+			"psi": 0,
+			"entries": [
+				"This rotting dagger handle was pulled from the chest of THARADORN, HOT BLOOD POOLS BENEATH THE EARTH AND FEEDS SOMETHING OLDER THAN HIM. With the conclusion of The New War and the reunion of the key fragments, new power has been infused into this artifact. Hell upon the world.",
+				"The attuned psycker gains the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"The attuned can speak to Tharadorn willingly.",
+						"The attuned gains access to the {@spell 「THARADORN'S VILE STRATAGEM| TOMK} emanation."
+					]
+				}
+			]
+		},
+		{
+			"name": "Prismatic Quiver",
+			"wondrous": "true",
+			"tier": "minor",
+			"rarity": "rare",
 			"source": "TOMK",
 			"entries": [
-				""
+				"This quiver contains six arrows, each tipped with an iridescent crystal. When firing an arrow from this quiver, roll a D6 on the table below, adding the resulting effect to the attack. When an effect is rolled, change its effect to 'Reroll this arrow's effect.' for subsequent uses.",
+				{
+					"type": "table",
+					"caption": "Prismatic Effect",
+					"colLabels": [
+						"d6",
+						"Effect"
+					],
+					"rows": [
+						[
+							"1",
+							"The arrow ricochets, hitting one of your allies as well as the target. Any other effects of the arrow apply as well."
+						],
+						[
+							"2",
+							"The arrow lets off a cloud of magical darkness which covers its path from the user to the target. This cloud is a 5 foot wide line."
+						],
+						[
+							"3",
+							"The arrow sticks into the target and starts talking aloud, listing off their secrets, potentially including their damage resistances and vulnerabilities, their hit points, or any reinforcements they have on the way. At the end of each turn, they can attempt a DC 14 Strength Saving Throw to dislodge it."
+						],
+						[
+							"4",
+							"The arrow sprays its target with stupefying mist, the target must make a DC 14 Wisdom Saving Throw against the effect of the Confusion spell, resaving as normally."
+						],
+						[
+							"5",
+							"The arrow explodes, every creature within 15 feet of the target makes a DC 14 Dexterity Saving Throw against a 4d6+4 Force Damage explosion. This explosion deals double damage to objects."
+						],
+						[
+							"6",
+							"Roll 2d6, taking the original prismatic effects of both numbers rolled. This can stack indefinitely."
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Angelic Talisman",
+			"wondrous": "true",
+			"tier": "minor",
+			"rarity": "Common",
+			"source": "TOMK",
+			"entries": [
+				"This anointed silk talisman can be affixed to a piece of clothing or armor, at which point it becomes permanently bonded. When the wearer fails a Death Saving Throw, they can choose to succeed, burning this talisman to ash in the process. If the triggering failure was a critical failure, they can choose to {@b critically} succeed instead."
+			]
+		},
+		{
+			"name": "True Gloves of Magical Honing: Magic Missile",
+			"wondrous": "true",
+			"tier": "major",
+			"rarity": "legendary",
+			"reqAttune": true,
+			"source": "TOMK",
+			"entries": [
+				"Created by an incredibly lazy but truly talented wizard, these arcanaloth-leather gloves add the following effects to the {@spell magic missile} spell. While attuned to these gloves, you may not cast 1st level spells besides {@spell magic missile}.",
+				{
+					"type": "list",
+					"items": [
+						"Create two additional darts.",
+						"You may transmute the damage type of the spell to any damage type of your choosing.",
+						"For each dart that deals damage, apply one stack of {@condition marked for death|TOMK}. These stacks disappear at the start of your next turn.",
+						"If an effect would make a target immune to {@spell magic missile}, you can consume one of your darts to temporarily bypass this effect."
+					]
+				}
 			]
 		},
 		{
