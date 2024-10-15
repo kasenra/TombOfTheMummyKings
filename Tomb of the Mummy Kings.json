@@ -5986,6 +5986,803 @@
 			"languageTags": [
 				"E"
 			]
+		},
+		{
+			"name": "Eternal Guardian Sentinel",
+			"source": "TOMK",
+			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "construct",
+				"tags": [
+					"eternal guardian",
+					"soldier"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "80"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 16,
+			"int": 14,
+			"wis": 11,
+			"cha": 10,
+			"passive": 13,
+			"cr": "6",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The sentinel makes three Lightning Dart attacks, potentially replacing one with a use of repulsion protocol."
+					]
+				},
+				{
+					"name": "Lightning Dart",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 60/120 ft., one target. {@h}15 ({@damage 3d6 + 5}) lightning damage."
+					]
+				},
+				{
+					"name": "Repulsion Protocol",
+					"entries": [
+						"Hostile creatures within 15 feet must make a {@dc 15} Strength Saving Throw or be pushed 10 feet away from the sentinel, taking {@h} 14 ({@damage 4d4+4}) thunder damage on a failed save."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/veteran.mp3"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"senses": [
+				"truesight 60 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"save": {
+				"con": "+6",
+				"int": "+5",
+				"str": "+7"
+			},
+			"skill": {
+				"perception": "+3",
+				"investigation": "+5",
+				"history": "+5"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Heart Stone",
+					"entries": [
+						"This guardian is powered by a singular Heart Stone. Every heart stone held by an Eternal Guardian gives it a +1 bonus to attack rolls, damage rolls, and saving throws."
+					]
+				},
+				{
+					"name": "Many-Eyed",
+					"entries": [
+						"Due to the optical sensors on every surface of the sentinel, it is incapable of being {@condition flanked|FleeMortals}."
+					]
+				},
+				{
+					"name": "Protective Aura",
+					"entries": [
+						"Allied creatures within 15 feet of the sentinel gain a bonus to their Saving Throws equal to the number of heart stones held by the sentinel. This bonus can stack."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"RNG",
+				"THW"
+			],
+			"bonus": [
+				{
+					"name": "Ancient Engineering",
+					"entries": [
+						"The guardian stretches out a hand, reaching out to all the heart stones within defeated eternal guardians within 30 feet and incorporating them into its chassis."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			},
+			"languages": [
+				"Communication Protocol 1.0",
+				"Understands Elvish"
+			],
+			"languageTags": [
+				"E"
+			],
+			"reaction": [
+				{
+					"name": "Key Protector",
+					"entries": [
+						"When an ally within the sentinel's aura takes damage, the sentinel can react to halve the damage dealt, taking the removed half themself. {@i (This halving is calculated after resistance and vulnerability)}"
+					]
+				}
+			],
+			"damageTags": [
+				"L",
+				"T"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "THARADORN, HOT BLOOD POOLS BENEATH THE EARTH AND FEEDS SOMETHING OLDER THAN HIM (Dishonored)",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"deadlord",
+					"brute"
+				]
+			},
+			"source": "TOMK",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"condition": "+ T"
+				}
+			],
+			"hp": {
+				"special": "150 + 50T"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 30,
+			"dex": 16,
+			"con": 26,
+			"int": 12,
+			"wis": 12,
+			"cha": 12,
+			"passive": 17,
+			"cr": "18",
+			"page": 1,
+			"senses": [
+				"blindsight 60ft"
+			],
+			"senseTags": [
+				"B"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"save": {
+				"con": "+14",
+				"str": "+16",
+				"cha": "+7"
+			},
+			"skill": {
+				"perception": "+7",
+				"athletics": "+16"
+			},
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"trait": [
+				{
+					"name": "Axis of Reality",
+					"entries": [
+						"Tharadorn has advantage on saving throws against effects that would change his form. If an effect would force movement on Tharadorn, it fails automatically due to his immense weight, and the creature inducing the effect is instead pushed with the opposite force."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Tharadorn fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Legendary Determination",
+					"entries": [
+						"When this creature would become {@condition paralyzed}, {@condition incapacitated}, or {@condition stunned}, it is instead only {@condition restrained}."
+					]
+				},
+				{
+					"name": "Unending Rage",
+					"entries": [
+						"Tharadorn is in a state of permanent rage, resisting all damage unless put under the effects of a {@spell calm emotions} spell."
+					]
+				},
+				{
+					"name": "Awakening Lord",
+					"entries": [
+						"As Tharadorn's canopic stitches his flesh back together and binds him to Toril, his rage and strength grows. For each day of his reconstruction, T, he gains bonuses to AC, attacks, damage, and health. After 5 days, he reaches his full power."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Tharadorn makes T attacks with Hate Beyond the Grave, potentially exchanging 3 attacks for a use of Cry of Agony."
+					]
+				},
+				{
+					"name": "Hate Beyond the Grave",
+					"entries": [
+						"{@atk mw} {@hit 9}+T to hit, reach 10 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage, plus T force damage. "
+					]
+				},
+				{
+					"name": "Cry of Agony {@recharge 5}",
+					"entries": [
+						"As long as Nemesis, The Deadlord of Agony lives, Tharadorn can weep, bleeding infernal curses upon her name, summoning the following devils in sequence of use:",
+						{
+							"type": "list",
+							"style": "list-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Tears",
+									"entries": [
+										"Tharadorn summons a pair of {@creature Merregon  | MPMM | Merregons}."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cry",
+									"entries": [
+										"Tharadorn summons a {@creature Black Abishai | MPMM}"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Weep",
+									"entries": [
+										"Tharadorn summons a {@creature Narzugon | MPMM}"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"bonus": [
+				{
+					"name": "Call to War",
+					"entries": [
+						"Tharadorn targets a creature within 60 feet who can hear him, filling their mind with violent, enraging delusions. The target creature must make a {@dc 16} Wisdom Saving Throw or be {@condition charmed}. While {@condition charmed} this way, the target can do the following on each of their turns:",
+						{
+							"type": "list",
+							"style": "list-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "War",
+									"entries": [
+										"The {@condition charmed} creature uses all of its actions to make the attack action, attacking the nearest creature in melee. The {@condition charmed} creature can choose its weapon and may choose the target in the case of a tie. Then, the {@condition charmed} creature gains one Cursemark of War."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Peace",
+									"entries": [
+										"The target takes {@damage 2d6} necrotic damage, as well as {@dice 1d6} additional necrotic damage for each Cursemark of War on them. If a {@condition charmed} creature completes a Peace turn without taking any hostile action, they can re-attempt the save, taking a stacking -1 penalty for each Cursemark of War on them."
+									]
+								}
+							]
+						},
+						"A creature that escapes the Call to War through Peace loses all Cursemarks and becomes immune to the effect until they take another creature's life. If this effect is ended any other way (ie: becoming immune to charm, benefiting from {@spell calm emotions}, Tharadorn's defeat), the {@condition charmed} targets maintain their Cursemarks of War unless they are subject to a {@spell remove curse} effect."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Tharadorn has four villain actions in his Dishonored form. He uses each ability on its corresponding round."
+			],
+			"resist": [
+				{
+					"resist": [
+						{
+							"special": "All Damage"
+						}
+					],
+					"note": "while Enraged",
+					"cond": true
+				}
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"F",
+				"O",
+				"Y"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "THARADORN, HOT BLOOD POOLS BENEATH THE EARTH AND FEEDS SOMETHING OLDER THAN HIM (Undefeated)",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"deadlord",
+					"leader"
+				]
+			},
+			"source": "TOMK",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"Twilight Platemail"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d12 + 90",
+				"average": 220
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 28,
+			"dex": 14,
+			"con": 22,
+			"int": 16,
+			"wis": 12,
+			"cha": 14,
+			"passive": 17,
+			"cr": "16",
+			"page": 1,
+			"senses": [
+				"blindsight 30ft"
+			],
+			"senseTags": [
+				"B"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"save": {
+				"con": "+11",
+				"str": "+14",
+				"cha": "+7"
+			},
+			"skill": {
+				"perception": "+7",
+				"athletics": "+16"
+			},
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"immune": [
+				"poison"
+			],
+			"trait": [
+				{
+					"name": "Axis of Reality",
+					"entries": [
+						"Tharadorn has advantage on saving throws against effects that would change his form. If an effect would force movement on Tharadorn, it fails automatically due to his immense weight, and the creature inducing the effect is instead pushed with the opposite force."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Tharadorn fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Legendary Determination",
+					"entries": [
+						"When this creature would become {@condition paralyzed}, {@condition incapacitated}, or {@condition stunned}, it is instead only {@condition restrained}."
+					]
+				},
+				{
+					"name": "Ancient Barrier",
+					"entries": [
+						"A shimmering barrier surrounds Tharadorn to a radius of 20 feet. Attacks and spells from outside this range fizzle into harmless smoke upon entering."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Tharadorn makes two attacks with Kingkiller Fang and uses Vile Stratagem"
+					]
+				},
+				{
+					"name": "Kingkiller Fang",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 15 ft., one target. {@h}16 ({@damage 2d10 + 5}) slashing damage, plus {@h} 7 ({@damage 2d6}) force damage. If this attack passes AC by 5 or more, the target falls {@condition prone}."
+					]
+				},
+				{
+					"name": "Vile Stratagem",
+					"entries": [
+						"Tharadorn speaks a forgotten command word targeting a creature he can see with dark magic. The target must make a {@dc 16} Wisdom Saving Throw or take 13 ({@damage 2d12}) psychic damage and suffer one of the following effects of Tharadorn's choice:",
+						{
+							"type": "list",
+							"style": "list-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Menaced",
+									"entries": [
+										"The target is {@condition frightened} until the end of their next turn."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Dazed",
+									"entries": [
+										"The target cannot take reactions or bonus actions until the end of their next turn."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Goaded",
+									"entries": [
+										"The target has disadvantage on attacks against any creature other than Tharadorn until the end of its next turn."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Pushed",
+									"entries": [
+										"The target stumbles back 10 feet without provoking attacks of opportunity."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Distracted",
+									"entries": [
+										"The next creature other than Tharadorn to attack the target before the start of Tharadorn's next turn gains advantage on the attack roll."
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"charmed",
+				"frightened"
+			],
+			"bonus": [
+				{
+					"name": "Call to War",
+					"entries": [
+						"Tharadorn targets a creature within 60 feet who can hear him, filling their mind with violent, enraging delusions. The target creature must make a {@dc 16} Wisdom Saving Throw or be {@condition charmed}. While {@condition charmed} this way, the target can do the following on each of their turns:",
+						{
+							"type": "list",
+							"style": "list-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "War",
+									"entries": [
+										"The {@condition charmed} creature uses all of its actions to make the attack action, attacking the nearest creature in melee. The {@condition charmed} creature can choose its weapon and may choose the target in the case of a tie. Then, the {@condition charmed} creature gains one Cursemark of War."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Peace",
+									"entries": [
+										"The target takes {@damage 2d6} necrotic damage, as well as {@dice 1d6} additional necrotic damage for each Cursemark of War on them. If a {@condition charmed} creature completes a Peace turn without taking any hostile action, they can re-attempt the save, taking a stacking -1 penalty for each Cursemark of War on them."
+									]
+								}
+							]
+						},
+						"A creature that escapes the Call to War through Peace loses all Cursemarks and becomes immune to the effect until they take another creature's life. If this effect is ended any other way (ie: becoming immune to charm, benefiting from {@spell calm emotions}, Tharadorn's defeat), the {@condition charmed} targets maintain their Cursemarks of War unless they are subject to a {@spell remove curse} effect."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Tharadorn has three villain actions in his Undefeated form. He uses each ability on its corresponding round."
+			],
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons",
+					"cond": true
+				}
+			],
+			"reaction": [
+				{
+					"name": "Fierce Reprimand",
+					"entries": [
+						"When one of Tharadorn's allies misses an attack, he can castigate them with a terrifying glare, dealing necrotic damage equal to half their attack's damage, and allowing them to reroll it, potentially turning a miss into a hit."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Round 1: Cruel Training",
+					"entries": [
+						"All of Tharadorn's allies can move up to their movement speed, then they can take {@damage 1d6} necrotic damage in order to take either the Dash or Attack action."
+					]
+				},
+				{
+					"name": "Round 2: Battle Eschatology",
+					"entries": [
+						"Tharadorn roars, calling up ghosts of The Old War to assault nearby creatures. All biological creatures within 40 feet must choose to either take {@damage 4d6 + 10} necrotic damage or be Called to War and immediately gain one Cursemark of War."
+					]
+				},
+				{
+					"name": "Round 3: Prison of the Ancients",
+					"entries": [
+						"Tharadorn channels all of his arcane power, casting {@spell wall of force} in a dome over the greatest threat still on the battlefield. While this wall remains, Tharadorn's ancient barrier is disabled."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "War Magic",
+					"headerEntries": [
+						"After using Battle Eschatology, Tharadorn can exchange one attack from his multiattack with a casting of one of the following spells."
+					],
+					"daily": {
+						"1e": [
+							"{@spell Melf's acid arrow|XPHB}",
+							"{@spell fireball|XPHB}",
+							"{@spell ice storm|XPHB}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"N",
+				"O",
+				"S",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"F"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Eternal Guardian Hexer-Decimal",
+			"source": "TOMK",
+			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "construct",
+				"tags": [
+					"eternal guardian"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 14,
+			"int": 14,
+			"wis": 11,
+			"cha": 10,
+			"passive": 13,
+			"cr": "5",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hexer makes two Stone Slap attacks against a {@condition restrained} target"
+					]
+				},
+				{
+					"name": "Stone Slap",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage, plus 3 ({@damage 1d4 + 1}) force damage."
+					]
+				},
+				{
+					"name": "Mithril Chains",
+					"entries": [
+						"The hexer targets a creature within 60 feet, encasing it in a net of enchanted mithril. The target must make a {@dc 15} Strength Saving Throw or be {@condition restrained} by the net until the end of their next turn. A creature {@condition restrained} this way has disadvantage on Wisdom Saving Throws. The DC for this saving throw increases by 1 for every heart stone held by the hexer."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/veteran.mp3"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"save": {
+				"con": "+4",
+				"int": "+4",
+				"str": "+5"
+			},
+			"skill": {
+				"perception": "+3",
+				"investigation": "+8",
+				"history": "+8"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Heart Stone",
+					"entries": [
+						"This guardian is powered by a singular Heart Stone. Every heart stone held by an Eternal Guardian gives it a +1 bonus to attack rolls, damage rolls, and saving throws."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"bonus": [
+				{
+					"name": "Ancient Engineering",
+					"entries": [
+						"The guardian stretches out a hand, reaching out to all the heart stones within defeated eternal guardians within 30 feet and incorporating them into its chassis."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			},
+			"languages": [
+				"Communication Protocol 1.0",
+				"Understands Elvish"
+			],
+			"languageTags": [
+				"E"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"damageTags": [
+				"B",
+				"O"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
 		}
 	],
 	"optionalFeatureTypes": {
@@ -10613,6 +11410,155 @@
 						"If an effect would make a target immune to {@spell magic missile}, you can consume one of your darts to temporarily bypass this effect."
 					]
 				}
+			]
+		},
+		{
+			"name": "Twilight Platemail",
+			"wondrous": "true",
+			"tier": "major",
+			"rarity": "very rare",
+			"source": "TOMK",
+			"type": "HA",
+			"ac": 18,
+			"stealth": true,
+			"strength": "18",
+			"bonusAc": "+1",
+			"entries": [
+				"While wearing this armor, you gain the following benefits",
+				{
+					"type": "list",
+					"items": [
+						"You gain a +1 bonus to AC.",
+						"You benefit from the {@spell calm emotions} spell at all times, rendering you immune to the {@condition charmed} and {@condition frightened} conditions.",
+						"If under the effects of a {@spell mage armor} spell, you ignore heavy armor proficiency and strength requirements for this armor."
+					]
+				},
+				"The wearer has Disadvantage on Dexterity (Stealth) checks.",
+				"If the wearer has a Strength score lower than 18, their speed is reduced by 10 feet."
+			]
+		},
+		{
+			"name": "Kingkiller Fang",
+			"wondrous": "true",
+			"tier": "major",
+			"type": "M",
+			"weaponCategory": "martial",
+			"property": [
+				"H|XPHB",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"Graze|XPHB"
+			],
+			"dmg1": "2d6",
+			"dmgType": "S",
+			"sword": true,
+			"weapon": true,
+			"bonusWeapon": "+2",
+			"rarity": "very rare",
+			"source": "TOMK",
+			"entries": [
+				"You have a +2 bonus to attack and damage rolls made with this magic weapon.",
+				"As an Encounter Power attack, you can bear down with this sword, forcing your target to make a Strength Saving Throw against your Strength DC or fall prone. If your strength is less than 20 and your size is less than Large, you fall prone immediately after this attack."
+			]
+		},
+		{
+			"name": "Mad Alchemist's Tools",
+			"wondrous": "true",
+			"type": "AT",
+			"tier": "minor",
+			"rarity": "rare",
+			"source": "TOMK",
+			"entries": [
+				"For one with proficiency, these tools function as a quite well-made set of {@item Alchemist's Supplies}.",
+				"If a creature without proficiency in Alchemist's Supplies can spend an hour to create a potion using these tools, turning 100 gp worth of reagants into a Wild Elixir, having one effect on the Wild Elixir Table.",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"colLabels": [
+						"1d100",
+						"Wild Elixir"
+					],
+					"rows": [
+						[
+							"1",
+							"The elixir explodes in the user's face, dealing 2d12 acid damage."
+						],
+						[
+							"2-21",
+							"The elixir becomes a {@item potion of healing|DMG}."
+						],
+						[
+							"22-32",
+							"The elixir becomes a {@item potion of climbing|DMG}."
+						],
+						[
+							"33-42",
+							"The elixir becomes a {@item potion of hill giant strength|DMG}."
+						],
+						[
+							"43-52",
+							"The elixir becomes a {@item potion of water breathing|DMG}."
+						],
+						[
+							"53-62",
+							"The elixir becomes a {@item potion of diminution|DMG}."
+						],
+						[
+							"63-72",
+							"The elixir becomes a {@item potion of heroism|DMG}."
+						],
+						[
+							"73-82",
+							"The elixir becomes a {@item potion of invulnerability|DMG}."
+						],
+						[
+							"83-92",
+							"The elixir becomes a {@item potion of speed|DMG}."
+						],
+						[
+							"93-99",
+							"The elixir becomes a {@item potion of longevity|DMG}."
+						],
+						[
+							"100",
+							"The elixir turns out well enough to make two doses. Roll twice on this table and gain one elixir for each effect."
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "",
+			"wondrous": "",
+			"tier": "",
+			"rarity": "",
+			"source": "TOMK",
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "",
+			"wondrous": "",
+			"tier": "",
+			"rarity": "",
+			"source": "TOMK",
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "",
+			"wondrous": "",
+			"tier": "",
+			"rarity": "",
+			"source": "TOMK",
+			"entries": [
+				""
 			]
 		},
 		{
