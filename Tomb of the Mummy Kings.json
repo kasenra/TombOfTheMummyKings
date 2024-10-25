@@ -6783,6 +6783,252 @@
 			"savingThrowForced": [
 				"strength"
 			]
+		},
+		{
+			"name": "KI'LO'MOK, WITCH OF TREACHERY",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "TOMK",
+			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"witch",
+					"sorcerer"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "28d8 + 84",
+				"average": 210
+			},
+			"speed": {
+				"walk": 40,
+				"fly": {
+					"number": 20,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 16,
+			"int": 16,
+			"wis": 12,
+			"cha": 26,
+			"save": {
+				"int": "+9",
+				"wis": "+7",
+				"cha": "+14"
+			},
+			"skill": {
+				"arcana": "+9",
+				"history": "+9",
+				"persuasion": "+14",
+				"deception": "+20"
+			},
+			"passive": 11,
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Witch",
+				"Common",
+				"Abyssal"
+			],
+			"cr": "19",
+			"spellcasting": [
+				{
+					"name": "Psionic Sorcery",
+					"headerEntries": [
+						"Ki'lo'mok casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 22}, {@hit 14} to hit with spell attacks). Ki'Lo'Mok's spells count as Psionic Emanations as well as spells:"
+					],
+					"will": [
+						"{@spell Dispel Magic}",
+						"{@spell Tasha's Hideous Laughter}"
+					],
+					"daily": {
+						"2": [
+							"{@spell Polymorph}"
+						],
+						"1e": [
+							"{@spell Maze}",
+							"{@spell Telekinesis}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Ki'lo'mok fails a saving throw, she can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Ki'lo'mok has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Legendary Determination",
+					"entries": [
+						"When this creature would become {@condition paralyzed}, {@condition incapacitated}, or {@condition stunned}, it is instead only {@condition restrained}."
+					]
+				},
+				{
+					"name": "Surpass (2/Day)",
+					"entries": [
+						"When a creature would succeed on a Saving Throw against one of her emanations, Ki'Lo'Mok can choose to make them fail their Saving Throw instead. Surpass can only be activated once per effect to which it applies."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Ki'lo'mok makes two Caustic Eldritch Blast attacks and uses Psychic Whip once."
+					]
+				},
+				{
+					"name": "Caustic Eldritch Blast",
+					"entries": [
+						"{@atk rs} {@hit 14} to hit, range 120 ft., one target. {@h}21 ({@damage 6d4 + 6}) acid damage."
+					]
+				},
+				{
+					"name": "Psychic Whip (Recharge: Use Surpass)",
+					"entries": [
+						"Ki'lo'mok psychically lashes out at one creature she can see within 90 feet of herself. The target must make a {@dc 20} Intelligence saving throw. On a failed save, the target takes 21 ({@damage 6d6}) psychic damage and has the {@condition stunned} condition until the start of Ki'lo'Mok's next turn. On a successful save, the target takes half as much damage only."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Nightmarish Scraping",
+					"entries": [
+						"The bones suspended inside Ki'lo'mok scrape and turn, forming curling pictographs of her foes' demise. Creatures within 30 feet who are capable of reading must make a {@dc 18} Wisdom Saving Throw or become {@condition frightened} until the end of their next turn. A creature who saves against this effect becomes immune for 24 hours."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Arcane Rebuff",
+					"entries": [
+						"Immediately after Ki'lo'mok takes damage, she unleashes arcane energy in a 10-foot-radius sphere centered on herself. All other creatures in that area must make a {@dc 20} Dexterity saving throw, taking 19 ({@damage 3d12}) lightning damage on a failed save or half as much damage on a successful one. Ki'lo'mok then teleports, along with any equipment she is wearing or carrying, to an unoccupied space she can see within 60 feet of herself."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RA",
+				"MLW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened",
+				"stunned"
+			],
+			"conditionInflictSpell": [
+				"incapacitated",
+				"prone",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Tasha the Witch",
+				"source": "VEoR"
+			},
+			"fluff": {
+				"name": "Tasha the Witch",
+				"source": "VEoR",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Tasha's path to greatness began when she was adopted by the arch-hag Baba Yaga, who named her Natasha. Tasha went on to create various spells, including Tasha's Hideous Laughter, and her magic-fueled ambitions brought her into contact with demons and demon lords, which she subjugated and used against her enemies. On the Material Plane, she became known as Iggwilv the Witch Queen and wrote the Demonomicon of Iggwilv, the greatest of all treatises on the Abyss and its demonic inhabitants. In recent years, Tasha sequestered herself in the Feywild, achieving incredible power and slowly turning into a Fey creature. Tasha became Zybilna, archfey of the domain of Prismeer."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Answering the Summons",
+								"entries": [
+									"When Zybilna received Alustriel Silverhand's summons to combat Vecna, the archfey was sorely needed in Prismeer. As a compromise, and to honor Tasha's friendship with Alustriel, Zybilna sent a version of herself from the past to Alustriel's side. The Tasha who appears in{@i Vecna: Eve of Ruin}is a powerful wizard, though she is not yet a witch queen or an archfey."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/VEoR/Tasha the Witch.webp"
+						}
+					}
+				]
+			},
+			"languageTags": [
+				"C",
+				"AB"
+			],
+			"senses": [
+				"Truesight 30 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"resist": [
+				"psychic"
+			],
+			"shortName": "Ki'lo'mok",
+			"legendaryHeader": [
+				"Ki'lo'mok has three villain actions ..."
+			],
+			"damageTags": [
+				"A",
+				"L",
+				"Y"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			]
 		}
 	],
 	"optionalFeatureTypes": {
@@ -11446,6 +11692,9 @@
 			"property": [
 				"H|XPHB",
 				"2H|XPHB"
+			],
+			"mastery": [
+				"Graze|XPHB"
 			],
 			"dmg1": "2d6",
 			"dmgType": "S",
