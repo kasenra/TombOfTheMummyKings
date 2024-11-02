@@ -5434,204 +5434,6 @@
 				"poisoned"
 			],
 			"languages": [
-				"Common",
-				"Witch"
-			],
-			"cr": "11",
-			"trait": [
-				{
-					"name": "Stone Sacrifice (3/Day)",
-					"entries": [
-						"When Emer fails a saving throw, she can choose to succeed instead by ending the effects of her Stone Gaze on a creature of her choice within 300 feet of her."
-					]
-				},
-				{
-					"name": "Legendary Determination",
-					"entries": [
-						"When this creature would become {@condition paralyzed}, {@condition incapacitated}, or {@condition stunned}, it is instead only {@condition restrained}."
-					]
-				},
-				{
-					"name": "Surpass (1/Day)",
-					"entries": [
-						"Once per day, when a creature would save against one of the witch's abilities, it may choose to bypass the need for a save and have the creature automatically fail."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Emer uses Pinning Shot or makes three attacks using Snake Bite, Longbow, or both. She also uses Stone Gaze or Envenomed Stone, if available."
-					]
-				},
-				{
-					"name": "Stone Crush",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 10 ft., one creature. {@h}14 ({@damage 4d6}) bludgeoning damage and {@h}3 ({@damage 1d6}) poison damage, and the target must succeed on a {@dc 16} Constitution saving throw or be {@condition poisoned} until the end of the witch's next turn. While {@condition poisoned} in this way, the target can't take reactions."
-					]
-				},
-				{
-					"name": "Stone Gaze",
-					"entries": [
-						"The witch fires beams of energy from its mask at up to three creatures it can see within 60 feet. Each target must succeed on a {@dc 16} Constitution saving throw or begin turning to stone. Every turn while turning to stone, the target repeats this saving throw. After one failed Saving Throw, the target is {@condition slowed|TOMK}. After a second failure, the target is also {@condition restrained}. And, after the third, the target is {@condition petrified}. If the target two times before becoming {@condition petrified}, the effect ends for them."
-					]
-				},
-				{
-					"name": "Envenomed Stone {@recharge 5}",
-					"entries": [
-						"The witch utters an otherworldly hex. Each creature within 60 feet of it who is being turned to stone by Stone Gaze must make a {@dc 16} Constitution saving throw, taking 44 ({@damage 8d10}) poison damage on a failed save, or half as much damage on a successful one."
-					]
-				}
-			],
-			"bonus": [
-				{
-					"name": "Mesmerizing Smile",
-					"entries": [
-						"The glowing eyes of the witch's mask gaze at one creature it can see within 60 feet. If the target can see the witch, they must succeed on a {@dc 16} Wisdom saving throw or be {@condition charmed} until the start of the target's next turn. A target {@condition charmed} in this way must immediately use their reaction, if available, to move up to their speed in a direction of the witch's choice."
-					]
-				},
-				{
-					"name": "Everpresence",
-					"entries": [
-						"The witch vanishes into a cloud of red mist, appearing at a location it can see within 60 feet, so long as that location is not in direct sunlight."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Blinding Fog",
-					"entries": [
-						"When a creature the witch can see within 5 feet hits it with a melee attack, the witch envelops them in its mist. The target must succeed on a {@dc 16} Dexterity saving throw or take 7 ({@damage 2d6}) acid damage and be {@condition blinded} until the start of their next turn."
-					]
-				}
-			],
-			"legendaryHeader": [
-				"The witch has four villain actions. It can take each action once during an encounter after an enemy's turn. It can take these actions in any order but can use only one per round."
-			],
-			"legendary": [
-				{
-					"name": "Action 1: I See You!",
-					"entries": [
-						"Emer uses Stone Gaze against each enemy she can see within 60 feet of her."
-					]
-				},
-				{
-					"name": "Action 2: Mists of Aparidion",
-					"entries": [
-						"<>"
-					]
-				},
-				{
-					"name": "Action 3: Stone Puppets",
-					"entries": [
-						"Emer mentally manipulates the stone in each creature who is being turned to stone by her Stone Gaze. Emer and each of those creatures move up to their speed then make a weapon attack against a creature of Emer's choice (no action required)."
-					]
-				},
-				{
-					"name": "Action 4: Punishment of the Godeater",
-					"entries": [
-						"Three portals manifest behind the witch, and a Godeater Tendril appears out of each, grabbing at its face and ripping its stone head off to reveal the beating heart beneath it. The witch becomes vulnerable to all damage, and its Stone Crush attack is replaced with the Curseblood Aurora attack.",
-						"These Godeater Tendrils can be targeted (15 AC, 25 HP), and when a tendril is killed this way, it deals 50 damage to the witch."
-					]
-				}
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C"
-			],
-			"miscTags": [
-				"MW",
-				"RCH",
-				"AOE"
-			],
-			"conditionInflict": [
-				"blinded",
-				"charmed",
-				"petrified",
-				"poisoned",
-				"restrained",
-				"slowed|tomk"
-			],
-			"traitTags": [
-				"Legendary Resistances"
-			],
-			"damageTags": [
-				"A",
-				"B",
-				"I"
-			],
-			"savingThrowForced": [
-				"constitution",
-				"dexterity",
-				"wisdom"
-			]
-		},
-		{
-			"name": "ERO'FULA'SEN, WITCH OF MADNESS",
-			"isNamedCreature": true,
-			"source": "TOMK",
-			"page": 1,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "monstrosity",
-				"tags": [
-					"Solo",
-					"Witch"
-				]
-			},
-			"alignment": [
-				"C",
-				"E"
-			],
-			"ac": [
-				17
-			],
-			"hp": {
-				"formula": "20d8 + 120",
-				"average": 210
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 20,
-			"dex": 22,
-			"con": 22,
-			"int": 16,
-			"wis": 17,
-			"cha": 18,
-			"save": {
-				"str": "+9",
-				"dex": "+10",
-				"con": "+10",
-				"wis": "+7"
-			},
-			"skill": {
-				"athletics": "+8",
-				"deception": "+8",
-				"perception": "+7",
-				"persuasion": "+8",
-				"stealth": "+11",
-				"survival": "+7"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 17,
-			"immune": [
-				"poison"
-			],
-			"conditionImmune": [
-				"poisoned"
-			],
-			"languages": [
 				"Witch",
 				"understands Common"
 			],
@@ -6855,7 +6657,7 @@
 				{
 					"name": "Psionic Sorcery",
 					"headerEntries": [
-						"Ki'lo'mok casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 22}, {@hit 14} to hit with spell attacks). Ki'Lo'Mok's spells count as Psionic Emanations as well as spells:"
+						"Ki'lo'mok casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 20}, {@hit 12} to hit with spell attacks). Ki'Lo'Mok's spells count as Psionic Emanations as well as spells:"
 					],
 					"will": [
 						"{@spell Dispel Magic}",
@@ -6863,6 +6665,7 @@
 					],
 					"daily": {
 						"2": [
+							"{@spell contagion|XPHB}",
 							"{@spell Polymorph}"
 						],
 						"1e": [
@@ -6904,7 +6707,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Ki'lo'mok makes two Caustic Eldritch Blast attacks and uses Psychic Whip once."
+						"Ki'lo'mok makes two Caustic Eldritch Blast attacks and uses Psychic Whip or Psionic Sorcery."
 					]
 				},
 				{
@@ -7014,12 +6817,36 @@
 			],
 			"shortName": "Ki'lo'mok",
 			"legendaryHeader": [
-				"Ki'lo'mok has three villain actions ..."
+				"Ki'lo'mok has three villain actions performed after another creature's turn in order."
+			],
+			"legendary": [
+				{
+					"name": "Round 1: Cry Mutiny",
+					"entries": [
+						"Ki'lo'mok screeches into the ether, summoning ten {@creature witchling | TOMK | witchlings}. She can then use one cast of polymorph to turn one of them into a rewritten {@creature Dhergoloth|MPMM}."
+					]
+				},
+				{
+					"name": "Round 2: Trapped Spell",
+					"entries": [
+						"Ki'lo'mok casts-invokes {@spell dominate person}. If this casting is countered, both the original target and the countering craft-user must make a {@dc 20} Intelligence Saving Throw to halve {@damage 6d6} psychic damage or be {@condition stunned} until the end of their next turn."
+					]
+				},
+				{
+					"name": "Round 3: Eminence of the Godeater",
+					"entries": [
+						"Three ethereal portals appear behind Ki'Lo'Mok, and a Godeater Tendril manifests out of each, reaching into her slimy body and empowering her. As long as Ki'lo'Mok stays within 30 feet of the portals, her eldritch blasts gain an additional {@damage 2d6} necrotic damage per surviving tendril.",
+						"These Godeater Tendrils can be targeted (15 AC, 50 HP), and when a tendril is killed this way, it deals 50 damage to the witch."
+					]
+				}
 			],
 			"damageTags": [
 				"A",
 				"L",
 				"Y"
+			],
+			"damageTagsSpell": [
+				"N"
 			],
 			"savingThrowForced": [
 				"dexterity",
@@ -7027,6 +6854,739 @@
 				"wisdom"
 			],
 			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Witchling (x6)",
+			"source": "TOMK",
+			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Witch",
+					"Minion"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "11"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 12,
+			"con": 14,
+			"int": 14,
+			"wis": 11,
+			"cha": 10,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Witch"
+			],
+			"cr": {
+				"cr": "4",
+				"xp": 220
+			},
+			"trait": [
+				{
+					"name": "Minion",
+					"entries": [
+						"If the witchling takes damage from an attack or as the result of a failed saving throw, their hit points are reduced to 0. If the mage-gorger takes damage from another effect, they die if the damage equals or exceeds their hit point maximum; otherwise they take no damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Conceptual Parasitism (Group Attack)",
+					"entries": [
+						"{@atk mw} {@hit 5}+X to hit, reach 10 ft., one target. {@h}4*X psychic damage, and the target takes a stacking -X penalty to Saving Throws until it fails a Saving Throw."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "Vaasan Debt-Thrall (x8)",
+			"source": "TOMK",
+			"page": 119,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Minion"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item hide armor|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"special": "15"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 7,
+			"wis": 11,
+			"cha": 10,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Abyssal",
+				"Gnoll"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Sacrifice All",
+					"entries": [
+						"When this minion dies, it can choose to heal a non-minion ally within 30 feet for 15 hit points."
+					]
+				},
+				{
+					"name": "Minion",
+					"entries": [
+						"If the mage-gorger takes damage from an attack or as the result of a failed saving throw, their hit points are reduced to 0. If the mage-gorger takes damage from another effect, they die if the damage equals or exceeds their hit point maximum; otherwise they take no damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Cursed Blades (Group Attack)",
+					"entries": [
+						"{@atk mw} {@hit 6}+X to hit, reach 5 ft., one target. {@h}2*X slashing damage plus 2*X cold damage. On a hit, a {@status Concentration|XPHB|Concentrating} target takes a -X penalty to its {@status Concentration|XPHB} save."
+					]
+				},
+				{
+					"name": "Hallowed Be His Name (Group Action)",
+					"entries": [
+						"The debt-thralls chant, granting an ally within 60 feet a +X bonus to all Saving Throws until the start of the thralls' next turn."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AB",
+				"OTH"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"resist": [
+				"fire"
+			]
+		},
+		{
+			"name": "Levin, Marauder of the Bleak Wastes (Lich King's Guard)",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "TOMK",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item breastplate | phb}",
+						"{@item iron gate| tomk}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 45",
+				"average": 127
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 16,
+			"int": 8,
+			"wis": 12,
+			"cha": 18,
+			"passive": 11,
+			"cr": "9",
+			"languages": [
+				"Common",
+				"Abyssal",
+				"Vaasan"
+			],
+			"languageTags": [
+				"C",
+				"AB"
+			],
+			"save": {
+				"con": "+7",
+				"cha": "+8"
+			},
+			"resist": [
+				"fire"
+			],
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Levin wields the {@item iron gate | tomk} and a {@item Stirring Dragon's Wrath Flail | FTD | Stirring Black Dragon Flail}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Levin makes three attacks with his flail. Any target hit by two or more of these attacks is {@condition slowed|TOMK} until the end of their next turn."
+					]
+				},
+				{
+					"name": "{@item Stirring Dragon's Wrath Flail | FTD | Stirring Black Dragon Flail}",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d8 + 8}) bludgeoning damage, plus 10 ({@damage 3d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Grasp of Phlegethos",
+					"entries": [
+						"Levin shoots an inky black tentacle from his back, targeting a creature within 30 feet. All enemies within 10 feet of the target must make a {@dc 16} Strength Saving Throw or be {@condition grappled} by the tentacle."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"bonus": [
+				{
+					"name": "Hunker Down",
+					"entries": [
+						"Levin takes cover behind the iron gate, adding his +4 shield bonus to his Dexterity and Constitution Saving Throws until the start of his next turn."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Flail Master",
+					"entries": [
+						"When a creature enters a space within 5 feet of Levin, he makes an attack of opportunity against them. If he hits by an AC gap of five or more, the target falls {@condition prone}."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Levin has the first villain action of his party, triggering after an enemy creature's turn in the first round. If a member of the Lich King's Guard goes unconscious, the next Villain Action in the order automatically triggers."
+			],
+			"legendary": [
+				{
+					"name": "Stygian Bindings",
+					"entries": [
+						"Levin slams the ground, invoking demons loyal to his liege and causing cursed chains to rise from the earth. Creatures he chooses within 60 feet must make a {@dc 16} Dexterity Saving Throw or be {@condition restrained} by abyssal chains. At the end of each chained creature's turn, it takes 5 acid damage and can attempt a {@dc 16} Strength Saving Throw to escape. A chained creature can use their action to attempt a {@dc 14} grapple escape to pull the chains off."
+					]
+				}
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"N"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			]
+		},
+		{
+			"name": "Alban of Kond (Lich King's Guard)",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "TOMK",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item +1 studded leather armor}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d10 + 10",
+				"average": 103
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 10,
+			"int": 12,
+			"wis": 12,
+			"cha": 18,
+			"passive": 15,
+			"cr": "9",
+			"legendaryHeader": [
+				"Alban has the second villain action of his party, triggering after an enemy creature's turn in the second round. If a member of the Lich King's Guard goes unconscious, the next Villain Action in the order automatically triggers."
+			],
+			"languages": [
+				"Common",
+				"Vaasan",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"save": {
+				"cha": "+8",
+				"con": "+4"
+			},
+			"skill": {
+				"perception": "+5"
+			},
+			"resist": [
+				"fire"
+			],
+			"legendary": [
+				{
+					"name": "Pact Awakening",
+					"entries": [
+						"Alban's skeleton familiar contorts and transforms into a powerful {@creature master thief | mpmm | skeletal ranger }, and it immediately makes a longbow attack."
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Pact of the Chain",
+					"entries": [
+						"Alban has a skeletal familiar that acts directly after him in combat."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Alban makes two Shadow Blade attacks."
+					]
+				},
+				{
+					"name": "Shadow Blade",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/40 ft., one target. {@h}18 ({@damage 2d10 + 7}) psychic damage in melee, or 18 ({@damage 2d10 + 7}) psychic damage at range, plus 3 ({@damage 1d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Fear of the Grave",
+					"entries": [
+						"Alban casts {@spell fear | phb} ({@dc 16}), affecting a 45 foot cone instead of a 30 foot cone."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"MW"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"bonus": [
+				{
+					"name": "Dual Training",
+					"entries": [
+						"Alban commands his skeletal familiar to make an extra attack this turn."
+					]
+				},
+				{
+					"name": "Rise in His Name",
+					"entries": [
+						"If Alban's skeletal familiar has been defeated, it rises again at half its maximum hit points."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Pain Connection",
+					"entries": [
+						"When Alban's familiar would take damage from an attack, he can choose to take the attack's damage in the familiar's place as psychic damage."
+					]
+				}
+			],
+			"damageTags": [
+				"N",
+				"Y"
+			]
+		},
+		{
+			"name": "Emile of Ahtitlak (Lich King's Guard)",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "TOMK",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d10 + 15",
+				"average": 114
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 8,
+			"dex": 18,
+			"con": 12,
+			"int": 14,
+			"wis": 14,
+			"cha": 16,
+			"passive": 16,
+			"cr": "9",
+			"legendaryHeader": [
+				"Emile has the third villain action of her party, triggering after an enemy creature's turn in the third round. If a member of the Lich King's Guard goes unconscious, the next Villain Action in the order automatically triggers."
+			],
+			"senses": [
+				"darkvision 60 feet"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Vaasan,"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"acrobatics": "+8",
+				"perception": "+6",
+				"insight": "+6"
+			},
+			"resist": [
+				"fire"
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Emile makes four attacks, Psychic Palm attacks against unmarked targets and Beasthunter's Claw attacks against the subject of his mark. Targets of these attacks must make a Strength Saving Throw against falling {@condition prone} at a DC of 14 plus the number of hits landed on them (doubled on {@condition marked|TOMK} targets)."
+					]
+				},
+				{
+					"name": "Psychic Palm",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) psychic damage, plus 3 ({@damage 1d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Beasthunter's Claw (Against Marked Target)",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d12 + 4}) psychic damage, plus 7 ({@damage 2d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "War Tranquility (Recharge: Multiattack)",
+					"entries": [
+						"Emile centers herself. Attacks against her have disadvantage, and she has advantage on Dexterity Saving Throws until the start of her next turn. In this state, Emile can freely take attacks of opportunity (including missile deflections) against creatures who leave her range or miss attacks against her, and on a hit, the target of these attacks must make a {@dc 18} Intelligence Saving Throw or be {@condition stunned} until the end of their next turn."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"reaction": [
+				{
+					"name": "Deflect Missile",
+					"entries": [
+						"When a ranged attack would miss Emile, she can catch the projectile and redirect it at a target of her choice, making a ranged unarmed attack of opportunity with the projectile's damage at a {@hit 8} bonus to hit."
+					]
+				},
+				{
+					"name": "Blessing of the Lich King",
+					"entries": [
+						"When one or more of Emile's allies is forced to make a Saving Throw, Emile can gift her talisman's power to them, giving one target a{@dice  + 1d8} bonus, two targets a{@dice  + 1d6} bonus, or three targets a{@dice  + 1d4} bonus, and giving up her bonus until her next turn starts."
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Pact of the Talisman",
+					"entries": [
+						"Emile has a protective talisman made of a lock of the Lich King's mortal form's hair. While she holds this talisman, she gains a{@dice  + 1d8} bonus to all saving throws."
+					]
+				},
+				{
+					"name": "Special Gear",
+					"entries": [
+						"Emile wears a pair of {@item Beasthunter's Gauntlets | tomk} and a {@item mantle of spell resistance}"
+					]
+				},
+				{
+					"name": "Mantle of Spell Resistance",
+					"entries": [
+						"Emile has advantage on saving throws against spells."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Purge the Rot of Unfaith",
+					"entries": [
+						"Emile utters a healing prayer to her lord, and all her surviving allies gain the benefits of the {@spell cure wounds}, {@spell bless}, and {@spell lesser restoration} spells. Allies who are {@condition unconscious} heal twice as many hit points."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Hunter's Mark",
+					"entries": [
+						"Emile marks a target with her ire, making them susceptible to her Beasthunter's Claw attack."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"damageTags": [
+				"N",
+				"Y"
+			],
+			"savingThrowForced": [
+				"intelligence"
+			]
+		},
+		{
+			"name": "Marina, Blight of Telos",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Half Drow",
+					"Warlock Knight"
+				]
+			},
+			"source": "TOMK",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"Armor of Shadows"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 30",
+				"average": 93
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 12,
+			"int": 14,
+			"wis": 14,
+			"cha": 18,
+			"passive": 12,
+			"cr": "9",
+			"legendaryHeader": [
+				"Marina has the fourth villain action of her party, triggering after {@b her own turn} in the fourth round. If a member of the Lich King's Guard goes unconscious, the next Villain Action in the order automatically triggers."
+			],
+			"page": 1,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Vaasan",
+				"Elvish"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"save": {
+				"cha": "+8",
+				"con": "+5",
+				"wis": "+6"
+			},
+			"resist": [
+				"fire"
+			],
+			"spellcasting": [
+				{
+					"name": "Pact of the Tome",
+					"headerEntries": [
+						"Marina can cast the following spells by leveraging her pact with the Lich King. Charisma is her spellcasting ability ({@dc 17}, SAB +9):"
+					],
+					"rest": {
+						"3": [
+							"{@spell counterspell|XPHB} (at 5th level)",
+							"{@spell flame strike|XPHB}",
+							"{@spell hunger of Hadar|XPHB}* (at 5th level)",
+							"{@spell phantasmal killer|XPHB}* (at 5th level)"
+						]
+					},
+					"daily": {
+						"1e": [
+							"{@spell chain lightning|XPHB}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Repelling Blasts",
+					"entries": [
+						"Marina makes three Eldritch Blast attacks which push targets back on a hit. Then, she casts a non-arcanum spell. "
+					]
+				},
+				{
+					"name": "Eldritch Blast",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 60/120 ft., one target. {@h}9 ({@damage 1d10 + 4}) force damage, plus 3 ({@damage 1d6}) necrotic damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RW"
+			],
+			"trait": [
+				{
+					"name": "Careful Spell (1/day)",
+					"entries": [
+						"When casting a spell, Marina can designate up to five creatures to automatically succeed on their saving throws against that spell."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Infernal Haste",
+					"entries": [
+						"Marina targets an ally within 30 feet to trade their bonus action for an extra action on the next turn. This extra action can only be used to make a max of one attack."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Misty Escape",
+					"entries": [
+						"When an attack or damaging spell would hit Marina, she can teleport up to 60 feet away, taking no damage."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Fog of Carceri",
+					"entries": [
+						"Marina channels dark energies into herself. If her {@status Concentration|XPHB} isn't broken before her next turn, she can use her action to cast {@spell maddening darkness |XGE}."
+					]
+				}
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"L",
+				"R",
+				"Y"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
 				"wisdom"
 			]
 		}
