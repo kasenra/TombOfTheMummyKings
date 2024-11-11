@@ -10989,6 +10989,52 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "「THARADORN'S VILE STRATAGEM」",
+			"level": 2,
+			"school": "P",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"You place a foul curse on target you can see. They must make an Intelligence Saving Throw or suffer tactical errors at every turn, suffering the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"If the cursebearer is Large or bigger, it's movement speed is halved.",
+						"If the cursebearer casts a spell with a casting time of 1 action, it has an additional cost of 1 bonus action.",
+						"The cursebearer has disadvantage on all attacks while {@condition flanked|FleeMortals}.",
+						"If the cursebearer uses an action that is not an attack or a use of spellcasting, one creature in melee range of the cursebearer (chosen by the invoker) can make an attack of opportunity against them."
+					]
+				},
+				"The cursebearer can re-attempt their Saving Throw at the end of each of their turns."
+			],
+			"source": "TOMK",
+			"page": 1
 		}
 	],
 	"condition": [
@@ -11582,9 +11628,9 @@
 			"range": "150/600",
 			"dmg1": "1d8",
 			"dmgType": "P",
-			"bonusWeapon": "+1",
+			"bonusWeapon": "+2",
 			"entries": [
-				"This silver longbow is inscribed with prayers to Selune, written in glowing elven script.",
+				"This silver longbow is inscribed with prayers to Selune, written in glowing elven script. While using it, you gain a +2 bonus to attack and damage rolls.",
 				"When making an attack with this weapon, the wielder can speak a command word to replace the arrow with a {@spell guiding bolt}. This ability can be used once per day, recharging at midnight.",
 				"On the night of Selune's full moon, the bow becomes overcharged until its next use, increasing the level of {@spell guiding bolt} use this way from 1 to 2.",
 				"This bow lets off dim light within 15 feet and bright light within 5 feet."
@@ -12338,33 +12384,46 @@
 			]
 		},
 		{
-			"name": "",
-			"wondrous": "",
-			"tier": "",
-			"rarity": "",
+			"name": "Farglass",
+			"wondrous": "true",
+			"tier": "minor",
+			"rarity": "rare",
 			"source": "TOMK",
 			"entries": [
-				""
+				"When a spellcaster channels a divination spell into this orb, any visual or auditory sensors created by the spell will project their outputs as a minor illusion centered on the Farglass. Additionally, a creature can touch the Farglass for one minute in order to project a memory of theirs into the orb, projecting it as a minor illusion in the same way. The resolution of this illusion is limited by the resolution of the user’s memory, thus no details unknown to the user are represented."
 			]
 		},
 		{
-			"name": "",
-			"wondrous": "",
-			"tier": "",
-			"rarity": "",
+			"name": "Invocation Band",
+			"wondrous": "true",
+			"tier": "major",
+			"rarity": "rare",
 			"source": "TOMK",
+			"reqAttune" : "true",
 			"entries": [
-				""
+				"While attuned to this band, its residual eldritch power grants you one eldritch invocation of your choice. You must meet all the prerequisites for this invocation, and it must not have a level requirement.",
+				"In order to change the invocation in this band, you must sacrifice a small helpless animal and let its blood pour into the earth. You can only perform this ritual once per tenday."
 			]
 		},
 		{
-			"name": "",
-			"wondrous": "",
-			"tier": "",
-			"rarity": "",
+			"name": "Owl Servitor",
+			"wondrous": "true",
+			"tier": "minor",
+			"rarity": "rare",
 			"source": "TOMK",
 			"entries": [
-				""
+				"This cutesy clockwork owl was designed by a tinkerer with too much time on her hand. When its key is wound, this servitor awakens as a giant owl which is a construct instead of a beast.",
+				"For an hour after being wound, the owl servitor will follow the user's verbal commands to the best of its ability."
+			]
+		},
+		{
+			"name": "Firestorm Round",
+			"wondrous": "true",
+			"tier": "minor",
+			"rarity": "uncommon",
+			"source": "TOMK",
+			"entries": [
+				"This piece of electrum ammunition is engraved with ignan runes. When this round is fired at a target, the target and any creature within 10 feet of it take 2d6 fire damage."
 			]
 		},
 		{
