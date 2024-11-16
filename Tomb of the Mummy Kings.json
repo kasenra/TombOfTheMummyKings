@@ -7599,7 +7599,9 @@
 		"RX": "Rogueish Exploits",
 		"WP": "At Will Power",
 		"EP": "Encounter Power",
-		"DP": "Daily Power"
+		"DP": "Daily Power",
+		"PP": "Paragon Path",
+		"PM" : "Perfection Module"
 	},
 	"optionalfeature": [
 		{
@@ -9330,6 +9332,548 @@
 					]
 				},
 				"Attack a creature in melee, regaining one Psionic Die on a hit and dealing extra psychic damage equal to your Intelligence Modifier. On a critical hit, regain two Psionic Dice instead."
+			]
+		},
+		{
+			"name": "Generic Power",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"",
+				""
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 0,
+						"class": {
+							"name": ""
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level: 0}",
+						"{@b Class:}",
+						"{@b Power Type:}",
+						"{@b Use Time:}"
+					]
+				},
+				""
+			]
+		},
+		{
+			"name": "Generic Paragon Path",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"PP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": ""
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Requirements:} ",
+						"{@b Ability Score:} "
+					]
+				},
+				"",
+				{
+					"type": "list",
+					"style": "list-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Heroic Paragon (15th Level)",
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "item",
+							"name": "Ascendant Paragon (17th Level)",
+							"entries": [
+								""
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Horizon Guardian",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"PP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Requirements:} Ranger, Awakened",
+						"{@b Ability Score:} Charisma"
+					]
+				},
+				"You've chosen the path of the Watcher, honing your mind into a weapon against the planar beings fighting over Toril. As your psychic weave's connection to quintessence grows, powers beyond this world will shape you into a praeternatural hunter.",
+				"You gain a +2 bonus to Charisma, and you always have the spell {@spell banishment} prepared. Targets of your {@spell hunter's mark} are unable to move between planes without your permission.",
+				{
+					"type": "list",
+					"style": "list-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Heroic Paragon (15th Level)",
+							"entries": [
+								"The duration of your {@spell hunter's mark} is increased to 24 hours. You always have the spell {@spell planar binding} prepared, and the material component used to cast it this way only needs 500 GP in value."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Ascendant Paragon (17th Level)",
+							"entries": [
+								"You gain an additional +2 bonus to Charisma. The duration of your {@spell hunter's mark} is increased to until dispelled. Additionally, you always have the spell {@spell forbiddance} prepared, and the material component used to cast it this way only needs 500 GP in value."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Constructed Perfection",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"PP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Artificer | TCE"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Requirements:} Artificer, Warforged",
+						"{@b Ability Score:} Constitution"
+					]
+				},
+				"With no flesh to hold you back, you've transcended what's possible for a humanoid warrior. Every ounce of metal and every drop of circulatum is yours to command.",
+				"You gain a +2 bonus to Constitution, and one of your forearms is replaced with a hefty Battlefist, which can be used as a melee or ranged artifice weapon. As a melee weapon, the battlefist deals 1d12 bludgeoning damage, and as a ranged weapon, it fires an arcane bolt dealing 1d10 force damage at a range of 30/60.",
+				"As part of your transcendance, you also gain a Perfection Module from {@optfeature Flexible Mobility Enhancers | TOMK}, {@optfeature Insectoid Supplementary Limb System | TOMK}, and {@optfeature Enhanced Universal Transmission Protocol | TOMK}, which starts in its Prototype Phase.",
+				{
+					"type": "list",
+					"style": "list-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Heroic Paragon (15th Level)",
+							"entries": [
+								"To represent your recent tinkering with your form, you gain a new Perfection Module or upgrade one of your existing modules."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Ascendant Paragon (17th Level)",
+							"entries": [
+								"To represent your approach to the perfect form, you gain a new Perfection Module or upgrade one of your existing modules. Additionally, you gain another +2 bonus to Constitution."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Flexible Mobility Enhancers",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"PM"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Prototype",
+							"entries": [
+								"You've modified yourself with a multi-purpose movement enhancer, with an hour of work, you can retrofit yourself to have one of the following movement bonuses:",
+								{
+									"type": "list",
+									"style": "list-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Polylegs",
+											"entries": [
+												"You gain a 10 foot bonus to your walk speed."
+											]
+										},
+										{
+											"type": "item",
+											"name": "Auto-Pitons",
+											"entries": [
+												"You gain a 20 foot bonus to your climbing speed."
+											]
+										},
+										{
+											"type": "item",
+											"name": "Hydro-Fins",
+											"entries": [
+												"You gain a 20 foot bonus to your swimming speed."
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "item",
+							"name": "Revolutionary",
+							"entries": [
+								"Your mobility enhancers have been honed with rapid development protocols.",
+								{
+									"type": "list",
+									"style": "list-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Explosive Burst-Sprint Polylegs",
+											"entries": [
+												"You gain a 15 foot bonus to your walk speed."
+											]
+										},
+										{
+											"type": "item",
+											"name": "Adamantium Honed Auto-Pitons",
+											"entries": [
+												"You gain a 25 foot bonus to your climbing speed."
+											]
+										},
+										{
+											"type": "item",
+											"name": "Mithril Auto-Hydro-Fins",
+											"entries": [
+												"You gain a 25 foot bonus to your swimming speed."
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "item",
+							"name": "Heretical",
+							"entries": [
+								"You've invented the zenith of transporation technology, including a prototype of personal flight technology.",
+								{
+									"type": "list",
+									"style": "list-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Frictionless Burst-Sprint Mili-legs",
+											"entries": [
+												"You gain a 20 foot bonus to your walk speed."
+											]
+										},
+										{
+											"type": "item",
+											"name": "Microgravity Shifted Adamantium Smart Pitons",
+											"entries": [
+												"You gain a 30 foot bonus to your climbing speed."
+											]
+										},
+										{
+											"type": "item",
+											"name": "Bio-Preserved Mithril Coated Kraken Fin-Graft",
+											"entries": [
+												"You gain a 30 foot bonus to your swimming speed."
+											]
+										},
+										{
+											"type": "item",
+											"name": "Pressurized Dualjet Launch System ",
+											"entries": [
+												"You gain a 20 foot bonus to your flying speed."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Insectoid Supplementary Limb System",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"PM"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Prototype",
+							"entries": [
+								"You've designed an extra, streamlined limb for yourself. It might come from your center, one of your existing arms, or it might only be a small dextrous hand attached at the wrist. This extra hand is fully functional, capable of interacting with objects or wielding weapons and shields."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Revolutionary",
+							"entries": [
+								"You've made space to add another arm to your chassis. Additionally, you can now grapple creatures using Intelligence (Arcana) in place of Strength (Athletics)."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Heretical",
+							"entries": [
+								"In pursuit of perfection, you've shed all semblance of human form. You gain an additional two arms, and due to the increased awareness needed to utilize all these limbs, you become immune to flanking."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Enhanced Universal Transmission Protocol",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"PM"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Prototype",
+							"entries": [
+								"By adding new connections to your linguistic center, you've upgraded your communication protocol with new encryption and decryption techniques. You learn two new languages, and your communication protocol messages can now be understood by any construct of 3 intelligence or higher."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Revolutionary",
+							"entries": [
+								"Due to new advances in your bio-integration methodology, your communication protocol messages can new be understood by any creature of 3 intelligence or higher, as well as constructs of any intelligence. Additionally, you have the spell {@spell sending} prepared."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Heretical",
+							"entries": [
+								"You've reached the pinnacle of human-construct interfacing and invented a neural subchip that could one day unite the world. By spending 10 minutes with a consenting creature, you can install a tiny subdermal neural chip into them. Your communication protocol messages can reach these chipped creatures at any range on the same plane. Additionally, any creature you communicate with over protocol is able to respond, even if they are not normally capable of protocol communication."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Echo Savant",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"PP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Fighter"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Requirements:} Fighter, Echo Knight Subclass",
+						"{@b Ability Score:} Constitution"
+					]
+				},
+				"Each day, without knowing it, each resident of Toril creates millions of waves in the quintessence. Not you, though. With each breath, you plan out the precise moves to place your echoes exactly where they need to be. No matter what happens, they will never see you coming.",
+				"You gain a +2 bonus to Constitution, and melee attacks through your echo now {@condition marked | TOMK | mark} targets on a hit. If a target violates this mark, you can immediately attack them through your echo with advantage. Additionally, your echo can take one more hit before collapsing (to a max of 2).",
+				"If you have more than one active echo, you can swap the positions of two of your echos instead of swapping your true self with an echo.",
+				{
+					"type": "list",
+					"style": "list-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Heroic Paragon (15th Level)",
+							"entries": [
+								"As their corporeality increases, your echoes are now capable of grappling targets. Additionally, your echoes can take one more hit before collapsing (to a max of 3)."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Ascendant Paragon (17th Level)",
+							"entries": [
+								"As your connection to quintessence grows, the fluidity of your echos does in turn. You can now swap positions between yourself and your echos using only 5 feet of movement. Additionally, you can maintain a second stable echo, and you gain another +2 bonus to Constitution."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Spellguard",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"PP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Wizard`"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Requirements:} Wizard, Elf Heritage",
+						"{@b Ability Score:} Constitution"
+					]
+				},
+				"In the long, bloody history of the Seldarine, there is no warrior as highly prized as the Spellguard. While the arts of the Young Seldarine have been lost, fragments of their Mythals exist within the elves of Realmspace. To protect what you hold dear, you must learn to harness this Mythal Shard's power.",
+				"You gain a +2 bonus to Constitution, and allies within 10 feet of you gain a +2 bonus to all Saving Throws against spells.",
+				{
+					"type": "list",
+					"style": "list-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Heroic Paragon (15th Level)",
+							"entries": [
+								"As your magic-nullifying presence grows, the bonus from your protective aura increases to +3. Additionally, you may choose one of Strength, Intelligence, or Charisma Saving Throws for which your aura provides an additional +2 bonus."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Ascendant Paragon (17th Level)",
+							"entries": [
+								"The shard inside you beats in sync with your heart. Your protective aura reaches out 20 feet, and you gain a +2 bonus to Constitution. Additionally, you may choose one of Dexterity, Constitution, or Wisdom Saving Throws, for which your aura provides an additional +2 bonus."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Grave Caller",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"PP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Bard"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Requirements:} Bard, Must have died",
+						"{@b Ability Score:} Intelligence"
+					]
+				},
+				"You have seen the Fugue Plane and returned from it. The grey void has tainted the song of life within you and drawn undeath to your presence.",
+				"You gain a +2 bonus to Intelligence, effects can no longer reduce your max hit points, and your creature type is now Undead as well as Ooze.", 
+				"Due to your imperfect return, you bear a Cursemark of Death. While this mark is attached to you, you cannot be magically healed. When targetting a creature using a spell, power, or attack, you can pass this curse onto them, abating your curse until the target dies or dawn comes. A target bearing your curse cannot be healed and takes 1d6 + Intelligence necrotic damage every time it fails a Saving Throw against one of your spells.",
+				"Additionally, you always have the spell {@spell Animate Dead} prepared, and once per day you can cast a spell which raises the dead without providing the required corpses.",
+				{
+					"type": "list",
+					"style": "list-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Heroic Paragon (15th Level)",
+							"entries": [
+								"Your curse sickens and rots you, but you can harness this suffering. Targets bearing your curse take 1d4 + Intelligence necrotic damage at the start of each of their turns. Your worsening curse has given you a second Cursemark.",
+								"Additionally, you always have the spell {@spell create undead} prepared, and you can command undead you control without using a bonus action."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Ascendant Paragon (17th Level)",
+							"entries": [
+								"You've reached the pinnacle of your alignment to the Fugue Plane. Targets bearing your curse have disadvantage on Saving Throws against your necromanctic spells and powers, and you gain a +2 bonus to Intelligence. Additionally, when you raise undead with a spell or power, raise one more undead."
+							]
+						}
+					]
+				}
 			]
 		}
 	],
