@@ -7589,6 +7589,216 @@
 				"dexterity",
 				"wisdom"
 			]
+		},
+		{
+			"name": "Mad Mage Braggan",
+			"source": "TOMK",
+			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid"
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				14,
+				{
+					"ac": 16,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 78,
+				"formula": "12d8 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 15,
+			"int": 12,
+			"wis": 12,
+			"cha": 20,
+			"save": {
+				"wis": "+4",
+				"cha": "+7"
+			},
+			"skill": {
+				"arcana": "+4",
+				"deception": "+7",
+				"persuasion": "+7",
+				"religion": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Infernal"
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The warlock casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 16}): "
+					],
+					"will": [
+						"{@spell alter self}",
+						"{@spell mage armor} (self only)",
+						"{@spell mage hand}",
+						"{@spell minor illusion}",
+						"{@spell prestidigitation}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell banishment}",
+							"{@spell fireball|XPHB}",
+							"{@spell wall of fire|XPHB}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Dark One's Own Luck (Recharges on Reload)",
+					"entries": [
+						"When the warlock makes an ability check or saving throw, it can add a {@dice d10} to the roll. It can do this after the roll is made but before any of the roll's effects occur."
+					]
+				},
+				{
+					"name": "Gunslinger",
+					"entries": [
+						"Braggan carries 10 plain rounds of ammunition for his +1 Arquebus. His bullets are coated in {@item carrion crawler mucus}"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Braggan makes one Arquebus attack and uses spellcasting or Hellfire. If his gun isn't loaded, Braggan uses Shady Dodge, Hellfire, and Spellcasting. If out of bullets, he makes two scimitar attacks then uses Hellfire or Spellcasting."
+					]
+				},
+				{
+					"name": "Arquebus",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 40/80 ft., one target. {@h}19 ({@damage 4d6 + 5}) piercing damage, plus 14 ({@damage 4d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) slashing damage plus 14 ({@damage 4d6}) fire damage."
+					]
+				},
+				{
+					"name": "Hellfire",
+					"entries": [
+						"Green flame explodes in a 10-foot-radius sphere centered on a point within 120 feet of the warlock. Each creature in that area must make a {@dc 16} Dexterity saving throw, taking 16 ({@damage 3d10}) fire damage and 11 ({@damage 2d10}) necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Shady Dodge",
+					"entries": [
+						"Braggan adopts a defensive stance while quickloading his arquebus. He takes the dodge, disengage, and reload actions simultaneously."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Fiendish Rebuke (3/Day)",
+					"entries": [
+						"In response to being damaged by a visible creature within 60 feet of it, the warlock forces that creature to make a {@dc 16} Constitution saving throw, taking 22 ({@damage 4d10}) necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"desert",
+				"underdark",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/warlock-of-the-fiend.mp3"
+			},
+			"attachedItems": [
+				"scimitar|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"I"
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"MLW",
+				"AOE"
+			],
+			"hasFluff": true,
+			"token": {
+				"name": "Warlock of the Fiend",
+				"source": "MPMM"
+			},
+			"fluff": {
+				"name": "Warlock of the Fiend",
+				"source": "MPMM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Warlocks of the Fiend gain their powers through magical pacts forged with archfiends of the Lower Planes. These warlocks often keep {@creature imp||imps} or {@creature quasit||quasits} as companions, and they tend toward philosophical extremes: consorting with fiendish cults or dedicating their lives to destroying such cults."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Warlocks",
+						"entries": [
+							"Warlocks gain arcane might through magical pacts with mysterious entities. While some use their abilities to serve the sources of their power, others use them to undermine or even destroy these entities."
+						]
+					}
+				]
+			},
+			"damageTags": [
+				"F",
+				"N",
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"B",
+				"F",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity"
+			]
 		}
 	],
 	"optionalFeatureTypes": {
@@ -7597,13 +7807,13 @@
 		"AH": "Artificer Hack",
 		"FM": "Fighter Maneuvers",
 		"RX": "Rogueish Exploits",
-		"BM" : "Bardic Melodies",
-		"WT" : "Wizarding Theses",
+		"BM": "Bardic Melodies",
+		"WT": "Wizarding Theses",
 		"WP": "At Will Power",
 		"EP": "Encounter Power",
 		"DP": "Daily Power",
 		"PP": "Paragon Path",
-		"PM" : "Perfection Module"
+		"PM": "Perfection Module"
 	},
 	"optionalfeature": [
 		{
@@ -9852,7 +10062,7 @@
 					]
 				},
 				"You have seen the Fugue Plane and returned from it. The grey void has tainted the song of life within you and drawn undeath to your presence.",
-				"You gain a +2 bonus to Intelligence, effects can no longer reduce your max hit points, and your creature type is now Undead as well as Ooze.", 
+				"You gain a +2 bonus to Intelligence, effects can no longer reduce your max hit points, and your creature type is now Undead as well as Ooze.",
 				"Due to your imperfect return, you bear a Cursemark of Death. While this mark is attached to you, you cannot be magically healed. When targetting a creature using a spell, power, or attack, you can pass this curse onto them, abating your curse until the target dies or dawn comes. A target bearing your curse cannot be healed and takes 1d6 + Intelligence necrotic damage every time it fails a Saving Throw against one of your spells.",
 				"Additionally, you always have the spell {@spell Animate Dead} prepared, and once per day you can cast a spell which raises the dead without providing the required corpses.",
 				{
@@ -9878,22 +10088,336 @@
 				}
 			]
 		},
-		{  "name": "Guarded Mind", "source": "TOMK",  "page": 5,  "featureType": [  "RE",  "EP"  ],
-"prerequisite": [  {  "level": {  "level": 12,  "class": {  "name": "Ranger"  }  }  }  ],  "entries":
-[  {  "type": "list",  "style": "list-hang-notitle",  "columns": 2,  "items": [  "{@b Level:} 12",  "{@b Class:} Ranger Evocation",  "{@b Power Type:} Encounter",  "{@b Use Time:} 1 Reaction"  ]  },
-"When an outsider (aberration, elemental, fey, fiend, undead, or celestial) attempts to impose the stunned, paralyzed, charmed, or frightened conditons on you, react to block the triggering effect and deal 2d10 + Charisma psychic damage to the triggering creature."  ]  },
-{  "name": "Otherworldly Lore", "source": "TOMK",  "page": 5,  "featureType": [  "RE",  "DP"  ],
-"prerequisite": [  {  "level": {  "level": 12,  "class": {  "name": "Ranger"  }  }  }  ],  "entries":
-[  {  "type": "list",  "style": "list-hang-notitle",  "columns": 2,  "items": [  "{@b Level:} 12",  "{@b Class:} Ranger Evocation",  "{@b Power Type:} Daily",  "{@b Use Time:} 1 Minute"  ]  },
-"By observing an outsider (aberration, elemental, fey, fiend, undead, or celestial) for a minute or longer, you can determine its taxonomical name, its creature type, and one of: an effect it can cause, an element it resists or is vulnerable to, the plane it originates from, or another fact of note. This information is magical and may not be known to any living being. This power can only be used on any individual outsider one time."  ]  },
-{  "name": "Adamantine Crush", "source": "TOMK",  "page": 5,  "featureType": [  "AH",  "EP"  ],  "prerequisite": [  {  "level": {  "level": 12,  "class": {  "name": "Artificer"  }  }  }  ],  "entries": [  {  "type": "list",  "style": "list-hang-notitle",  "columns": 2,  "items": [  "{@b Level:} 12",  "{@b Class:} Artificer Hack",  "{@b Power Type:} Encounter",  "{@b Use Time:} 1 Attack"  ]  },  "Make an artifice melee unarmed attack using your Battlefist. The target of this attack must make a Strength Saving Throw against your Constitution DC or be pushed a number of feet equal to your Constitution modifier times five. If this pushes the target into a wall, they 1d6 bludgeoning damage for every 5 feet they were pushed, then fall prone."  ]  },
-{  "name": "Self Repair Modules", "source": "TOMK",  "page": 5,  "featureType": [  "AH",  "DP"  ],  "prerequisite": [  {  "level": {  "level": 12,  "class": {  "name": "Artificer"  }  }  }  ],  "entries": [  {  "type": "list",  "style": "list-hang-notitle",  "columns": 2,  "items": [  "{@b Level:} 12",  "{@b Class:} Artificer Hack",  "{@b Power Type:} Daily",  "{@b Use Time:} 1 Bonus Action"  ]  },  "Roll a hit dice and add your Constitution modifier. Regain twice that many hit points, then end any poisoned, blinded, or restrained conditions on yourself."  ]  },
-{  "name": "Triangle Attack", "source": "TOMK",  "page": 5,  "featureType": [  "RE",  "EP"  ],  "prerequisite": [  {  "level": {  "level": 12,  "class": {  "name": "Rogue"  }  }  }  ],  "entries": [  {  "type": "list",  "style": "list-hang-notitle",  "columns": 2,  "items": [  "{@b Level:} 12",  "{@b Class:} Rogueish Exploit",  "{@b Power Type:} Encounter",  "{@b Use Time:} 1 Attack"  ]  },  "Make a sneak attack while flanking with one of your echoes. Add an additional 2d6 sneak attack dice per echo threatening the target."  ]  },
-{  "name": "Superposition", "source": "TOMK",  "page": 5,  "featureType": [  "RE",  "DP"  ],  "prerequisite": [  {  "level": {  "level": 12,  "class": {  "name": "Rogue"  }  }  }  ],  "entries": [  {  "type": "list",  "style": "list-hang-notitle",  "columns": 2,  "items": [  "{@b Level:} 12",  "{@b Class:} Rogueish Exploit",  "{@b Power Type:} Daily",  "{@b Use Time:} 1 Bonus Action"  ]  },  "Pull an unstable echo from a doomed timeline. At the end of your turn, collapse one of your echos back into the quintessence."  ]  },
-{  "name": "Force Lash", "source": "TOMK",  "page": 5,  "featureType": [  "WT",  "EP"  ],  "prerequisite": [  {  "level": {  "level": 12,  "class": {  "name": "Wizard"  }  }  }  ],  "entries": [  {  "type": "list",  "style": "list-hang-notitle",  "columns": 2,  "items": [  "{@b Level:} 12",  "{@b Class:} Wizarding Thesis",  "{@b Power Type:} Encounter",  "{@b Use Time:} 1 Attack"  ]  },  "A crackling whip of pure force extends from your palm. Make a melee spell attack against a target within 15 feet. On a hit, the target falls prone and takes 3d6 + Constitution force damage. If the target is a spellcaster, you have advantage on the attack."  ]  },
-{  "name": "Mythal Field", "source": "TOMK",  "page": 5,  "featureType": [  "WT",  "DP"  ],  "prerequisite": [  {  "level": {  "level": 12,  "class": {  "name": "Wizard"  }  }  }  ],  "entries": [  {  "type": "list",  "style": "list-hang-notitle",  "columns": 2,  "items": [  "{@b Level:} 12",  "{@b Class:} Wizarding Thesis",  "{@b Power Type:} Daily",  "{@b Use Time:} 1 Bonus Action"  ]  },  "Opening yourself to your Mythal Shard, you create a 20-foot aura of crackling negative energy. Creatures you choose within this aura are only able to cast spells of a level higher than your Constitution Modifier plus one."  ]  },
-{  "name": "Visions of Doom", "source": "TOMK",  "page": 5,  "featureType": [  "BM",  "EP"  ],  "prerequisite": [  {  "level": {  "level": 12,  "class": {  "name": "Bard"  }  }  }  ],  "entries": [  {  "type": "list",  "style": "list-hang-notitle",  "columns": 2,  "items": [  "{@b Level:} 12",  "{@b Class:} Bardic Melody",  "{@b Power Type:} Encounter",  "{@b Use Time:} 1 Action"  ]  },  "Target a creature bearing your curse to assault it with whispers from beyond the grave. If must make a Wisdom Saving Throw against your Intelligence DC. On a failure, it takes 2d10 psychic damage, and your allies have advantage on attacks against it until the end of your next turn. On a successful save, the target takes half damage."  ]  },
-{  "name": "Spirits from Beyond", "source": "TOMK",  "page": 5,  "featureType": [  "BM",  "DP"  ],  "prerequisite": [  {  "level": {  "level": 12,  "class": {  "name": "Bard"  }  }  }  ],  "entries": [  {  "type": "list",  "style": "list-hang-notitle",  "columns": 2,  "items": [  "{@b Level:} 12",  "{@b Class:} Bardic Melody",  "{@b Power Type:} Daily",  "{@b Use Time:} 1 Reaction"  ]  },  "When an ally fails a skill check, you can open their mind to the fugue plane, invigorating them with a vision of one they've lost. They can reroll this skill check, adding your Intelligence Modifier to their roll."  ]  }
+		{
+			"name": "Guarded Mind",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RE",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level:} 12",
+						"{@b Class:} Ranger Evocation",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Reaction"
+					]
+				},
+				"When an outsider (aberration, elemental, fey, fiend, undead, or celestial) attempts to impose the stunned, paralyzed, charmed, or frightened conditons on you, react to block the triggering effect and deal 2d10 + Charisma psychic damage to the triggering creature."
+			]
+		},
+		{
+			"name": "Otherworldly Lore",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RE",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Ranger"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level:} 12",
+						"{@b Class:} Ranger Evocation",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Minute"
+					]
+				},
+				"By observing an outsider (aberration, elemental, fey, fiend, undead, or celestial) for a minute or longer, you can determine its taxonomical name, its creature type, and one of: an effect it can cause, an element it resists or is vulnerable to, the plane it originates from, or another fact of note. This information is magical and may not be known to any living being. This power can only be used on any individual outsider one time."
+			]
+		},
+		{
+			"name": "Adamantine Crush",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"AH",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level:} 12",
+						"{@b Class:} Artificer Hack",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"Make an artifice melee unarmed attack using your Battlefist. The target of this attack must make a Strength Saving Throw against your Constitution DC or be pushed a number of feet equal to your Constitution modifier times five. If this pushes the target into a wall, they 1d6 bludgeoning damage for every 5 feet they were pushed, then fall prone."
+			]
+		},
+		{
+			"name": "Self Repair Modules",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"AH",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level:} 12",
+						"{@b Class:} Artificer Hack",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Bonus Action"
+					]
+				},
+				"Roll a hit dice and add your Constitution modifier. Regain twice that many hit points, then end any poisoned, blinded, or restrained conditions on yourself."
+			]
+		},
+		{
+			"name": "Triangle Attack",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RE",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Rogue"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level:} 12",
+						"{@b Class:} Rogueish Exploit",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"Make a sneak attack while flanking with one of your echoes. Add an additional 2d6 sneak attack dice per echo threatening the target."
+			]
+		},
+		{
+			"name": "Superposition",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"RE",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Rogue"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level:} 12",
+						"{@b Class:} Rogueish Exploit",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Bonus Action"
+					]
+				},
+				"Pull an unstable echo from a doomed timeline. At the end of your turn, collapse one of your echos back into the quintessence."
+			]
+		},
+		{
+			"name": "Force Lash",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"WT",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Wizard"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level:} 12",
+						"{@b Class:} Wizarding Thesis",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Attack"
+					]
+				},
+				"A crackling whip of pure force extends from your palm. Make a melee spell attack against a target within 15 feet. On a hit, the target falls prone and takes 3d6 + Constitution force damage. If the target is a spellcaster, you have advantage on the attack."
+			]
+		},
+		{
+			"name": "Mythal Field",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"WT",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Wizard"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level:} 12",
+						"{@b Class:} Wizarding Thesis",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Bonus Action"
+					]
+				},
+				"Opening yourself to your Mythal Shard, you create a 20-foot aura of crackling negative energy. Creatures you choose within this aura are only able to cast spells of a level higher than your Constitution Modifier plus one."
+			]
+		},
+		{
+			"name": "Visions of Doom",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"BM",
+				"EP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Bard"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level:} 12",
+						"{@b Class:} Bardic Melody",
+						"{@b Power Type:} Encounter",
+						"{@b Use Time:} 1 Action"
+					]
+				},
+				"Target a creature bearing your curse to assault it with whispers from beyond the grave. If must make a Wisdom Saving Throw against your Intelligence DC. On a failure, it takes 2d10 psychic damage, and your allies have advantage on attacks against it until the end of your next turn. On a successful save, the target takes half damage."
+			]
+		},
+		{
+			"name": "Spirits from Beyond",
+			"source": "TOMK",
+			"page": 5,
+			"featureType": [
+				"BM",
+				"DP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Bard"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						"{@b Level:} 12",
+						"{@b Class:} Bardic Melody",
+						"{@b Power Type:} Daily",
+						"{@b Use Time:} 1 Reaction"
+					]
+				},
+				"When an ally fails a skill check, you can open their mind to the fugue plane, invigorating them with a vision of one they've lost. They can reroll this skill check, adding your Intelligence Modifier to their roll."
+			]
+		}
 	],
 	"spell": [
 		{
@@ -11891,7 +12415,7 @@
 		{
 			"abbreviation": "CUM",
 			"source": "TOMK",
-			"name": "Cumbersome",
+			"name": "cumbersome",
 			"page": 4,
 			"entries": [
 				{
@@ -11907,7 +12431,7 @@
 		{
 			"abbreviation": "TS",
 			"source": "TOMK",
-			"name": "Tinker-Strength",
+			"name": "tinker-strength",
 			"page": 5,
 			"entries": [
 				{
@@ -11924,7 +12448,7 @@
 		{
 			"abbreviation": "TD",
 			"source": "TOMK",
-			"name": "Tinker-Dexterity",
+			"name": "tinker-dexterity",
 			"page": 5,
 			"entries": [
 				{
@@ -11941,7 +12465,7 @@
 		{
 			"abbreviation": "PSI",
 			"source": "TOMK",
-			"name": "Psionic Attuned",
+			"name": "psionic attuned",
 			"page": 5,
 			"entries": [
 				{
@@ -12961,7 +13485,7 @@
 			"tier": "major",
 			"rarity": "rare",
 			"source": "TOMK",
-			"reqAttune" : "true",
+			"reqAttune": true,
 			"entries": [
 				"While attuned to this band, its residual eldritch power grants you one eldritch invocation of your choice. You must meet all the prerequisites for this invocation, and it must not have a level requirement.",
 				"In order to change the invocation in this band, you must sacrifice a small helpless animal and let its blood pour into the earth. You can only perform this ritual once per tenday."
@@ -12986,6 +13510,134 @@
 			"source": "TOMK",
 			"entries": [
 				"This piece of electrum ammunition is engraved with ignan runes. When this round is fired at a target, the target and any creature within 10 feet of it take 2d6 fire damage."
+			]
+		},
+		{
+			"name": "+1 Arquebus", 
+			"rarity": "none",
+			"weaponCategory": "artifice",
+			"type": "R",
+			"property": [
+				"A"
+			],
+			"range": "40/120",
+			"dmg1": "4d6",
+			"firearm": "true",
+			"bonusWeapon" : "+1",
+			"source": "TOMK",
+			"entries": [
+				"You have a +1 to damage and attack rolls with this magical weapon.",
+				"A primitive firearm prototyped by Abeiran gnome clans. Most arquebi on Toril are shoddy forgeries of these original designs.",
+				"Loading a bullet and powder into this weapon takes ten minutes for a layman, one minute for someone proficient, and one action for someone with the {@feat gunner} feat."
+			]
+		},
+		{
+			"name": "+1 Adamantine Breaker Blade",
+			"wondrous": "True",
+			"tier": "major",
+			"rarity": "rare",
+			"type" : "M",
+			"weaponCategory" : "artifice",
+			"property" : ["A", "2H", "H", "S", "TS"],
+			"firearm" : "true",
+			"range": "40/120",
+			"bonusWeapon" : "+1",
+			"dmg1" : "2d6",
+			"dmg2" : "2d6+2d4",
+			"dmgType" : "S",
+			"source": "TOMK",
+			"entries": [
+				"Impractical, over-engineered, and incredibly lethal, this trick-greatsword contains an attached firearm cylinder, capable of holding 3 bullets. By consuming a bullet when attacking, the user deals an additional 2d4 damage. Additionally, the wielder can use a bonus action to conceal or reveal the mechanism within, converting this weapon into a ranged firearm with a range of 40/120 feet which does 2d8 piercing damage.",
+				"When the melee form of this weapon hits an object, the hit is a critical hit.",
+				"Reloading the cylinder within requires the weapon be in its ranged form, and doing so takes 10 minutes for a layman, one minute for a proficient firearm user, and one action for a {@feat gunner |TCE}.",
+				{
+					"type": "entries",
+					"name": "Trick-Weapons",
+					"entries": [
+						"This is a trick-weapon, meaning it has two forms, which a proficient wielder can swap between using a Bonus Action.",
+						"When this weapon is in its melee form, it can only make melee attacks, and when it is in its ranged form, it can only make ranged attacks."
+					]
+				}
+			]
+		},
+		{
+			"name": "Mad Mage Braggan's Chaps",
+			"wondrous": "true",
+			"tier": "minor",
+			"rarity": "rare",
+			"source": "TOMK",
+			"entries": [
+				"These magical pants have been dyed with noxiously fragrant blue mushrooms. Thanks to the mechanisms in the attached bandolier, the wearer can take the dodge action and reload a firearm using a single action."
+			]
+		},
+		{
+			"name": "",
+			"wondrous": "",
+			"tier": "",
+			"rarity": "",
+			"source": "TOMK",
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "",
+			"wondrous": "",
+			"tier": "",
+			"rarity": "",
+			"source": "TOMK",
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "",
+			"wondrous": "",
+			"tier": "",
+			"rarity": "",
+			"source": "TOMK",
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "",
+			"wondrous": "",
+			"tier": "",
+			"rarity": "",
+			"source": "TOMK",
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "",
+			"wondrous": "",
+			"tier": "",
+			"rarity": "",
+			"source": "TOMK",
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "",
+			"wondrous": "",
+			"tier": "",
+			"rarity": "",
+			"source": "TOMK",
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "",
+			"wondrous": "",
+			"tier": "",
+			"rarity": "",
+			"source": "TOMK",
+			"entries": [
+				""
 			]
 		},
 		{
